@@ -284,10 +284,9 @@ Please use the following support channels:
 * `Our Gitter chat room <https://gitter.im/jkbrzt/httpie>`_
   to ask questions, discuss features, and for general discussion.
 * `StackOverflow <https://stackoverflow.com>`_
-  to ask questions (please make sure to use the
-  `httpie <http://stackoverflow.com/questions/tagged/httpie>`_ tag).
-* Tweet directly to `@clihttp <https://twitter.com/clihttp>`_.
-* You can also tweet directly to `@jakubroztocil`_.
+  to ask questions 
+* Tweet directly to us at `@TSGP <https://twitter.com/clihttp>`_.
+* You can also tweet directly to `@realTomBresee`_.
 
 
 |
