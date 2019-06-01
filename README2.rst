@@ -333,49 +333,6 @@ Note that ``@`` is used to simulate a file upload form field, whereas
 ``=@`` just embeds the file content as a regular text field value.
 
 
-HTTP headers
-============
-
-To set custom headers you can use the ``Header:Value`` notation:
-
-.. code-block:: bash
-
-    $ http example.org  User-Agent:Bacon/1.0  'Cookie:valued-visitor=yes;foo=bar'  \
-        X-Foo:Bar  Referer:http://httpie.org/
-
-
-.. code-block:: http
-
-    GET / HTTP/1.1
-    Accept: */*
-    Accept-Encoding: gzip, deflate
-    Cookie: valued-visitor=yes;foo=bar
-    Host: example.org
-    Referer: http://httpie.org/
-    User-Agent: Bacon/1.0
-    X-Foo: Bar
-
-
-Default request headers
------------------------
-
-There are a couple of default headers that HTTPie sets:
-
-.. code-block:: http
-
-    GET / HTTP/1.1
-    Accept: */*
-    Accept-Encoding: gzip, deflate
-    User-Agent: HTTPie/<version>
-    Host: <taken-from-URL>
-
-
-
-Any of these except ``Host`` can be overwritten and some of them unset.
-
-
-
-
 
 
 |
