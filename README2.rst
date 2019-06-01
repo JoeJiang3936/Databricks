@@ -408,10 +408,14 @@ Apache Spark and Pyspark
 
 
 
+
+
+
+
 User support
 ------------
 
-Some links
+Please use the following support channels:
 
 * `GitHub issues <https://github.com/jkbr/httpie/issues>`_
   for bug reports and feature requests.
@@ -422,8 +426,6 @@ Some links
   `httpie <http://stackoverflow.com/questions/tagged/httpie>`_ tag).
 * Tweet directly to `@clihttp <https://twitter.com/clihttp>`_.
 * You can also tweet directly to `@jakubroztocil`_.
-
-
 
 
 Related projects
