@@ -52,13 +52,11 @@ Gene Sequencing Explained
 .. class:: no-web
 
 
-
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
         :alt: HTTPie in action
         :width: 100%
         :scale: 20
         :align: right
-
 
 
 .. class:: no-web no-pdf
@@ -96,6 +94,24 @@ Why Apache Spark ?
 
 
 |
+
+
+
+
+
+
+Background
+==============
+
+Apache Spark™ is a unified analytics engine for large-scale data processing.  Spark SQL is Apache Spark's module for working with structured data.
+Spark appliations can be written in Java, Scala, R, Python, and SQL. For the purposes of this exercise we will primarily be focusing on Python and SQL approaches within Apache Spark. 
+
+Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
+
+
+
+|
+
 
 
 
@@ -149,27 +165,6 @@ Our Approach
 
 
 |
-
-
-
-Background
-==============
-
-Apache Spark™ is a unified analytics engine for large-scale data processing.  Spark SQL is Apache Spark's module for working with structured data.
-Spark appliations can be written in Java, Scala, R, Python, and SQL. For the purposes of this exercise we will primarily be focusing on Python and SQL approaches within Apache Spark. 
-
-Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
-
-
-
-|
-
-
-
-
-
-
-
 
 
 
