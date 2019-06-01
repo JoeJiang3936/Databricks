@@ -264,6 +264,8 @@ Note that data fields aren't the only way to specify request data:
 Reference
 =========
 
+|
+
 Apache Spark and Pyspark
 ------------------------
 
@@ -284,7 +286,6 @@ Please use the following support channels:
 References
 ----------------
 
-|
 
 Dependencies Links
 ~~~~~~~~~~~~
