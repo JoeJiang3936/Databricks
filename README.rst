@@ -267,16 +267,6 @@ Reference
 Apache Spark and Pyspark
 ------------------------
 
-<insert>
-
-
-
-
-
-
-User support
-------------
-
 Please use the following support channels:
 
 * `GitHub issues <https://github.com/jkbr/httpie/issues>`_
