@@ -72,8 +72,30 @@ Our Approach
 * Run 3rd-party app like Hail or some other crazy complex system on Databricks
 * Push further into expanding model into full cloud-hosted versions (AWS-like)
 * Document the performance differences as you run these individual approaches
-  *  i see x and then i see y and then i see z 
-* I don't know, something like the above, none of us has Apache Spark experience
+* I don't know, something like the above, none of us has Apache Spark experience, but i think we can pull this off 
+
+
+
+
+
+
+.. class:: no-web
+
+
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/spark-map-transformation-operation.gif 
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
+
+.. class:: no-web no-pdf
+
+
+
+
+
 
 
 |
