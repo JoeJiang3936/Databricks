@@ -152,7 +152,7 @@ Under the hood, HTTPie uses these two amazing libraries:
 
 
 
-
+|
 
 
 The How
@@ -181,31 +181,9 @@ A MacPorts *port* is also available:
 
 
 
-Windows, etc.
--------------
-
-A universal installation method (that works on Windows, Mac OS X, Linux, …,
-and always provides the latest version) is to use `pip`_:
 
 
-.. code-block:: bash
-
-    # Make sure we have an up-to-date version of pip and setuptools:
-    $ pip install --upgrade pip setuptools
-
-    $ pip install --upgrade httpie
-
-
-(If ``pip`` installation fails for some reason, you can try
-``easy_install httpie`` as a fallback.)
-
-
-
-
-
-
-
-
+|
 
 
 
@@ -325,5 +303,5 @@ Under the hood, HTTPie uses these two amazing libraries:
   — Python HTTP library for humans
 * `Pygments <http://pygments.org/>`_
   — Python syntax highlighter
-
-
+* `Apache Spark <https://spark.apache.org/>`_
+  — Python syntax highlighter
