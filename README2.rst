@@ -98,6 +98,8 @@ Background
 
 Apache Spark™ is a unified analytics engine for large-scale data processing.
 
+Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
+
 
 
 
