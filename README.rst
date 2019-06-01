@@ -27,7 +27,7 @@ colorized output.
 
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
         :alt: HTTPie in action
-        :width: 100%
+        :width: 150%
         :align: center
 
 
