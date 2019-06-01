@@ -341,8 +341,6 @@ Please use the following support channels:
 
 * `GitHub issues <https://github.com/jkbr/httpie/issues>`_
   for bug reports and feature requests.
-* `Our Gitter chat room <https://gitter.im/jkbrzt/httpie>`_
-  to ask questions, discuss features, and for general discussion.
 * `StackOverflow <https://stackoverflow.com>`_
   to ask questions 
 * Tweet directly to us at `@TSGP <https://twitter.com/clihttp>`_.
@@ -358,7 +356,6 @@ References
 Dependencies Links
 ~~~~~~~~~~~~
 
-Under the hood, HTTPie uses these two amazing libraries:
 
 * `Apache Spark <https://spark.apache.org/>`_
   — Main Apache Spark website
