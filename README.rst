@@ -300,10 +300,10 @@ Dependencies
 Under the hood, HTTPie uses these two amazing libraries:
 
 * `Apache Spark <https://spark.apache.org/>`_
+  — Main Apache Spark website
+* `SparkSQL <https://spark.apache.org/sql/>`_
   — Main Apache Spark website 
-  * `SparkSQL <https://spark.apache.org/sql/>`_
-  — Main Apache Spark website 
-  * `Requests <http://python-requests.org>`_
+* `Requests <http://python-requests.org>`_
   — Python HTTP library for humans
 * `Pygments <http://pygments.org/>`_
   — Python syntax highlighter
