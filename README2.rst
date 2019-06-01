@@ -23,16 +23,33 @@ The following repo contains information assembled for our course project
 
 
 
-    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
-        :alt: HTTPie in action
-        :width: 100%
-        :align: right
-
-
-
 
 
 .. class:: no-web no-pdf
+
+
+
+
+
+
+
+User support
+------------
+
+Please check the following:
+
+* `Click <http://portquiz.net:27017/>`_
+  to confirm you can reach the right port for MongoDB and there is no firewall in play ! 
+
+* `Our Gitter chat room <https://gitter.im/jkbrzt/httpie>`_
+  to ask questions, discuss features, and for general discussion.
+* `StackOverflow <https://stackoverflow.com>`_
+  to ask questions (please make sure to use the
+  `httpie <http://stackoverflow.com/questions/tagged/httpie>`_ tag).
+* Tweet directly to `@clihttp <https://twitter.com/clihttp>`_.
+* You can also tweet directly to `@jakubroztocil`_.
+
+
 
 
 
@@ -45,13 +62,6 @@ The following repo contains information assembled for our course project
 
 
 .. class:: no-web
-
-
-
-    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
-        :alt: HTTPie in action
-        :width: 100%
-        :align: center
 
 
 
