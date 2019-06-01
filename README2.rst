@@ -279,62 +279,6 @@ Note that data fields aren't the only way to specify request data:
 
 
 
-
-
-Forms
-=====
-
-Submitting forms is very similar to sending `JSON`_ requests. Often the only
-difference is in adding the ``--form, -f`` option, which ensures that
-data fields are serialized as, and ``Content-Type`` is set to,
-``application/x-www-form-urlencoded; charset=utf-8``. It is possible to make
-form data the implicit content type instead of JSON
-via the `config`_ file.
-
-
-Regular forms
--------------
-
-.. code-block:: bash
-
-    $ http --form POST api.example.org/person/1 name='John Smith'
-
-
-.. code-block:: http
-
-    POST /person/1 HTTP/1.1
-    Content-Type: application/x-www-form-urlencoded; charset=utf-8
-
-    name=John+Smith
-
-
-File upload forms
------------------
-
-If one or more file fields is present, the serialization and content type is
-``multipart/form-data``:
-
-.. code-block:: bash
-
-    $ http -f POST example.com/jobs name='John Smith' cv@~/Documents/cv.pdf
-
-
-The request above is the same as if the following HTML form were
-submitted:
-
-.. code-block:: html
-
-    <form enctype="multipart/form-data" method="post" action="http://example.com/jobs">
-        <input type="text" name="name" />
-        <input type="file" name="cv" />
-    </form>
-
-Note that ``@`` is used to simulate a file upload form field, whereas
-``=@`` just embeds the file content as a regular text field value.
-
-
-
-
 |
 
 Reference
