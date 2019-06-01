@@ -5,6 +5,7 @@ Gene Sequencing Data Processing with Apache Spark
 
 The following repo contains information assembled for our course project
 
+
 |
 
 
@@ -171,52 +172,16 @@ Our Approach
 
 
 
-.. class:: no-web
-
-
-
-    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
-        :alt: HTTPie in action
-        :width: 100%
-        :align: center
-
-
-
-.. class:: no-web no-pdf
-
-
-
-
-
-
-
 User support
-------------
+============
 
-Please check the following:
+Jupyter Notebook examples and references as we learn more about this approach options 
 
-* `Click <http://portquiz.net:27017/>`_
-  to confirm you can reach the right port for MongoDB and there is no firewall in play ! 
-
-* `Our Gitter chat room <https://gitter.im/jkbrzt/httpie>`_
-  to ask questions, discuss features, and for general discussion.
 * `StackOverflow <https://stackoverflow.com>`_
   to ask questions (please make sure to use the
   `httpie <http://stackoverflow.com/questions/tagged/httpie>`_ tag).
 * Tweet directly to `@clihttp <https://twitter.com/clihttp>`_.
 * You can also tweet directly to `@jakubroztocil`_.
-
-
-Related projects
-----------------
-
-Dependencies
-~~~~~~~~~~~~
-
-Under the hood, HTTPie uses these two amazing libraries:
-
-* `Requests <http://python-requests.org>`_
-  — Python HTTP library for humans
 
 
 
@@ -339,6 +304,11 @@ Apache Spark and Pyspark
 
 Please use the following support channels:
 
+https://thesparkgenomeproject.com/
+
+
+
+
 * `GitHub issues <https://github.com/jkbr/httpie/issues>`_
   for bug reports and feature requests.
 * `StackOverflow <https://stackoverflow.com>`_
@@ -353,7 +323,7 @@ References
 ----------------
 
 
-Dependencies Links
+Links
 ~~~~~~~~~~~~
 
 
