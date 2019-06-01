@@ -1,6 +1,8 @@
 Gene Sequencing Data Processing with Apache Spark 
 ########################################
 
+|
+
 The following repo contains information assembled for our course project
 
 
@@ -225,11 +227,11 @@ SparkSQL differences such as  ``insert`` here:
     DELETE /todos/7 HTTP/1.1
 
 
-Insert more here
 
 
 
 
+|
 
 
 JSON 
