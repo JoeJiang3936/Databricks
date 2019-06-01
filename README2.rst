@@ -232,7 +232,7 @@ Insert more here
 
 
 
-Request items
+JSON 
 =============
 
 There are a few different *request item* types that provide a
