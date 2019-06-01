@@ -393,31 +393,17 @@ Any of these except ``Host`` can be overwritten and some of them unset.
 
 
 Reference
-====
+=========
 
-Interface design
-----------------
+Apache Spark and Pyspark
+------------------------
 
-The syntax of the command arguments closely corresponds to the actual HTTP
-requests sent over the wire. It has the advantage  that it's easy to remember
-and read. It is often possible to translate an HTTP request to an HTTPie
-argument list just by inlining the request elements. For example, compare this
-HTTP request:
-
-.. code-block:: http
-
-    hi
-    its me
-    hello 
-    tom:  123
+<>
+...
 
 
 
-
-with the HTTPie command that sends it:
-
-
-
+|
 
 
 
@@ -425,7 +411,7 @@ with the HTTPie command that sends it:
 User support
 ------------
 
-Please use the following support channels:
+Some links
 
 * `GitHub issues <https://github.com/jkbr/httpie/issues>`_
   for bug reports and feature requests.
@@ -436,6 +422,8 @@ Please use the following support channels:
   `httpie <http://stackoverflow.com/questions/tagged/httpie>`_ tag).
 * Tweet directly to `@clihttp <https://twitter.com/clihttp>`_.
 * You can also tweet directly to `@jakubroztocil`_.
+
+
 
 
 Related projects
