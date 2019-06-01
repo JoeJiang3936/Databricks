@@ -168,61 +168,40 @@ Our Approach
 
 
 
-
 |
 
+Jupyter Notebooks 
+=========
+
+As we progress step-by-step, we will upload jupyter notebooks
+
+
+Notebooks Links
+------------------------
+
+The following are pertinent links to information about the processing steps we took 
+
+* `Databricks 101 <https://github.com/jkbr/httpie/issues>`_
+  for introductory example of how to create RDD datasets
+* `Databricks 201 <https://stackoverflow.com>`_
+   
 
 
 
-
-The How
-============
-
-
-
-steps
------
-
-
-On macOS, HTTPie can be installed via `Homebrew <http://brew.sh/>`_
-(recommended):
-
-.. code-block:: bash
-
-    $ brew install httpie
-
-
-A MacPorts *port* is also available:
-
-.. code-block:: bash
-
-    $ port install httpie
-
-
-
-
-
-
-|
-
-
-
-Apache Spark Background
-===========
-
-Core of this will be done with Apache Spark and SparkSQL 
+Code 
+------------------------
 
 
 .. code-block:: bash
 
-    <common Apache Spark commands here>
+    example of some cool code 
+    import something
 
 
-SparkSQL differences such as  ``insert`` here:
+.. code-block:: python
 
-.. code-block:: http
-
-    DELETE /todos/7 HTTP/1.1
+    import pyspark
+    print("something")
 
 
 
