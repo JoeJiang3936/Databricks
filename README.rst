@@ -106,7 +106,7 @@ Why Apache Spark ?
 
 
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/spark-runs-everywhere.png 
-                :alt: HTTPie in action
+        :alt: HTTPie in action
         :width: 200%
         :align: right
 
