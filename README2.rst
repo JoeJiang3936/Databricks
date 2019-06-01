@@ -27,7 +27,7 @@ The following repo contains information assembled for our course project
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
         :alt: HTTPie in action
         :width: 100%
-        :align: center
+        :align: right
 
 
 
