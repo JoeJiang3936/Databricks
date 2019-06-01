@@ -13,11 +13,6 @@ colorized output.
 
 .. class:: no-web
 
-    .. image:: https://raw.githubusercontent.com/jakubroztocil/httpie/master/httpie.gif
-        :alt: HTTPie in action
-        :width: 100%
-        :align: center
-
 
     .. image:: https://raw.githubusercontent.com/jakubroztocil/httpie/master/httpie.png
         :alt: HTTPie compared to cURL
@@ -27,8 +22,16 @@ colorized output.
 
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
         :alt: HTTPie in action
-        :width: 150%
+        :width: 100%
         :align: center
+
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
 
 
 
