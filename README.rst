@@ -25,6 +25,8 @@ The following repo contains information assembled for our course project
 
 
 
+
+
 .. class:: no-web
 
 
@@ -52,7 +54,7 @@ The following repo contains information assembled for our course project
 
 
 
-Gene Sequencing / Genome Breakouts Explained
+Gene Sequencing Explained
 =============
 
 * Genes
@@ -80,12 +82,49 @@ Gene Sequencing / Genome Breakouts Explained
 
 
 
+|
+
+
+
+
+Why Apache Spark ? 
+=============
+
+* Runs workloads 100x faster
+* Distributed processing
+* Quasi-infinite scaling
+* Standaridized and Generalized
+* Capable of combining SQL, streaming, and complex analytics
+* Runs everywhere:  Hadoop, Apache Mesos, Kubernetes, standalone, in the cloud (Azure, AWS, etc)
+
+
+
+
+
+.. class:: no-web
+
+
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/spark-runs-everywhere.png 
+                :alt: HTTPie in action
+        :width: 200%
+        :align: right
+
+
+
+.. class:: no-web no-pdf
+
 
 
 
 
 
 |
+
+
+
+
+
 
 
 Our Approach
