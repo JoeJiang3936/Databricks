@@ -11,6 +11,7 @@ colorized output.
 
 
 
+
 .. class:: no-web
 
 
@@ -19,11 +20,6 @@ colorized output.
         :width: 100%
         :align: center
 
-
-    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
-        :alt: HTTPie in action
-        :width: 100%
-        :align: center
 
 
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
