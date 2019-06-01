@@ -175,23 +175,6 @@ Our Approach
 
 
 
-
-User support
-============
-
-Jupyter Notebook examples and references as we learn more about this approach options 
-
-* `StackOverflow <https://stackoverflow.com>`_
-  to ask questions (please make sure to use the
-  `httpie <http://stackoverflow.com/questions/tagged/httpie>`_ tag).
-* Tweet directly to `@clihttp <https://twitter.com/clihttp>`_.
-* You can also tweet directly to `@jakubroztocil`_.
-
-
-
-|
-
-
 The How
 ============
 
@@ -306,12 +289,7 @@ Reference
 Apache Spark and Pyspark
 ------------------------
 
-Please use the following support channels:
-
-https://thesparkgenomeproject.com/
-
-
-
+The following are pertinent links to information about the processing steps we took 
 
 * `GitHub issues <https://github.com/jkbr/httpie/issues>`_
   for bug reports and feature requests.
