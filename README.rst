@@ -1,4 +1,4 @@
-MongoDB:  Databases for real humans 
+Gene Sequencing with Apache Spark 
 ########################################
 
 HTTPie (pronounced *aitch-tee-tee-pie*) is a command line HTTP client.
