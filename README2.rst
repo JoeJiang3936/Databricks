@@ -424,23 +424,3 @@ Under the hood, HTTPie uses these two amazing libraries:
   — Python syntax highlighter
 
 
-
-HTTPie friends
-~~~~~~~~~~~~~~
-
-HTTPie plays exceptionally well with the following tools:
-
-* `jq <https://stedolan.github.io/jq/>`_
-  — CLI JSON processor that
-  works great in conjunction with HTTPie
-* `http-prompt <https://github.com/eliangcs/http-prompt>`_
-  —  interactive shell for HTTPie featuring autocomplete
-  and command syntax highlighting
-
-
-
-
-
-|
-
-
