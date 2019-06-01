@@ -184,6 +184,10 @@ The following are pertinent links to information about the processing steps we t
 
 * `Databricks 101 <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   for introductory example of how to create RDD datasets
+* `Databricks 101 HTML <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/notebooks/001-pyspark.html>`_
+  if you just want to download the .html to your phone or whatever and view output
+
+
 * `Databricks 201 <https://stackoverflow.com>`_
   our deeper exploration into Databricks and pyspark
 * `SparkSQL 101 <https://stackoverflow.com>`_
