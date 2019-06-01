@@ -184,6 +184,11 @@ The following are pertinent links to information about the processing steps we t
 * `Databricks 101 <https://github.com/jkbr/httpie/issues>`_
   for introductory example of how to create RDD datasets
 * `Databricks 201 <https://stackoverflow.com>`_
+  our deeper exploration into Databricks and pyspark
+* `SparkSQL 101 <https://stackoverflow.com>`_
+  for introductory example of how to query and analyze datasets and databases
+
+
    
 
 
