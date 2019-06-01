@@ -216,14 +216,14 @@ with the ``-dev`` suffix, for example:
 
 
 
-HTTP method
+Apache Spark Background
 ===========
 
 The name of the HTTP method comes right before the URL argument:
 
 .. code-block:: bash
 
-    $ http DELETE example.org/todos/7
+    <common Apache Spark commands here>
 
 
 Which looks similar to the actual ``Request-Line`` that is sent:
