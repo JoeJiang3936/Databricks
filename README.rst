@@ -1,11 +1,11 @@
 Gene Sequencing with Apache Spark 
 ########################################
 
-HTTPie (pronounced *aitch-tee-tee-pie*) is a command line HTTP client.
-Its goal is to make CLI interaction with web services as human-friendly
-as possible. It provides a simple ``http`` command that allows for sending
-arbitrary HTTP requests using a simple and natural syntax, and displays
-colorized output. 
+The following repo contains information assembled for our course project
+
+
+
+
 
 
 
@@ -15,10 +15,12 @@ colorized output.
 .. class:: no-web
 
 
-    .. image:: https://raw.githubusercontent.com/jakubroztocil/httpie/master/httpie.png
-        :alt: HTTPie compared to cURL
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
+        :alt: HTTPie in action
         :width: 100%
         :align: center
+
 
 
 
