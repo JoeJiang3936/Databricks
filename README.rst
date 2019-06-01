@@ -39,9 +39,12 @@ The following repo contains information assembled for our course project
 Gene Sequencing Explained
 =============
 
-* Genes
+* Genes are fancy 
 * Sequencing
 * Really short explanation of the biochemical tie-in
+* Result is huge files and huge processing time 
+
+
 
 
 
