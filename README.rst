@@ -197,10 +197,6 @@ Sample Code
 ------------------------
 
 
-.. code-block:: bash
-
-    example of some cool code 
-    import something
 
 
 .. code-block:: python
