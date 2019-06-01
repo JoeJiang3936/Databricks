@@ -168,30 +168,6 @@ Under the hood, HTTPie uses these two amazing libraries:
 
 
 
-Our Approach
-=============
-
-* Research the basics of Apache Spark 
-* Research pyspark and SparkSQL
-* Get Apache Spark running on laptop (local mode)
-* Understand how to baseline and monitor KPIs for local mode
-* Get Apache Spark running, via Databricks (local mode)
-* Baseline
-* Get Apache Spark running, via Databricks (distributed compute mode!)
-* Baseline
-* Import small datasets
-* Experiement with HDFS file type versions
-* Push a beyond-TB sized sequence table to cluster
-* Process the table via SparkSQL, etc
-* Run 3rd-party app like Hail or some other crazy complex system on Databricks
-* Push into cloud-hosted versions (AWS-like)
-* Document the performance differences as you run these individual approaches
-* I don't know, something like the above, none of us has Apache Spark experience
-
-
-
-
-
 The How
 ============
 
@@ -237,15 +213,8 @@ and always provides the latest version) is to use `pip`_:
 ``easy_install httpie`` as a fallback.)
 
 
-Python version
---------------
 
-Although Python 2.7 is supported as well, it is strongly recommended to
-install HTTPie against the latest Python 3.x whenever possible. That will
-ensure that some of the newer HTTP features, such as
-`SNI (Server Name Indication)`_, work out of the box.
-Python 3 is the default for Homebrew installations starting with version 0.9.4.
-To see which version HTTPie uses, run ``http --debug``.
+
 
 
 
