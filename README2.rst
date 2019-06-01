@@ -56,12 +56,36 @@ The following repo contains information assembled for our course project
 |pypi| |unix_build| |coverage| |gitter|
 
 
-
 .. contents::
 
 .. section-numbering::
 
 
+
+
+
+
+
+
+Our Approach
+=============
+
+* Research the basics of Apache Spark 
+* Research pyspark and SparkSQL
+* Get Apache Spark running on laptop (local mode)
+* Understand how to baseline and monitor KPIs for local mode
+* Get Apache Spark running, via Databricks (local mode)
+* Baseline
+* Get Apache Spark running, via Databricks (distributed compute mode!)
+* Baseline
+* Import small datasets
+* Experiement with HDFS file type versions
+* Push a beyond-TB sized sequence table to cluster
+* Process the table via SparkSQL, etc
+* Run 3rd-party app like Hail or some other crazy complex system on Databricks
+* Push into cloud-hosted versions (AWS-like)
+* Document the performance differences as you run these individual approaches
+* I don't know, something like the above, none of us has Apache Spark experience
 
 
 
