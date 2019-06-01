@@ -303,5 +303,5 @@ Under the hood, HTTPie uses these two amazing libraries:
   — Python HTTP library for humans
 * `Pygments <http://pygments.org/>`_
   — Python syntax highlighter
-
-
+* `Apache Spark <https://spark.apache.org/>`_
+  — Python syntax highlighter
