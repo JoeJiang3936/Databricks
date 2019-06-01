@@ -3,7 +3,11 @@ Gene Sequencing Data Processing with Apache Spark
 
 |
 
-The following repo contains information assembled for our course project
+https://thesparkgenomeproject.com/
+
+|
+
+The following github repo contains information assembled for our course project
 
 
 |
