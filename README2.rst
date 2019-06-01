@@ -93,6 +93,21 @@ Our Approach
 
 
 
+Python version
+==============
+
+Although Python 2.7 is supported as well, it is strongly recommended to
+install HTTPie against the latest Python 3.x whenever possible. That will
+ensure that some of the newer HTTP features, such as
+`SNI (Server Name Indication)`_, work out of the box.
+Python 3 is the default for Homebrew installations starting with version 0.9.4.
+To see which version HTTPie uses, run ``http --debug``.
+
+
+
+
+
+
 
 
 
@@ -367,32 +382,7 @@ Note that data fields aren't the only way to specify request data:
 `Redirected input`_ is a mechanism for passing arbitrary request data.
 
 
-Escaping rules
---------------
 
-You can use ``\`` to escape characters that shouldn't be used as separators
-(or parts thereof). For instance, ``foo\==bar`` will become a data key/value
-pair (``foo=`` and ``bar``) instead of a URL parameter.
-
-Often it is necessary to quote the values, e.g. ``foo='bar baz'``.
-
-If any of the field names or headers starts with a minus
-(e.g., ``-fieldname``), you need to place all such items after the special
-token ``--`` to prevent confusion with ``--arguments``:
-
-.. code-block:: bash
-
-    $ http httpbin.org/post  --  -name-starting-with-dash=foo -Unusual-Header:bar
-
-.. code-block:: http
-
-    POST /post HTTP/1.1
-    -Unusual-Header: bar
-    Content-Type: application/json
-
-    {
-        "-name-starting-with-dash": "foo"
-    }
 
 
 
