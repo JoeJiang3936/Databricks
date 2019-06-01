@@ -58,20 +58,21 @@ Our Approach
 =============
 
 * Research the basics of Apache Spark 
-* Research pyspark and SparkSQL
+* Research SparkSQL and pyspark 
 * Get Apache Spark running on laptop (local mode)
-* Understand how to baseline and monitor KPIs for local mode
+* Understand how to baseline and monitor database query and access KPIs for local mode
 * Get Apache Spark running, via Databricks (local mode)
 * Baseline
 * Get Apache Spark running, via Databricks (distributed compute mode!)
 * Baseline
 * Import small datasets
-* Experiement with HDFS file type versions
+* Experiment with HDFS file type versions
 * Push a beyond-TB sized sequence table to cluster
 * Process the table via SparkSQL, etc
 * Run 3rd-party app like Hail or some other crazy complex system on Databricks
-* Push into cloud-hosted versions (AWS-like)
+* Push further into expanding model into full cloud-hosted versions (AWS-like)
 * Document the performance differences as you run these individual approaches
+  *  i see x and then i see y and then i see z 
 * I don't know, something like the above, none of us has Apache Spark experience
 
 
