@@ -25,26 +25,6 @@ The following repo contains information assembled for our course project
 
 
 
-
-
-.. class:: no-web
-
-
-
-    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
-        :alt: HTTPie in action
-        :width: 200%
-        :align: right
-
-
-
-.. class:: no-web no-pdf
-
-
-
-
-
-
 .. contents::
 
 .. section-numbering::
