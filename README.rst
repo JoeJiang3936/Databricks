@@ -55,7 +55,8 @@ Gene Sequencing Explained
 
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/tom2.gif
         :alt: HTTPie in action
-        :width: 200%
+        :width: 100%
+        :scale: 20
         :align: right
 
 
