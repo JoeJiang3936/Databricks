@@ -113,33 +113,6 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 
-Commands 
-========
-
-
-
-
-
-.. csv-table:: Standard Commands
-   :header: "command", "purpose"
-   :widths: 50, 50
-
-   "show dbs", "show all databases"
-   "use <db>", "select database to work with ......................"
-   "show users", "list all users"
-   "db.auth('username', 'password');", "authentication steps"
-   "db.logout()", "log out from system"
-   "show collections;",  "list out all collections"
-   "db.getCollectionNames();", "list out all collections (2)"
-   "db.<collectionName>.find();", "retreive all information"
-   "db.<collectionName>.find().limit(10);", "retrieve but limit to 10 total"
-
-
-
-
-
-
-
 
 
 
