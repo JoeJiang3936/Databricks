@@ -248,41 +248,7 @@ Python 3 is the default for Homebrew installations starting with version 0.9.4.
 To see which version HTTPie uses, run ``http --debug``.
 
 
-Unstable version
-----------------
 
-You can also install the latest unreleased development version directly from
-the ``master`` branch on GitHub.  It is a work-in-progress of a future stable
-release so the experience might be not as smooth.
-
-
-.. class:: no-pdf
-
-|unix_build|
-
-
-On macOS you can install it with Homebrew:
-
-.. code-block:: bash
-
-    $ brew install httpie --HEAD
-
-
-Otherwise with ``pip``:
-
-.. code-block:: bash
-
-    $ pip install --upgrade https://github.com/jakubroztocil/httpie/archive/master.tar.gz
-
-
-Verify that now we have the
-`current development version identifier <https://github.com/jakubroztocil/httpie/blob/0af6ae1be444588bbc4747124e073423151178a0/httpie/__init__.py#L5>`_
-with the ``-dev`` suffix, for example:
-
-.. code-block:: bash
-
-    $ http --version
-    1.0.0-dev
 
 
 
