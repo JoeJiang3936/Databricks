@@ -23,9 +23,9 @@ The following repo contains information assembled for our course project
 
 
 
-
-
 .. class:: no-web no-pdf
+
+
 
 
 
@@ -40,8 +40,6 @@ The following repo contains information assembled for our course project
         :alt: HTTPie in action
         :width: 100%
         :align: right
-
-
 
 
 
@@ -99,7 +97,27 @@ Commands
 
 
 
-https://stackoverflow.com/questions/17489789/why-do-i-get-a-pymongo-cursor-cursor-when-trying-to-query-my-mongodb-db-via-pymo
+
+
+
+
+
+
+.. class:: no-web
+
+
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
+
+.. class:: no-web no-pdf
+
+
+
 
 
 
