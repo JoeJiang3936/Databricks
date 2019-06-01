@@ -290,11 +290,13 @@ Please use the following support channels:
 * You can also tweet directly to `@jakubroztocil`_.
 
 
-Related projects
+|
+
+References
 ----------------
 
 
-Dependencies
+Dependencies Links
 ~~~~~~~~~~~~
 
 Under the hood, HTTPie uses these two amazing libraries:
