@@ -77,7 +77,6 @@ Our Approach
 
 
 
-
 Background
 ==============
 
@@ -85,8 +84,6 @@ Apache Spark™ is a unified analytics engine for large-scale data processing.  
 Spark appliations can be written in Java, Scala, R, Python, and SQL. For the purposes of this exercise we will primarily be focusing on Python and SQL approaches within Apache Spark. 
 
 Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
-
-
 
 
 
