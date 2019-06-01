@@ -219,22 +219,27 @@ with the ``-dev`` suffix, for example:
 Apache Spark Background
 ===========
 
-The name of the HTTP method comes right before the URL argument:
+Core of this will be done with Apache Spark and SparkSQL 
+
 
 .. code-block:: bash
 
     <common Apache Spark commands here>
 
 
-Which looks similar to the actual ``Request-Line`` that is sent:
+SparkSQL differences such as  ``insert`` here:
 
 .. code-block:: http
 
     DELETE /todos/7 HTTP/1.1
 
 
-When the ``METHOD`` argument is omitted from the command, HTTPie defaults to
-either ``GET`` (with no request data) or ``POST`` (with request data).
+Insert more here
+
+
+
+
+
 
 
 Request URL
@@ -289,11 +294,6 @@ If the port is omitted, then port 80 is assumed.
 
     $ http :3000/bar
 
-
-.. code-block:: http
-
-    GET /bar HTTP/1.1
-    Host: localhost:3000
 
 
 .. code-block:: bash
