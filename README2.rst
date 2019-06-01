@@ -13,15 +13,14 @@ The following repo contains information assembled for our course project
 .. class:: no-web
 
 
-
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/dna_rotating.gif
         :alt: HTTPie in action
         :width: 100%
         :align: center
 
-
-
 .. class:: no-web no-pdf
+
+
 
 
 
@@ -51,7 +50,6 @@ The following repo contains information assembled for our course project
 
 
 
-|pypi| |unix_build| |coverage| |gitter|
 
 
 .. contents::
@@ -396,14 +394,9 @@ Reference
 Apache Spark and Pyspark
 ------------------------
 
-<>
-...
+words
 
-
-
-|
-
-
+words
 
 
 
@@ -429,6 +422,7 @@ Please use the following support channels:
 Related projects
 ----------------
 
+
 Dependencies
 ~~~~~~~~~~~~
 
@@ -438,6 +432,7 @@ Under the hood, HTTPie uses these two amazing libraries:
   — Python HTTP library for humans
 * `Pygments <http://pygments.org/>`_
   — Python syntax highlighter
+
 
 
 HTTPie friends
@@ -456,22 +451,3 @@ HTTPie plays exceptionally well with the following tools:
 
 
 
-
-
-
-
-.. |pypi| image:: https://img.shields.io/pypi/v/httpie.svg?style=flat-square&label=latest%20stable%20version
-    :target: https://pypi.python.org/pypi/httpie
-    :alt: Latest version released on PyPi
-
-.. |coverage| image:: https://img.shields.io/coveralls/jakubroztocil/httpie/master.svg?style=flat-square&label=coverage
-    :target: https://coveralls.io/r/jakubroztocil/httpie?branch=master
-    :alt: Test coverage
-
-.. |unix_build| image:: https://img.shields.io/travis/jakubroztocil/httpie/master.svg?style=flat-square&label=unix%20build
-    :target: http://travis-ci.org/jakubroztocil/httpie
-    :alt: Build status of the master branch on Mac/Linux
-
-.. |gitter| image:: https://img.shields.io/gitter/room/jkbrzt/httpie.svg?style=flat-square
-    :target: https://gitter.im/jkbrzt/httpie
-    :alt: Chat on Gitter
