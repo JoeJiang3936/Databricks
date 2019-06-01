@@ -64,7 +64,7 @@ The following repo contains information assembled for our course project
 
 
 
-
+|
 
 
 Our Approach
@@ -88,7 +88,7 @@ Our Approach
 * I don't know, something like the above, none of us has Apache Spark experience
 
 
-
+|
 
 
 
