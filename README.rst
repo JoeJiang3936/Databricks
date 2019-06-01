@@ -175,6 +175,7 @@ Jupyter Notebooks
 
 As we progress step-by-step, we will upload jupyter notebooks
 
+|
 
 Notebooks Links
 ------------------------
@@ -190,7 +191,7 @@ The following are pertinent links to information about the processing steps we t
 
 
    
-
+|
 
 
 Sample Code 
