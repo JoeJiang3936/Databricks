@@ -10,8 +10,6 @@ The following repo contains information assembled for our course project
 
 
 
-
-
 .. class:: no-web
 
 
@@ -453,6 +451,8 @@ HTTPie plays exceptionally well with the following tools:
 * `http-prompt <https://github.com/eliangcs/http-prompt>`_
   —  interactive shell for HTTPie featuring autocomplete
   and command syntax highlighting
+
+
 
 
 
