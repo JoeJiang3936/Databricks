@@ -182,7 +182,7 @@ Notebooks Links
 
 The following are pertinent links to information about the processing steps we took 
 
-* `Databricks 101 <https://github.com/jkbr/httpie/issues>`_
+* `Databricks 101 <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   for introductory example of how to create RDD datasets
 * `Databricks 201 <https://stackoverflow.com>`_
   our deeper exploration into Databricks and pyspark
