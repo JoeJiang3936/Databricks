@@ -3,7 +3,7 @@ Gene Sequencing Data Processing with Apache Spark
 
 |
 
-Link to our public website:  &nbsp;  https://thesparkgenomeproject.com/
+Link to our public website:   https://thesparkgenomeproject.com/
 
 |
 
@@ -102,10 +102,18 @@ how
 
 The |biohazard| symbol will be used to warn you when the subject matter is especially intense
 
-.. |biohazard| image:: \images\bio.png
+.. |biohazard| image:: .\ENTER\images\bio.png
    :align: middle
    :width: 12
 
+
+
+.. image:: .\ENTER\images\bio.png
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+   :alt: alternate text
+   :align: right
 
 
 
