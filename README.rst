@@ -276,23 +276,24 @@ Note that data fields aren't the only way to specify request data:
 
 |
 
-Reference
+References
 =========
 
 
 |
 
-References
+Links
 ----------------
 
-Links
+
+
+
+General
 ~~~~~~~~~~~~
 
 
 * `Apache Spark <https://spark.apache.org/>`_
   — Main Apache Spark website
-* `SparkSQL <https://spark.apache.org/sql/>`_
-  — Main SparkSQL website 
 * `Hadoop <http://python-requests.org>`_
   — Hadoop Standard Library
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
@@ -301,4 +302,27 @@ Links
   — this is where it starts getting very complicated
 * `.rst essentials <https://gist.github.com/ionelmc/e876b73e2001acd2140f>`_
   — more advanced .rst creation
+
+
+
+
+SparkSQL
+~~~~~~~~~~~~
+
+
+* `SparkSQL <https://spark.apache.org/sql/>`_
+  — Main SparkSQL website 
+
+
+
+
+Hail
+~~~~~~~~~~~~
+
+
+* `Hail <https://hail.is/>`_
+  — this is where it starts getting very complicated
+
+
+
 
