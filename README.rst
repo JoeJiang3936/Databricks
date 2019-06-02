@@ -296,8 +296,6 @@ General
   — Hadoop Standard Library
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
   — where you can log in and use SparkSQL
-* `Hail <https://hail.is/>`_
-  — this is where it starts getting very complicated
 * `.rst essentials <https://gist.github.com/ionelmc/e876b73e2001acd2140f>`_
   — more advanced .rst creation
 
@@ -311,16 +309,17 @@ SparkSQL
 * `SparkSQL <https://spark.apache.org/sql/>`_
   — Main SparkSQL website 
 
-
 |
 
-Hail
-~~~~~~~~~~~~
+Next Generation Sequencing
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
+* `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
+  — AWS-based approaches 
 
-
+  
 
 
