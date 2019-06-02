@@ -32,6 +32,8 @@ The following github repo contains information assembled for our course project,
 
 
 
+
+
 .. contents::
 
 .. section-numbering::
@@ -74,6 +76,42 @@ Gene Sequencing Explained
 |
 
 
+
+what
+  Definition lists associate a term with
+  a definition.
+
+how
+  The term is a one-line phrase, and the
+  definition is one or more paragraphs or
+  body elements, indented relative to the
+  term. Blank lines are not allowed
+  between term and definition.
+
+
+
+:Authors:
+    Tony J. (Tibs) Ibbs,
+    David Goodger
+
+:Version: 1.0 of 2001/08/08
+:Dedication: To my father.
+
+
+
+
+The |biohazard| symbol will be used to warn you when the subject matter is especially intense
+
+.. |biohazard| image:: biohazard.png
+   :align: middle
+   :width: 12
+
+
+
+
+
+
+|
 
 
 Why Apache Spark ? 
