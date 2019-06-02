@@ -46,11 +46,21 @@ The following github repo contains information assembled for our course project,
 Gene Sequencing Explained
 =============
 
+
+
+
+genome
+  In the fields of molecular biology and genetics, a genome is the genetic material of an organism. It consists of DNA (or RNA in RNA viruses). The genome includes both the genes (the coding regions) and the noncoding DNA,[1] as well as mitochondrial DNA[2] and chloroplast DNA. The study of the genome is called genomics.
+
+
+genome sequence
+  A genome sequence is the complete list of the nucleotides (A, C, G, and T for DNA genomes) that make up all the chromosomes of an individual or a species. Within a species, the vast majority of nucleotides are identical between individuals, but sequencing multiple individuals is necessary to understand the genetic diversity.
+
+
 * Genes are incredibly complicated
 * Sequencing high level is 
 * Really short explanation of the biochemical tie-in
 * Result is huge files and huge processing time, which we believe we can alleviate with our distributed computing approach 
-
 
 
 
@@ -74,12 +84,6 @@ Gene Sequencing Explained
 
 
 |
-
-
-
-genome
-  In the fields of molecular biology and genetics, a genome is the genetic material of an organism. It consists of DNA (or RNA in RNA viruses). The genome includes both the genes (the coding regions) and the noncoding DNA,[1] as well as mitochondrial DNA[2] and chloroplast DNA. The study of the genome is called genomics.
-
 
 
 
