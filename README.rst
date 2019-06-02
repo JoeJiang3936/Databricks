@@ -319,7 +319,7 @@ Next Generation Sequencing
   — this is where it starts getting very complicated
 * `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
   — Amazon information about how to simplify and securely scale genomic analysis with AWS platform 
-  * `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
+* `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
   — Genomics workflows on AWS
 * `Igenomix  <https://aws.amazon.com/solutions/case-studies/igenomix/>`_
   — AWS-based case study of Igenomix and NGS
