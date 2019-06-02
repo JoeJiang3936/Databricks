@@ -46,7 +46,7 @@ The following github repo contains information assembled for our course project,
 Gene Sequencing Explained
 =========================
 
-Some high level basics 
+Some high level basics... 
 
 genome
   In the fields of molecular biology and genetics, a genome is the genetic material of an organism. It consists of DNA (or RNA in RNA viruses). The genome includes both the genes (the coding regions) and the noncoding DNA,[1] as well as mitochondrial DNA[2] and chloroplast DNA. The study of the genome is called genomics.
