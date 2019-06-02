@@ -3,8 +3,7 @@ Gene Sequencing Data Processing with Apache Spark
 
 |
 
-Link to our public website:  
-https://thesparkgenomeproject.com/
+Link to our public website:  &nbsp;  https://thesparkgenomeproject.com/
 
 |
 
