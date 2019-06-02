@@ -170,6 +170,24 @@ Our Approach
 |
 
 
+If we do this efficiently, we can keep the processing optimized in batch processing:
+
+.. class:: no-web
+
+
+    .. image:: .\ENTER\images\rainbow.png
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
+.. class:: no-web no-pdf
+
+
+
+
+
+
 
 Jupyter Notebooks 
 =========
