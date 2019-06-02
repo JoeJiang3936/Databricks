@@ -118,6 +118,13 @@ The |biohazard| symbol will be used to warn you when the subject matter is espec
 
 
 
+.. image:: .\ENTER\images\bio.png
+    :width: 20px
+    :align: center
+    :height: 10px
+    :alt: alternate text
+
+
 
 
 |
