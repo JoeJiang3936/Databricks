@@ -102,7 +102,7 @@ how
 
 The |biohazard| symbol will be used to warn you when the subject matter is especially intense
 
-.. |biohazard| image:: biohazard.png
+.. |biohazard| image:: .\images\biohazard.png
    :align: middle
    :width: 12
 
