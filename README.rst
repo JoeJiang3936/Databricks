@@ -108,9 +108,10 @@ The |biohazard| symbol will be used to warn you when the subject matter is espec
 
 
 
+
 .. image:: .\ENTER\images\bio.png
-   :height: 100px
-   :width: 200 px
+   :height: 10px
+   :width: 20 px
    :scale: 50 %
    :alt: alternate text
    :align: right
