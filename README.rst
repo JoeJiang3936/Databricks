@@ -280,13 +280,11 @@ References
 =========
 
 
-|
-
 Links
 ----------------
 
 
-
+|
 
 General
 ~~~~~~~~~~~~
@@ -304,7 +302,7 @@ General
   — more advanced .rst creation
 
 
-
+|
 
 SparkSQL
 ~~~~~~~~~~~~
@@ -314,7 +312,7 @@ SparkSQL
   — Main SparkSQL website 
 
 
-
+|
 
 Hail
 ~~~~~~~~~~~~
