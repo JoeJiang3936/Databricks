@@ -3,11 +3,12 @@ Gene Sequencing Data Processing with Apache Spark
 
 |
 
+Link to our public website:
 https://thesparkgenomeproject.com/
 
 |
 
-The following github repo contains information assembled for our course project
+The following github repo contains information assembled for our course project, and contains all the details of how we completed this ambitious project
 
 
 |
@@ -44,10 +45,10 @@ The following github repo contains information assembled for our course project
 Gene Sequencing Explained
 =============
 
-* Genes are fancy 
-* Sequencing
+* Genes are incredibly complicated
+* Sequencing high level is 
 * Really short explanation of the biochemical tie-in
-* Result is huge files and huge processing time 
+* Result is huge files and huge processing time, which we believe we can alleviate with our distributed computing approach 
 
 
 
@@ -79,12 +80,13 @@ Gene Sequencing Explained
 Why Apache Spark ? 
 =============
 
-* Runs workloads 100x faster
+* Runs workloads 100x+ faster than conventional approaches
+* Think divide and conquer !  (good metaphor Joe) 
 * Distributed processing
 * Quasi-infinite scaling
 * Standaridized and Generalized
 * Capable of combining SQL, streaming, and complex analytics
-* Runs everywhere:  Hadoop, Apache Mesos, Kubernetes, standalone, in the cloud (Azure, AWS, etc)
+* Runs *everywhere*: Hadoop, Apache Mesos, Kubernetes, standalone, in the cloud (Azure, AWS, etc)
 
 
 
@@ -103,24 +105,15 @@ Why Apache Spark ?
 
 
 
-
-
 Background
 ==============
 
-Apache Spark™ is a unified analytics engine for large-scale data processing.  Spark SQL is Apache Spark's module for working with structured data.
-Spark appliations can be written in Java, Scala, R, Python, and SQL. For the purposes of this exercise we will primarily be focusing on Python and SQL approaches within Apache Spark. 
+Apache Spark™ is a unified analytics engine for large-scale data processing.  Spark SQL is Apache Spark's module for working with structured data, and the primary appliation we will be using to demonstrate our proficiency in our Databases course.  Spark appliations can be written in Java, Scala, R, Python, and SQL;  We focus on Python and SQL, with a splash of R for visualization images.  
 
 Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
 
 
-
 |
-
-
-
-
-
 
 
 
@@ -129,6 +122,7 @@ Our Approach
 
 * Research the basics of Apache Spark 
 * Research SparkSQL and pyspark 
+* Focus on building practice notebooks along our journey
 * Get Apache Spark running on laptop (local mode)
 * Understand how to baseline and monitor database query and access KPIs for local mode
 * Get Apache Spark running, via Databricks (local mode)
@@ -146,12 +140,10 @@ Our Approach
 
 
 
-
 |
 
 
 .. class:: no-web
-
 
 
     .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/spark-map-transformation-operation.gif 
@@ -160,20 +152,19 @@ Our Approach
         :align: center
 
 
-
 .. class:: no-web no-pdf
-
-
 
 
 
 
 |
 
+
+
 Jupyter Notebooks 
 =========
 
-As we progress step-by-step, we will upload jupyter notebooks
+As we progress step-by-step, we will upload jupyter notebooks. This is the key to really understanding this complicated approach. 
 
 |
 
@@ -183,11 +174,9 @@ Notebooks Links
 The following are pertinent links to information about the processing steps we took 
 
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
-  for introductory example of how to create RDD datasets
+  for introductory example of how to create RDD datasets and get familiar with the Databricks platform
 * `Databricks 101 HTML <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/notebooks/001-pyspark.html>`_
   if you just want to download the .html to your phone or whatever and view output
-
-
 * `Databricks 201 <https://stackoverflow.com>`_
   our deeper exploration into Databricks and pyspark
 * `SparkSQL 101 <https://stackoverflow.com>`_
@@ -198,10 +187,9 @@ The following are pertinent links to information about the processing steps we t
 |
 
 
+
 Sample Code 
 ------------------------
-
-
 
 
 .. code-block:: python
@@ -219,6 +207,10 @@ Sample Code
     pi = 4 * count / num_samples
     print(pi)
     sc.stop()
+
+    import hail as hl
+    print(hl.cite_hail())
+
 
 
 
@@ -272,8 +264,6 @@ Note that data fields aren't the only way to specify request data:
 
 
 
-
-
 |
 
 Reference
@@ -286,10 +276,7 @@ Apache Spark and Pyspark
 
 The following are pertinent links to information about the processing steps we took 
 
-* `GitHub issues <https://github.com/jkbr/httpie/issues>`_
-  for bug reports and feature requests.
-* `StackOverflow <https://stackoverflow.com>`_
-  to ask questions 
+
 * Tweet directly to us at `@TSGP <https://twitter.com/clihttp>`_.
 * You can also tweet directly to `@realTomBresee`_.
 
@@ -299,7 +286,6 @@ The following are pertinent links to information about the processing steps we t
 References
 ----------------
 
-
 Links
 ~~~~~~~~~~~~
 
@@ -307,11 +293,13 @@ Links
 * `Apache Spark <https://spark.apache.org/>`_
   — Main Apache Spark website
 * `SparkSQL <https://spark.apache.org/sql/>`_
-  — Main Apache Spark website 
+  — Main SparkSQL website 
 * `Hadoop <http://python-requests.org>`_
   — Hadoop Standard Library
-* `Apache Spark <https://spark.apache.org/>`_
-  — Main Apache Spark website 
+* `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
+  — where you can log in and use SparkSQL
+* `Hail <https://hail.is/>`_
+  — this is where it starts getting very complicated
 
 
 
