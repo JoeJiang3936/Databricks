@@ -311,15 +311,15 @@ SparkSQL
 
 |
 
+
 Next Generation Sequencing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
 * `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
-  — AWS-based approaches 
+  — Amazon information about how to simplify and securely scale genomic analysis with AWS platform 
+  * `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
+  — Genomics workflows on AWS
 * `Igenomix  <https://aws.amazon.com/solutions/case-studies/igenomix/>`_
   — AWS-based case study of Igenomix and NGS
-* `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
-  — Genomics workflows on AWS
