@@ -320,6 +320,6 @@ Next Generation Sequencing
 * `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
   — AWS-based approaches 
 
-* `Igenomix <https://aws.amazon.com/solutions/case-studies/igenomix/`_
+* `Igenomix  <https://aws.amazon.com/solutions/case-studies/igenomix/>`_
   — AWS-based case study of Igenomix and NGS
-  
+
