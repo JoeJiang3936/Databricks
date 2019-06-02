@@ -77,16 +77,10 @@ Gene Sequencing Explained
 
 
 
-what
-  Definition lists associate a term with
-  a definition.
+genome
+  In the fields of molecular biology and genetics, a genome is the genetic material of an organism. It consists of DNA (or RNA in RNA viruses). The genome includes both the genes (the coding regions) and the noncoding DNA,[1] as well as mitochondrial DNA[2] and chloroplast DNA. The study of the genome is called genomics.
 
-how
-  The term is a one-line phrase, and the
-  definition is one or more paragraphs or
-  body elements, indented relative to the
-  term. Blank lines are not allowed
-  between term and definition.
+
 
 
 
@@ -98,31 +92,6 @@ how
 :Dedication: To my father.
 
 
-
-
-The |biohazard| symbol will be used to warn you when the subject matter is especially intense
-
-.. |biohazard| image:: .\ENTER\images\bio.png
-   :align: middle
-   :width: 12
-
-
-
-
-.. image:: .\ENTER\images\bio.png
-   :height: 10px
-   :width: 20 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
-
-
-
-.. image:: .\ENTER\images\bio.png
-    :width: 20px
-    :align: center
-    :height: 10px
-    :alt: alternate text
 
 
 
@@ -353,6 +322,6 @@ Links
   — where you can log in and use SparkSQL
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
-
-
+* `.rst essentials <https://gist.github.com/ionelmc/e876b73e2001acd2140f>`_
+  — more advanced .rst creation
 
