@@ -1,0 +1,1574 @@
+19/06/02 17:13:33 INFO StaticConf$: DB_HOME: /databricks
+19/06/02 17:13:33 INFO DriverDaemon$: ========== driver starting up ==========
+19/06/02 17:13:33 INFO DriverDaemon$: Java: Oracle Corporation 1.8.0_212
+19/06/02 17:13:33 INFO DriverDaemon$: OS: Linux/amd64 4.4.0-1083-aws
+19/06/02 17:13:33 INFO DriverDaemon$: CWD: /databricks/driver
+19/06/02 17:13:33 INFO DriverDaemon$: Mem: Max: 3.8G loaded GCs: PS Scavenge, PS MarkSweep
+19/06/02 17:13:33 INFO DriverDaemon$: Logging multibyte characters: ✓
+19/06/02 17:13:33 INFO DriverDaemon$: 'publicFile' appender in root logger: class com.databricks.logging.RedactionRollingFileAppender
+19/06/02 17:13:33 INFO DriverDaemon$: 'org.apache.log4j.Appender' appender in root logger: class com.codahale.metrics.log4j.InstrumentedAppender
+19/06/02 17:13:33 INFO DriverDaemon$: 'null' appender in root logger: class com.databricks.logging.RequestTracker
+19/06/02 17:13:33 INFO DriverDaemon$: == Modules:
+19/06/02 17:13:33 INFO DriverDaemon$: Starting prometheus metrics log export timer
+19/06/02 17:13:33 INFO DriverDaemon$: Universe Git Hash: 7a6565123eeffec6c3ec102a40a2414b5b26873c
+19/06/02 17:13:33 INFO DriverDaemon$: Spark Git Hash: 2828893009ab5692e154b7522817c5a4ab484d75
+19/06/02 17:13:34 WARN RunHelpers$: Missing tag isolation client: java.util.NoSuchElementException: key not found: TagDefinition(clientType,The client type for a request, used for isolating resources for the request.)
+19/06/02 17:13:34 INFO DatabricksILoop$: Creating throwaway interpreter
+19/06/02 17:13:34 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+19/06/02 17:13:34 INFO SparkConfUtils$: new spark config: spark.databricks.delta.preview.enabled -> true
+19/06/02 17:13:34 INFO SparkConfUtils$: new spark config: spark.executor.tempDirectory -> /local_disk0/tmp
+19/06/02 17:13:34 INFO SparkConfUtils$: new spark config: spark.driver.tempDirectory -> /local_disk0/tmp
+19/06/02 17:13:34 INFO MetastoreMonitor$: Internal internal metastore configured (config=DbMetastoreConfig{host=devtierprod1-db.caj77bnxuhme.us-west-2.rds.amazonaws.com, port=3306, dbName=organization7001951515152566, user=FU2zliOdnynEtmRn})
+19/06/02 17:13:34 INFO JettyClient$: Creating new HttpClient with SSLContextFactory=None,maxRequestHeaderSize=65536, namePrefix=Some(DriverDaemon), idleTimeout=2 hours, useBlockingConnect: true
+19/06/02 17:13:34 INFO HikariDataSource: metastore-monitor - Starting...
+19/06/02 17:13:34 INFO HikariDataSource: metastore-monitor - Start completed.
+19/06/02 17:13:34 INFO DriverCorral: Creating the driver context
+19/06/02 17:13:34 INFO DatabricksILoop$: Class Server Dir: /local_disk0/tmp/repl/spark-6615153504973447667-24b75b1f-1a7b-4e1f-ba18-88cdd0d566b5
+19/06/02 17:13:34 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/06/02 17:13:34 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/06/02 17:13:34 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 627 milliseconds)
+19/06/02 17:13:34 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+19/06/02 17:13:34 INFO SparkConfUtils$: new spark config: spark.databricks.delta.preview.enabled -> true
+19/06/02 17:13:34 INFO SparkConfUtils$: new spark config: spark.executor.tempDirectory -> /local_disk0/tmp
+19/06/02 17:13:34 INFO SparkConfUtils$: new spark config: spark.driver.tempDirectory -> /local_disk0/tmp
+19/06/02 17:13:34 WARN SparkConf: The configuration key 'spark.akka.frameSize' has been deprecated as of Spark 1.6 and may be removed in the future. Please use the new key 'spark.rpc.message.maxSize' instead.
+19/06/02 17:13:34 INFO SparkContext: Running Spark version 2.4.0
+19/06/02 17:13:35 WARN SparkConf: Detected deprecated memory fraction settings: [spark.storage.memoryFraction, spark.shuffle.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+19/06/02 17:13:35 INFO SparkContext: Submitted application: Databricks Shell
+19/06/02 17:13:35 INFO SparkContext: Spark configuration:
+eventLog.rolloverIntervalSeconds=3600
+spark.akka.frameSize=256
+spark.app.name=Databricks Shell
+spark.cleaner.referenceTracking.blocking=false
+spark.databricks.acl.client=com.databricks.spark.sql.acl.client.SparkSqlAclClient
+spark.databricks.acl.provider=com.databricks.sql.acl.ReflectionBackedAclProvider
+spark.databricks.cloudProvider=AWS
+spark.databricks.clusterSource=API
+spark.databricks.clusterUsageTags.autoTerminationMinutes=120
+spark.databricks.clusterUsageTags.clusterAllTags=[{"key":"Name","value":"ce3-worker"}]
+spark.databricks.clusterUsageTags.clusterAvailability=ON_DEMAND
+spark.databricks.clusterUsageTags.clusterCreator=ThirdPartyApp
+spark.databricks.clusterUsageTags.clusterEbsVolumeCount=0
+spark.databricks.clusterUsageTags.clusterEbsVolumeSize=0
+spark.databricks.clusterUsageTags.clusterEbsVolumeType=GENERAL_PURPOSE_SSD
+spark.databricks.clusterUsageTags.clusterFirstOnDemand=0
+spark.databricks.clusterUsageTags.clusterGeneration=0
+spark.databricks.clusterUsageTags.clusterId=0602-171315-ails645
+spark.databricks.clusterUsageTags.clusterLogDeliveryEnabled=false
+spark.databricks.clusterUsageTags.clusterLogDestination=
+spark.databricks.clusterUsageTags.clusterMetastoreAccessType=RDS_DIRECT
+spark.databricks.clusterUsageTags.clusterName=today
+spark.databricks.clusterUsageTags.clusterNoDriverDaemon=false
+spark.databricks.clusterUsageTags.clusterNodeType=dev-tier-node
+spark.databricks.clusterUsageTags.clusterNumSshKeys=0
+spark.databricks.clusterUsageTags.clusterOwnerOrgId=7001951515152566
+spark.databricks.clusterUsageTags.clusterOwnerUserId=*********(redacted)
+spark.databricks.clusterUsageTags.clusterPinned=false
+spark.databricks.clusterUsageTags.clusterPythonVersion=3
+spark.databricks.clusterUsageTags.clusterResourceClass=default
+spark.databricks.clusterUsageTags.clusterScalingType=fixed_size
+spark.databricks.clusterUsageTags.clusterSku=STANDARD_SKU
+spark.databricks.clusterUsageTags.clusterSpotBidPricePercent=100
+spark.databricks.clusterUsageTags.clusterState=Pending
+spark.databricks.clusterUsageTags.clusterStateMessage=Starting Spark
+spark.databricks.clusterUsageTags.clusterTargetWorkers=0
+spark.databricks.clusterUsageTags.clusterWorkers=0
+spark.databricks.clusterUsageTags.containerZoneId=us-west-2c
+spark.databricks.clusterUsageTags.driverContainerId=63418bf1b98a433691232db35320a859
+spark.databricks.clusterUsageTags.driverContainerPrivateIp=10.172.253.190
+spark.databricks.clusterUsageTags.driverInstanceId=i-08ead9eabc50a4f8f
+spark.databricks.clusterUsageTags.driverInstancePrivateIp=10.172.227.172
+spark.databricks.clusterUsageTags.driverNodeType=dev-tier-node
+spark.databricks.clusterUsageTags.driverPublicDns=ec2-52-12-135-47.us-west-2.compute.amazonaws.com
+spark.databricks.clusterUsageTags.enableCredentialPassthrough=*********(redacted)
+spark.databricks.clusterUsageTags.enableDfAcls=false
+spark.databricks.clusterUsageTags.enableElasticDisk=false
+spark.databricks.clusterUsageTags.enableJdbcAutoStart=true
+spark.databricks.clusterUsageTags.enableJobsAutostart=true
+spark.databricks.clusterUsageTags.enableSqlAclsOnly=false
+spark.databricks.clusterUsageTags.numPerClusterInitScriptsV2=0
+spark.databricks.clusterUsageTags.sparkVersion=5.3.x-scala2.11
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeCount=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeSizeGb=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeType=*********(redacted)
+spark.databricks.clusterUsageTags.workerEnvironmentId=default-worker-env
+spark.databricks.credential.redactor=*********(redacted)
+spark.databricks.delta.logStore.crossCloud.fatal=true
+spark.databricks.delta.multiClusterWrites.enabled=true
+spark.databricks.delta.preview.enabled=true
+spark.databricks.driverNodeTypeId=dev-tier-node
+spark.databricks.eventLog.dir=eventlogs
+spark.databricks.io.directoryCommit.enableLogicalDelete=false
+spark.databricks.overrideDefaultCommitProtocol=org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol
+spark.databricks.passthrough.adls.gen2.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.adls.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.s3a.tokenProviderClassName=*********(redacted)
+spark.databricks.preemption.enabled=true
+spark.databricks.r.cleanWorkspace=true
+spark.databricks.redactor=com.databricks.spark.util.DatabricksSparkLogRedactorProxy
+spark.databricks.session.share=false
+spark.databricks.sparkContextId=6615153504973447667
+spark.databricks.tahoe.logStore.aws.class=com.databricks.tahoe.store.S3LockBasedLogStore
+spark.databricks.tahoe.logStore.azure.class=com.databricks.tahoe.store.AzureLogStore
+spark.databricks.tahoe.logStore.class=com.databricks.tahoe.store.DelegatingLogStore
+spark.databricks.workerNodeTypeId=dev-tier-node
+spark.driver.allowMultipleContexts=false
+spark.driver.maxResultSize=4g
+spark.driver.tempDirectory=/local_disk0/tmp
+spark.eventLog.enabled=false
+spark.executor.extraClassPath=*********(redacted)
+spark.executor.extraJavaOptions=-Djava.io.tmpdir=/local_disk0/tmp -XX:ReservedCodeCacheSize=256m -XX:+UseCodeCacheFlushing -Djava.security.properties=/databricks/spark/dbconf/java/extra.security -XX:+PrintFlagsFinal -XX:+PrintGCDateStamps -verbose:gc -XX:+PrintGCDetails -Xss4m -Djavax.xml.datatype.DatatypeFactory=com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Djavax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema=com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory -Dorg.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser -Dorg.w3c.dom.DOMImplementationSourceList=com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl -Ddatabricks.serviceName=spark-executor-1
+spark.executor.memory=4800m
+spark.executor.tempDirectory=/local_disk0/tmp
+spark.extraListeners=com.databricks.backend.daemon.driver.DBCEventLoggingListener
+spark.files.fetchFailure.unRegisterOutputOnHost=true
+spark.files.overwrite=true
+spark.files.useFetchCache=false
+spark.hadoop.databricks.dbfs.client.version=v1
+spark.hadoop.databricks.s3commit.client.sslTrustAll=false
+spark.hadoop.fs.abfs.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+spark.hadoop.fs.abfs.impl.disable.cache=true
+spark.hadoop.fs.abfss.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+spark.hadoop.fs.abfss.impl.disable.cache=true
+spark.hadoop.fs.adl.impl=com.databricks.adl.AdlFileSystem
+spark.hadoop.fs.adl.impl.disable.cache=true
+spark.hadoop.fs.azure.skip.metrics=true
+spark.hadoop.fs.s3.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.connection.maximum=200
+spark.hadoop.fs.s3a.fast.upload=true
+spark.hadoop.fs.s3a.fast.upload.default=true
+spark.hadoop.fs.s3a.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.multipart.size=10485760
+spark.hadoop.fs.s3a.multipart.threshold=104857600
+spark.hadoop.fs.s3a.threads.max=136
+spark.hadoop.fs.s3n.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.wasb.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasb.impl.disable.cache=true
+spark.hadoop.fs.wasbs.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasbs.impl.disable.cache=true
+spark.hadoop.hive.server2.idle.operation.timeout=7200000
+spark.hadoop.hive.server2.idle.session.timeout=900000
+spark.hadoop.hive.server2.keystore.password=*********(redacted)
+spark.hadoop.hive.server2.keystore.path=/databricks/keys/jetty-ssl-driver-keystore.jks
+spark.hadoop.hive.server2.session.check.interval=60000
+spark.hadoop.hive.server2.thrift.http.port=10000
+spark.hadoop.hive.server2.transport.mode=http
+spark.hadoop.hive.server2.use.SSL=true
+spark.hadoop.hive.warehouse.subdir.inherit.perms=false
+spark.hadoop.mapred.output.committer.class=com.databricks.backend.daemon.data.client.DirectOutputCommitter
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version=2
+spark.hadoop.parquet.memory.pool.ratio=0.5
+spark.hadoop.spark.sql.parquet.output.committer.class=org.apache.spark.sql.parquet.DirectParquetOutputCommitter
+spark.hadoop.spark.sql.sources.outputCommitterClass=com.databricks.backend.daemon.data.client.MapReduceDirectOutputCommitter
+spark.hadoop.spark.thriftserver.customHeadersToProperties=*********(redacted)
+spark.home=/databricks/spark
+spark.logConf=true
+spark.master=local[8]
+spark.metrics.conf=/databricks/spark/conf/metrics.properties
+spark.r.backendConnectionTimeout=604800
+spark.r.numRBackendThreads=1
+spark.rdd.compress=true
+spark.repl.class.outputDir=/local_disk0/tmp/repl/spark-6615153504973447667-24b75b1f-1a7b-4e1f-ba18-88cdd0d566b5
+spark.rpc.message.maxSize=256
+spark.scheduler.listenerbus.eventqueue.capacity=20000
+spark.scheduler.mode=FAIR
+spark.serializer.objectStreamReset=100
+spark.shuffle.manager=SORT
+spark.shuffle.memoryFraction=0.2
+spark.shuffle.reduceLocality.enabled=false
+spark.shuffle.service.enabled=true
+spark.shuffle.service.port=4048
+spark.sparkr.use.daemon=false
+spark.speculation=false
+spark.speculation.multiplier=3
+spark.speculation.quantile=0.9
+spark.sql.allowMultipleContexts=false
+spark.sql.hive.convertCTAS=true
+spark.sql.hive.convertMetastoreParquet=true
+spark.sql.hive.metastore.jars=/databricks/hive/*
+spark.sql.hive.metastore.sharedPrefixes=org.mariadb.jdbc,com.mysql.jdbc,org.postgresql,com.microsoft.sqlserver,microsoft.sql.DateTimeOffset,microsoft.sql.Types,com.databricks,com.codahale,com.fasterxml.jackson,shaded.databricks
+spark.sql.hive.metastore.version=0.13.0
+spark.sql.parquet.cacheMetadata=true
+spark.sql.parquet.compression.codec=snappy
+spark.sql.sources.commitProtocolClass=com.databricks.sql.transaction.directory.DirectoryAtomicCommitProtocol
+spark.sql.streaming.checkpointFileManagerClass=com.databricks.spark.sql.streaming.DatabricksCheckpointFileManager
+spark.sql.ui.retainedExecutions=100
+spark.sql.warehouse.dir=*********(redacted)
+spark.storage.blockManagerTimeoutIntervalMs=300000
+spark.storage.memoryFraction=0.5
+spark.streaming.driver.writeAheadLog.allowBatching=true
+spark.streaming.driver.writeAheadLog.closeFileAfterWrite=true
+spark.task.reaper.enabled=true
+spark.task.reaper.killTimeout=60s
+spark.ui.port=42000
+spark.worker.cleanup.enabled=false
+19/06/02 17:13:35 INFO SecurityManager: Changing view acls to: root
+19/06/02 17:13:35 INFO SecurityManager: Changing modify acls to: root
+19/06/02 17:13:35 INFO SecurityManager: Changing view acls groups to: 
+19/06/02 17:13:35 INFO SecurityManager: Changing modify acls groups to: 
+19/06/02 17:13:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+19/06/02 17:13:35 INFO Utils: Successfully started service 'sparkDriver' on port 37344.
+19/06/02 17:13:35 INFO SparkEnv: Registering MapOutputTracker
+19/06/02 17:13:35 INFO SparkEnv: Registering BlockManagerMaster
+19/06/02 17:13:35 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/06/02 17:13:35 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/06/02 17:13:35 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3c17daa-6861-4a1e-8b35-f7e2948806b2
+19/06/02 17:13:36 INFO MemoryStore: MemoryStore started with capacity 1991.4 MB
+19/06/02 17:13:36 INFO SparkEnv: Registering OutputCommitCoordinator
+19/06/02 17:13:36 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+19/06/02 17:13:36 INFO log: Logging initialized @4642ms
+19/06/02 17:13:36 INFO Server: jetty-9.3.20.v20170531
+19/06/02 17:13:36 INFO Server: Started @4766ms
+19/06/02 17:13:36 INFO AbstractConnector: Started ServerConnector@1a20af42{HTTP/1.1,[http/1.1]}{10.172.253.190:42000}
+19/06/02 17:13:36 INFO Utils: Successfully started service 'SparkUI' on port 42000.
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4a901445{/jobs,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@290e8cab{/jobs/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6e3ecf5c{/jobs/job,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@341b13a8{/jobs/job/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@692dba54{/stages,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@71f1cc02{/stages/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5f14761c{/stages/stage,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@48eb001a{/stages/stage/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@34332b8d{/stages/pool,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@724b939e{/stages/pool/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6f8aba08{/storage,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7ff19c33{/storage/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@52b3bf03{/storage/rdd,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7cca01a8{/storage/rdd/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@462abec3{/environment,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@35c9a231{/environment/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7a4d582c{/executors,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5626d18c{/executors/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@45e9b12d{/executors/threadDump,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3dc95b8b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2d55e826{/executors/heapHistogram,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d1ff6b1{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@45f756e6{/static,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5634a861{/,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2b0dc227{/api,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@75e09567{/jobs/job/kill,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2a334bac{/stages/stage/kill,null,AVAILABLE,@Spark}
+19/06/02 17:13:36 INFO SparkUI: Bound SparkUI to 10.172.253.190, and started at http://10.172.253.190:42000
+19/06/02 17:13:36 WARN FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/06/02 17:13:36 INFO FairSchedulableBuilder: Created default pool: default, schedulingMode: FIFO, minShare: 0, weight: 1
+19/06/02 17:13:36 INFO Executor: Starting executor ID driver on host localhost
+19/06/02 17:13:36 INFO Executor: Using REPL class URI: spark://ip-10-172-253-190.us-west-2.compute.internal:37344/classes
+19/06/02 17:13:36 INFO TaskSchedulerImpl: Task preemption enabled.
+19/06/02 17:13:36 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33795.
+19/06/02 17:13:36 INFO NettyBlockTransferService: Server created on ip-10-172-253-190.us-west-2.compute.internal:33795
+19/06/02 17:13:36 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/06/02 17:13:36 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-172-253-190.us-west-2.compute.internal, 33795, None)
+19/06/02 17:13:36 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-172-253-190.us-west-2.compute.internal:33795 with 1991.4 MB RAM, BlockManagerId(driver, ip-10-172-253-190.us-west-2.compute.internal, 33795, None)
+19/06/02 17:13:36 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-172-253-190.us-west-2.compute.internal, 33795, None)
+19/06/02 17:13:36 INFO BlockManager: external shuffle service port = 4048
+19/06/02 17:13:36 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-172-253-190.us-west-2.compute.internal, 33795, None)
+19/06/02 17:13:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@65bb6275{/metrics/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:37 INFO DBCEventLoggingListener: Initializing DBCEventLoggingListener
+19/06/02 17:13:37 INFO DBCEventLoggingListener: Logging events to eventlogs/6615153504973447667/eventlog
+19/06/02 17:13:37 INFO SparkContext: Registered listener com.databricks.backend.daemon.driver.DBCEventLoggingListener
+19/06/02 17:13:37 INFO SparkContext: Loading Spark Service RPC Server
+19/06/02 17:13:37 INFO SparkServiceRPCServer: Starting Spark Service RPC Server
+19/06/02 17:13:37 INFO Server: jetty-9.3.20.v20170531
+19/06/02 17:13:37 INFO AbstractConnector: Started ServerConnector@494c8f29{HTTP/1.1,[http/1.1]}{0.0.0.0:15001}
+19/06/02 17:13:37 INFO Server: Started @5839ms
+19/06/02 17:13:37 INFO DatabricksILoop$: Successfully registered spark metrics in Prometheus registry
+19/06/02 17:13:37 INFO DatabricksILoop$: Successfully initialized SparkContext
+19/06/02 17:13:37 INFO JettyClient$: Creating new HttpClient with SSLContextFactory=None,maxRequestHeaderSize=65536, namePrefix=Some(DBFSV1), idleTimeout=2 hours, useBlockingConnect: true
+19/06/02 17:13:37 INFO DBFS: Initialized DBFS with DBFSV1 as the delegate.
+19/06/02 17:13:38 INFO DatabricksILoop$: Finished creating throwaway interpreter
+19/06/02 17:13:38 INFO SharedState: Scheduler stats enabled.
+19/06/02 17:13:38 INFO SharedState: loading hive config file: file:/databricks/hive/conf/hive-site.xml
+19/06/02 17:13:38 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('/user/hive/warehouse').
+19/06/02 17:13:38 INFO SharedState: Warehouse path is '/user/hive/warehouse'.
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@634f58d2{/SQL,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@585513a8{/SQL/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6aa7e176{/SQL/execution,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@52abed9d{/SQL/execution/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@601d6622{/static/sql,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1f916219{/storage/iocache,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@67acfde9{/storage/iocache/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:38 INFO LogStore: LogStore class: class com.databricks.tahoe.store.DelegatingLogStore
+19/06/02 17:13:39 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/06/02 17:13:40 INFO HiveUtils: Initializing execution hive, version 1.2.1
+19/06/02 17:13:40 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/06/02 17:13:40 INFO ObjectStore: ObjectStore, initialize called
+19/06/02 17:13:41 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/06/02 17:13:41 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/06/02 17:13:42 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/06/02 17:13:44 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:13:44 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:13:45 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:13:45 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:13:45 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/06/02 17:13:45 INFO ObjectStore: Initialized ObjectStore
+19/06/02 17:13:45 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+19/06/02 17:13:45 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+19/06/02 17:13:45 INFO HiveMetaStore: Added admin role in metastore
+19/06/02 17:13:45 INFO HiveMetaStore: Added public role in metastore
+19/06/02 17:13:45 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/06/02 17:13:45 INFO HiveMetaStore: 0: get_all_databases
+19/06/02 17:13:45 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_all_databases	
+19/06/02 17:13:45 INFO HiveMetaStore: 0: get_functions: db=default pat=*
+19/06/02 17:13:45 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+19/06/02 17:13:45 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:13:46 INFO SessionState: Created HDFS directory: /tmp/hive/root
+19/06/02 17:13:46 INFO SessionState: Created local directory: /local_disk0/tmp/root
+19/06/02 17:13:46 INFO SessionState: Created local directory: /local_disk0/tmp/ef948fe8-b164-4e66-9349-5b2bc051ec21_resources
+19/06/02 17:13:46 INFO SessionState: Created HDFS directory: /tmp/hive/root/ef948fe8-b164-4e66-9349-5b2bc051ec21
+19/06/02 17:13:46 INFO SessionState: Created local directory: /local_disk0/tmp/root/ef948fe8-b164-4e66-9349-5b2bc051ec21
+19/06/02 17:13:46 INFO SessionState: Created HDFS directory: /tmp/hive/root/ef948fe8-b164-4e66-9349-5b2bc051ec21/_tmp_space.db
+19/06/02 17:13:46 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+19/06/02 17:13:46 INFO SessionManager: Operation log root directory is created: /local_disk0/tmp/root/operation_logs
+19/06/02 17:13:46 INFO SessionManager: HiveServer2: Background operation thread pool size: 100
+19/06/02 17:13:46 INFO SessionManager: HiveServer2: Background operation thread wait queue size: 100
+19/06/02 17:13:46 INFO SessionManager: HiveServer2: Background operation thread keepalive time: 10 seconds
+19/06/02 17:13:46 INFO AbstractService: Service:OperationManager is inited.
+19/06/02 17:13:46 INFO AbstractService: Service:SessionManager is inited.
+19/06/02 17:13:46 INFO AbstractService: Service: CLIService is inited.
+19/06/02 17:13:46 INFO AbstractService: Service:ThriftHttpCLIService is inited.
+19/06/02 17:13:46 INFO AbstractService: Service: HiveServer2 is inited.
+19/06/02 17:13:46 INFO AbstractService: Service:OperationManager is started.
+19/06/02 17:13:46 INFO AbstractService: Service:SessionManager is started.
+19/06/02 17:13:46 INFO AbstractService: Service:CLIService is started.
+19/06/02 17:13:46 INFO ObjectStore: ObjectStore, initialize called
+19/06/02 17:13:46 INFO Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+19/06/02 17:13:46 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/06/02 17:13:46 INFO ObjectStore: Initialized ObjectStore
+19/06/02 17:13:46 INFO HiveMetaStore: 0: get_databases: default
+19/06/02 17:13:46 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: default	
+19/06/02 17:13:46 INFO HiveMetaStore: 0: Shutting down the object store...
+19/06/02 17:13:46 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=Shutting down the object store...	
+19/06/02 17:13:46 INFO HiveMetaStore: 0: Metastore shutdown complete.
+19/06/02 17:13:46 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=Metastore shutdown complete.	
+19/06/02 17:13:46 INFO AbstractService: Service:ThriftHttpCLIService is started.
+19/06/02 17:13:46 INFO AbstractService: Service:HiveServer2 is started.
+19/06/02 17:13:46 INFO ThriftCLIService: HTTP Server SSL: adding excluded protocols: [SSLv2, SSLv3]
+19/06/02 17:13:46 INFO ThriftCLIService: HTTP Server SSL: SslContextFactory.getExcludeProtocols = [SSL, SSLv2, SSLv2Hello, SSLv3]
+19/06/02 17:13:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@45e9db77{/sqlserver,null,AVAILABLE,@Spark}
+19/06/02 17:13:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6c930e7e{/sqlserver/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5bfdc92b{/sqlserver/session,null,AVAILABLE,@Spark}
+19/06/02 17:13:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@68dc2f53{/sqlserver/session/json,null,AVAILABLE,@Spark}
+19/06/02 17:13:46 INFO DriverDaemon: Starting driver daemon...
+19/06/02 17:13:46 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+19/06/02 17:13:46 INFO SparkConfUtils$: new spark config: spark.databricks.delta.preview.enabled -> true
+19/06/02 17:13:46 INFO SparkConfUtils$: new spark config: spark.executor.tempDirectory -> /local_disk0/tmp
+19/06/02 17:13:46 INFO SparkConfUtils$: new spark config: spark.driver.tempDirectory -> /local_disk0/tmp
+19/06/02 17:13:46 WARN SparkConf: The configuration key 'spark.akka.frameSize' has been deprecated as of Spark 1.6 and may be removed in the future. Please use the new key 'spark.rpc.message.maxSize' instead.
+19/06/02 17:13:46 INFO DriverDaemon$$anon$1: Message out thread ready
+19/06/02 17:13:46 INFO Server: jetty-9.3.20.v20170531
+19/06/02 17:13:46 INFO AbstractConnector: Started ServerConnector@5274acd1{HTTP/1.1,[http/1.1]}{0.0.0.0:6061}
+19/06/02 17:13:46 INFO Server: Started @15121ms
+19/06/02 17:13:46 INFO DriverDaemon: Driver daemon started.
+19/06/02 17:13:46 INFO Server: jetty-9.3.20.v20170531
+19/06/02 17:13:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@43db0fdb{/,null,AVAILABLE}
+19/06/02 17:13:46 INFO SslContextFactory: x509=X509@7803fe17(1,h=[databrickscloud.com],w=[]) for SslContextFactory@200ecd2c(file:///databricks/keys/jetty-ssl-driver-keystore.jks,null)
+19/06/02 17:13:46 INFO AbstractConnector: Started ServerConnector@505e046e{SSL,[ssl, http/1.1]}{0.0.0.0:10000}
+19/06/02 17:13:46 INFO Server: Started @15162ms
+19/06/02 17:13:46 INFO ThriftCLIService: Started ThriftHttpCLIService in https mode on port 10000 path=/cliservice/* with 5...500 worker threads
+19/06/02 17:13:48 INFO DriverCorral: Loading the root classloader
+19/06/02 17:13:48 INFO DriverCorral: Starting sql repl ReplId-69450-775dc-08a94-1
+19/06/02 17:13:48 INFO SQLDriverWrapper: setupRepl:ReplId-69450-775dc-08a94-1: finished to load
+19/06/02 17:13:48 INFO DriverCorral: Starting sql repl ReplId-fe640-fc485-32544
+19/06/02 17:13:48 INFO SQLDriverWrapper: setupRepl:ReplId-fe640-fc485-32544: finished to load
+19/06/02 17:13:48 INFO DriverCorral: Starting sql repl ReplId-357bb-4de90-16bd2-a
+19/06/02 17:13:48 INFO SQLDriverWrapper: setupRepl:ReplId-357bb-4de90-16bd2-a: finished to load
+19/06/02 17:13:48 INFO DriverCorral: Starting sql repl ReplId-e106e-e7497-7127e
+19/06/02 17:13:48 INFO SQLDriverWrapper: setupRepl:ReplId-e106e-e7497-7127e: finished to load
+19/06/02 17:13:48 INFO DriverCorral: Starting sql repl ReplId-5004b-2b7c1-cee8c-e
+19/06/02 17:13:48 INFO SQLDriverWrapper: setupRepl:ReplId-5004b-2b7c1-cee8c-e: finished to load
+19/06/02 17:13:48 INFO DriverCorral: Starting r repl ReplId-29244-fc98a-0638b-8
+19/06/02 17:13:48 INFO RDriverLocal: 1. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: object created with for ReplId-29244-fc98a-0638b-8.
+19/06/02 17:13:48 INFO RDriverLocal: 2. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: initializing ...
+19/06/02 17:13:48 INFO RDriverLocal: 3. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: started RBackend thread on port 43565
+19/06/02 17:13:48 INFO RDriverLocal: 4. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: waiting for SparkR to be installed ...
+19/06/02 17:14:01 INFO RDriverLocal$: SparkR installation completed.
+19/06/02 17:14:01 INFO RDriverLocal: 5. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: launching R process ...
+19/06/02 17:14:01 INFO RDriverLocal: 6. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: cgroup isolation disabled, not placing R process in REPL cgroup.
+19/06/02 17:14:01 INFO RDriverLocal: 7. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: starting R process on port 36194 (attempt 1) ...
+19/06/02 17:14:02 INFO RDriverLocal: 8. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: R process started with RServe listening on port 36194.
+19/06/02 17:14:02 INFO RDriverLocal: 9. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: setting up BufferedStreamThread with bufferSize: 100.
+19/06/02 17:14:03 INFO RDriverLocal: 10. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: starting interpreter to talk to R process ...
+19/06/02 17:14:04 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
+19/06/02 17:14:04 INFO RDriverLocal: 11. RDriverLocal.bc772d06-ad7a-4e44-89b6-a870a3de948e: R interpretter is connected.
+19/06/02 17:14:04 INFO RDriverWrapper: setupRepl:ReplId-29244-fc98a-0638b-8: finished to load
+19/06/02 17:14:11 INFO DriverCorral: Starting scala repl ReplId-82cfd-a2af4-104e
+19/06/02 17:14:11 INFO ScalaDriverWrapper: setupRepl:ReplId-82cfd-a2af4-104e: finished to load
+19/06/02 17:14:12 INFO DriverCorral: Starting sql repl ReplId-7c418-9ecb2-7e427-9
+19/06/02 17:14:12 INFO SQLDriverWrapper: setupRepl:ReplId-7c418-9ecb2-7e427-9: finished to load
+19/06/02 17:14:12 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_7863858410386970586_b9cbab97c12e47b5a30bd19edf867566
+19/06/02 17:14:12 INFO LogicalPlanStats: Setting LogicalPlanStats visitor to com.databricks.sql.optimizer.statsEstimation.DatabricksLogicalPlanStatsVisitor$
+19/06/02 17:14:13 INFO HiveUtils: Initializing HiveMetastoreConnection version 0.13.0 using file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.inject__guice__3.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-core__2.7.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/----jackson_core_shaded--libjackson-core.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpcore__4.4.4_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.server--apacheds-i18n--org.apache.directory.server__apacheds-i18n__2.0.0-M15.jar:file:/databricks/hive/maven--spark_1.4--org.tukaani--xz--org.tukaani__xz__1.5.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-exec--org.spark-project.hive__hive-exec__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.twitter--util-jvm_2.11--com.twitter__util-jvm_2.11__6.23.0.jar:file:/databricks/hive/maven--antlr--antlr--antlr__antlr__2.7.7.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.slf4j--slf4j-api--org.slf4j__slf4j-api__1.7.16.jar:file:/databricks/hive/maven--spark_1.4--org.apache.derby--derby--org.apache.derby__derby__10.10.1.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-net--commons-net--commons-net__commons-net__3.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpclient__4.5.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-logging__commons-logging__1.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.xml.stream__stax-api__1.0-2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.el--javax.el-api--javax.el__javax.el-api__2.2.4.jar:file:/databricks/hive/----jackson_datatype_joda_shaded--libjackson-datatype-joda.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.sun.xml.bind__jaxb-impl__2.2.3-1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.commons--commons-math3--org.apache.commons__commons-math3__3.4.1.jar:file:/databricks/hive/daemon--data--data-common--data-common-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--io.netty__netty-all__4.0.52.Final_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__retrofit__2.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--com.esotericsoftware.minlog--minlog--com.esotericsoftware.minlog__minlog__1.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-codec--commons-codec--commons-codec__commons-codec__1.10.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-configuration--commons-configuration--commons-configuration__commons-configuration__1.6.jar:file:/databricks/hive/common--jetty--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/dbfs--utils--dbfs-utils-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--spark_1.4--org.apache.thrift--libthrift--org.apache.thrift__libthrift__0.9.2.jar:file:/databricks/hive/maven--spark_1.4--org.codehaus.groovy--groovy-all--org.codehaus.groovy__groovy-all__2.1.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-beanutils--commons-beanutils--commons-beanutils__commons-beanutils__1.7.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.netty--netty-all--io.netty__netty-all__4.1.17.Final.jar:file:/databricks/hive/maven--commons-io--commons-io--commons-io__commons-io__2.5.jar:file:/databricks/hive/maven--org.apache.httpcomponents--httpcore--org.apache.httpcomponents__httpcore__4.4.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang.modules--scala-xml_2.11--org.scala-lang.modules__scala-xml_2.11__1.0.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-continuation--org.eclipse.jetty__jetty-continuation__9.3.20.v20170531.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-shims--org.spark-project.hive__hive-shims__0.13.1a.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-storage__7.0.0_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--spark_1.4--javax.jdo--jdo-api--javax.jdo__jdo-api__3.0.1.jar:file:/databricks/hive/maven--spark_1.4--com.esotericsoftware.reflectasm--reflectasm-shaded--com.esotericsoftware.reflectasm__reflectasm-shaded__1.07.jar:file:/databricks/hive/maven--log4j--log4j--log4j__log4j__1.2.17.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.servlet.jsp--jsp-api--javax.servlet.jsp__jsp-api__2.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.databricks.scalapb--scalapb-runtime_2.11--com.databricks.scalapb__scalapb-runtime_2.11__0.4.15-9.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.dataformat--jackson-dataformat-cbor--com.fasterxml.jackson.dataformat__jackson-dataformat-cbor__2.6.7.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--io.reactivex__rxjava__1.2.4_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.validation--validation-api--javax.validation__validation-api__1.1.0.Final.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpcore__4.4.4_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--spark_1.4--org.apache.zookeeper--zookeeper--org.apache.zookeeper__zookeeper__3.4.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-sts--com.amazonaws__aws-java-sdk-sts__1.11.313.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.code.findbugs__jsr305__1.3.9_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.curator--curator-recipes--org.apache.curator__curator-recipes__2.7.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.api--api-asn1-api--org.apache.directory.api__api-asn1-api__1.0.0-M20.jar:file:/databricks/hive/third_party--azure--com.microsoft.azure__azure-storage__5.2.0_shaded.jar:file:/databricks/hive/maven--spark_1.4--jline--jline--jline__jline__0.9.94.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-servlets--io.dropwizard.metrics__metrics-servlets__3.1.5.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-annotations__2.7.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--xmlenc--xmlenc--xmlenc__xmlenc__0.52.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.code.gson--gson--com.google.code.gson__gson__2.2.4.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-service--org.spark-project.hive__hive-service__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-core--com.amazonaws__aws-java-sdk-core__1.11.313.jar:file:/databricks/hive/third_party--datalake--datalake-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--org.json--json--org.json__json__20090211.jar:file:/databricks/hive/maven--spark_1.4--io.netty--netty--io.netty__netty__3.8.0.Final.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-annotations__1.2.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--org.xerial.snappy--snappy-java--org.xerial.snappy__snappy-java__1.1.2.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.springframework--spring-core--org.springframework__spring-core__4.1.4.RELEASE.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--joda-time__joda-time__2.4_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.apache.velocity--velocity--org.apache.velocity__velocity__1.5.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-beeline--org.spark-project.hive__hive-beeline__0.13.1a.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.inject__javax.inject__1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/extern--acl--auth--auth-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.microsoft.azure--azure-data-lake-store-sdk--com.microsoft.azure__azure-data-lake-store-sdk__2.2.8.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-core--com.fasterxml.jackson.core__jackson-core__2.6.7.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-core__2.7.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-ant--org.spark-project.hive__hive-ant__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-cli--org.spark-project.hive__hive-cli__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.typesafe.scala-logging--scala-logging-api_2.11--com.typesafe.scala-logging__scala-logging-api_2.11__2.1.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-common--org.apache.hadoop__hadoop-common__2.7.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--jmespath-java--com.amazonaws__jmespath-java__1.11.313.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.commons--commons-compress--org.apache.commons__commons-compress__1.8.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__okhttp-urlconnection__3.3.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--javax.transaction--jta--javax.transaction__jta__1.1.jar:file:/databricks/hive/common--path--path-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--jetty8-shaded-client--jetty-util_shaded.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-metastore--org.spark-project.hive__hive-metastore__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang--scala-reflect_2.11--org.scala-lang__scala-reflect__2.11.12.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.xml.bind__jaxb-api__2.2.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-jvm--io.dropwizard.metrics__metrics-jvm__3.1.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--log4j--apache-log4j-extras--log4j__apache-log4j-extras__1.2.17.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.typesafe--config--com.typesafe__config__1.2.1.jar:file:/databricks/hive/maven--spark_1.4--org.apache.thrift--libfb303--org.apache.thrift__libfb303__0.9.0.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.htrace__htrace-core__3.1.0-incubating_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-ganglia--io.dropwizard.metrics__metrics-ganglia__3.1.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-annotations--com.fasterxml.jackson.core__jackson-annotations__2.6.7.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--info.ganglia.gmetric4j--gmetric4j--info.ganglia.gmetric4j__gmetric4j__1.0.7.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.rest__client-runtime__1.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-logging__commons-logging__1.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.codehaus.jackson--jackson-core-asl--org.codehaus.jackson__jackson-core-asl__1.9.13.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-httpclient--commons-httpclient--commons-httpclient__commons-httpclient__3.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--hadoop-azure-2.7.3-abfs-external-20180920_b33d810-spark_2.4_2.11_deploy_shaded.jar:file:/databricks/hive/maven--commons-lang--commons-lang--commons-lang__commons-lang__2.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-client--org.eclipse.jetty__jetty-client__9.3.20.v20170531.jar:file:/databricks/hive/maven--org.apache.commons--commons-lang3--org.apache.commons__commons-lang3__3.4.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--software.amazon.ion--ion-java--software.amazon.ion__ion-java__1.0.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.springframework--spring-test--org.springframework__spring-test__4.1.4.RELEASE.jar:file:/databricks/hive/----jackson_databind_shaded--libjackson-databind.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.xerial.snappy--snappy-java--org.xerial.snappy__snappy-java__1.1.7.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.prometheus--simpleclient_dropwizard--io.prometheus__simpleclient_dropwizard__0.0.16.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scalatest--scalatest_2.11--org.scalatest__scalatest_2.11__3.0.3.jar:file:/databricks/hive/maven--spark_1.4--com.googlecode.javaewah--JavaEWAH--com.googlecode.javaewah__JavaEWAH__0.3.2.jar:file:/databricks/hive/maven--commons-codec--commons-codec--commons-codec__commons-codec__1.8.jar:file:/databricks/hive/s3commit--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--org.apache.ant--ant-launcher--org.apache.ant__ant-launcher__1.9.2.jar:file:/databricks/hive/common--credentials--credentials-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-logging--commons-logging--commons-logging__commons-logging__1.1.3.jar:file:/databricks/hive/s3commit--common--common-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.trueaccord.lenses--lenses_2.11--com.trueaccord.lenses__lenses_2.11__0.3.jar:file:/databricks/hive/maven--commons-collections--commons-collections--commons-collections__commons-collections__3.2.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-annotations--org.apache.hadoop__hadoop-annotations__2.7.3.jar:file:/databricks/hive/maven--org.apache.ant--ant--org.apache.ant__ant__1.9.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.htrace--htrace-core--org.apache.htrace__htrace-core__3.1.0-incubating.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.jdbi--jdbi--org.jdbi__jdbi__2.63.1.jar:file:/databricks/hive/maven--spark_1.4--org.antlr--ST4--org.antlr__ST4__4.0.4.jar:file:/databricks/hive/maven--spark_1.4--org.apache.avro--avro--org.apache.avro__avro__1.8.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.activation__activation__1.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/extern--extern-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-server--org.eclipse.jetty__jetty-server__9.3.20.v20170531.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-common--org.spark-project.hive.shims__hive-shims-common__0.13.1a.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-codec__commons-codec__1.9_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/third_party--jetty8-shaded-client--jetty-io_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.code.findbugs--jsr305--com.google.code.findbugs__jsr305__2.0.1.jar:file:/databricks/hive/third_party--azure--com.fasterxml.jackson.core__jackson-core__2.7.2_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-auth--org.apache.hadoop__hadoop-auth__2.7.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-core--io.dropwizard.metrics__metrics-core__3.1.5.jar:file:/databricks/hive/maven--stax--stax-api--stax__stax-api__1.0.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.jboss.logging--jboss-logging--org.jboss.logging__jboss-logging__3.1.3.GA.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.netty--netty--io.netty__netty__3.9.9.Final.jar:file:/databricks/hive/third_party--azure--org.apache.commons__commons-lang3__3.4_shaded.jar:file:/databricks/hive/common--lazy--lazy-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpclient__4.5.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-servlet--org.eclipse.jetty__jetty-servlet__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-s3--com.amazonaws__aws-java-sdk-s3__1.11.313.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-util--org.eclipse.jetty__jetty-util__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-kms--com.amazonaws__aws-java-sdk-kms__1.11.313.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.curator--curator-framework--org.apache.curator__curator-framework__2.7.1.jar:file:/databricks/hive/third_party--jetty8-shaded-client--databricks-patched-jetty-client-jar_shaded.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-jdbc--org.spark-project.hive__hive-jdbc__0.13.1a.jar:file:/databricks/hive/maven--com.thoughtworks.paranamer--paranamer--com.thoughtworks.paranamer__paranamer__2.8.jar:file:/databricks/hive/third_party--jackson--jackson-module-scala-shaded_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.twitter--util-app_2.11--com.twitter__util-app_2.11__6.23.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.slf4j--slf4j-log4j12--org.slf4j__slf4j-log4j12__1.7.16.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.protobuf--protobuf-java--com.google.protobuf__protobuf-java__2.6.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--log4j--log4j--log4j__log4j__1.2.17.jar:file:/databricks/hive/maven--spark_1.4--junit--junit--junit__junit__3.8.1.jar:file:/databricks/hive/logging--log4j-mod--log4j-mod-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-beanutils--commons-beanutils-core--commons-beanutils__commons-beanutils-core__1.8.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.typesafe.scala-logging--scala-logging-slf4j_2.11--com.typesafe.scala-logging__scala-logging-slf4j_2.11__2.1.2.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-0.20--org.spark-project.hive.shims__hive-shims-0.20__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.httpcomponents--httpclient--org.apache.httpcomponents__httpclient__4.5.4.jar:file:/databricks/hive/maven--spark_1.4--org.datanucleus--datanucleus-api-jdo--org.datanucleus__datanucleus-api-jdo__3.2.6.jar:file:/databricks/hive/maven--commons-logging--commons-logging--commons-logging__commons-logging__1.1.3.jar:file:/databricks/hive/s3--s3-spark_2.4_2.11_deploy.jar:file:/databricks/hive/api-base--api-base_java-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.databricks.scalapb--compilerplugin_2.11--com.databricks.scalapb__compilerplugin_2.11__0.4.15-9.jar:file:/databricks/hive/third_party--jackson--jsr305_only_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.databricks--jets3t--com.databricks__jets3t__0.7.1-0.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-common--org.spark-project.hive__hive-common__0.13.1a.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__logging-interceptor__3.3.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--net.sf.jpam--jpam--net.sf.jpam__jpam__1.1.jar:file:/databricks/hive/common--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-log4j--io.dropwizard.metrics__metrics-log4j__3.1.5.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.datatype__jackson-datatype-joda__2.7.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--commons-httpclient--commons-httpclient--commons-httpclient__commons-httpclient__3.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.guava__guava__11.0.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.hibernate--hibernate-validator--org.hibernate__hibernate-validator__5.1.1.Final.jar:file:/databricks/hive/third_party--jackson--guava_only_shaded.jar:file:/databricks/hive/daemon--data--client--conf--conf-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-codec__commons-codec__1.9_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--azure--com.microsoft.azure__azure-keyvault-core__1.0.0_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.acplt--oncrpc--org.acplt__oncrpc__1.0.7.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-common-secure--org.spark-project.hive.shims__hive-shims-common-secure__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-cli--commons-cli--commons-cli__commons-cli__1.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-keyvault-core__1.0.0_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--spark_1.4--com.esotericsoftware.kryo--kryo--com.esotericsoftware.kryo__kryo__2.21.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.avro--avro--org.apache.avro__avro__1.8.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang.modules--scala-parser-combinators_2.11--org.scala-lang.modules__scala-parser-combinators_2.11__1.1.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.curator--curator-client--org.apache.curator__curator-client__2.7.1.jar:file:/databricks/hive/maven--spark_1.4--com.jolbox--bonecp--com.jolbox__bonecp__0.8.0.RELEASE.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.prometheus--simpleclient--io.prometheus__simpleclient__0.0.16.jar:file:/databricks/hive/maven--spark_1.4--com.twitter--parquet-hadoop-bundle--com.twitter__parquet-hadoop-bundle__1.3.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.twitter--util-core_2.11--com.twitter__util-core_2.11__6.23.0.jar:file:/databricks/hive/maven--spark_1.4--org.objenesis--objenesis--org.objenesis__objenesis__1.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__okhttp__3.3.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.joda--joda-convert--org.joda__joda-convert__1.7.jar:file:/databricks/hive/maven--spark_1.4--org.datanucleus--datanucleus-core--org.datanucleus__datanucleus-core__3.2.10.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-json--io.dropwizard.metrics__metrics-json__3.1.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.httpcomponents--httpcore--org.apache.httpcomponents__httpcore__4.4.8.jar:file:/databricks/hive/maven--org.slf4j--slf4j-api--org.slf4j__slf4j-api__1.7.5.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-serde--org.spark-project.hive__hive-serde__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--org.apache.commons--commons-compress--org.apache.commons__commons-compress__1.9.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-databind__2.7.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-0.23--org.spark-project.hive.shims__hive-shims-0.23__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-io--commons-io--commons-io__commons-io__2.4.jar:file:/databricks/hive/third_party--jetty8-shaded-client--databricks-patched-jetty-http-jar_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.codehaus.jackson--jackson-core-asl--org.codehaus.jackson__jackson-core-asl__1.9.13.jar:file:/databricks/hive/maven--spark_1.4--javolution--javolution--javolution__javolution__5.5.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-io--org.eclipse.jetty__jetty-io__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang--scala-library_2.11--org.scala-lang__scala-library__2.11.12.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-proxy--org.eclipse.jetty__jetty-proxy__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.tukaani--xz--org.tukaani__xz__1.5.jar:file:/databricks/hive/maven--spark_1.4--oro--oro--oro__oro__2.0.8.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-security--org.eclipse.jetty__jetty-security__9.3.20.v20170531.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--hadoop-azure-2.7.3-abfs-external-20180625_3682417-spark_2.4_2.11_deploy_shaded.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--aopalliance__aopalliance__1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-http--org.eclipse.jetty__jetty-http__9.3.20.v20170531.jar:file:/databricks/hive/maven--org.apache.httpcomponents--httpclient--org.apache.httpcomponents__httpclient__4.4.1.jar:file:/databricks/hive/common--hadoop--hadoop-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.servlet--javax.servlet-api--javax.servlet__javax.servlet-api__3.1.0.jar:file:/databricks/hive/maven--spark_1.4--org.iq80.snappy--snappy--org.iq80.snappy__snappy__0.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-collections--commons-collections--commons-collections__commons-collections__3.2.2.jar:file:/databricks/hive/jsonutil--jsonutil-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--spark_1.4--org.antlr--antlr-runtime--org.antlr__antlr-runtime__3.4.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-lang--commons-lang--commons-lang__commons-lang__2.6.jar:file:/databricks/hive/maven--org.slf4j--slf4j-log4j12--org.slf4j__slf4j-log4j12__1.7.5.jar:file:/databricks/hive/maven--spark_1.4--org.codehaus.jackson--jackson-mapper-asl--org.codehaus.jackson__jackson-mapper-asl__1.9.13.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.protobuf--protobuf-java--org.spark-project.protobuf__protobuf-java__2.5.0-spark.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__converter-jackson__2.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.guava--guava--com.google.guava__guava__15.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.server--apacheds-kerberos-codec--org.apache.directory.server__apacheds-kerberos-codec__2.0.0-M15.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.api--api-util--org.apache.directory.api__api-util__1.0.0-M20.jar:file:/databricks/hive/api-base--api-base-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.guava__guava__16.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/extern--libaws-regions.jar:file:/databricks/hive/maven--spark_1.4--org.datanucleus--datanucleus-rdbms--org.datanucleus__datanucleus-rdbms__3.2.9.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-databind--com.fasterxml.jackson.core__jackson-databind__2.6.7.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scalactic--scalactic_2.11--org.scalactic__scalactic_2.11__3.0.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-servlets--org.eclipse.jetty__jetty-servlets__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-digester--commons-digester--commons-digester__commons-digester__1.8.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml--classmate--com.fasterxml__classmate__1.0.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-healthchecks--io.dropwizard.metrics__metrics-healthchecks__3.1.5.jar:file:/databricks/hive/third_party--jetty8-shaded-client--jetty-jmx_shaded.jar:file:/databricks/hive/daemon--data--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okio__okio__1.8.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-0.20S--org.spark-project.hive.shims__hive-shims-0.20S__0.13.1a.jar:file:/databricks/hive/maven--org.antlr--stringtemplate--org.antlr__stringtemplate__3.2.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__adapter-rxjava__2.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--commons-cli--commons-cli--commons-cli__commons-cli__1.2.jar:file:/databricks/hive/----jackson_annotations_shaded--libjackson-annotations.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.zookeeper--zookeeper--org.apache.zookeeper__zookeeper__3.4.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-jetty9--io.dropwizard.metrics__metrics-jetty9__3.1.5.jar:file:/databricks/hive/third_party--jackson--paranamer_only_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--joda-time--joda-time--joda-time__joda-time__2.9.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.thoughtworks.paranamer--paranamer--com.thoughtworks.paranamer__paranamer__2.8.jar:file:/databricks/hive/bonecp-configs.jar
+19/06/02 17:14:13 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/06/02 17:14:13 INFO ObjectStore: ObjectStore, initialize called
+19/06/02 17:14:13 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/06/02 17:14:13 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/06/02 17:14:13 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/06/02 17:14:14 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:14:14 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:14:14 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:14:14 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/02 17:14:14 INFO Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+19/06/02 17:14:14 INFO ObjectStore: Initialized ObjectStore
+19/06/02 17:14:15 INFO HiveMetaStore: Added admin role in metastore
+19/06/02 17:14:15 INFO HiveMetaStore: Added public role in metastore
+19/06/02 17:14:15 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/06/02 17:14:15 INFO SessionState: No Tez session required at this point. hive.execution.engine=mr.
+19/06/02 17:14:15 INFO HiveClientImpl: Warehouse location for Hive client (version 0.13.1) is /user/hive/warehouse
+19/06/02 17:14:15 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:14:15 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:14:15 INFO HiveMetaStore: 0: get_databases: *
+19/06/02 17:14:15 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: *	
+19/06/02 17:14:15 INFO SQLAppStatusListener: Execution ID: 0 Total Executor Run Time: 0
+19/06/02 17:14:15 INFO SQLAppStatusListener: Execution ID: 1 Total Executor Run Time: 0
+19/06/02 17:14:15 INFO CodeGenerator: Code generated in 231.283103 ms
+19/06/02 17:14:15 INFO CodeGenerator: Code generated in 15.726925 ms
+19/06/02 17:14:15 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_7863858410386970586_b9cbab97c12e47b5a30bd19edf867566
+19/06/02 17:14:15 INFO SQLAppStatusListener: Execution ID: 2 Total Executor Run Time: 0
+19/06/02 17:14:16 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_6128163888297406828_58c80dc6113244f1ac7049a084efb329
+19/06/02 17:14:16 INFO HiveMetaStore: 0: get_database: global_temp
+19/06/02 17:14:16 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: global_temp	
+19/06/02 17:14:16 ERROR RetryingHMSHandler: NoSuchObjectException(message:There is no database named global_temp)
+	at org.apache.hadoop.hive.metastore.ObjectStore.getMDatabase(ObjectStore.java:487)
+	at org.apache.hadoop.hive.metastore.ObjectStore.getDatabase(ObjectStore.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.hive.metastore.RawStoreProxy.invoke(RawStoreProxy.java:108)
+	at com.sun.proxy.$Proxy41.getDatabase(Unknown Source)
+	at org.apache.hadoop.hive.metastore.HiveMetaStore$HMSHandler.get_database(HiveMetaStore.java:796)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.hive.metastore.RetryingHMSHandler.invoke(RetryingHMSHandler.java:105)
+	at com.sun.proxy.$Proxy42.get_database(Unknown Source)
+	at org.apache.hadoop.hive.metastore.HiveMetaStoreClient.getDatabase(HiveMetaStoreClient.java:949)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.hive.metastore.RetryingMetaStoreClient.invoke(RetryingMetaStoreClient.java:89)
+	at com.sun.proxy.$Proxy43.getDatabase(Unknown Source)
+	at org.apache.hadoop.hive.ql.metadata.Hive.getDatabase(Hive.java:1165)
+	at org.apache.hadoop.hive.ql.metadata.Hive.databaseExists(Hive.java:1154)
+	at org.apache.spark.sql.hive.client.HiveClientImpl$$anonfun$databaseExists$1.apply$mcZ$sp(HiveClientImpl.scala:396)
+	at org.apache.spark.sql.hive.client.HiveClientImpl$$anonfun$databaseExists$1.apply(HiveClientImpl.scala:396)
+	at org.apache.spark.sql.hive.client.HiveClientImpl$$anonfun$databaseExists$1.apply(HiveClientImpl.scala:396)
+	at org.apache.spark.sql.hive.client.HiveClientImpl$$anonfun$withHiveState$1.apply(HiveClientImpl.scala:322)
+	at org.apache.spark.sql.hive.client.HiveClientImpl$$anonfun$retryLocked$1.apply(HiveClientImpl.scala:230)
+	at org.apache.spark.sql.hive.client.HiveClientImpl$$anonfun$retryLocked$1.apply(HiveClientImpl.scala:222)
+	at org.apache.spark.sql.hive.client.HiveClientImpl.synchronizeOnObject(HiveClientImpl.scala:266)
+	at org.apache.spark.sql.hive.client.HiveClientImpl.retryLocked(HiveClientImpl.scala:222)
+	at org.apache.spark.sql.hive.client.HiveClientImpl.withHiveState(HiveClientImpl.scala:305)
+	at org.apache.spark.sql.hive.client.HiveClientImpl.databaseExists(HiveClientImpl.scala:395)
+	at org.apache.spark.sql.hive.client.PoolingHiveClient$$anonfun$databaseExists$1.apply(PoolingHiveClient.scala:256)
+	at org.apache.spark.sql.hive.client.PoolingHiveClient$$anonfun$databaseExists$1.apply(PoolingHiveClient.scala:255)
+	at org.apache.spark.sql.hive.client.PoolingHiveClient.withHiveClient(PoolingHiveClient.scala:101)
+	at org.apache.spark.sql.hive.client.PoolingHiveClient.databaseExists(PoolingHiveClient.scala:255)
+	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply$mcZ$sp(HiveExternalCatalog.scala:276)
+	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:276)
+	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$databaseExists$1.apply(HiveExternalCatalog.scala:276)
+	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$withClient$1$$anonfun$apply$1.apply(HiveExternalCatalog.scala:141)
+	at org.apache.spark.sql.hive.HiveExternalCatalog.org$apache$spark$sql$hive$HiveExternalCatalog$$maybeSynchronized(HiveExternalCatalog.scala:104)
+	at org.apache.spark.sql.hive.HiveExternalCatalog$$anonfun$withClient$1.apply(HiveExternalCatalog.scala:139)
+	at com.databricks.backend.daemon.driver.ProgressReporter$.withStatusCode(ProgressReporter.scala:345)
+	at com.databricks.backend.daemon.driver.ProgressReporter$.withStatusCode(ProgressReporter.scala:331)
+	at com.databricks.spark.util.SparkDatabricksProgressReporter$.withStatusCode(ProgressReporter.scala:23)
+	at org.apache.spark.sql.hive.HiveExternalCatalog.withClient(HiveExternalCatalog.scala:137)
+	at org.apache.spark.sql.hive.HiveExternalCatalog.databaseExists(HiveExternalCatalog.scala:275)
+	at org.apache.spark.sql.catalyst.catalog.ExternalCatalogWithListener.databaseExists(ExternalCatalogWithListener.scala:74)
+	at org.apache.spark.sql.internal.SharedState.globalTempViewManager$lzycompute(SharedState.scala:181)
+	at org.apache.spark.sql.internal.SharedState.globalTempViewManager(SharedState.scala:176)
+	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anonfun$2.apply(HiveSessionStateBuilder.scala:59)
+	at org.apache.spark.sql.hive.HiveSessionStateBuilder$$anonfun$2.apply(HiveSessionStateBuilder.scala:59)
+	at org.apache.spark.sql.catalyst.catalog.SessionCatalog.globalTempViewManager$lzycompute(SessionCatalog.scala:94)
+	at org.apache.spark.sql.catalyst.catalog.SessionCatalog.globalTempViewManager(SessionCatalog.scala:94)
+	at org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:789)
+	at org.apache.spark.sql.catalyst.catalog.SessionCatalog.listTables(SessionCatalog.scala:779)
+	at org.apache.spark.sql.execution.command.ShowTablesCommand$$anonfun$17.apply(tables.scala:767)
+	at org.apache.spark.sql.execution.command.ShowTablesCommand$$anonfun$17.apply(tables.scala:767)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.execution.command.ShowTablesCommand.run(tables.scala:767)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:72)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:70)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:81)
+	at org.apache.spark.sql.Dataset$$anonfun$6.apply(Dataset.scala:205)
+	at org.apache.spark.sql.Dataset$$anonfun$6.apply(Dataset.scala:205)
+	at org.apache.spark.sql.Dataset$$anonfun$55.apply(Dataset.scala:3424)
+	at org.apache.spark.sql.execution.SQLExecution$$anonfun$withCustomExecutionEnv$1.apply(SQLExecution.scala:99)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:228)
+	at org.apache.spark.sql.execution.SQLExecution$.withCustomExecutionEnv(SQLExecution.scala:85)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:158)
+	at org.apache.spark.sql.Dataset.org$apache$spark$sql$Dataset$$withAction(Dataset.scala:3423)
+	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:205)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:89)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:696)
+	at org.apache.spark.sql.SQLContext.sql(SQLContext.scala:707)
+	at com.databricks.backend.daemon.driver.SQLDriverLocal$$anonfun$1.apply(SQLDriverLocal.scala:87)
+	at com.databricks.backend.daemon.driver.SQLDriverLocal$$anonfun$1.apply(SQLDriverLocal.scala:33)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:296)
+	at com.databricks.backend.daemon.driver.SQLDriverLocal.executeSql(SQLDriverLocal.scala:33)
+	at com.databricks.backend.daemon.driver.SQLDriverLocal.repl(SQLDriverLocal.scala:136)
+	at com.databricks.backend.daemon.driver.DriverLocal$$anonfun$execute$8.apply(DriverLocal.scala:323)
+	at com.databricks.backend.daemon.driver.DriverLocal$$anonfun$execute$8.apply(DriverLocal.scala:303)
+	at com.databricks.logging.UsageLogging$$anonfun$withAttributionContext$1.apply(UsageLogging.scala:235)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	at com.databricks.logging.UsageLogging$class.withAttributionContext(UsageLogging.scala:230)
+	at com.databricks.backend.daemon.driver.DriverLocal.withAttributionContext(DriverLocal.scala:47)
+	at com.databricks.logging.UsageLogging$class.withAttributionTags(UsageLogging.scala:268)
+	at com.databricks.backend.daemon.driver.DriverLocal.withAttributionTags(DriverLocal.scala:47)
+	at com.databricks.backend.daemon.driver.DriverLocal.execute(DriverLocal.scala:303)
+	at com.databricks.backend.daemon.driver.DriverWrapper$$anonfun$tryExecutingCommand$2.apply(DriverWrapper.scala:591)
+	at com.databricks.backend.daemon.driver.DriverWrapper$$anonfun$tryExecutingCommand$2.apply(DriverWrapper.scala:591)
+	at scala.util.Try$.apply(Try.scala:192)
+	at com.databricks.backend.daemon.driver.DriverWrapper.tryExecutingCommand(DriverWrapper.scala:586)
+	at com.databricks.backend.daemon.driver.DriverWrapper.getCommandOutputAndError(DriverWrapper.scala:477)
+	at com.databricks.backend.daemon.driver.DriverWrapper.executeCommand(DriverWrapper.scala:544)
+	at com.databricks.backend.daemon.driver.DriverWrapper.runInnerLoop(DriverWrapper.scala:383)
+	at com.databricks.backend.daemon.driver.DriverWrapper.runInner(DriverWrapper.scala:330)
+	at com.databricks.backend.daemon.driver.DriverWrapper.run(DriverWrapper.scala:216)
+	at java.lang.Thread.run(Thread.java:748)
+
+19/06/02 17:14:16 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:14:16 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:14:16 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:14:16 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:14:16 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/02 17:14:16 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/02 17:14:16 INFO SQLAppStatusListener: Execution ID: 3 Total Executor Run Time: 0
+19/06/02 17:14:16 INFO SQLAppStatusListener: Execution ID: 4 Total Executor Run Time: 0
+19/06/02 17:14:16 INFO CodeGenerator: Code generated in 16.321636 ms
+19/06/02 17:14:16 INFO SQLAppStatusListener: Execution ID: 5 Total Executor Run Time: 0
+19/06/02 17:14:16 INFO CodeGenerator: Code generated in 14.563728 ms
+19/06/02 17:14:16 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_6128163888297406828_58c80dc6113244f1ac7049a084efb329
+19/06/02 17:14:29 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8682963664689192133_d6c2139a84c14a1bab4cf90f6b34d9e8
+19/06/02 17:14:30 INFO SignalUtils: Registered signal handler for INT
+19/06/02 17:14:30 INFO DriverILoop: Set class prefix to: line6bbc68f66e9d4cef9b1f6d3a96da191c
+19/06/02 17:14:30 INFO DriverILoop: set ContextClassLoader
+19/06/02 17:14:30 INFO DriverILoop: initialized intp
+19/06/02 17:14:36 INFO ContextCleaner: Cleaned accumulator 1 (name: number of output rows)
+19/06/02 17:14:36 INFO ContextCleaner: Cleaned accumulator 0 (name: number of output rows)
+19/06/02 17:14:36 INFO CodeGenerator: Code generated in 51.989619 ms
+19/06/02 17:14:36 INFO LogicalPlanStats: Setting LogicalPlanStats visitor to com.databricks.sql.optimizer.statsEstimation.DatabricksLogicalPlanStatsVisitor$
+19/06/02 17:14:36 INFO CodeGenerator: Code generated in 14.571671 ms
+19/06/02 17:14:36 INFO SQLAppStatusListener: Execution ID: 6 Total Executor Run Time: 0
+19/06/02 17:14:36 INFO CodeGenerator: Code generated in 21.93045 ms
+19/06/02 17:14:36 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8682963664689192133_d6c2139a84c14a1bab4cf90f6b34d9e8
+19/06/02 17:15:00 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8884183254269861160_bcea2f04de8e44a99d2ab7b0d20ae1e5
+19/06/02 17:15:00 WARN ScalaDriverLocal: User Code Compile error: <console>:5: error: illegal start of definition
+# in our case, we see the README.md file in the samples docs
+^
+
+19/06/02 17:15:00 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8884183254269861160_bcea2f04de8e44a99d2ab7b0d20ae1e5
+19/06/02 17:15:14 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5126636868677859310_c1786df7eacb4efa8b10965c3244bdf8
+19/06/02 17:15:14 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5126636868677859310_c1786df7eacb4efa8b10965c3244bdf8
+19/06/02 17:15:55 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7690813845438599468_73499dfcacb649679ce64f9219c0a9b7
+19/06/02 17:15:55 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7690813845438599468_73499dfcacb649679ce64f9219c0a9b7
+19/06/02 17:17:13 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8422664234505808062_7222e67b2e7840caa99e2fe8d858b9b6
+19/06/02 17:17:13 WARN ScalaDriverLocal: User Code Compile error: <console>:5: error: identifier expected but '[' found.
+sc.[\t]
+   ^
+<console>:5: error: identifier expected but ']' found.
+sc.[\t]
+      ^
+
+19/06/02 17:17:13 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8422664234505808062_7222e67b2e7840caa99e2fe8d858b9b6
+19/06/02 17:17:23 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6111799219041750689_a1e9ea92ef0b46c5a82314884e038b0f
+19/06/02 17:17:23 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6111799219041750689_a1e9ea92ef0b46c5a82314884e038b0f
+19/06/02 17:17:31 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6947349299451473749_1defd527d25a4904ae5bb03ce59e35cd
+19/06/02 17:17:31 WARN ScalaDriverLocal: User Code Compile error: notebook:1: error: not found: value dir
+dir(sc)
+^
+
+19/06/02 17:17:31 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6947349299451473749_1defd527d25a4904ae5bb03ce59e35cd
+19/06/02 17:18:00 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7394030251016615662_86a55860000c475588ae65434a930070
+19/06/02 17:18:00 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7394030251016615662_86a55860000c475588ae65434a930070
+19/06/02 17:18:05 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8484987233140330799_78a92d39f2d1436ea8f5ebb79d9d1c29
+19/06/02 17:18:05 WARN ScalaDriverLocal: User Code Compile error: notebook:1: error: Option[org.apache.spark.ui.SparkUI] does not take parameters
+sc.ui()
+     ^
+
+19/06/02 17:18:05 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8484987233140330799_78a92d39f2d1436ea8f5ebb79d9d1c29
+19/06/02 17:18:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7508347031674759395_390195e1437d41ea8c22519ffb679404
+19/06/02 17:18:15 WARN ScalaDriverLocal: User Code Compile error: <console>:5: error: '(' expected but identifier found.
+for i in dir(sc): print(i)
+    ^
+
+19/06/02 17:18:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7508347031674759395_390195e1437d41ea8c22519ffb679404
+19/06/02 17:18:21 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4969862081063914330_554ea3176859442aa40009598bf795bb
+19/06/02 17:18:21 WARN ScalaDriverLocal: User Code Compile error: <console>:5: error: '(' expected but identifier found.
+for i in dir(sc):
+    ^
+
+19/06/02 17:18:21 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4969862081063914330_554ea3176859442aa40009598bf795bb
+19/06/02 17:18:34 INFO HiveMetaStore: 1: get_database: default
+19/06/02 17:18:34 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:18:34 INFO HiveMetaStore: 1: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/06/02 17:18:34 INFO ObjectStore: ObjectStore, initialize called
+19/06/02 17:18:34 INFO Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+19/06/02 17:18:34 INFO ObjectStore: Initialized ObjectStore
+19/06/02 17:18:34 INFO DriverCorral: Metastore health check ok
+19/06/02 17:18:34 INFO DriverCorral: DBFS health check ok
+19/06/02 17:18:34 INFO HikariDataSource: metastore-monitor - Starting...
+19/06/02 17:18:34 INFO HikariDataSource: metastore-monitor - Start completed.
+19/06/02 17:18:34 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/06/02 17:18:34 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/06/02 17:18:34 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 23 milliseconds)
+19/06/02 17:18:56 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_8913384221468938383_0c9a2dac19f74f14a2f4235b7fa43033
+19/06/02 17:18:56 INFO HiveMetaStore: 0: get_databases: *
+19/06/02 17:18:56 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: *	
+19/06/02 17:18:56 INFO SQLAppStatusListener: Execution ID: 7 Total Executor Run Time: 0
+19/06/02 17:18:56 INFO SQLAppStatusListener: Execution ID: 8 Total Executor Run Time: 0
+19/06/02 17:18:56 INFO CodeGenerator: Code generated in 9.951295 ms
+19/06/02 17:18:56 INFO SQLAppStatusListener: Execution ID: 9 Total Executor Run Time: 0
+19/06/02 17:18:56 INFO CodeGenerator: Code generated in 8.84764 ms
+19/06/02 17:18:56 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_8913384221468938383_0c9a2dac19f74f14a2f4235b7fa43033
+19/06/02 17:18:57 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_4936301914341984540_5c031e2aa0544c85905b2ee2d46928a1
+19/06/02 17:18:57 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:18:57 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:18:57 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:18:57 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:18:57 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/02 17:18:57 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/02 17:18:57 INFO SQLAppStatusListener: Execution ID: 10 Total Executor Run Time: 0
+19/06/02 17:18:57 INFO SQLAppStatusListener: Execution ID: 11 Total Executor Run Time: 0
+19/06/02 17:18:57 INFO CodeGenerator: Code generated in 11.527152 ms
+19/06/02 17:18:57 INFO SQLAppStatusListener: Execution ID: 12 Total Executor Run Time: 0
+19/06/02 17:18:57 INFO CodeGenerator: Code generated in 11.55589 ms
+19/06/02 17:18:57 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_4936301914341984540_5c031e2aa0544c85905b2ee2d46928a1
+19/06/02 17:18:58 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_5234840084154680385_8caa21f897604e0b8c309f8ab10be8e5
+19/06/02 17:18:58 INFO HiveMetaStore: 0: get_databases: *
+19/06/02 17:18:58 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: *	
+19/06/02 17:18:58 INFO DriverCorral: Starting sql repl ReplId-41d0f-f2e31-80bf9-0
+19/06/02 17:18:58 INFO SQLDriverWrapper: setupRepl:ReplId-41d0f-f2e31-80bf9-0: finished to load
+19/06/02 17:18:58 INFO SQLAppStatusListener: Execution ID: 13 Total Executor Run Time: 0
+19/06/02 17:18:58 INFO SQLAppStatusListener: Execution ID: 14 Total Executor Run Time: 0
+19/06/02 17:18:59 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_5234840084154680385_8caa21f897604e0b8c309f8ab10be8e5
+19/06/02 17:18:59 INFO ContextCleaner: Cleaned accumulator 3 (name: number of output rows)
+19/06/02 17:18:59 INFO ContextCleaner: Cleaned accumulator 2 (name: number of output rows)
+19/06/02 17:18:59 INFO ContextCleaner: Cleaned accumulator 4 (name: number of output rows)
+19/06/02 17:18:59 INFO SQLAppStatusListener: Execution ID: 15 Total Executor Run Time: 0
+19/06/02 17:18:59 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_5781646131576520003_547813c27a9a49c3ada3266a492d053f
+19/06/02 17:18:59 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:18:59 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:18:59 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:18:59 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:18:59 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/02 17:18:59 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/02 17:18:59 INFO SQLAppStatusListener: Execution ID: 16 Total Executor Run Time: 0
+19/06/02 17:18:59 INFO SQLAppStatusListener: Execution ID: 17 Total Executor Run Time: 0
+19/06/02 17:18:59 INFO CodeGenerator: Code generated in 11.53025 ms
+19/06/02 17:18:59 INFO SQLAppStatusListener: Execution ID: 18 Total Executor Run Time: 0
+19/06/02 17:18:59 INFO CodeGenerator: Code generated in 11.259602 ms
+19/06/02 17:18:59 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_5781646131576520003_547813c27a9a49c3ada3266a492d053f
+19/06/02 17:19:04 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_6894278044215647220_53e184cb81304bb5b01125e9b89676a8
+19/06/02 17:19:04 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:19:04 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:19:04 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:19:04 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:19:04 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/02 17:19:04 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/02 17:19:04 INFO SQLAppStatusListener: Execution ID: 19 Total Executor Run Time: 0
+19/06/02 17:19:04 INFO SQLAppStatusListener: Execution ID: 20 Total Executor Run Time: 0
+19/06/02 17:19:04 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_6894278044215647220_53e184cb81304bb5b01125e9b89676a8
+19/06/02 17:19:04 INFO SQLAppStatusListener: Execution ID: 21 Total Executor Run Time: 0
+19/06/02 17:19:35 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_5989319368317840762_53ed1c49a31c4fc99b8734f95356042c
+19/06/02 17:19:35 INFO HiveMetaStore: 0: get_databases: *
+19/06/02 17:19:35 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: *	
+19/06/02 17:19:35 INFO SQLAppStatusListener: Execution ID: 22 Total Executor Run Time: 0
+19/06/02 17:19:35 INFO SQLAppStatusListener: Execution ID: 23 Total Executor Run Time: 0
+19/06/02 17:19:35 INFO CodeGenerator: Code generated in 11.531067 ms
+19/06/02 17:19:35 INFO SQLAppStatusListener: Execution ID: 24 Total Executor Run Time: 0
+19/06/02 17:19:35 INFO CodeGenerator: Code generated in 7.606224 ms
+19/06/02 17:19:35 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_5989319368317840762_53ed1c49a31c4fc99b8734f95356042c
+19/06/02 17:19:35 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_7477217675292838172_c0fead6da4ad4c508a0273a8c9f65c52
+19/06/02 17:19:35 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:19:35 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:19:35 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:19:35 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:19:35 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/02 17:19:35 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/02 17:19:35 INFO SQLAppStatusListener: Execution ID: 25 Total Executor Run Time: 0
+19/06/02 17:19:35 INFO SQLAppStatusListener: Execution ID: 26 Total Executor Run Time: 0
+19/06/02 17:19:35 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_7477217675292838172_c0fead6da4ad4c508a0273a8c9f65c52
+19/06/02 17:19:35 INFO SQLAppStatusListener: Execution ID: 27 Total Executor Run Time: 0
+19/06/02 17:20:31 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_5906713812196542572_a8aff3179f10430eae009e68b52b6cd6
+19/06/02 17:20:31 INFO HiveMetaStore: 0: get_databases: *
+19/06/02 17:20:31 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: *	
+19/06/02 17:20:31 INFO SQLAppStatusListener: Execution ID: 28 Total Executor Run Time: 0
+19/06/02 17:20:31 INFO SQLAppStatusListener: Execution ID: 29 Total Executor Run Time: 0
+19/06/02 17:20:31 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_5906713812196542572_a8aff3179f10430eae009e68b52b6cd6
+19/06/02 17:20:31 INFO DriverCorral: Starting scala repl ReplId-9e5b0-c6e71-d6d38
+19/06/02 17:20:31 INFO ScalaDriverWrapper: setupRepl:ReplId-9e5b0-c6e71-d6d38: finished to load
+19/06/02 17:20:31 INFO SQLAppStatusListener: Execution ID: 30 Total Executor Run Time: 0
+19/06/02 17:20:31 INFO ProgressReporter$: Added result fetcher for 8953589183889162873_4676613217070416559_0491aead792a40ea842865e6a5dbfc00
+19/06/02 17:20:31 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:20:31 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:20:31 INFO ProgressReporter$: Added result fetcher for 713170484335570232_4825418730525026546_bc4f992ad7fc48ae9b7cd63ea3eebe02
+19/06/02 17:20:31 INFO HiveMetaStore: 0: get_database: default
+19/06/02 17:20:31 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:20:31 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/02 17:20:31 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/02 17:20:31 INFO SQLAppStatusListener: Execution ID: 31 Total Executor Run Time: 0
+19/06/02 17:20:31 INFO SQLAppStatusListener: Execution ID: 32 Total Executor Run Time: 0
+19/06/02 17:20:31 INFO ProgressReporter$: Removed result fetcher for 8953589183889162873_4676613217070416559_0491aead792a40ea842865e6a5dbfc00
+19/06/02 17:20:31 INFO SQLAppStatusListener: Execution ID: 33 Total Executor Run Time: 0
+19/06/02 17:20:32 INFO DriverILoop: Set class prefix to: lineac3ce18a5ade40928fe71c9be5632326
+19/06/02 17:20:32 INFO DriverILoop: set ContextClassLoader
+19/06/02 17:20:32 INFO DriverILoop: initialized intp
+19/06/02 17:20:35 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 314.4 KB, free 1991.1 MB)
+19/06/02 17:20:35 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 25.5 KB, free 1991.1 MB)
+19/06/02 17:20:35 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 25.5 KB, free: 1991.4 MB)
+19/06/02 17:20:35 INFO SparkContext: Created broadcast 0 from textFile at command--1:3
+19/06/02 17:20:35 INFO FileInputFormat: Total input paths to process : 1
+19/06/02 17:20:35 INFO SparkContext: Starting job: take at command--1:3
+19/06/02 17:20:35 INFO DAGScheduler: Got job 0 (take at command--1:3) with 1 output partitions
+19/06/02 17:20:35 INFO DAGScheduler: Final stage: ResultStage 0 (take at command--1:3)
+19/06/02 17:20:35 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:20:35 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:20:35 INFO DAGScheduler: Submitting ResultStage 0 (dbfs:/FileStore/tables/README.md MapPartitionsRDD[1] at textFile at command--1:3), which has no missing parents
+19/06/02 17:20:36 INFO ContextCleaner: Cleaned accumulator 10 (name: number of output rows)
+19/06/02 17:20:36 INFO ContextCleaner: Cleaned accumulator 11 (name: number of output rows)
+19/06/02 17:20:36 INFO ContextCleaner: Cleaned accumulator 6 (name: number of output rows)
+19/06/02 17:20:36 INFO ContextCleaner: Cleaned accumulator 8 (name: number of output rows)
+19/06/02 17:20:36 INFO ContextCleaner: Cleaned accumulator 9 (name: number of output rows)
+19/06/02 17:20:36 INFO ContextCleaner: Cleaned accumulator 7 (name: number of output rows)
+19/06/02 17:20:36 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.9 KB, free 1991.1 MB)
+19/06/02 17:20:36 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 1991.1 MB)
+19/06/02 17:20:36 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.3 KB, free: 1991.4 MB)
+19/06/02 17:20:36 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:20:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (dbfs:/FileStore/tables/README.md MapPartitionsRDD[1] at textFile at command--1:3) (first 15 tasks are for partitions Vector(0))
+19/06/02 17:20:36 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+19/06/02 17:20:36 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:20:36 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:20:36 WARN FairSchedulableBuilder: A job was submitted with scheduler pool 713170484335570232, which has not been configured. This can happen when the file that pools are read from isn't set, or when that file doesn't contain 713170484335570232. Created 713170484335570232 with default configuration (schedulingMode: FIFO, minShare: 0, weight: 1)
+19/06/02 17:20:36 INFO FairSchedulableBuilder: Added task set TaskSet_0.0 tasks to pool 713170484335570232
+19/06/02 17:20:36 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 5477 bytes)
+19/06/02 17:20:36 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+19/06/02 17:20:36 INFO HadoopRDD: Input split: dbfs:/FileStore/tables/README.md:0+1016
+19/06/02 17:20:36 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:20:36 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 845 bytes result sent to driver
+19/06/02 17:20:36 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 414 ms on localhost (executor driver) (1/1)
+19/06/02 17:20:36 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 713170484335570232
+19/06/02 17:20:36 INFO DAGScheduler: ResultStage 0 (take at command--1:3) finished in 0.587 s
+19/06/02 17:20:36 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:20:36 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+19/06/02 17:20:36 INFO DAGScheduler: Job 0 finished: take at command--1:3, took 0.657422 s
+19/06/02 17:20:36 INFO ProgressReporter$: Removed result fetcher for 713170484335570232_4825418730525026546_bc4f992ad7fc48ae9b7cd63ea3eebe02
+19/06/02 17:20:36 INFO ProgressReporter$: Added result fetcher for 713170484335570232_6374133191282719887_38b7f8a498bd4466b7f9de51038f1afe
+19/06/02 17:20:37 INFO InMemoryFileIndex: Start listing leaf files and directories. Size of Paths: 1; threshold: 32
+19/06/02 17:20:37 INFO InMemoryFileIndex: Start listing leaf files and directories. Size of Paths: 0; threshold: 32
+19/06/02 17:20:37 INFO InMemoryFileIndex: Start listing leaf files and directories. Size of Paths: 2; threshold: 32
+19/06/02 17:20:37 INFO InMemoryFileIndex: Start listing leaf files and directories. Size of Paths: 0; threshold: 32
+19/06/02 17:20:37 INFO InMemoryFileIndex: Start listing leaf files and directories. Size of Paths: 0; threshold: 32
+19/06/02 17:20:37 INFO LogicalPlanStats: Setting LogicalPlanStats visitor to com.databricks.sql.optimizer.statsEstimation.DatabricksLogicalPlanStatsVisitor$
+19/06/02 17:20:37 INFO FileSourceStrategy: Pruning directories with: 
+19/06/02 17:20:37 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#99, None)) > 0)
+19/06/02 17:20:37 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+19/06/02 17:20:37 INFO FileSourceScanExec: Pushed Filters: 
+19/06/02 17:20:37 INFO CodeGenerator: Code generated in 50.968929 ms
+19/06/02 17:20:37 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 534.7 KB, free 1990.5 MB)
+19/06/02 17:20:37 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 46.1 KB, free 1990.5 MB)
+19/06/02 17:20:37 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 46.1 KB, free: 1991.3 MB)
+19/06/02 17:20:37 INFO SparkContext: Created broadcast 2 from load at command--1:9
+19/06/02 17:20:37 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+19/06/02 17:20:37 INFO SparkContext: Starting job: load at command--1:9
+19/06/02 17:20:37 INFO DAGScheduler: Got job 1 (load at command--1:9) with 1 output partitions
+19/06/02 17:20:37 INFO DAGScheduler: Final stage: ResultStage 1 (load at command--1:9)
+19/06/02 17:20:37 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:20:37 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:20:37 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[3] at load at command--1:9), which has no missing parents
+19/06/02 17:20:37 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 14.0 KB, free 1990.5 MB)
+19/06/02 17:20:37 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 7.0 KB, free 1990.5 MB)
+19/06/02 17:20:37 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 7.0 KB, free: 1991.3 MB)
+19/06/02 17:20:37 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:20:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at load at command--1:9) (first 15 tasks are for partitions Vector(0))
+19/06/02 17:20:37 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+19/06/02 17:20:37 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:20:37 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:20:37 WARN FairSchedulableBuilder: A job was submitted with scheduler pool 713170484335570232, which has not been configured. This can happen when the file that pools are read from isn't set, or when that file doesn't contain 713170484335570232. Created 713170484335570232 with default configuration (schedulingMode: FIFO, minShare: 0, weight: 1)
+19/06/02 17:20:37 INFO FairSchedulableBuilder: Added task set TaskSet_1.0 tasks to pool 713170484335570232
+19/06/02 17:20:37 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 5996 bytes)
+19/06/02 17:20:37 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+19/06/02 17:20:38 INFO TransportClientFactory: Successfully created connection to ip-10-172-253-190.us-west-2.compute.internal/10.172.253.190:37344 after 10 ms (0 ms spent in bootstraps)
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 107.875973 ms
+19/06/02 17:20:38 INFO FileScanRDD: Reading File path: dbfs:/FileStore/tables/README.md, range: 0-2033, partition values: [empty row].
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 12.482037 ms
+19/06/02 17:20:38 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:20:38 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2301 bytes result sent to driver
+19/06/02 17:20:38 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 248 ms on localhost (executor driver) (1/1)
+19/06/02 17:20:38 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 713170484335570232
+19/06/02 17:20:38 INFO DAGScheduler: ResultStage 1 (load at command--1:9) finished in 0.295 s
+19/06/02 17:20:38 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:20:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+19/06/02 17:20:38 INFO DAGScheduler: Job 1 finished: load at command--1:9, took 0.312894 s
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 18.533509 ms
+19/06/02 17:20:38 INFO FileSourceStrategy: Pruning directories with: 
+19/06/02 17:20:38 INFO FileSourceStrategy: Post-Scan Filters: 
+19/06/02 17:20:38 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+19/06/02 17:20:38 INFO FileSourceScanExec: Pushed Filters: 
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 60.549611 ms
+19/06/02 17:20:38 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 534.7 KB, free 1990.0 MB)
+19/06/02 17:20:38 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 46.1 KB, free 1989.9 MB)
+19/06/02 17:20:38 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 46.1 KB, free: 1991.3 MB)
+19/06/02 17:20:38 INFO SparkContext: Created broadcast 4 from load at command--1:9
+19/06/02 17:20:38 INFO SQLAppStatusListener: Execution ID: 34 Total Executor Run Time: 226
+19/06/02 17:20:38 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+19/06/02 17:20:38 INFO FileSourceStrategy: Pruning directories with: 
+19/06/02 17:20:38 INFO FileSourceStrategy: Post-Scan Filters: 
+19/06/02 17:20:38 INFO FileSourceStrategy: Output Data Schema: struct<_c0: string>
+19/06/02 17:20:38 INFO FileSourceScanExec: Pushed Filters: 
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 18.561135 ms
+19/06/02 17:20:38 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 534.6 KB, free 1989.4 MB)
+19/06/02 17:20:38 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 46.0 KB, free 1989.3 MB)
+19/06/02 17:20:38 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 46.0 KB, free: 1991.2 MB)
+19/06/02 17:20:38 INFO SparkContext: Created broadcast 5 from collectResult at OutputAggregator.scala:136
+19/06/02 17:20:38 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+19/06/02 17:20:38 INFO SparkContext: Starting job: collectResult at OutputAggregator.scala:136
+19/06/02 17:20:38 INFO DAGScheduler: Got job 2 (collectResult at OutputAggregator.scala:136) with 1 output partitions
+19/06/02 17:20:38 INFO DAGScheduler: Final stage: ResultStage 2 (collectResult at OutputAggregator.scala:136)
+19/06/02 17:20:38 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:20:38 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:20:38 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[10] at collectResult at OutputAggregator.scala:136), which has no missing parents
+19/06/02 17:20:38 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 14.3 KB, free 1989.3 MB)
+19/06/02 17:20:38 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 7.5 KB, free 1989.3 MB)
+19/06/02 17:20:38 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 7.5 KB, free: 1991.2 MB)
+19/06/02 17:20:38 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:20:38 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[10] at collectResult at OutputAggregator.scala:136) (first 15 tasks are for partitions Vector(0))
+19/06/02 17:20:38 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+19/06/02 17:20:38 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:20:38 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:20:38 INFO FairSchedulableBuilder: Added task set TaskSet_2.0 tasks to pool 713170484335570232
+19/06/02 17:20:38 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 5996 bytes)
+19/06/02 17:20:38 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 68.048008 ms
+19/06/02 17:20:38 INFO FileScanRDD: Reading File path: dbfs:/FileStore/tables/README.md, range: 0-2033, partition values: [empty row].
+19/06/02 17:20:38 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:20:38 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 4042 bytes result sent to driver
+19/06/02 17:20:38 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 183 ms on localhost (executor driver) (1/1)
+19/06/02 17:20:38 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 713170484335570232
+19/06/02 17:20:38 INFO DAGScheduler: ResultStage 2 (collectResult at OutputAggregator.scala:136) finished in 0.199 s
+19/06/02 17:20:38 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:20:38 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+19/06/02 17:20:38 INFO DAGScheduler: Job 2 finished: collectResult at OutputAggregator.scala:136, took 0.206229 s
+19/06/02 17:20:38 INFO CodeGenerator: Code generated in 9.626407 ms
+19/06/02 17:20:38 INFO SQLAppStatusListener: Execution ID: 35 Total Executor Run Time: 168
+19/06/02 17:20:38 INFO ProgressReporter$: Removed result fetcher for 713170484335570232_6374133191282719887_38b7f8a498bd4466b7f9de51038f1afe
+19/06/02 17:22:01 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8836212507383223886_69ace82103004600a14d66d529513e0e
+19/06/02 17:22:01 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8836212507383223886_69ace82103004600a14d66d529513e0e
+19/06/02 17:22:21 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6410834281418341077_76184598b3724433aee189abe4257d1f
+19/06/02 17:22:21 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6410834281418341077_76184598b3724433aee189abe4257d1f
+19/06/02 17:22:39 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6616214526630609577_b32aa8df585d4b55b70669fe51671276
+19/06/02 17:22:39 WARN ScalaDriverLocal: User Code Compile error: notebook:1: error: package scala is not a value
+scala
+^
+
+19/06/02 17:22:39 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6616214526630609577_b32aa8df585d4b55b70669fe51671276
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_3_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 7.0 KB, free: 1991.2 MB)
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 46.1 KB, free: 1991.3 MB)
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_4_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 46.1 KB, free: 1991.3 MB)
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 46.0 KB, free: 1991.4 MB)
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_0_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 25.5 KB, free: 1991.4 MB)
+19/06/02 17:23:34 INFO BlockManagerInfo: Removed broadcast_6_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 7.5 KB, free: 1991.4 MB)
+19/06/02 17:23:34 INFO HiveMetaStore: 1: get_database: default
+19/06/02 17:23:34 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:23:34 INFO DriverCorral: Metastore health check ok
+19/06/02 17:23:34 INFO DriverCorral: DBFS health check ok
+19/06/02 17:23:34 INFO HikariDataSource: metastore-monitor - Starting...
+19/06/02 17:23:34 INFO HikariDataSource: metastore-monitor - Start completed.
+19/06/02 17:23:34 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/06/02 17:23:34 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/06/02 17:23:34 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 14 milliseconds)
+19/06/02 17:24:22 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7037943657310980355_6f491c4198694d0a91b46dbe7ef31f61
+19/06/02 17:24:23 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7037943657310980355_6f491c4198694d0a91b46dbe7ef31f61
+19/06/02 17:25:34 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8917472667100763647_66172e04b11f413bb031fd5e33283dba
+19/06/02 17:25:34 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8917472667100763647_66172e04b11f413bb031fd5e33283dba
+19/06/02 17:25:48 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9126609057889764707_e667b2bea6f2431390bf02d3f3ba6f80
+19/06/02 17:25:48 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9126609057889764707_e667b2bea6f2431390bf02d3f3ba6f80
+19/06/02 17:25:57 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7672783198273730502_8b4e1f0409914489b28e342a519eba0a
+19/06/02 17:25:57 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7672783198273730502_8b4e1f0409914489b28e342a519eba0a
+19/06/02 17:26:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6110411067889994802_775e8ba3f6eb4fcf82f3227520e7905e
+19/06/02 17:26:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6110411067889994802_775e8ba3f6eb4fcf82f3227520e7905e
+19/06/02 17:26:26 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9026704818265524554_603ad37051ec44d98e9b0aa62564e44a
+19/06/02 17:26:26 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9026704818265524554_603ad37051ec44d98e9b0aa62564e44a
+19/06/02 17:27:25 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8094266972209004342_d080caa3ebd94eb88c18fe519e97352b
+19/06/02 17:27:25 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8094266972209004342_d080caa3ebd94eb88c18fe519e97352b
+19/06/02 17:27:42 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5719079213636495211_6490d3c08e0145628f513cfb3fb88bb1
+19/06/02 17:27:42 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5719079213636495211_6490d3c08e0145628f513cfb3fb88bb1
+19/06/02 17:27:51 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5797681167348415479_8eb9bf6a601142cabfdf4a08c3bd6eeb
+19/06/02 17:27:51 WARN ScalaDriverLocal: User Code Compile error: <console>:6: error: ';' expected but string literal found.
+       \|   "This is the next line."
+            ^
+
+19/06/02 17:27:51 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5797681167348415479_8eb9bf6a601142cabfdf4a08c3bd6eeb
+19/06/02 17:28:04 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6552043574945393299_2fe3821f5718468a9d41ae9d4dedc156
+19/06/02 17:28:04 WARN ScalaDriverLocal: User Code Compile error: <console>:6: error: ';' expected but string literal found.
+       \   "This is the next line."
+           ^
+
+19/06/02 17:28:04 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6552043574945393299_2fe3821f5718468a9d41ae9d4dedc156
+19/06/02 17:28:12 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9026268342042593938_86291a281e0a4711a5e6ee94df1fd9b3
+19/06/02 17:28:12 WARN ScalaDriverLocal: User Code Compile error: notebook:1: error: not found: value \
+val multiLine = \
+                ^
+
+19/06/02 17:28:12 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9026268342042593938_86291a281e0a4711a5e6ee94df1fd9b3
+19/06/02 17:28:29 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7077575989901746350_2845f0ea79974d248e0effa7fcb7db5f
+19/06/02 17:28:29 WARN ScalaDriverLocal: User Code Compile error: <console>:6: error: ';' expected but 'if' found.
+       |   if (x > y) x
+           ^
+<console>:7: error: ';' expected but 'else' found.
+       |   else y
+           ^
+
+19/06/02 17:28:29 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7077575989901746350_2845f0ea79974d248e0effa7fcb7db5f
+19/06/02 17:28:34 INFO HiveMetaStore: 1: get_database: default
+19/06/02 17:28:34 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:28:34 INFO DriverCorral: Metastore health check ok
+19/06/02 17:28:34 INFO DriverCorral: DBFS health check ok
+19/06/02 17:28:34 INFO HikariDataSource: metastore-monitor - Starting...
+19/06/02 17:28:34 INFO HikariDataSource: metastore-monitor - Start completed.
+19/06/02 17:28:34 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/06/02 17:28:34 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/06/02 17:28:34 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 66 milliseconds)
+19/06/02 17:28:42 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5710945458055687959_f5c3600333dd4e00a993aed18884de91
+19/06/02 17:28:42 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5710945458055687959_f5c3600333dd4e00a993aed18884de91
+19/06/02 17:28:51 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6876452167115310949_e5b7b3047417422282751d30b30da86d
+19/06/02 17:28:52 WARN ScalaDriverLocal: User Code Compile error: notebook:2: error: not found: value args
+  while (i < args.length) {
+             ^
+notebook:3: error: not found: value args
+    println(args(i))
+            ^
+
+19/06/02 17:28:52 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6876452167115310949_e5b7b3047417422282751d30b30da86d
+19/06/02 17:30:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5975364543259442327_791b710596c34984a8d1c8239af98335
+19/06/02 17:30:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5975364543259442327_791b710596c34984a8d1c8239af98335
+19/06/02 17:30:52 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9179632221004083594_f0fc160ec857455a810de01d3794d05b
+19/06/02 17:30:52 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9179632221004083594_f0fc160ec857455a810de01d3794d05b
+19/06/02 17:31:07 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8229091917057333776_95dcf09493874bfeae2725de4ece8947
+19/06/02 17:31:07 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8229091917057333776_95dcf09493874bfeae2725de4ece8947
+19/06/02 17:31:09 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5951909759555767490_f2e60ee43212495c86b94c24256abc40
+19/06/02 17:31:09 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5951909759555767490_f2e60ee43212495c86b94c24256abc40
+19/06/02 17:31:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6713533766348313177_2d70009b19154c42b6c4b4293c5a2fc0
+19/06/02 17:31:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6713533766348313177_2d70009b19154c42b6c4b4293c5a2fc0
+19/06/02 17:31:44 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8291595701430858475_be59105bbd4645a58c07b182cf18dfcf
+19/06/02 17:31:44 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8291595701430858475_be59105bbd4645a58c07b182cf18dfcf
+19/06/02 17:31:59 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7623532056798948403_d5f64efc524b40c992eb1485a99f5e6e
+19/06/02 17:31:59 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7623532056798948403_d5f64efc524b40c992eb1485a99f5e6e
+19/06/02 17:33:17 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5050958156374583162_3c91c648348f4ae590f385e7705fbd0b
+19/06/02 17:33:17 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5050958156374583162_3c91c648348f4ae590f385e7705fbd0b
+19/06/02 17:33:34 INFO HiveMetaStore: 1: get_database: default
+19/06/02 17:33:34 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:33:34 INFO DriverCorral: Metastore health check ok
+19/06/02 17:33:34 INFO DriverCorral: DBFS health check ok
+19/06/02 17:33:34 INFO HikariDataSource: metastore-monitor - Starting...
+19/06/02 17:33:34 INFO HikariDataSource: metastore-monitor - Start completed.
+19/06/02 17:33:34 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/06/02 17:33:34 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/06/02 17:33:34 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 28 milliseconds)
+19/06/02 17:34:03 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8847103515823811110_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO CodeGenerator: Code generated in 37.293595 ms
+19/06/02 17:34:04 INFO CodeGenerator: Code generated in 9.376117 ms
+19/06/02 17:34:04 INFO SQLAppStatusListener: Execution ID: 36 Total Executor Run Time: 0
+19/06/02 17:34:04 INFO CodeGenerator: Code generated in 10.215357 ms
+19/06/02 17:34:04 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8847103515823811110_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8220303722520821049_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8220303722520821049_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4629219408494922552_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4629219408494922552_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5564596986360505199_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 314.4 KB, free 1991.1 MB)
+19/06/02 17:34:04 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 25.5 KB, free 1991.1 MB)
+19/06/02 17:34:04 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 25.5 KB, free: 1991.4 MB)
+19/06/02 17:34:04 INFO SparkContext: Created broadcast 7 from textFile at command-690877890667303:4
+19/06/02 17:34:04 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5564596986360505199_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:04 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8293595296374851620_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO FileInputFormat: Total input paths to process : 1
+19/06/02 17:34:05 INFO SparkContext: Starting job: count at command-690877890667305:3
+19/06/02 17:34:05 INFO DAGScheduler: Got job 3 (count at command-690877890667305:3) with 2 output partitions
+19/06/02 17:34:05 INFO DAGScheduler: Final stage: ResultStage 3 (count at command-690877890667305:3)
+19/06/02 17:34:05 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:05 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:05 INFO DAGScheduler: Submitting ResultStage 3 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[12] at textFile at command-690877890667303:4), which has no missing parents
+19/06/02 17:34:05 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 3.7 KB, free 1991.1 MB)
+19/06/02 17:34:05 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 2.2 KB, free 1991.1 MB)
+19/06/02 17:34:05 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.2 KB, free: 1991.4 MB)
+19/06/02 17:34:05 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:05 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 3 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[12] at textFile at command-690877890667303:4) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Adding task set 3.0 with 2 tasks
+19/06/02 17:34:05 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:05 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:05 WARN FairSchedulableBuilder: A job was submitted with scheduler pool 36820282902843470, which has not been configured. This can happen when the file that pools are read from isn't set, or when that file doesn't contain 36820282902843470. Created 36820282902843470 with default configuration (schedulingMode: FIFO, minShare: 0, weight: 1)
+19/06/02 17:34:05 INFO FairSchedulableBuilder: Added task set TaskSet_3.0 tasks to pool 36820282902843470
+19/06/02 17:34:05 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 5493 bytes)
+19/06/02 17:34:05 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 4, localhost, executor driver, partition 1, PROCESS_LOCAL, 5493 bytes)
+19/06/02 17:34:05 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+19/06/02 17:34:05 INFO Executor: Running task 1.0 in stage 3.0 (TID 4)
+19/06/02 17:34:05 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:05 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 789 bytes result sent to driver
+19/06/02 17:34:05 INFO Executor: Finished task 1.0 in stage 3.0 (TID 4). 789 bytes result sent to driver
+19/06/02 17:34:05 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 4) in 113 ms on localhost (executor driver) (1/2)
+19/06/02 17:34:05 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 113 ms on localhost (executor driver) (2/2)
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:05 INFO DAGScheduler: ResultStage 3 (count at command-690877890667305:3) finished in 0.120 s
+19/06/02 17:34:05 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+19/06/02 17:34:05 INFO DAGScheduler: Job 3 finished: count at command-690877890667305:3, took 0.124415 s
+19/06/02 17:34:05 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8293595296374851620_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5648645831611394082_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO SparkContext: Starting job: first at command-690877890667308:2
+19/06/02 17:34:05 INFO DAGScheduler: Got job 4 (first at command-690877890667308:2) with 1 output partitions
+19/06/02 17:34:05 INFO DAGScheduler: Final stage: ResultStage 4 (first at command-690877890667308:2)
+19/06/02 17:34:05 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:05 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:05 INFO DAGScheduler: Submitting ResultStage 4 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[12] at textFile at command-690877890667303:4), which has no missing parents
+19/06/02 17:34:05 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 3.9 KB, free 1991.1 MB)
+19/06/02 17:34:05 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 2.3 KB, free 1991.1 MB)
+19/06/02 17:34:05 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.3 KB, free: 1991.4 MB)
+19/06/02 17:34:05 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:05 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[12] at textFile at command-690877890667303:4) (first 15 tasks are for partitions Vector(0))
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+19/06/02 17:34:05 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:05 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:05 INFO FairSchedulableBuilder: Added task set TaskSet_4.0 tasks to pool 36820282902843470
+19/06/02 17:34:05 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 5493 bytes)
+19/06/02 17:34:05 INFO Executor: Running task 0.0 in stage 4.0 (TID 5)
+19/06/02 17:34:05 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO Executor: Finished task 0.0 in stage 4.0 (TID 5). 789 bytes result sent to driver
+19/06/02 17:34:05 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 5) in 46 ms on localhost (executor driver) (1/1)
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:05 INFO DAGScheduler: ResultStage 4 (first at command-690877890667308:2) finished in 0.054 s
+19/06/02 17:34:05 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+19/06/02 17:34:05 INFO DAGScheduler: Job 4 finished: first at command-690877890667308:2, took 0.056738 s
+19/06/02 17:34:05 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5648645831611394082_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5351812652147820403_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5351812652147820403_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7833412756694924596_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO SparkContext: Starting job: count at command-690877890667312:2
+19/06/02 17:34:05 INFO DAGScheduler: Got job 5 (count at command-690877890667312:2) with 2 output partitions
+19/06/02 17:34:05 INFO DAGScheduler: Final stage: ResultStage 5 (count at command-690877890667312:2)
+19/06/02 17:34:05 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:05 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:05 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[13] at filter at command-690877890667310:2), which has no missing parents
+19/06/02 17:34:05 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 4.0 KB, free 1991.1 MB)
+19/06/02 17:34:05 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 2.4 KB, free 1991.0 MB)
+19/06/02 17:34:05 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.4 KB, free: 1991.4 MB)
+19/06/02 17:34:05 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:05 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 5 (MapPartitionsRDD[13] at filter at command-690877890667310:2) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Adding task set 5.0 with 2 tasks
+19/06/02 17:34:05 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:05 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:05 INFO FairSchedulableBuilder: Added task set TaskSet_5.0 tasks to pool 36820282902843470
+19/06/02 17:34:05 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:05 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 7, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:05 INFO Executor: Running task 0.0 in stage 5.0 (TID 6)
+19/06/02 17:34:05 INFO Executor: Running task 1.0 in stage 5.0 (TID 7)
+19/06/02 17:34:05 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:05 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:05 INFO Executor: Finished task 1.0 in stage 5.0 (TID 7). 789 bytes result sent to driver
+19/06/02 17:34:05 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 7) in 81 ms on localhost (executor driver) (1/2)
+19/06/02 17:34:05 INFO Executor: Finished task 0.0 in stage 5.0 (TID 6). 789 bytes result sent to driver
+19/06/02 17:34:05 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 6) in 88 ms on localhost (executor driver) (2/2)
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:05 INFO DAGScheduler: ResultStage 5 (count at command-690877890667312:2) finished in 0.094 s
+19/06/02 17:34:05 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:05 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+19/06/02 17:34:05 INFO DAGScheduler: Job 5 finished: count at command-690877890667312:2, took 0.098344 s
+19/06/02 17:34:05 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7833412756694924596_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:05 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7000753964442987864_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO SparkContext: Starting job: collect at command-690877890667313:2
+19/06/02 17:34:06 INFO DAGScheduler: Got job 6 (collect at command-690877890667313:2) with 2 output partitions
+19/06/02 17:34:06 INFO DAGScheduler: Final stage: ResultStage 6 (collect at command-690877890667313:2)
+19/06/02 17:34:06 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:06 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:06 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[13] at filter at command-690877890667310:2), which has no missing parents
+19/06/02 17:34:06 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 4.1 KB, free 1991.0 MB)
+19/06/02 17:34:06 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 2.5 KB, free 1991.0 MB)
+19/06/02 17:34:06 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.5 KB, free: 1991.4 MB)
+19/06/02 17:34:06 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:06 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 6 (MapPartitionsRDD[13] at filter at command-690877890667310:2) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:34:06 INFO TaskSchedulerImpl: Adding task set 6.0 with 2 tasks
+19/06/02 17:34:06 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:06 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:06 INFO FairSchedulableBuilder: Added task set TaskSet_6.0 tasks to pool 36820282902843470
+19/06/02 17:34:06 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 8, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:06 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 9, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:06 INFO Executor: Running task 0.0 in stage 6.0 (TID 8)
+19/06/02 17:34:06 INFO Executor: Running task 1.0 in stage 6.0 (TID 9)
+19/06/02 17:34:06 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:34:06 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:06 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:06 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:06 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:06 INFO Executor: Finished task 0.0 in stage 6.0 (TID 8). 1330 bytes result sent to driver
+19/06/02 17:34:06 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 8) in 56 ms on localhost (executor driver) (1/2)
+19/06/02 17:34:06 INFO Executor: Finished task 1.0 in stage 6.0 (TID 9). 1196 bytes result sent to driver
+19/06/02 17:34:06 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 9) in 61 ms on localhost (executor driver) (2/2)
+19/06/02 17:34:06 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:06 INFO DAGScheduler: ResultStage 6 (collect at command-690877890667313:2) finished in 0.067 s
+19/06/02 17:34:06 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:06 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+19/06/02 17:34:06 INFO DAGScheduler: Job 6 finished: collect at command-690877890667313:2, took 0.072047 s
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7000753964442987864_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5258985907785084634_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5258985907785084634_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8712115550609480807_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8712115550609480807_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4632114171629368320_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4632114171629368320_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9001318861517055363_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9001318861517055363_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7107699915079479041_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7107699915079479041_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7307562261308652212_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7307562261308652212_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:06 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4824960965823927991_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4824960965823927991_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7868671607074510251_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7868671607074510251_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6571504555602872842_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6571504555602872842_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5525809419362149952_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:07 WARN ScalaDriverLocal: User Code Compile error: <console>:6: error: ';' expected but 'if' found.
+       |   if (x > y) x
+           ^
+<console>:7: error: ';' expected but 'else' found.
+       |   else y
+           ^
+
+19/06/02 17:34:07 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5525809419362149952_76c16d86037045b2ab8e900b10370f25
+19/06/02 17:34:26 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7861756357708618996_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO CodeGenerator: Code generated in 10.301297 ms
+19/06/02 17:34:26 INFO SQLAppStatusListener: Execution ID: 37 Total Executor Run Time: 0
+19/06/02 17:34:26 INFO CodeGenerator: Code generated in 10.88646 ms
+19/06/02 17:34:26 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7861756357708618996_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5401912128969333834_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5401912128969333834_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8580327418709553103_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO BlockManagerInfo: Removed broadcast_9_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.3 KB, free: 1991.4 MB)
+19/06/02 17:34:26 INFO BlockManagerInfo: Removed broadcast_10_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.4 KB, free: 1991.4 MB)
+19/06/02 17:34:26 INFO BlockManagerInfo: Removed broadcast_8_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.2 KB, free: 1991.4 MB)
+19/06/02 17:34:26 INFO BlockManagerInfo: Removed broadcast_11_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.5 KB, free: 1991.4 MB)
+19/06/02 17:34:26 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8580327418709553103_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6582412017028604358_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 314.4 KB, free 1990.8 MB)
+19/06/02 17:34:26 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 25.5 KB, free 1990.7 MB)
+19/06/02 17:34:26 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 25.5 KB, free: 1991.4 MB)
+19/06/02 17:34:26 INFO SparkContext: Created broadcast 12 from textFile at command-690877890667303:4
+19/06/02 17:34:26 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6582412017028604358_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5706789404566678099_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:26 INFO FileInputFormat: Total input paths to process : 1
+19/06/02 17:34:26 INFO SparkContext: Starting job: count at command-690877890667305:3
+19/06/02 17:34:26 INFO DAGScheduler: Got job 7 (count at command-690877890667305:3) with 2 output partitions
+19/06/02 17:34:26 INFO DAGScheduler: Final stage: ResultStage 7 (count at command-690877890667305:3)
+19/06/02 17:34:26 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:26 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:26 INFO DAGScheduler: Submitting ResultStage 7 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[15] at textFile at command-690877890667303:4), which has no missing parents
+19/06/02 17:34:26 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 3.7 KB, free 1990.7 MB)
+19/06/02 17:34:26 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 2.3 KB, free 1990.7 MB)
+19/06/02 17:34:26 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:34:26 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:27 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 7 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[15] at textFile at command-690877890667303:4) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Adding task set 7.0 with 2 tasks
+19/06/02 17:34:27 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:27 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:27 WARN FairSchedulableBuilder: A job was submitted with scheduler pool 36820282902843470, which has not been configured. This can happen when the file that pools are read from isn't set, or when that file doesn't contain 36820282902843470. Created 36820282902843470 with default configuration (schedulingMode: FIFO, minShare: 0, weight: 1)
+19/06/02 17:34:27 INFO FairSchedulableBuilder: Added task set TaskSet_7.0 tasks to pool 36820282902843470
+19/06/02 17:34:27 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 10, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:27 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 11, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:27 INFO Executor: Running task 0.0 in stage 7.0 (TID 10)
+19/06/02 17:34:27 INFO Executor: Running task 1.0 in stage 7.0 (TID 11)
+19/06/02 17:34:27 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:27 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO Executor: Finished task 0.0 in stage 7.0 (TID 10). 789 bytes result sent to driver
+19/06/02 17:34:27 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 10) in 58 ms on localhost (executor driver) (1/2)
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO Executor: Finished task 1.0 in stage 7.0 (TID 11). 789 bytes result sent to driver
+19/06/02 17:34:27 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 11) in 143 ms on localhost (executor driver) (2/2)
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:27 INFO DAGScheduler: ResultStage 7 (count at command-690877890667305:3) finished in 0.152 s
+19/06/02 17:34:27 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Killing all running tasks in stage 7: Stage finished
+19/06/02 17:34:27 INFO DAGScheduler: Job 7 finished: count at command-690877890667305:3, took 0.156495 s
+19/06/02 17:34:27 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5706789404566678099_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8057609558516061362_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO SparkContext: Starting job: first at command-690877890667308:2
+19/06/02 17:34:27 INFO DAGScheduler: Got job 8 (first at command-690877890667308:2) with 1 output partitions
+19/06/02 17:34:27 INFO DAGScheduler: Final stage: ResultStage 8 (first at command-690877890667308:2)
+19/06/02 17:34:27 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:27 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:27 INFO DAGScheduler: Submitting ResultStage 8 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[15] at textFile at command-690877890667303:4), which has no missing parents
+19/06/02 17:34:27 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 3.9 KB, free 1990.7 MB)
+19/06/02 17:34:27 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 2.3 KB, free 1990.7 MB)
+19/06/02 17:34:27 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:34:27 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:27 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[15] at textFile at command-690877890667303:4) (first 15 tasks are for partitions Vector(0))
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+19/06/02 17:34:27 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:27 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:27 INFO FairSchedulableBuilder: Added task set TaskSet_8.0 tasks to pool 36820282902843470
+19/06/02 17:34:27 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 12, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:27 INFO Executor: Running task 0.0 in stage 8.0 (TID 12)
+19/06/02 17:34:27 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO Executor: Finished task 0.0 in stage 8.0 (TID 12). 789 bytes result sent to driver
+19/06/02 17:34:27 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 12) in 54 ms on localhost (executor driver) (1/1)
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:27 INFO DAGScheduler: ResultStage 8 (first at command-690877890667308:2) finished in 0.062 s
+19/06/02 17:34:27 INFO DAGScheduler: Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+19/06/02 17:34:27 INFO DAGScheduler: Job 8 finished: first at command-690877890667308:2, took 0.063875 s
+19/06/02 17:34:27 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8057609558516061362_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5892675694631549147_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5892675694631549147_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5646053311626673465_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO SparkContext: Starting job: count at command-690877890667312:2
+19/06/02 17:34:27 INFO DAGScheduler: Got job 9 (count at command-690877890667312:2) with 2 output partitions
+19/06/02 17:34:27 INFO DAGScheduler: Final stage: ResultStage 9 (count at command-690877890667312:2)
+19/06/02 17:34:27 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:27 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:27 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[16] at filter at command-690877890667310:2), which has no missing parents
+19/06/02 17:34:27 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 4.0 KB, free 1990.7 MB)
+19/06/02 17:34:27 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 2.4 KB, free 1990.7 MB)
+19/06/02 17:34:27 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.4 KB, free: 1991.3 MB)
+19/06/02 17:34:27 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:27 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 9 (MapPartitionsRDD[16] at filter at command-690877890667310:2) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Adding task set 9.0 with 2 tasks
+19/06/02 17:34:27 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:27 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:27 INFO FairSchedulableBuilder: Added task set TaskSet_9.0 tasks to pool 36820282902843470
+19/06/02 17:34:27 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 13, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:27 INFO TaskSetManager: Starting task 1.0 in stage 9.0 (TID 14, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:27 INFO Executor: Running task 0.0 in stage 9.0 (TID 13)
+19/06/02 17:34:27 INFO Executor: Running task 1.0 in stage 9.0 (TID 14)
+19/06/02 17:34:27 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:27 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:27 INFO Executor: Finished task 0.0 in stage 9.0 (TID 13). 789 bytes result sent to driver
+19/06/02 17:34:27 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 13) in 66 ms on localhost (executor driver) (1/2)
+19/06/02 17:34:27 INFO Executor: Finished task 1.0 in stage 9.0 (TID 14). 789 bytes result sent to driver
+19/06/02 17:34:27 INFO TaskSetManager: Finished task 1.0 in stage 9.0 (TID 14) in 73 ms on localhost (executor driver) (2/2)
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:27 INFO DAGScheduler: ResultStage 9 (count at command-690877890667312:2) finished in 0.078 s
+19/06/02 17:34:27 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:27 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+19/06/02 17:34:27 INFO DAGScheduler: Job 9 finished: count at command-690877890667312:2, took 0.082264 s
+19/06/02 17:34:27 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5646053311626673465_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:27 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5347729625010973807_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO SparkContext: Starting job: collect at command-690877890667313:2
+19/06/02 17:34:28 INFO DAGScheduler: Got job 10 (collect at command-690877890667313:2) with 2 output partitions
+19/06/02 17:34:28 INFO DAGScheduler: Final stage: ResultStage 10 (collect at command-690877890667313:2)
+19/06/02 17:34:28 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:34:28 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:34:28 INFO DAGScheduler: Submitting ResultStage 10 (MapPartitionsRDD[16] at filter at command-690877890667310:2), which has no missing parents
+19/06/02 17:34:28 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 4.1 KB, free 1990.7 MB)
+19/06/02 17:34:28 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 2.5 KB, free 1990.7 MB)
+19/06/02 17:34:28 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.5 KB, free: 1991.3 MB)
+19/06/02 17:34:28 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:34:28 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 10 (MapPartitionsRDD[16] at filter at command-690877890667310:2) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:34:28 INFO TaskSchedulerImpl: Adding task set 10.0 with 2 tasks
+19/06/02 17:34:28 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:34:28 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:34:28 INFO FairSchedulableBuilder: Added task set TaskSet_10.0 tasks to pool 36820282902843470
+19/06/02 17:34:28 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 15, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:28 INFO TaskSetManager: Starting task 1.0 in stage 10.0 (TID 16, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:34:28 INFO Executor: Running task 0.0 in stage 10.0 (TID 15)
+19/06/02 17:34:28 INFO Executor: Running task 1.0 in stage 10.0 (TID 16)
+19/06/02 17:34:28 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:34:28 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:34:28 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:28 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:28 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:34:28 INFO Executor: Finished task 0.0 in stage 10.0 (TID 15). 1330 bytes result sent to driver
+19/06/02 17:34:28 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 15) in 81 ms on localhost (executor driver) (1/2)
+19/06/02 17:34:28 INFO Executor: Finished task 1.0 in stage 10.0 (TID 16). 1196 bytes result sent to driver
+19/06/02 17:34:28 INFO TaskSetManager: Finished task 1.0 in stage 10.0 (TID 16) in 96 ms on localhost (executor driver) (2/2)
+19/06/02 17:34:28 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:34:28 INFO DAGScheduler: ResultStage 10 (collect at command-690877890667313:2) finished in 0.101 s
+19/06/02 17:34:28 INFO DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:34:28 INFO TaskSchedulerImpl: Killing all running tasks in stage 10: Stage finished
+19/06/02 17:34:28 INFO DAGScheduler: Job 10 finished: collect at command-690877890667313:2, took 0.105653 s
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5347729625010973807_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5410364378150293006_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5410364378150293006_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4873690494624695874_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4873690494624695874_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6934170556511623556_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6934170556511623556_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7929640847592079484_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7929640847592079484_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7336711760646522450_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7336711760646522450_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6829213678366537750_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6829213678366537750_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8898166776951510926_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8898166776951510926_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8957104261184384580_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8957104261184384580_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:28 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5665759446658046161_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:29 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5665759446658046161_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:29 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8687162832029512056_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:29 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8687162832029512056_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:29 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7991933214522118862_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:34:29 WARN ScalaDriverLocal: User Code Compile error: notebook:2: error: not found: value args
+  while (i < args.length) {
+             ^
+notebook:3: error: not found: value args
+    println(args(i))
+            ^
+
+19/06/02 17:34:29 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7991933214522118862_b2b7de7bcf00451cbb36cf85d95c6b35
+19/06/02 17:35:13 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5213038331558018497_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO CodeGenerator: Code generated in 39.314357 ms
+19/06/02 17:35:13 INFO CodeGenerator: Code generated in 9.863031 ms
+19/06/02 17:35:13 INFO SQLAppStatusListener: Execution ID: 38 Total Executor Run Time: 0
+19/06/02 17:35:13 INFO CodeGenerator: Code generated in 9.797548 ms
+19/06/02 17:35:13 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5213038331558018497_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6486044044659310293_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6486044044659310293_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9202636844706640406_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9202636844706640406_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8717598715692472807_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 314.4 KB, free 1990.4 MB)
+19/06/02 17:35:13 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 25.5 KB, free 1990.4 MB)
+19/06/02 17:35:13 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 25.5 KB, free: 1991.3 MB)
+19/06/02 17:35:13 INFO SparkContext: Created broadcast 17 from textFile at command-690877890667303:4
+19/06/02 17:35:13 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8717598715692472807_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5078835752090375135_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:13 INFO FileInputFormat: Total input paths to process : 1
+19/06/02 17:35:13 INFO SparkContext: Starting job: count at command-690877890667305:3
+19/06/02 17:35:13 INFO DAGScheduler: Got job 11 (count at command-690877890667305:3) with 2 output partitions
+19/06/02 17:35:13 INFO DAGScheduler: Final stage: ResultStage 11 (count at command-690877890667305:3)
+19/06/02 17:35:13 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:35:13 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:35:13 INFO DAGScheduler: Submitting ResultStage 11 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[18] at textFile at command-690877890667303:4), which has no missing parents
+19/06/02 17:35:13 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 3.7 KB, free 1990.4 MB)
+19/06/02 17:35:13 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 2.2 KB, free 1990.4 MB)
+19/06/02 17:35:13 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.2 KB, free: 1991.3 MB)
+19/06/02 17:35:13 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:35:13 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 11 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[18] at textFile at command-690877890667303:4) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:35:13 INFO TaskSchedulerImpl: Adding task set 11.0 with 2 tasks
+19/06/02 17:35:13 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:35:13 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:35:13 WARN FairSchedulableBuilder: A job was submitted with scheduler pool 36820282902843470, which has not been configured. This can happen when the file that pools are read from isn't set, or when that file doesn't contain 36820282902843470. Created 36820282902843470 with default configuration (schedulingMode: FIFO, minShare: 0, weight: 1)
+19/06/02 17:35:13 INFO FairSchedulableBuilder: Added task set TaskSet_11.0 tasks to pool 36820282902843470
+19/06/02 17:35:13 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 17, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:13 INFO TaskSetManager: Starting task 1.0 in stage 11.0 (TID 18, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:13 INFO Executor: Running task 0.0 in stage 11.0 (TID 17)
+19/06/02 17:35:13 INFO Executor: Running task 1.0 in stage 11.0 (TID 18)
+19/06/02 17:35:13 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:35:13 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:35:13 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:13 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:13 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO Executor: Finished task 1.0 in stage 11.0 (TID 18). 789 bytes result sent to driver
+19/06/02 17:35:14 INFO Executor: Finished task 0.0 in stage 11.0 (TID 17). 789 bytes result sent to driver
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 1.0 in stage 11.0 (TID 18) in 52 ms on localhost (executor driver) (1/2)
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 17) in 54 ms on localhost (executor driver) (2/2)
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:35:14 INFO DAGScheduler: ResultStage 11 (count at command-690877890667305:3) finished in 0.060 s
+19/06/02 17:35:14 INFO DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+19/06/02 17:35:14 INFO DAGScheduler: Job 11 finished: count at command-690877890667305:3, took 0.063631 s
+19/06/02 17:35:14 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5078835752090375135_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6901747955698525395_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO SparkContext: Starting job: first at command-690877890667308:2
+19/06/02 17:35:14 INFO DAGScheduler: Got job 12 (first at command-690877890667308:2) with 1 output partitions
+19/06/02 17:35:14 INFO DAGScheduler: Final stage: ResultStage 12 (first at command-690877890667308:2)
+19/06/02 17:35:14 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:35:14 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:35:14 INFO DAGScheduler: Submitting ResultStage 12 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[18] at textFile at command-690877890667303:4), which has no missing parents
+19/06/02 17:35:14 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 3.9 KB, free 1990.4 MB)
+19/06/02 17:35:14 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 2.3 KB, free 1990.4 MB)
+19/06/02 17:35:14 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:35:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (/databricks-datasets/samples/docs/README.md MapPartitionsRDD[18] at textFile at command-690877890667303:4) (first 15 tasks are for partitions Vector(0))
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks
+19/06/02 17:35:14 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:35:14 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:35:14 INFO FairSchedulableBuilder: Added task set TaskSet_12.0 tasks to pool 36820282902843470
+19/06/02 17:35:14 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 19, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:14 INFO Executor: Running task 0.0 in stage 12.0 (TID 19)
+19/06/02 17:35:14 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO Executor: Finished task 0.0 in stage 12.0 (TID 19). 789 bytes result sent to driver
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 19) in 49 ms on localhost (executor driver) (1/1)
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:35:14 INFO DAGScheduler: ResultStage 12 (first at command-690877890667308:2) finished in 0.054 s
+19/06/02 17:35:14 INFO DAGScheduler: Job 12 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 12: Stage finished
+19/06/02 17:35:14 INFO DAGScheduler: Job 12 finished: first at command-690877890667308:2, took 0.057655 s
+19/06/02 17:35:14 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6901747955698525395_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7252366385427706219_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7252366385427706219_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8088792105574615139_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO SparkContext: Starting job: count at command-690877890667312:2
+19/06/02 17:35:14 INFO DAGScheduler: Got job 13 (count at command-690877890667312:2) with 2 output partitions
+19/06/02 17:35:14 INFO DAGScheduler: Final stage: ResultStage 13 (count at command-690877890667312:2)
+19/06/02 17:35:14 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:35:14 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:35:14 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[19] at filter at command-690877890667310:2), which has no missing parents
+19/06/02 17:35:14 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 4.0 KB, free 1990.4 MB)
+19/06/02 17:35:14 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 2.4 KB, free 1990.4 MB)
+19/06/02 17:35:14 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.4 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:35:14 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 13 (MapPartitionsRDD[19] at filter at command-690877890667310:2) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Adding task set 13.0 with 2 tasks
+19/06/02 17:35:14 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:35:14 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:35:14 INFO FairSchedulableBuilder: Added task set TaskSet_13.0 tasks to pool 36820282902843470
+19/06/02 17:35:14 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 20, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:14 INFO TaskSetManager: Starting task 1.0 in stage 13.0 (TID 21, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:14 INFO Executor: Running task 0.0 in stage 13.0 (TID 20)
+19/06/02 17:35:14 INFO Executor: Running task 1.0 in stage 13.0 (TID 21)
+19/06/02 17:35:14 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:35:14 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO Executor: Finished task 0.0 in stage 13.0 (TID 20). 789 bytes result sent to driver
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 20) in 43 ms on localhost (executor driver) (1/2)
+19/06/02 17:35:14 INFO Executor: Finished task 1.0 in stage 13.0 (TID 21). 789 bytes result sent to driver
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 1.0 in stage 13.0 (TID 21) in 63 ms on localhost (executor driver) (2/2)
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:35:14 INFO DAGScheduler: ResultStage 13 (count at command-690877890667312:2) finished in 0.067 s
+19/06/02 17:35:14 INFO DAGScheduler: Job 13 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 13: Stage finished
+19/06/02 17:35:14 INFO DAGScheduler: Job 13 finished: count at command-690877890667312:2, took 0.070193 s
+19/06/02 17:35:14 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8088792105574615139_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7794306007357000465_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_16_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.5 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_20_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.4 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_13_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO SparkContext: Starting job: collect at command-690877890667313:2
+19/06/02 17:35:14 INFO DAGScheduler: Got job 14 (collect at command-690877890667313:2) with 2 output partitions
+19/06/02 17:35:14 INFO DAGScheduler: Final stage: ResultStage 14 (collect at command-690877890667313:2)
+19/06/02 17:35:14 INFO DAGScheduler: Parents of final stage: List()
+19/06/02 17:35:14 INFO DAGScheduler: Missing parents: List()
+19/06/02 17:35:14 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[19] at filter at command-690877890667310:2), which has no missing parents
+19/06/02 17:35:14 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 4.1 KB, free 1990.4 MB)
+19/06/02 17:35:14 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 2.5 KB, free 1990.4 MB)
+19/06/02 17:35:14 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on ip-10-172-253-190.us-west-2.compute.internal:33795 (size: 2.5 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_15_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.4 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1477
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_19_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 14 (MapPartitionsRDD[19] at filter at command-690877890667310:2) (first 15 tasks are for partitions Vector(0, 1))
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Adding task set 14.0 with 2 tasks
+19/06/02 17:35:14 INFO TaskSetManager: Jars for session None: Map()
+19/06/02 17:35:14 INFO TaskSetManager: Files for session None: Map()
+19/06/02 17:35:14 INFO FairSchedulableBuilder: Added task set TaskSet_14.0 tasks to pool 36820282902843470
+19/06/02 17:35:14 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 22, localhost, executor driver, partition 0, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:14 INFO TaskSetManager: Starting task 1.0 in stage 14.0 (TID 23, localhost, executor driver, partition 1, PROCESS_LOCAL, 5494 bytes)
+19/06/02 17:35:14 INFO Executor: Running task 0.0 in stage 14.0 (TID 22)
+19/06/02 17:35:14 INFO Executor: Running task 1.0 in stage 14.0 (TID 23)
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_18_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.2 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:1568+1569
+19/06/02 17:35:14 INFO BlockManagerInfo: Removed broadcast_14_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.3 KB, free: 1991.3 MB)
+19/06/02 17:35:14 INFO HadoopRDD: Input split: dbfs:/databricks-datasets/samples/docs/README.md:0+1568
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO DbfsBlockInputStream: Created remote input stream for block 0
+19/06/02 17:35:14 INFO Executor: Finished task 0.0 in stage 14.0 (TID 22). 1330 bytes result sent to driver
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 22) in 57 ms on localhost (executor driver) (1/2)
+19/06/02 17:35:14 INFO Executor: Finished task 1.0 in stage 14.0 (TID 23). 1196 bytes result sent to driver
+19/06/02 17:35:14 INFO TaskSetManager: Finished task 1.0 in stage 14.0 (TID 23) in 62 ms on localhost (executor driver) (2/2)
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 36820282902843470
+19/06/02 17:35:14 INFO DAGScheduler: ResultStage 14 (collect at command-690877890667313:2) finished in 0.071 s
+19/06/02 17:35:14 INFO DAGScheduler: Job 14 is finished. Cancelling potential speculative or zombie tasks for this job
+19/06/02 17:35:14 INFO TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+19/06/02 17:35:14 INFO DAGScheduler: Job 14 finished: collect at command-690877890667313:2, took 0.073835 s
+19/06/02 17:35:14 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7794306007357000465_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4923310066142244400_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4923310066142244400_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5969062158620086197_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5969062158620086197_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_6541905695665197365_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_6541905695665197365_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8447336635980445994_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8447336635980445994_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9043089315911238527_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9043089315911238527_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5858538566599580256_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5858538566599580256_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_5979899353493258405_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_5979899353493258405_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7866992279179998988_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7866992279179998988_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8866287366281273223_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8866287366281273223_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_8073647352190279932_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_8073647352190279932_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:15 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7169085369241353373_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7169085369241353373_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9089104454891396616_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9089104454891396616_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9219056876068979908_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9219056876068979908_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7585163823025111700_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7585163823025111700_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Added result fetcher for 36820282902843470_4912209189245882673_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_4912209189245882673_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Added result fetcher for 36820282902843470_7893048338925322238_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_7893048338925322238_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Added result fetcher for 36820282902843470_9182765830270113507_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:35:16 INFO ProgressReporter$: Removed result fetcher for 36820282902843470_9182765830270113507_e6be41a1e44c42eea367562365219bf7
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 490 (name: internal.metrics.input.recordsRead)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 485 (name: internal.metrics.shuffle.read.recordsRead)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 468 (name: internal.metrics.executorRunTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 489 (name: internal.metrics.input.bytesRead)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 476 (name: internal.metrics.updatedBlockStatuses)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 475 (name: internal.metrics.peakExecutionMemory)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 469 (name: internal.metrics.executorCpuTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 494 (name: internal.metrics.output.bytesWritten)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 495 (name: internal.metrics.output.recordsWritten)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 478 (name: internal.metrics.parquetCacheMetadataSize)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 479 (name: internal.metrics.shuffle.read.remoteBlocksFetched)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 466 (name: internal.metrics.executorDeserializeTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 486 (name: internal.metrics.shuffle.write.bytesWritten)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 493 (name: internal.metrics.input.cachedFileSplits)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 471 (name: internal.metrics.jvmGCTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 487 (name: internal.metrics.shuffle.write.recordsWritten)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 467 (name: internal.metrics.executorDeserializeCpuTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 477 (name: internal.metrics.parquetCacheDiskUsage)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 480 (name: internal.metrics.shuffle.read.localBlocksFetched)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 484 (name: internal.metrics.shuffle.read.fetchWaitTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 491 (name: internal.metrics.input.sampledTimeReadNano)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 472 (name: internal.metrics.resultSerializationTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 483 (name: internal.metrics.shuffle.read.localBytesRead)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 481 (name: internal.metrics.shuffle.read.remoteBytesRead)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 492 (name: internal.metrics.input.sampledBytesRead)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 474 (name: internal.metrics.diskBytesSpilled)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 470 (name: internal.metrics.resultSize)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 488 (name: internal.metrics.shuffle.write.writeTime)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 473 (name: internal.metrics.memoryBytesSpilled)
+19/06/02 17:38:14 INFO ContextCleaner: Cleaned accumulator 482 (name: internal.metrics.shuffle.read.remoteBytesReadToDisk)
+19/06/02 17:38:14 INFO BlockManagerInfo: Removed broadcast_21_piece0 on ip-10-172-253-190.us-west-2.compute.internal:33795 in memory (size: 2.5 KB, free: 1991.3 MB)
+19/06/02 17:38:34 INFO HiveMetaStore: 1: get_database: default
+19/06/02 17:38:34 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/02 17:38:34 INFO DriverCorral: Metastore health check ok
+19/06/02 17:38:34 INFO DriverCorral: DBFS health check ok
+19/06/02 17:38:34 INFO HikariDataSource: metastore-monitor - Starting...
+19/06/02 17:38:34 INFO HikariDataSource: metastore-monitor - Start completed.
+19/06/02 17:38:34 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/06/02 17:38:34 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/06/02 17:38:34 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 40 milliseconds)
