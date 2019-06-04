@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)http://tm0493322.gsm1900.org:4040/executors/threadDump/?executorId=driver -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./spark-basic - Thread dump for executor driver_files/bootstrap.min.css" type="text/css"><link rel="stylesheet" href="./spark-basic - Thread dump for executor driver_files/vis.min.css" type="text/css"><link rel="stylesheet" href="./spark-basic - Thread dump for executor driver_files/webui.css" type="text/css"><link rel="stylesheet" href="./spark-basic - Thread dump for executor driver_files/timeline-view.css" type="text/css"><script src="./spark-basic - Thread dump for executor driver_files/sorttable.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/jquery-1.12.4.min.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/vis.min.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/bootstrap-tooltip.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/initialize-tooltips.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/table.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/additional-metrics.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/timeline-view.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/log-view.js.download"></script><script src="./spark-basic - Thread dump for executor driver_files/webui.js.download"></script><script>setUIRoot('')</script>
+        
+        
+        <link rel="shortcut icon" href="./spark-basic - Thread dump for executor driver_files/spark-logo-77x50px-hd.png">
+        <title>spark-basic - Thread dump for executor driver</title>
+      <link type="text/css" rel="stylesheet" href="chrome-extension://ghihpjhpgdepnohngpgfcmcijmkggpaf/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://ghihpjhpgdepnohngpgfcmcijmkggpaf/js/page_context.js"></script></head>
+      <body screen_capture_injected="true">
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="brand">
+              <a href="http://tm0493322.gsm1900.org:4040/" class="brand">
+                <img src="./spark-basic - Thread dump for executor driver_files/spark-logo-77x50px-hd.png">
+                <span class="version">2.4.3</span>
+              </a>
+            </div>
+            <p class="navbar-text pull-right">
+              <strong title="spark-basic">spark-basic</strong> application UI
+            </p>
+            <ul class="nav"><li class="">
+        <a href="http://tm0493322.gsm1900.org:4040/jobs/">Jobs</a>
+      </li><li class="">
+        <a href="http://tm0493322.gsm1900.org:4040/stages/">Stages</a>
+      </li><li class="">
+        <a href="http://tm0493322.gsm1900.org:4040/storage/">Storage</a>
+      </li><li class="">
+        <a href="http://tm0493322.gsm1900.org:4040/environment/">Environment</a>
+      </li><li class="active">
+        <a href="http://tm0493322.gsm1900.org:4040/executors/">Executors</a>
+      </li><li class="">
+        <a href="http://tm0493322.gsm1900.org:4040/SQL/">SQL</a>
+      </li></ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+              <h3 style="vertical-align: bottom; display: inline-block;">
+                Thread dump for executor driver
+                
+              </h3>
+            </div>
+          </div>
+          <div class="row-fluid">
+      <p>Updated at 2019/06/03 19:32:23</p>
+      <p><a class="expandbutton" onclick="expandAllThreadStackTrace(true)">
+          Expand All
+        </a></p><p><a class="expandbutton hidden" onclick="collapseAllThreadStackTrace(true)">
+          Collapse All
+        </a></p><div class="form-inline">
+        <div class="bs-example" data-example-id="simple-form-inline">
+          <div class="form-group">
+            <div class="input-group">
+              Search: <input type="text" class="form-control" id="search" oninput="onSearchStringChange()">
+            </div>
+          </div>
+        </div>
+        </div><p></p>
+      <table class="table table-bordered table-condensed table-striped accordion-group sortable">
+        <thead>
+          <tr><th onclick="collapseAllThreadStackTrace(false)">Thread ID</th>
+          <th onclick="collapseAllThreadStackTrace(false)">Thread Name</th>
+          <th onclick="collapseAllThreadStackTrace(false)">Thread State</th>
+          <th onclick="collapseAllThreadStackTrace(false)">Thread Locks</th>
+        </tr></thead>
+        <tbody><tr id="thread_5_tr" class="accordion-heading" onclick="toggleThreadStackTrace(5, false)" onmouseover="onMouseOverAndOut(5)" onmouseout="onMouseOverAndOut(5)">
+          <td id="5_td_id" class="">5</td>
+          <td id="5_td_name" class="">Attach Listener</td>
+          <td id="5_td_state" class="">RUNNABLE</td>
+          <td id="5_td_locking" class=""></td>
+          <td id="5_td_stacktrace" class="hidden"></td>
+        </tr><tr id="thread_53_tr" class="accordion-heading" onclick="toggleThreadStackTrace(53, false)" onmouseover="onMouseOverAndOut(53)" onmouseout="onMouseOverAndOut(53)">
+          <td id="53_td_id">53</td>
+          <td id="53_td_name">context-cleaner-periodic-gc</td>
+          <td id="53_td_state">TIMED_WAITING</td>
+          <td id="53_td_locking"></td>
+          <td id="53_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_49_tr" class="accordion-heading" onclick="toggleThreadStackTrace(49, false)" onmouseover="onMouseOverAndOut(49)" onmouseout="onMouseOverAndOut(49)">
+          <td id="49_td_id" class="">49</td>
+          <td id="49_td_name" class="">dag-scheduler-event-loop</td>
+          <td id="49_td_state" class="">WAITING</td>
+          <td id="49_td_locking" class=""></td>
+          <td id="49_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:492)<br>java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:680)<br>org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:47)</td>
+        </tr><tr id="thread_17_tr" class="accordion-heading" onclick="toggleThreadStackTrace(17, false)" onmouseover="onMouseOverAndOut(17)" onmouseout="onMouseOverAndOut(17)">
+          <td id="17_td_id">17</td>
+          <td id="17_td_name">dispatcher-event-loop-0</td>
+          <td id="17_td_state">WAITING</td>
+          <td id="17_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@121678764})</td>
+          <td id="17_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_18_tr" class="accordion-heading" onclick="toggleThreadStackTrace(18, false)" onmouseover="onMouseOverAndOut(18)" onmouseout="onMouseOverAndOut(18)">
+          <td id="18_td_id" class="">18</td>
+          <td id="18_td_name" class="">dispatcher-event-loop-1</td>
+          <td id="18_td_state" class="">WAITING</td>
+          <td id="18_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@1340173562})</td>
+          <td id="18_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_19_tr" class="accordion-heading" onclick="toggleThreadStackTrace(19, false)" onmouseover="onMouseOverAndOut(19)" onmouseout="onMouseOverAndOut(19)">
+          <td id="19_td_id">19</td>
+          <td id="19_td_name">dispatcher-event-loop-2</td>
+          <td id="19_td_state">WAITING</td>
+          <td id="19_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@893854380})</td>
+          <td id="19_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_20_tr" class="accordion-heading" onclick="toggleThreadStackTrace(20, false)" onmouseover="onMouseOverAndOut(20)" onmouseout="onMouseOverAndOut(20)">
+          <td id="20_td_id">20</td>
+          <td id="20_td_name">dispatcher-event-loop-3</td>
+          <td id="20_td_state">WAITING</td>
+          <td id="20_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@503457074})</td>
+          <td id="20_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_21_tr" class="accordion-heading" onclick="toggleThreadStackTrace(21, false)" onmouseover="onMouseOverAndOut(21)" onmouseout="onMouseOverAndOut(21)">
+          <td id="21_td_id" class="">21</td>
+          <td id="21_td_name" class="">dispatcher-event-loop-4</td>
+          <td id="21_td_state" class="">WAITING</td>
+          <td id="21_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@480108693})</td>
+          <td id="21_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_22_tr" class="accordion-heading" onclick="toggleThreadStackTrace(22, false)" onmouseover="onMouseOverAndOut(22)" onmouseout="onMouseOverAndOut(22)">
+          <td id="22_td_id">22</td>
+          <td id="22_td_name">dispatcher-event-loop-5</td>
+          <td id="22_td_state">WAITING</td>
+          <td id="22_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@1482676544})</td>
+          <td id="22_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_23_tr" class="accordion-heading" onclick="toggleThreadStackTrace(23, false)" onmouseover="onMouseOverAndOut(23)" onmouseout="onMouseOverAndOut(23)">
+          <td id="23_td_id">23</td>
+          <td id="23_td_name">dispatcher-event-loop-6</td>
+          <td id="23_td_state">WAITING</td>
+          <td id="23_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@1417790117})</td>
+          <td id="23_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_24_tr" class="accordion-heading" onclick="toggleThreadStackTrace(24, false)" onmouseover="onMouseOverAndOut(24)" onmouseout="onMouseOverAndOut(24)">
+          <td id="24_td_id">24</td>
+          <td id="24_td_name">dispatcher-event-loop-7</td>
+          <td id="24_td_state">WAITING</td>
+          <td id="24_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@1529169586})</td>
+          <td id="24_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.rpc.netty.Dispatcher$MessageLoop.run(Dispatcher.scala:215)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_50_tr" class="accordion-heading" onclick="toggleThreadStackTrace(50, false)" onmouseover="onMouseOverAndOut(50)" onmouseout="onMouseOverAndOut(50)">
+          <td id="50_td_id">50</td>
+          <td id="50_td_name">driver-heartbeater</td>
+          <td id="50_td_state">TIMED_WAITING</td>
+          <td id="50_td_locking"></td>
+          <td id="50_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_54_tr" class="accordion-heading" onclick="toggleThreadStackTrace(54, false)" onmouseover="onMouseOverAndOut(54)" onmouseout="onMouseOverAndOut(54)">
+          <td id="54_td_id" class="">54</td>
+          <td id="54_td_name" class="">element-tracking-store-worker</td>
+          <td id="54_td_state" class="">WAITING</td>
+          <td id="54_td_locking" class=""></td>
+          <td id="54_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_3_tr" class="accordion-heading" onclick="toggleThreadStackTrace(3, false)" onmouseover="onMouseOverAndOut(3)" onmouseout="onMouseOverAndOut(3)">
+          <td id="3_td_id" class="threaddump-td-mouseover">3</td>
+          <td id="3_td_name" class="threaddump-td-mouseover">Finalizer</td>
+          <td id="3_td_state" class="threaddump-td-mouseover">WAITING</td>
+          <td id="3_td_locking" class="threaddump-td-mouseover"></td>
+          <td id="3_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)<br>java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)<br>java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)</td>
+        </tr><tr id="thread_45_tr" class="accordion-heading" onclick="toggleThreadStackTrace(45, false)" onmouseover="onMouseOverAndOut(45)" onmouseout="onMouseOverAndOut(45)">
+          <td id="45_td_id" class="">45</td>
+          <td id="45_td_name" class="">heartbeat-receiver-event-loop-thread</td>
+          <td id="45_td_state" class="">TIMED_WAITING</td>
+          <td id="45_td_locking" class=""></td>
+          <td id="45_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_58_tr" class="accordion-heading" onclick="toggleThreadStackTrace(58, false)" onmouseover="onMouseOverAndOut(58)" onmouseout="onMouseOverAndOut(58)">
+          <td id="58_td_id" class="">58</td>
+          <td id="58_td_name" class="">Idle Worker Monitor for C:\Users\tbresee\AppData\Local\Continuum\anaconda3\python</td>
+          <td id="58_td_state" class="">TIMED_WAITING</td>
+          <td id="58_td_locking" class=""></td>
+          <td id="58_td_stacktrace" class="hidden">java.lang.Thread.sleep(Native Method)<br>org.apache.spark.api.python.PythonWorkerFactory$MonitorThread.run(PythonWorkerFactory.scala:287)</td>
+        </tr><tr id="thread_1_tr" class="accordion-heading" onclick="toggleThreadStackTrace(1, false)" onmouseover="onMouseOverAndOut(1)" onmouseout="onMouseOverAndOut(1)">
+          <td id="1_td_id" class="">1</td>
+          <td id="1_td_name" class="">main</td>
+          <td id="1_td_state" class="">RUNNABLE</td>
+          <td id="1_td_locking" class="">Monitor(java.io.BufferedInputStream@1008627920})</td>
+          <td id="1_td_stacktrace" class="hidden">java.io.FileInputStream.readBytes(Native Method)<br>java.io.FileInputStream.read(FileInputStream.java:255)<br>java.io.BufferedInputStream.fill(BufferedInputStream.java:246)<br>java.io.BufferedInputStream.read(BufferedInputStream.java:265) =&gt; holding Monitor(java.io.BufferedInputStream@1008627920})<br>org.apache.spark.api.python.PythonGatewayServer$.main(PythonGatewayServer.scala:87)<br>org.apache.spark.api.python.PythonGatewayServer.main(PythonGatewayServer.scala)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)<br>org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:849)<br>org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:167)<br>org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:195)<br>org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:86)<br>org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:924)<br>org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:933)<br>org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)</td>
+        </tr><tr id="thread_26_tr" class="accordion-heading" onclick="toggleThreadStackTrace(26, false)" onmouseover="onMouseOverAndOut(26)" onmouseout="onMouseOverAndOut(26)">
+          <td id="26_td_id" class="">26</td>
+          <td id="26_td_name" class="">map-output-dispatcher-0</td>
+          <td id="26_td_state" class="">WAITING</td>
+          <td id="26_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@1462627131})</td>
+          <td id="26_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_27_tr" class="accordion-heading" onclick="toggleThreadStackTrace(27, false)" onmouseover="onMouseOverAndOut(27)" onmouseout="onMouseOverAndOut(27)">
+          <td id="27_td_id" class="">27</td>
+          <td id="27_td_name" class="">map-output-dispatcher-1</td>
+          <td id="27_td_state" class="">WAITING</td>
+          <td id="27_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@97749282})</td>
+          <td id="27_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_28_tr" class="accordion-heading" onclick="toggleThreadStackTrace(28, false)" onmouseover="onMouseOverAndOut(28)" onmouseout="onMouseOverAndOut(28)">
+          <td id="28_td_id" class="">28</td>
+          <td id="28_td_name" class="">map-output-dispatcher-2</td>
+          <td id="28_td_state" class="">WAITING</td>
+          <td id="28_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@203110302})</td>
+          <td id="28_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_29_tr" class="accordion-heading" onclick="toggleThreadStackTrace(29, false)" onmouseover="onMouseOverAndOut(29)" onmouseout="onMouseOverAndOut(29)">
+          <td id="29_td_id" class="">29</td>
+          <td id="29_td_name" class="">map-output-dispatcher-3</td>
+          <td id="29_td_state" class="">WAITING</td>
+          <td id="29_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@12676891})</td>
+          <td id="29_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_30_tr" class="accordion-heading" onclick="toggleThreadStackTrace(30, false)" onmouseover="onMouseOverAndOut(30)" onmouseout="onMouseOverAndOut(30)">
+          <td id="30_td_id">30</td>
+          <td id="30_td_name">map-output-dispatcher-4</td>
+          <td id="30_td_state">WAITING</td>
+          <td id="30_td_locking">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@948774923})</td>
+          <td id="30_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_31_tr" class="accordion-heading" onclick="toggleThreadStackTrace(31, false)" onmouseover="onMouseOverAndOut(31)" onmouseout="onMouseOverAndOut(31)">
+          <td id="31_td_id" class="">31</td>
+          <td id="31_td_name" class="">map-output-dispatcher-5</td>
+          <td id="31_td_state" class="">WAITING</td>
+          <td id="31_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@562965665})</td>
+          <td id="31_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_32_tr" class="accordion-heading" onclick="toggleThreadStackTrace(32, false)" onmouseover="onMouseOverAndOut(32)" onmouseout="onMouseOverAndOut(32)">
+          <td id="32_td_id" class="">32</td>
+          <td id="32_td_name" class="">map-output-dispatcher-6</td>
+          <td id="32_td_state" class="">WAITING</td>
+          <td id="32_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@1954306249})</td>
+          <td id="32_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_33_tr" class="accordion-heading" onclick="toggleThreadStackTrace(33, false)" onmouseover="onMouseOverAndOut(33)" onmouseout="onMouseOverAndOut(33)">
+          <td id="33_td_id" class="">33</td>
+          <td id="33_td_name" class="">map-output-dispatcher-7</td>
+          <td id="33_td_state" class="">WAITING</td>
+          <td id="33_td_locking" class="">Lock(java.util.concurrent.ThreadPoolExecutor$Worker@2144225514})</td>
+          <td id="33_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.MapOutputTrackerMaster$MessageLoop.run(MapOutputTracker.scala:384)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_48_tr" class="accordion-heading" onclick="toggleThreadStackTrace(48, false)" onmouseover="onMouseOverAndOut(48)" onmouseout="onMouseOverAndOut(48)">
+          <td id="48_td_id" class="">48</td>
+          <td id="48_td_name" class="">netty-rpc-env-timeout</td>
+          <td id="48_td_state" class="">TIMED_WAITING</td>
+          <td id="48_td_locking" class=""></td>
+          <td id="48_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_75_tr" class="accordion-heading" onclick="toggleThreadStackTrace(75, false)" onmouseover="onMouseOverAndOut(75)" onmouseout="onMouseOverAndOut(75)">
+          <td id="75_td_id" class="">75</td>
+          <td id="75_td_name" class="">org.apache.hadoop.fs.FileSystem$Statistics$StatisticsDataReferenceCleaner</td>
+          <td id="75_td_state" class="">WAITING</td>
+          <td id="75_td_locking" class=""></td>
+          <td id="75_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)<br>java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)<br>org.apache.hadoop.fs.FileSystem$Statistics$StatisticsDataReferenceCleaner.run(FileSystem.java:3063)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_13_tr" class="accordion-heading" onclick="toggleThreadStackTrace(13, false)" onmouseover="onMouseOverAndOut(13)" onmouseout="onMouseOverAndOut(13)">
+          <td id="13_td_id" class="">13</td>
+          <td id="13_td_name" class="">pool-1-thread-1</td>
+          <td id="13_td_state" class="">TIMED_WAITING</td>
+          <td id="13_td_locking" class=""></td>
+          <td id="13_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_2_tr" class="accordion-heading" onclick="toggleThreadStackTrace(2, false)" onmouseover="onMouseOverAndOut(2)" onmouseout="onMouseOverAndOut(2)">
+          <td id="2_td_id">2</td>
+          <td id="2_td_name">Reference Handler</td>
+          <td id="2_td_state">WAITING</td>
+          <td id="2_td_locking"></td>
+          <td id="2_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.Object.wait(Object.java:502)<br>java.lang.ref.Reference.tryHandlePending(Reference.java:191)<br>java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)</td>
+        </tr><tr id="thread_35_tr" class="accordion-heading" onclick="toggleThreadStackTrace(35, false)" onmouseover="onMouseOverAndOut(35)" onmouseout="onMouseOverAndOut(35)">
+          <td id="35_td_id">35</td>
+          <td id="35_td_name">refresh progress</td>
+          <td id="35_td_state">TIMED_WAITING</td>
+          <td id="35_td_locking"></td>
+          <td id="35_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.util.TimerThread.mainLoop(Timer.java:552)<br>java.util.TimerThread.run(Timer.java:505)</td>
+        </tr><tr id="thread_34_tr" class="accordion-heading" onclick="toggleThreadStackTrace(34, false)" onmouseover="onMouseOverAndOut(34)" onmouseout="onMouseOverAndOut(34)">
+          <td id="34_td_id">34</td>
+          <td id="34_td_name">RemoteBlock-temp-file-clean-thread</td>
+          <td id="34_td_state">TIMED_WAITING</td>
+          <td id="34_td_locking"></td>
+          <td id="34_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)<br>org.apache.spark.storage.BlockManager$RemoteBlockDownloadFileManager.org$apache$spark$storage$BlockManager$RemoteBlockDownloadFileManager$$keepCleaning(BlockManager.scala:1724)<br>org.apache.spark.storage.BlockManager$RemoteBlockDownloadFileManager$$anon$2.run(BlockManager.scala:1692)</td>
+        </tr><tr id="thread_25_tr" class="accordion-heading" onclick="toggleThreadStackTrace(25, false)" onmouseover="onMouseOverAndOut(25)" onmouseout="onMouseOverAndOut(25)">
+          <td id="25_td_id">25</td>
+          <td id="25_td_name">rpc-server-3-1</td>
+          <td id="25_td_state">RUNNABLE</td>
+          <td id="25_td_locking">Monitor(io.netty.channel.nio.SelectedSelectionKeySet@1409300616}), Monitor(java.util.Collections$UnmodifiableSet@135519660}), Monitor(sun.nio.ch.WindowsSelectorImpl@665196894})</td>
+          <td id="25_td_stacktrace" class="hidden">sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)<br>sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)<br>sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86) =&gt; holding Monitor(sun.nio.ch.WindowsSelectorImpl@665196894})<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)<br>io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)<br>io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:753)<br>io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:409)<br>io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)<br>io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_51_tr" class="accordion-heading" onclick="toggleThreadStackTrace(51, false)" onmouseover="onMouseOverAndOut(51)" onmouseout="onMouseOverAndOut(51)">
+          <td id="51_td_id">51</td>
+          <td id="51_td_name">shuffle-server-5-1</td>
+          <td id="51_td_state">RUNNABLE</td>
+          <td id="51_td_locking">Monitor(io.netty.channel.nio.SelectedSelectionKeySet@438879306}), Monitor(java.util.Collections$UnmodifiableSet@998555820}), Monitor(sun.nio.ch.WindowsSelectorImpl@1677619566})</td>
+          <td id="51_td_stacktrace" class="hidden">sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)<br>sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)<br>sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86) =&gt; holding Monitor(sun.nio.ch.WindowsSelectorImpl@1677619566})<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)<br>io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)<br>io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:753)<br>io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:409)<br>io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)<br>io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_4_tr" class="accordion-heading" onclick="toggleThreadStackTrace(4, false)" onmouseover="onMouseOverAndOut(4)" onmouseout="onMouseOverAndOut(4)">
+          <td id="4_td_id">4</td>
+          <td id="4_td_name">Signal Dispatcher</td>
+          <td id="4_td_state">RUNNABLE</td>
+          <td id="4_td_locking"></td>
+          <td id="4_td_stacktrace" class="hidden"></td>
+        </tr><tr id="thread_52_tr" class="accordion-heading" onclick="toggleThreadStackTrace(52, false)" onmouseover="onMouseOverAndOut(52)" onmouseout="onMouseOverAndOut(52)">
+          <td id="52_td_id">52</td>
+          <td id="52_td_name">Spark Context Cleaner</td>
+          <td id="52_td_state">TIMED_WAITING</td>
+          <td id="52_td_locking"></td>
+          <td id="52_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)<br>org.apache.spark.ContextCleaner$$anonfun$org$apache$spark$ContextCleaner$$keepCleaning$1.apply$mcV$sp(ContextCleaner.scala:181)<br>org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1302)<br>org.apache.spark.ContextCleaner.org$apache$spark$ContextCleaner$$keepCleaning(ContextCleaner.scala:178)<br>org.apache.spark.ContextCleaner$$anon$1.run(ContextCleaner.scala:73)</td>
+        </tr><tr id="thread_16_tr" class="accordion-heading" onclick="toggleThreadStackTrace(16, false)" onmouseover="onMouseOverAndOut(16)" onmouseout="onMouseOverAndOut(16)">
+          <td id="16_td_id">16</td>
+          <td id="16_td_name">spark-listener-group-appStatus</td>
+          <td id="16_td_state">WAITING</td>
+          <td id="16_td_locking"></td>
+          <td id="16_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply$mcJ$sp(AsyncEventQueue.scala:97)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply(AsyncEventQueue.scala:87)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply(AsyncEventQueue.scala:87)<br>scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)<br>org.apache.spark.scheduler.AsyncEventQueue.org$apache$spark$scheduler$AsyncEventQueue$$dispatch(AsyncEventQueue.scala:87)<br>org.apache.spark.scheduler.AsyncEventQueue$$anon$1$$anonfun$run$1.apply$mcV$sp(AsyncEventQueue.scala:83)<br>org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1302)<br>org.apache.spark.scheduler.AsyncEventQueue$$anon$1.run(AsyncEventQueue.scala:82)</td>
+        </tr><tr id="thread_44_tr" class="accordion-heading" onclick="toggleThreadStackTrace(44, false)" onmouseover="onMouseOverAndOut(44)" onmouseout="onMouseOverAndOut(44)">
+          <td id="44_td_id">44</td>
+          <td id="44_td_name">spark-listener-group-executorManagement</td>
+          <td id="44_td_state">WAITING</td>
+          <td id="44_td_locking"></td>
+          <td id="44_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply$mcJ$sp(AsyncEventQueue.scala:97)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply(AsyncEventQueue.scala:87)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply(AsyncEventQueue.scala:87)<br>scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)<br>org.apache.spark.scheduler.AsyncEventQueue.org$apache$spark$scheduler$AsyncEventQueue$$dispatch(AsyncEventQueue.scala:87)<br>org.apache.spark.scheduler.AsyncEventQueue$$anon$1$$anonfun$run$1.apply$mcV$sp(AsyncEventQueue.scala:83)<br>org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1302)<br>org.apache.spark.scheduler.AsyncEventQueue$$anon$1.run(AsyncEventQueue.scala:82)</td>
+        </tr><tr id="thread_82_tr" class="accordion-heading" onclick="toggleThreadStackTrace(82, false)" onmouseover="onMouseOverAndOut(82)" onmouseout="onMouseOverAndOut(82)">
+          <td id="82_td_id">82</td>
+          <td id="82_td_name">spark-listener-group-streams</td>
+          <td id="82_td_state">WAITING</td>
+          <td id="82_td_locking"></td>
+          <td id="82_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply$mcJ$sp(AsyncEventQueue.scala:97)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply(AsyncEventQueue.scala:87)<br>org.apache.spark.scheduler.AsyncEventQueue$$anonfun$org$apache$spark$scheduler$AsyncEventQueue$$dispatch$1.apply(AsyncEventQueue.scala:87)<br>scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)<br>org.apache.spark.scheduler.AsyncEventQueue.org$apache$spark$scheduler$AsyncEventQueue$$dispatch(AsyncEventQueue.scala:87)<br>org.apache.spark.scheduler.AsyncEventQueue$$anon$1$$anonfun$run$1.apply$mcV$sp(AsyncEventQueue.scala:83)<br>org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1302)<br>org.apache.spark.scheduler.AsyncEventQueue$$anon$1.run(AsyncEventQueue.scala:82)</td>
+        </tr><tr id="thread_36_tr" class="accordion-heading" onclick="toggleThreadStackTrace(36, false)" onmouseover="onMouseOverAndOut(36)" onmouseout="onMouseOverAndOut(36)">
+          <td id="36_td_id">36</td>
+          <td id="36_td_name">SparkUI-36</td>
+          <td id="36_td_state">RUNNABLE</td>
+          <td id="36_td_locking">Monitor(sun.nio.ch.Util$3@309593551}), Monitor(java.util.Collections$UnmodifiableSet@833178344}), Monitor(sun.nio.ch.WindowsSelectorImpl@969183210})</td>
+          <td id="36_td_stacktrace" class="hidden">sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)<br>sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)<br>sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86) =&gt; holding Monitor(sun.nio.ch.WindowsSelectorImpl@969183210})<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:243)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:191)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:249)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_37_tr" class="accordion-heading" onclick="toggleThreadStackTrace(37, false)" onmouseover="onMouseOverAndOut(37)" onmouseout="onMouseOverAndOut(37)">
+          <td id="37_td_id">37</td>
+          <td id="37_td_name">SparkUI-37</td>
+          <td id="37_td_state">RUNNABLE</td>
+          <td id="37_td_locking"></td>
+          <td id="37_td_stacktrace" class="hidden">sun.management.ThreadImpl.dumpThreads0(Native Method)<br>sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)<br>org.apache.spark.util.Utils$.getThreadDump(Utils.scala:2153)<br>org.apache.spark.SparkContext.getExecutorThreadDump(SparkContext.scala:603)<br>org.apache.spark.ui.exec.ExecutorThreadDumpPage.render(ExecutorThreadDumpPage.scala:40)<br>org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:84)<br>org.apache.spark.ui.WebUI$$anonfun$2.apply(WebUI.scala:84)<br>org.apache.spark.ui.JettyUtils$$anon$3.doGet(JettyUtils.scala:90)<br>javax.servlet.http.HttpServlet.service(HttpServlet.java:687)<br>javax.servlet.http.HttpServlet.service(HttpServlet.java:790)<br>org.spark_project.jetty.servlet.ServletHolder.handle(ServletHolder.java:848)<br>org.spark_project.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:584)<br>org.spark_project.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)<br>org.spark_project.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)<br>org.spark_project.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)<br>org.spark_project.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)<br>org.spark_project.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:493)<br>org.spark_project.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)<br>org.spark_project.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)<br>org.spark_project.jetty.server.Server.handle(Server.java:539)<br>org.spark_project.jetty.server.HttpChannel.handle(HttpChannel.java:333)<br>org.spark_project.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)<br>org.spark_project.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)<br>org.spark_project.jetty.io.FillInterest.fillable(FillInterest.java:108)<br>org.spark_project.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_38_tr" class="accordion-heading" onclick="toggleThreadStackTrace(38, false)" onmouseover="onMouseOverAndOut(38)" onmouseout="onMouseOverAndOut(38)">
+          <td id="38_td_id">38</td>
+          <td id="38_td_name">SparkUI-38</td>
+          <td id="38_td_state">RUNNABLE</td>
+          <td id="38_td_locking">Monitor(sun.nio.ch.Util$3@14971722}), Monitor(java.util.Collections$UnmodifiableSet@17903249}), Monitor(sun.nio.ch.WindowsSelectorImpl@306540136})</td>
+          <td id="38_td_stacktrace" class="hidden">sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)<br>sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)<br>sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86) =&gt; holding Monitor(sun.nio.ch.WindowsSelectorImpl@306540136})<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:243)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:191)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:249)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_39_tr" class="accordion-heading" onclick="toggleThreadStackTrace(39, false)" onmouseover="onMouseOverAndOut(39)" onmouseout="onMouseOverAndOut(39)">
+          <td id="39_td_id">39</td>
+          <td id="39_td_name">SparkUI-39</td>
+          <td id="39_td_state">RUNNABLE</td>
+          <td id="39_td_locking">Monitor(sun.nio.ch.Util$3@2076133758}), Monitor(java.util.Collections$UnmodifiableSet@1492744140}), Monitor(sun.nio.ch.WindowsSelectorImpl@599027879})</td>
+          <td id="39_td_stacktrace" class="hidden">sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)<br>sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)<br>sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86) =&gt; holding Monitor(sun.nio.ch.WindowsSelectorImpl@599027879})<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:243)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:191)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:249)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_40_tr" class="accordion-heading" onclick="toggleThreadStackTrace(40, false)" onmouseover="onMouseOverAndOut(40)" onmouseout="onMouseOverAndOut(40)">
+          <td id="40_td_id">40</td>
+          <td id="40_td_name">SparkUI-40-acceptor-0@64c1b8c1-ServerConnector@6a065a29{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}</td>
+          <td id="40_td_state">RUNNABLE</td>
+          <td id="40_td_locking">Monitor(java.lang.Object@127180031})</td>
+          <td id="40_td_stacktrace" class="hidden">sun.nio.ch.ServerSocketChannelImpl.accept0(Native Method)<br>sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:422)<br>sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:250) =&gt; holding Monitor(java.lang.Object@127180031})<br>org.spark_project.jetty.server.ServerConnector.accept(ServerConnector.java:397)<br>org.spark_project.jetty.server.AbstractConnector$Acceptor.run(AbstractConnector.java:601)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_41_tr" class="accordion-heading" onclick="toggleThreadStackTrace(41, false)" onmouseover="onMouseOverAndOut(41)" onmouseout="onMouseOverAndOut(41)">
+          <td id="41_td_id">41</td>
+          <td id="41_td_name">SparkUI-41</td>
+          <td id="41_td_state">TIMED_WAITING</td>
+          <td id="41_td_locking"></td>
+          <td id="41_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>org.spark_project.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:392)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.idleJobPoll(QueuedThreadPool.java:563)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.access$800(QueuedThreadPool.java:48)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_42_tr" class="accordion-heading" onclick="toggleThreadStackTrace(42, false)" onmouseover="onMouseOverAndOut(42)" onmouseout="onMouseOverAndOut(42)">
+          <td id="42_td_id">42</td>
+          <td id="42_td_name">SparkUI-42</td>
+          <td id="42_td_state">RUNNABLE</td>
+          <td id="42_td_locking">Monitor(sun.nio.ch.Util$3@2021694177}), Monitor(java.util.Collections$UnmodifiableSet@687950977}), Monitor(sun.nio.ch.WindowsSelectorImpl@1575279198})</td>
+          <td id="42_td_stacktrace" class="hidden">sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)<br>sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)<br>sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)<br>sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86) =&gt; holding Monitor(sun.nio.ch.WindowsSelectorImpl@1575279198})<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)<br>sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.select(ManagedSelector.java:243)<br>org.spark_project.jetty.io.ManagedSelector$SelectorProducer.produce(ManagedSelector.java:191)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:249)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)<br>org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_43_tr" class="accordion-heading" onclick="toggleThreadStackTrace(43, false)" onmouseover="onMouseOverAndOut(43)" onmouseout="onMouseOverAndOut(43)">
+          <td id="43_td_id">43</td>
+          <td id="43_td_name">SparkUI-43</td>
+          <td id="43_td_state">TIMED_WAITING</td>
+          <td id="43_td_locking"></td>
+          <td id="43_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>org.spark_project.jetty.util.BlockingArrayQueue.poll(BlockingArrayQueue.java:392)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.idleJobPoll(QueuedThreadPool.java:563)<br>org.spark_project.jetty.util.thread.QueuedThreadPool.access$800(QueuedThreadPool.java:48)<br>org.spark_project.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_264_tr" class="accordion-heading" onclick="toggleThreadStackTrace(264, false)" onmouseover="onMouseOverAndOut(264)" onmouseout="onMouseOverAndOut(264)">
+          <td id="264_td_id">264</td>
+          <td id="264_td_name">SparkUI-JettyScheduler</td>
+          <td id="264_td_state">TIMED_WAITING</td>
+          <td id="264_td_locking"></td>
+          <td id="264_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)<br>java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_65_tr" class="accordion-heading" onclick="toggleThreadStackTrace(65, false)" onmouseover="onMouseOverAndOut(65)" onmouseout="onMouseOverAndOut(65)">
+          <td id="65_td_id">65</td>
+          <td id="65_td_name">task-result-getter-0</td>
+          <td id="65_td_state">WAITING</td>
+          <td id="65_td_locking"></td>
+          <td id="65_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_70_tr" class="accordion-heading" onclick="toggleThreadStackTrace(70, false)" onmouseover="onMouseOverAndOut(70)" onmouseout="onMouseOverAndOut(70)">
+          <td id="70_td_id">70</td>
+          <td id="70_td_name">task-result-getter-1</td>
+          <td id="70_td_state">WAITING</td>
+          <td id="70_td_locking"></td>
+          <td id="70_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_73_tr" class="accordion-heading" onclick="toggleThreadStackTrace(73, false)" onmouseover="onMouseOverAndOut(73)" onmouseout="onMouseOverAndOut(73)">
+          <td id="73_td_id">73</td>
+          <td id="73_td_name">task-result-getter-2</td>
+          <td id="73_td_state">WAITING</td>
+          <td id="73_td_locking"></td>
+          <td id="73_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_84_tr" class="accordion-heading" onclick="toggleThreadStackTrace(84, false)" onmouseover="onMouseOverAndOut(84)" onmouseout="onMouseOverAndOut(84)">
+          <td id="84_td_id">84</td>
+          <td id="84_td_name">task-result-getter-3</td>
+          <td id="84_td_state">WAITING</td>
+          <td id="84_td_locking"></td>
+          <td id="84_td_stacktrace" class="hidden">sun.misc.Unsafe.park(Native Method)<br>java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)<br>java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)<br>java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)<br>java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_14_tr" class="accordion-heading" onclick="toggleThreadStackTrace(14, false)" onmouseover="onMouseOverAndOut(14)" onmouseout="onMouseOverAndOut(14)">
+          <td id="14_td_id">14</td>
+          <td id="14_td_name">Thread-2</td>
+          <td id="14_td_state">RUNNABLE</td>
+          <td id="14_td_locking">Monitor(java.net.SocksSocketImpl@531525485})</td>
+          <td id="14_td_stacktrace" class="hidden">java.net.DualStackPlainSocketImpl.accept0(Native Method)<br>java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)<br>java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)<br>java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199) =&gt; holding Monitor(java.net.SocksSocketImpl@531525485})<br>java.net.ServerSocket.implAccept(ServerSocket.java:545)<br>java.net.ServerSocket.accept(ServerSocket.java:513)<br>py4j.GatewayServer.run(GatewayServer.java:685)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_15_tr" class="accordion-heading" onclick="toggleThreadStackTrace(15, false)" onmouseover="onMouseOverAndOut(15)" onmouseout="onMouseOverAndOut(15)">
+          <td id="15_td_id">15</td>
+          <td id="15_td_name">Thread-3</td>
+          <td id="15_td_state">RUNNABLE</td>
+          <td id="15_td_locking">Monitor(java.io.InputStreamReader@163986756})</td>
+          <td id="15_td_stacktrace" class="hidden">java.net.SocketInputStream.socketRead0(Native Method)<br>java.net.SocketInputStream.socketRead(SocketInputStream.java:116)<br>java.net.SocketInputStream.read(SocketInputStream.java:171)<br>java.net.SocketInputStream.read(SocketInputStream.java:141)<br>sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)<br>sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)<br>sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178) =&gt; holding Monitor(java.io.InputStreamReader@163986756})<br>java.io.InputStreamReader.read(InputStreamReader.java:184)<br>java.io.BufferedReader.fill(BufferedReader.java:161)<br>java.io.BufferedReader.readLine(BufferedReader.java:324) =&gt; holding Monitor(java.io.InputStreamReader@163986756})<br>java.io.BufferedReader.readLine(BufferedReader.java:389)<br>py4j.GatewayConnection.run(GatewayConnection.java:230)<br>java.lang.Thread.run(Thread.java:748)</td>
+        </tr><tr id="thread_46_tr" class="accordion-heading" onclick="toggleThreadStackTrace(46, false)" onmouseover="onMouseOverAndOut(46)" onmouseout="onMouseOverAndOut(46)">
+          <td id="46_td_id">46</td>
+          <td id="46_td_name">Timer-0</td>
+          <td id="46_td_state">WAITING</td>
+          <td id="46_td_locking"></td>
+          <td id="46_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.Object.wait(Object.java:502)<br>java.util.TimerThread.mainLoop(Timer.java:526)<br>java.util.TimerThread.run(Timer.java:505)</td>
+        </tr><tr id="thread_47_tr" class="accordion-heading" onclick="toggleThreadStackTrace(47, false)" onmouseover="onMouseOverAndOut(47)" onmouseout="onMouseOverAndOut(47)">
+          <td id="47_td_id">47</td>
+          <td id="47_td_name">Timer-1</td>
+          <td id="47_td_state">WAITING</td>
+          <td id="47_td_locking"></td>
+          <td id="47_td_stacktrace" class="hidden">java.lang.Object.wait(Native Method)<br>java.lang.Object.wait(Object.java:502)<br>java.util.TimerThread.mainLoop(Timer.java:526)<br>java.util.TimerThread.run(Timer.java:505)</td>
+        </tr></tbody>
+      <tfoot></tfoot></table>
+    </div>
+        </div>
+      
+    </body></html>
