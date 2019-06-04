@@ -361,5 +361,10 @@ Next Generation Sequencing
   — Genomics workflows on AWS
 * `Igenomix  <https://aws.amazon.com/solutions/case-studies/igenomix/>`_
   — AWS-based case study of Igenomix and NGS
+* `Data Slicer  <http://grch37.ensembl.org/Homo_sapiens/Tools/DataSlicer?db=core>`_
+  — subset of extremely large datasets VCF BAM etc 
+
+  
+
 
 
