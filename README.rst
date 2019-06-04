@@ -320,6 +320,7 @@ General
 
 |
 
+
 SparkSQL
 ~~~~~~~~~~~~
 
@@ -330,14 +331,22 @@ SparkSQL
 |
 
 
+
 Next Generation Sequencing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+* `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
+  — An introduction to Variant Call Format 
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
+* `Big Data Genomics <http://bdgenomics.org/>`_
+  — ADAM etc
 * `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
   — Amazon information about how to simplify and securely scale genomic analysis with AWS platform 
 * `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
   — Genomics workflows on AWS
 * `Igenomix  <https://aws.amazon.com/solutions/case-studies/igenomix/>`_
   — AWS-based case study of Igenomix and NGS
+
+
