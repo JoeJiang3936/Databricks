@@ -318,6 +318,11 @@ General
   — more advanced .rst creation
 
 
+
+https://www.scala-lang.org/
+
+
+
 |
 
 
@@ -330,6 +335,14 @@ SparkSQL
 
 |
 
+Scala
+~~~~~~~~~~~~
+
+
+* `Scala <https://www.scala-lang.org/>`_
+  — Main website for Scala.  There is no getting around it.  You want to push the envelope, you must learn Scala...
+
+|
 
 
 Next Generation Sequencing
@@ -341,7 +354,7 @@ Next Generation Sequencing
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
 * `Big Data Genomics <http://bdgenomics.org/>`_
-  — ADAM etc
+  — Variant Calling with Cannoli, ADAM, Avocado, and DECA
 * `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
   — Amazon information about how to simplify and securely scale genomic analysis with AWS platform 
 * `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
