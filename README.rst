@@ -357,9 +357,7 @@ General
 * `Hadoop <https://hadoop.apache.org/>`_
   — Hadoop Standard Library
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
-  — where you can log in and use SparkSQL
-* `.rst essentials <https://gist.github.com/ionelmc/e876b73e2001acd2140f>`_
-  — more advanced .rst creation
+  — where you can log in and use SparkSQL and other Databricks APIs
 
 
 
@@ -379,7 +377,6 @@ SparkSQL
   
 
 
-
 |
 
 Scala
@@ -392,7 +389,8 @@ Scala
 |
 
 
-Next Generation Sequencing
+
+Next Generation DNA Sequencing (NGS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -416,7 +414,9 @@ Next Generation Sequencing
   — Building the Fastest DNASeq Pipeline at Scale
 * `Databricks Unified Analytics Platform for Genomics <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/Unified_Analytics_Platform_for_Genomics_Databricks.pdf>`_
   — Blueprint data for new Databricks Genomics platform 
-
+Google 
+* `Google Genomics <C:\Users\tbresee\Documents\GIT\THESPARKGENOMEPROJECT\ENTER\txt_based_info\google-genomics-whitepaper.pdf>`_
+  — Using Google Genomics API to query massive bioinformational datasets
 
 
 
@@ -424,7 +424,7 @@ Next Generation Sequencing
 
 
 
-Appendix - Variant Call Format (VCF) file breakout
+Appendix - Variant Call Format (VCF) file field breakout
 =========
 
 
