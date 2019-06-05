@@ -147,6 +147,7 @@ Our Approach
 * Push further into expanding model into full cloud-hosted versions (AWS-like)
 * Document the performance differences as you run these individual approaches
 * I don't know, something like the above, none of us has Apache Spark experience, but i think we can pull this off 
+* Time it:  get really good with Databricks, ApacheSpark, and Scala, and then pop into a free 
 
 
 
@@ -362,6 +363,10 @@ Next Generation Sequencing
   — AWS-based case study of Igenomix and NGS
 * `Data Slicer  <http://grch37.ensembl.org/Homo_sapiens/Tools/DataSlicer?db=core>`_
   — subset of extremely large datasets VCF BAM etc 
+* `Databricks Pipeline  <https://databricks.com/blog/2018/09/10/building-the-fastest-dnaseq-pipeline-at-scale.html>`_
+  — Building the Fastest DNASeq Pipeline at Scale
+
+
 
   
 
