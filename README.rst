@@ -418,10 +418,9 @@ Next Generation DNA Sequencing (NGS)
 
 * `Google Genomics <https://cloud.google.com/genomics/#>`_
   — Main page overview of Google Genomics program for processing petabytes of genomic data
+
 * `Google Genomics <C:\Users\tbresee\Documents\GIT\THESPARKGENOMEPROJECT\ENTER\txt_based_info\google-genomics-whitepaper.pdf>`_
   — Whitepaper:  Using Google Genomics API to query massive bioinformational datasets
-
-
 
 
 
