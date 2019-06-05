@@ -1,11 +1,37 @@
+
 Gene Sequencing Data Processing with Apache Spark 
 ########################################
 
+
+http://jsonlines.org/
+http://jsonlines.org/examples/
+This page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
+
+
+CSV seems so easy that many programmers have written code to generate it themselves, and almost every implementation is different. Handling broken CSV files is a common and frustrating task. CSV has no standard encoding, no standard column separator and multiple character escaping standards. String is the only type supported for cell values, so some programs attempt to guess the correct types.
+
+JSON Lines handles tabular data cleanly and without ambiguity. Cells may use the standard JSON types.
+
+http://jsonlines.org/on_the_web/
+Suggested Conventions
+JSON Lines files may be saved with the file extension .jsonl.
+
+Stream compressors like gzip or bzip2 are recommended for saving space, resulting in .jsonl.gz or .jsonl.bz2 files.
+
+
+
+
+
 |
+
+
 
 Link to our public website:   https://thesparkgenomeproject.com/
 
+
+
 |
+
 
 The following github repo contains information assembled for our course project, and contains all the details of how we completed this ambitious project
 
@@ -119,7 +145,10 @@ Why Apache Spark ?
 Background
 ==============
 
-Apache Spark™ is a unified analytics engine for large-scale data processing.  Spark SQL is Apache Spark's module for working with structured data, and the primary appliation we will be using to demonstrate our proficiency in our Databases course.  Spark appliations can be written in Java, Scala, R, Python, and SQL;  We focus on Python and SQL, with a splash of R for visualization images.  
+Apache Spark is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, machine learning and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
+
+
+It is fundamentally unified analytics engine for large-scale data processing.  Spark SQL is Apache Spark's module for working with structured data, and the primary appliation we will be using to demonstrate our proficiency in our Databases course.  Spark appliations can be written in Java, Scala, R, Python, and SQL;  We focus on Python and SQL, with a splash of R for visualization images.  
 
 Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
 
@@ -283,12 +312,8 @@ Sample Code
 
 
 
-
-
-
-
-
 |
+
 
 
 JSON 
@@ -338,6 +363,7 @@ Note that data fields aren't the only way to specify request data:
 |
 |
 
+
 References
 =========
 
@@ -365,6 +391,8 @@ General
 |
 
 
+
+
 SparkSQL
 ~~~~~~~~~~~~
 
@@ -376,8 +404,9 @@ SparkSQL
   
   
 
-
 |
+
+
 
 Scala
 ~~~~~~~~~~~~
@@ -385,6 +414,8 @@ Scala
 
 * `Scala <https://www.scala-lang.org/>`_
   — Main website for Scala.  There is no getting around it.  You want to push the envelope, you must learn Scala...
+
+
 
 |
 
@@ -414,23 +445,43 @@ Next Generation DNA Sequencing (NGS)
   — Building the Fastest DNASeq Pipeline at Scale
 * `Databricks Unified Analytics Platform for Genomics <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/Unified_Analytics_Platform_for_Genomics_Databricks.pdf>`_
   — Blueprint data for new Databricks Genomics platform 
-
 * `Google Genomics Home <https://cloud.google.com/genomics/#>`_
   — Main page overview of Google Genomics program for processing petabytes of genomic data
-
 * `Google Whitepaper <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/google-genomics-whitepaper.pdf>`_
   — Using Google Genomics API to query massive bioinformational datasets
 
 
 
+|
 
-  |
+
+
+
+Solid Links
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
+  — really good overviews of the transformations possible 
+
+* `gitbook mastering sparksql <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
+  — great gitbook, very detailed
+
+
+* `scala examples  <http://blog.madhukaraphatak.com/introduction-to-spark-two-part-2/>`_
+  — scala examples
+
+
+
+
+
+|
+
 
 
 
 Appendix - Variant Call Format (VCF) file field breakout
 =========
-
 
 
 
