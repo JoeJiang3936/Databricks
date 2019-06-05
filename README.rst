@@ -240,6 +240,25 @@ Sample Code
     import hail as hl
     print(hl.cite_hail())
 
+    callset = allel.read_vcf('C:/SPARK/sample.vcf')
+    callset['variants/REF']
+    callset = allel.read_vcf('C:/SPARK/sample.vcf')
+    callset['variants/ALT']
+
+    callset = allel.read_vcf(vcf_path, fields=['numalt'], log=sys.stdout)
+
+    allel.vcf_to_hdf5('C:/SPARK/sample.vcf', 'C:/SPARK/sample_hdf5.h5', fields='*', overwrite=True)
+
+    
+
+    
+
+
+
+
+
+
+
 
 
 
