@@ -43,6 +43,7 @@ The following github repo contains information assembled for our course project,
 
 
 
+
 Gene Sequencing Explained
 =========================
 
@@ -216,6 +217,22 @@ The following are pertinent links to information about the processing steps we t
 
    
 |
+
+
+Think big picture.  We need to change our perception on what we consider a LOT of data...
+
+.. class:: no-web
+
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/purple.jpg 
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
+.. class:: no-web no-pdf
+
+
 
 
 
@@ -407,7 +424,7 @@ Next Generation Sequencing
 
 
 
-Appendix - Variant Call Format (VCF) breakout
+Appendix - Variant Call Format (VCF) file breakout
 =========
 
 
