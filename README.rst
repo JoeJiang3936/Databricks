@@ -329,7 +329,7 @@ General
 
 * `Apache Spark <https://spark.apache.org/>`_
   — Main Apache Spark website
-* `Hadoop <http://python-requests.org>`_
+* `Hadoop <https://hadoop.apache.org/>`_
   — Hadoop Standard Library
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
   — where you can log in and use SparkSQL
