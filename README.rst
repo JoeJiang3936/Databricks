@@ -368,7 +368,23 @@ Next Generation Sequencing
 
 
 
-  
+  |
+
+
+
+
+.. class:: no-web
+
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/screengrab.png
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+.. class:: no-web no-pdf
+
+
+
 
 
 
