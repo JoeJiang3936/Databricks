@@ -130,25 +130,27 @@ Our goal is to document how much more streamlined and efficient this system is f
 Our Approach
 =============
 
-* Research the basics of Apache Spark 
-* Research SparkSQL and pyspark 
-* Focus on building practice notebooks along our journey
-* Get Apache Spark running on laptop (local mode)
+* Research the basics of Apache Spark  
+* Research SparkSQL and pyspark API libraries  
+* Focus on building practice jupyter notebooks along our journey, step-by-step
+* Get Apache Spark (with Hadoop, Scala/sbt, JVM) running on laptop (local mode)
 * Understand how to baseline and monitor database query and access KPIs for local mode
-* Get Apache Spark running, via Databricks (local mode)
+* Get Apache Spark running, via Databricks online, in local mode
+* Baseline with UI to see the 'performance' of SparkSQL queries, joins, actions 
+* Get Apache Spark running, via Databricks (distributed cluster mode)
 * Baseline
-* Get Apache Spark running, via Databricks (distributed compute mode!)
-* Baseline
-* Import small datasets
+* Import small datasets into Databricks
 * Experiment with HDFS file type versions
+* Push 1GB+ data faile onto system 
 * Push a beyond-TB sized sequence table to cluster
-* Process the table via SparkSQL, etc
+* Process the table via SparkSQL, convert to Dataframes/Datasets, leverage ApacheSpark 2.x version, beyond the simple concepts of RDD
 * Run 3rd-party app like Hail or some other crazy complex system on Databricks
 * Push further into expanding model into full cloud-hosted versions (AWS-like)
+* Distribute files to multiple S3 instances, tie in 
 * Document the performance differences as you run these individual approaches
-* I don't know, something like the above, none of us has Apache Spark experience, but i think we can pull this off 
-* Time it:  get really good with Databricks, ApacheSpark, and Scala, and then pop into a free 
-
+* Time it:  get really good with Databricks, ApacheSpark, and Scala, and *then* pop into a free Genomics Platform from Databricks for seven day crunch
+* Push hard into TB-sized genomics, next-generation DNA sequencing, genomics and informatics
+* Publish all results 
 
 
 |
