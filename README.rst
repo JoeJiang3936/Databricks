@@ -229,18 +229,16 @@ Sample Code
     findspark.init()
     import pyspark
     import random
-    sc = pyspark.SparkContext(appName="Pi")
-    num_samples = 100000000
-    def inside(p):     
-        x, y = random.random(), random.random()
-        return x*x + y*y < 1
-    count = sc.parallelize(range(0, num_samples)).filter(inside).count()
-    pi = 4 * count / num_samples
-    print(pi)
-    sc.stop()
+    sc = pyspark.SparkContext()
 
     import hail as hl
     print(hl.cite_hail())
+
+    # The advantage of using ‘object’ dtype is that strings can be of any length. 
+    # Alternatively, you can use a fixed-length string dtype, e.g.:
+
+    callset = allel.read_vcf('C:/SPARK/sample.vcf', types={'REF': 'S3'})
+    callset['variants/REF']
 
     callset = allel.read_vcf('C:/SPARK/sample.vcf')
     callset['variants/REF']
