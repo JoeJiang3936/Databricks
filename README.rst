@@ -191,7 +191,7 @@ If we do this efficiently, we can keep the processing optimized in batch process
 
 
 Jupyter Notebooks 
-=========
+==================
 
 As we progress step-by-step, we will upload jupyter notebooks. This is the key to really understanding this complicated approach. 
 
@@ -202,6 +202,8 @@ Notebooks Links
 
 The following are pertinent links to information about the processing steps we took 
 
+* `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
+  successful implementation of SparkSQL on .vcf genomics data
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   for introductory example of how to create RDD datasets and get familiar with the Databricks platform
 * `Databricks 101 HTML <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/notebooks/001-pyspark.html>`_
