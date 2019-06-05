@@ -351,6 +351,8 @@ Next Generation Sequencing
 
 * `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
   — An introduction to Variant Call Format 
+* `VCF Specification  <http://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
+  — the exact spec, i find it helpful to review the nuances of the genome data output...
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
 * `Big Data Genomics <http://bdgenomics.org/>`_
