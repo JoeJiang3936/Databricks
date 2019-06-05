@@ -395,7 +395,7 @@ Next Generation DNA Sequencing (NGS)
 
 
 * `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
-  — An introduction to Variant Call Format 
+  — An introduction to the genomic Variant Call Format 
 * `VCF Specification  <http://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
   — the exact spec, i find it helpful to review the nuances of the genome data output...
 * `Hail <https://hail.is/>`_
@@ -417,7 +417,6 @@ Next Generation DNA Sequencing (NGS)
 
 * `Google Genomics Home <https://cloud.google.com/genomics/#>`_
   — Main page overview of Google Genomics program for processing petabytes of genomic data
-
 
 * `Google Whitepaper <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/google-genomics-whitepaper.pdf>`_
   — Using Google Genomics API to query massive bioinformational datasets
