@@ -210,8 +210,7 @@ The following are pertinent links to information about the processing steps we t
   if you just want to download the .html to your phone or whatever and view output
 * `Databricks 201 <https://stackoverflow.com>`_
   our deeper exploration into Databricks and pyspark
-* `SparkSQL 101 <https://stackoverflow.com>`_
-  for introductory example of how to query and analyze datasets and databases
+
 
 
    
