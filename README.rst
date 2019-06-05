@@ -384,13 +384,9 @@ Next Generation Sequencing
   — subset of extremely large datasets VCF BAM etc 
 * `Databricks Pipeline  <https://databricks.com/blog/2018/09/10/building-the-fastest-dnaseq-pipeline-at-scale.html>`_
   — Building the Fastest DNASeq Pipeline at Scale
-* `Databricks - Unified Analytics Platform for Genomics  <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/Unified_Analytics_Platform_for_Genomics_Databricks.pdf>`_
+* `Databricks Unified Analytics Platform for Genomics <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/Unified_Analytics_Platform_for_Genomics_Databricks.pdf>`_
   — Blueprint data for new Databricks Genomics platform 
 
-
-
-Unified Analytics Platform
-for Genomics
 
 
 
