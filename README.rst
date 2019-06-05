@@ -3,24 +3,6 @@ Gene Sequencing Data Processing with Apache Spark
 ########################################
 
 
-http://jsonlines.org/
-http://jsonlines.org/examples/
-This page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes.
-
-
-CSV seems so easy that many programmers have written code to generate it themselves, and almost every implementation is different. Handling broken CSV files is a common and frustrating task. CSV has no standard encoding, no standard column separator and multiple character escaping standards. String is the only type supported for cell values, so some programs attempt to guess the correct types.
-
-JSON Lines handles tabular data cleanly and without ambiguity. Cells may use the standard JSON types.
-
-http://jsonlines.org/on_the_web/
-Suggested Conventions
-JSON Lines files may be saved with the file extension .jsonl.
-
-Stream compressors like gzip or bzip2 are recommended for saving space, resulting in .jsonl.gz or .jsonl.bz2 files.
-
-
-
-
 
 |
 
@@ -467,12 +449,13 @@ Solid Links
 * `gitbook mastering sparksql <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
   — great gitbook, very detailed
 
-
 * `scala examples  <http://blog.madhukaraphatak.com/introduction-to-spark-two-part-2/>`_
   — scala examples
 
+* `json lines (not json) <http://jsonlines.org/>`_
+  —  this page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes. SSON Lines handles tabular data cleanly and without ambiguity. Stream compressors like gzip or bzip2 are recommended for saving space, resulting in .jsonl.gz or .jsonl.bz2 files...
 
-
+  
 
 
 |
