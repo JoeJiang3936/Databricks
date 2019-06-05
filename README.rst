@@ -169,7 +169,6 @@ Our Approach
 
 
 
-
 |
 
 
@@ -249,6 +248,13 @@ Sample Code
     callset = allel.read_vcf(vcf_path, fields=['numalt'], log=sys.stdout)
 
     allel.vcf_to_hdf5('C:/SPARK/sample.vcf', 'C:/SPARK/sample_hdf5.h5', fields='*', overwrite=True)
+
+    spark.read.json("s3n://...").registerTempTable("json")
+    results = spark.sql(
+    """SELECT * 
+     FROM people
+     JOIN json ...""")
+
 
     
 
@@ -350,6 +356,12 @@ SparkSQL
 
 * `SparkSQL <https://spark.apache.org/sql/>`_
   — Main SparkSQL website 
+* `SparkSQL Apache Guide <https://spark.apache.org/docs/latest/sql-programming-guide.html>`_
+  — Spark SQL, DataFrames and Datasets Guide
+  
+  
+
+
 
 |
 
