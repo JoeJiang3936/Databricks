@@ -412,13 +412,10 @@ Next Generation DNA Sequencing (NGS)
   — subset of extremely large datasets VCF BAM etc 
 * `Databricks Pipeline  <https://databricks.com/blog/2018/09/10/building-the-fastest-dnaseq-pipeline-at-scale.html>`_
   — Building the Fastest DNASeq Pipeline at Scale
-
 * `Databricks Unified Analytics Platform for Genomics <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/Unified_Analytics_Platform_for_Genomics_Databricks.pdf>`_
   — Blueprint data for new Databricks Genomics platform 
-
 * `Google Genomics <https://cloud.google.com/genomics/#>`_
   — Main page overview of Google Genomics program for processing petabytes of genomic data
-
 * `Google Genomics <C:\Users\tbresee\Documents\GIT\THESPARKGENOMEPROJECT\ENTER\txt_based_info\google-genomics-whitepaper.pdf>`_
   — Whitepaper:  Using Google Genomics API to query massive bioinformational datasets
 
