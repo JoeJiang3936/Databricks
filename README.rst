@@ -303,54 +303,6 @@ Sample Code
 
 
 |
-
-
-
-JSON 
-=============
-
-There are a few different *request item* types that provide a
-convenient mechanism for specifying HTTP headers, simple JSON and
-form data, files, and URL parameters.
-
-They are key/value pairs specified after the URL. All have in
-common that they become part of the actual request that is sent and that
-their type is distinguished only by the separator used:
-``:``, ``=``, ``:=``, ``==``, ``@``, ``=@``, and ``:=@``. The ones with an
-``@`` expect a file path as value.
-
-+-----------------------+-----------------------------------------------------+
-| Item Type             | Description                                         |
-+=======================+=====================================================+
-| HTTP Headers          | Arbitrary HTTP header, e.g. ``X-API-Token:123``.    |
-| ``Name:Value``        |                                                     |
-+-----------------------+-----------------------------------------------------+
-| URL parameters        | Appends the given name/value pair as a query        |
-| ``name==value``       | string parameter to the URL.                        |
-|                       | The ``==`` separator is used.                       |
-+-----------------------+-----------------------------------------------------+
-| Data Fields           | Request data fields to be serialized as a JSON      |
-| ``field=value``,      | object (default), or to be form-encoded             |
-| ``field=@file.txt``   | (``--form, -f``).                                   |
-+-----------------------+-----------------------------------------------------+
-| Raw JSON fields       | Useful when sending JSON and one or                 |
-| ``field:=json``,      | more fields need to be a ``Boolean``, ``Number``,   |
-| ``field:=@file.json`` | nested ``Object``, or an ``Array``,  e.g.,          |
-|                       | ``meals:='["ham","spam"]'`` or ``pies:=[1,2,3]``    |
-|                       | (note the quotes).                                  |
-+-----------------------+-----------------------------------------------------+
-| Form File Fields      | Only available with ``--form, -f``.                 |
-| ``field@/dir/file``   | For example ``screenshot@~/Pictures/img.png``.      |
-|                       | The presence of a file field results                |
-|                       | in a ``multipart/form-data`` request.               |
-+-----------------------+-----------------------------------------------------+
-
-
-Note that data fields aren't the only way to specify request data:
-`Redirected input`_ is a mechanism for passing arbitrary request data.
-
-
-|
 |
 
 
