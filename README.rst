@@ -409,9 +409,9 @@ Next Generation DNA Sequencing (NGS)
 
 * `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
   — An introduction to the genomic Variant Call Format 
-* `VCF Specification  <http://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
-  — the exact spec, i find it helpful to review the nuances of the genome data output...
-* `Hail <https://hail.is/>`_
+* `VCF Specification  <https://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
+  — the variant call format specification, its written like a clean engineering breakout doc, its only 36 pages dude, just read it. 
+  * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
 * `Big Data Genomics <http://bdgenomics.org/>`_
   — Variant Calling with Cannoli, ADAM, Avocado, and DECA
