@@ -216,18 +216,18 @@ Jupyter Notebook Links
 The following are pertinent links to information about the processing steps we took 
 
 * `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
--- successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
+— successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
 
 * `SparkSQL on Genomic Data HTML View <http://htmlpreview.github.io/?https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/html/successful_processing_vcf_genome_spark.html>`_
-  same as above but probably easier to read
+— same as above but probably easier to read
 
 
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
-  for introductory example of how to create RDD datasets and get familiar with the Databricks platform
+— for introductory example of how to create RDD datasets and get familiar with the Databricks platform
 * `Databricks 101 HTML <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/notebooks/001-pyspark.html>`_
-  if you just want to download the .html to your phone or whatever and view output
+— if you just want to download the .html to your phone or whatever and view output
 * `Databricks 201 <https://stackoverflow.com>`_
-  our deeper exploration into Databricks and pyspark
+— our deeper exploration into Databricks and pyspark
 
 
 
