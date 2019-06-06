@@ -314,7 +314,7 @@ Links
 ----------------
 
 
-
+|
 
 General
 ~~~~~~~~~~~~
@@ -330,7 +330,7 @@ General
 
 
 
-
+|
 
 
 
@@ -345,7 +345,7 @@ SparkSQL
   
   
 
-
+|
 
 
 
@@ -358,7 +358,7 @@ Scala
 
 
 
-
+|
 
 
 Next Generation DNA Sequencing (NGS)
@@ -392,7 +392,7 @@ Next Generation DNA Sequencing (NGS)
 
 
 
-
+|
 
 
 
