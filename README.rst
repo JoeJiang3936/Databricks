@@ -314,7 +314,7 @@ Links
 ----------------
 
 
-|
+
 
 General
 ~~~~~~~~~~~~
@@ -330,7 +330,6 @@ General
 
 
 
-|
 
 
 
@@ -346,7 +345,6 @@ SparkSQL
   
   
 
-|
 
 
 
@@ -360,7 +358,6 @@ Scala
 
 
 
-|
 
 
 
@@ -395,7 +392,6 @@ Next Generation DNA Sequencing (NGS)
 
 
 
-|
 
 
 
@@ -417,7 +413,6 @@ Solid Links
   —  this page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes. SSON Lines handles tabular data cleanly and without ambiguity. Stream compressors like gzip or bzip2 are recommended for saving space, resulting in .jsonl.gz or .jsonl.bz2 files...
 
   
-
 
 |
 |
