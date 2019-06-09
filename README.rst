@@ -390,6 +390,16 @@ Next Generation DNA Sequencing (NGS)
 * `Google Whitepaper <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/google-genomics-whitepaper.pdf>`_
   — Using Google Genomics API to query massive bioinformational datasets
 
+* `Spark Accelerated Genomics Processing <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/summit-talk_2019.pdf>`_
+  — Spark Summit Slides about next generation sequencing and Spark
+
+
+
+
+
+
+
+
 
 
 |
