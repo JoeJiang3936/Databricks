@@ -223,41 +223,14 @@ Our Technical Approach
    - We also will demonstrate the performance impact of applying the right compression and encoding scheme to the data
    - Parquet allows compression schemes to be specified on a per-column level, and is future-proofed to allow adding more encodings as they are invented and implemented
    - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_ and file metadata format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileLayout.gif>`_
-
 - **Philosopy - Keep I/O to a minimum**
-  - 
-
-
-- **Philosopy - Keep I/O to a minimum**
-  - 
-
-
+  - Parquet 2.0 
 - **Parallelize everywhere we can**
   - process instructions in parallel
+  - avoid jumps like 'if'
 
 
   
-
-
-The parquet design goals are interoperability, space efficiency, and query efficiency ! 
-Reuse.
-Language agnostic 
-well defined at the binary format. 
-no double conversion
-file format and back 
-data model:  avro 
-framework:  spark
-query engine:  hive, impala
-store column by column, all same type, all homgeous
-homogeneous thing, compression easier 
-READ only the data you need ! 
-skip all the data you need (go straight to the column)
-projection 
-statistics 
-parquet has statistics 
-dont scan the entire file ! ! ! 
-
-
 
 
 
@@ -510,6 +483,33 @@ Appendix - Variant Call Format (VCF) file field breakout
 
 
 
+
+|
+|
+|
+
+
+
+The parquet design goals are interoperability, space efficiency, and query efficiency ! 
+Reuse.
+Language agnostic 
+well defined at the binary format. 
+no double conversion
+file format and back 
+data model:  avro 
+framework:  spark
+query engine:  hive, impala
+store column by column, all same type, all homgeous
+homogeneous thing, compression easier 
+READ only the data you need ! 
+skip all the data you need (go straight to the column)
+projection 
+statistics 
+parquet has statistics 
+dont scan the entire file ! ! ! 
+compression comparisons:  tpch:  compression 
+decoding time vs compresssion:  R ggplot2 graph
+https://parquet.apache.org/presentations/
 
 
 
