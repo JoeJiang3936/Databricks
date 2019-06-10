@@ -242,9 +242,9 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
   - Parquet 2.0   
 
 - **Parallelize everywhere we can**
-  - process instructions in parallel
-  - avoid jumps like 'if'  
-  
+   -  process instructions in parallel
+   -  avoid jumps like 'if'  
+
 
 
 |
