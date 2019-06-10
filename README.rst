@@ -257,7 +257,7 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 =====   ===========  
 
 
-
+ Note:  VCF files include SNPs, INDELs, CNV and SV
 
 
 - **All files are stored during the process in Apache Parquet format**
@@ -452,9 +452,8 @@ Scala
 
 
 
+
 |
-
-
 Next Generation DNA Sequencing (NGS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -580,4 +579,10 @@ https://samtools.github.io/hts-specs/SAMv1.pdf
 
 
 
+
+Having your full genome sequenced means:
+- 130X Coverage for the Whole Exome
+- 30X Coverage for the non-coding regions of the DNA
+- Expanded with analysis of your Mitochondrial DNA (mtDNA)
+- Next Generation Sequencing (NGS)
 
