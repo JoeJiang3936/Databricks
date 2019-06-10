@@ -203,9 +203,11 @@ Our Technical Approach
 
 * Focus on leveraging the accepted .vcf file format for input files
 * All files are stored during the process in Apache Parquet format 
-   * This optimized columnar storage format is perfect for our applications
-* 
-
+   * this format has advantages of compressed, efficient columnar data storage format and representation
+   * interop with hadoop streamlined
+   * Parquet is built from the ground up with complex nested data structures in mind, and uses the record shredding and assembly algorithm described in the original Google Dremel paper. 
+   *  Parquet is built to support very efficient compression and encoding schemes. We also will demonstrate the performance impact of applying the right compression and encoding scheme to the data. 
+   *  Parquet allows compression schemes to be specified on a per-column level, and is future-proofed to allow adding more encodings as they are invented and implemented.
 
 
 
