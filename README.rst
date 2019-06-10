@@ -233,19 +233,12 @@ Our Technical Approach
 |
 
 
- 
-+------------+------------+
-| File Type  | Description|
-+============+============+
-| vcf        |  VCF stands for Variant Call Format.sed VCF|
-+------------+------------+
-| body row 1 | column 2   |
-+------------+------------+
-| vcf        |          VC|
-+------------+------------+
-| body row 1 | column 2   |
-+------------+------------+
-
+===== ======
+Vokal Umlaut
+===== ======
+aA äÄ
+oO öÖ
+===== ======
 
 
 
