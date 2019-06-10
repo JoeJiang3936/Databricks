@@ -142,13 +142,10 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 
-`Internal and External links <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
+`format <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
 
 
 
-
-
-`Internal and External links`_
 
 
 
@@ -228,10 +225,7 @@ Our Technical Approach
    - File metatdata image 
 - more
 - more
-   - more 
-
-
-
+   - more can be read `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
 
 
 
