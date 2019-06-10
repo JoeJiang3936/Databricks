@@ -236,6 +236,7 @@ If we do this efficiently, we can keep the processing optimized in batch process
 
 
 
+
 |
 |
 Our Technical Approach
@@ -277,11 +278,10 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    -  process instructions in parallel
    -  avoid jumps like 'if'  
 
-- **Parallelize everywhere we can**
-   -  process instructions in parallel
-   -  avoid jumps like 'if'  
+- **Minimize shuffles !**
+   -  Spark shuffles will call to io process, so we try to avoid  
 
-
+   
 
 
 
