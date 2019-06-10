@@ -106,6 +106,7 @@ Why Apache Spark ?
 * Standaridized and Generalized
 * Capable of combining SQL, streaming, and complex analytics
 * Runs *everywhere*: Hadoop, Apache Mesos, Kubernetes, standalone, in the cloud (Azure, AWS, etc)
+* Accidentally a perfect fit for NGS and precision medicine
 
 
 
