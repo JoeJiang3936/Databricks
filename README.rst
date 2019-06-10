@@ -553,6 +553,20 @@ Appendix - Variant Call Format (VCF) fields breakout
 
 
 
+
+Raw Notes (dont read this)
+==========================
+
+- ratio 
+- elastic 
+- ratio:  compute/network/io ratio static
+- workload
+- cloud perf vs on-premises
+- compare:  cloud vs on-premise ? 
+
+
+
+
 The parquet design goals are interoperability, space efficiency, and query efficiency ! 
 Reuse.
 Language agnostic 
@@ -579,7 +593,6 @@ https://samtools.github.io/hts-specs/SAMv1.pdf
 
 
 
-
 Having your full genome sequenced means:
 - 130X Coverage for the Whole Exome
 - 30X Coverage for the non-coding regions of the DNA
@@ -590,3 +603,8 @@ Whole Genome Sequencing
 
 https://www.illumina.com/informatics/sequencing-data-analysis.html
 
+
+
+Choose:  Cloud Service Provider 
+
+Elasticity
