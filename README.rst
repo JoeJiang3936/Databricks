@@ -552,11 +552,23 @@ Appendix - Variant Call Format (VCF) fields breakout
 |
 |
 
+
+
+
+
 |
 ToDo
 =========
 
 -  create image of the whole set up
 
--  
+-  baseline and comparisons
+
+-  adam up and working
+
+-  hail up and working
+
+-  pipelines up and working
+
+
 
