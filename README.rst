@@ -232,6 +232,17 @@ Our Technical Approach
 
   
 
+============    =========== 
+   File         Description 
+------------    ------ 
+  A             A or B 
+=====           ====== 
+False           False 
+True            True 
+False           True 
+True            True 
+=====           ======
+
 
 
 
