@@ -232,11 +232,13 @@ Our Technical Approach
 
 
 
-  
+
+ 
 +------------+------------+
 | Header 1   | Header 2   |
 +============+============+
-| .vcf       | VCF stands for Variant Call Format. It is a standardized text file format for representing SNP, INDEL, SV and CNV variation calls. SNPs (Single Sucleotide Polymorphisms, pronounced “snips”), are the most common type of genetic variation among people. Each SNP represents a difference in a single DNA building block, called a nucleotide. This is the most used VCF (ex. on third party tools like Sequencing.com|
+| .vcf       | VCF stands for Variant Call Format. It is a standardized text file format for representing SNP, INDEL, SV and CNV variation calls. 
+               SNPs (Single Sucleotide Polymorphisms, pronounced “snips”), are the most common type of genetic variation among people. Each SNP represents a difference in a single DNA building block, called a nucleotide. This is the most used VCF (ex. on third party tools like Sequencing.com|
 +------------+------------+
 | body row 1 | column 2   |
 +------------+------------+
