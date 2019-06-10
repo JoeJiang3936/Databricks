@@ -222,10 +222,10 @@ Our Technical Approach
    - Parquet is built to support very efficient compression and encoding schemes. We also will demonstrate the performance impact of applying the right compression and encoding scheme to the data
    - Parquet allows compression schemes to be specified on a per-column level, and is future-proofed to allow adding more encodings as they are invented and implemented
    - File format [image](https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif)
-   - File metatdata image 
+   - File metatdata `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
 - more
 - more
-   - more can be read `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
+   - mor
 
 
 
