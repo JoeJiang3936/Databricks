@@ -234,9 +234,6 @@ If we do this efficiently, we can keep the processing optimized in batch process
 
 
 
-
-
-
 |
 |
 Our Technical Approach
@@ -281,7 +278,11 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 - **Minimize shuffles !**
    -  Spark shuffles will call to io process, so we try to avoid  
 
-
+- **Misc**
+   -  Focus on defining workload behavior
+   -  Fully utilize 
+   -  compute vs io
+   -  Spark shuffles will call to io process, so we try to avoid  
 
 
 
@@ -551,60 +552,11 @@ Appendix - Variant Call Format (VCF) fields breakout
 |
 |
 
+|
+ToDo
+=========
 
+-  create image of the whole set up
 
+-  
 
-Raw Notes (dont read this)
-==========================
-
-- ratio 
-- elastic 
-- ratio:  compute/network/io ratio static
-- workload
-- cloud perf vs on-premises
-- compare:  cloud vs on-premise ? 
-
-
-
-
-The parquet design goals are interoperability, space efficiency, and query efficiency ! 
-Reuse.
-Language agnostic 
-well defined at the binary format. 
-no double conversion
-file format and back 
-data model:  avro 
-framework:  spark
-query engine:  hive, impala
-store column by column, all same type, all homgeous
-homogeneous thing, compression easier 
-READ only the data you need ! 
-skip all the data you need (go straight to the column)
-projection 
-statistics 
-parquet has statistics 
-dont scan the entire file ! ! ! 
-compression comparisons:  tpch:  compression 
-decoding time vs compresssion:  R ggplot2 graph
-https://parquet.apache.org/presentations/  
-https://us.dantelabs.com/blogs/news/genetic-data-fastq-bam-and-vcf  
-
-https://samtools.github.io/hts-specs/SAMv1.pdf  
-
-
-
-Having your full genome sequenced means:
-- 130X Coverage for the Whole Exome
-- 30X Coverage for the non-coding regions of the DNA
-- Expanded with analysis of your Mitochondrial DNA (mtDNA)
-- Next Generation Sequencing (NGS)
-
-Whole Genome Sequencing  
-
-https://www.illumina.com/informatics/sequencing-data-analysis.html
-
-
-
-Choose:  Cloud Service Provider 
-
-Elasticity
