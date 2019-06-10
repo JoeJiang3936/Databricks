@@ -586,3 +586,7 @@ Having your full genome sequenced means:
 - Expanded with analysis of your Mitochondrial DNA (mtDNA)
 - Next Generation Sequencing (NGS)
 
+Whole Genome Sequencing  
+
+https://www.illumina.com/informatics/sequencing-data-analysis.html
+
