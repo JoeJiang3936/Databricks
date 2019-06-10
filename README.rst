@@ -237,7 +237,7 @@ Our Technical Approach
 +------------+------------+
 | Header 1   | Header 2   |
 +============+============+
-| .vcf       | VCF stands for Variant Call Format.|
+| vcf       | VCF stands for Variant Call Format|
 +------------+------------+
 | body row 1 | column 2   |
 +------------+------------+
