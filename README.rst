@@ -219,11 +219,43 @@ Our Technical Approach
    - Built from the ground up with complex nested data structures in mind
    - Uses record shredding and assembly algorithm
    - Very efficient compression and encoding schemes
+   - We want compression but not at the cost of reading ! 
    - We also will demonstrate the performance impact of applying the right compression and encoding scheme to the data
    - Parquet allows compression schemes to be specified on a per-column level, and is future-proofed to allow adding more encodings as they are invented and implemented
    - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_ and file metadata format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileLayout.gif>`_
 
-- 
+- **Philosopy - Keep I/O to a minimum**
+  - 
+
+
+- **Philosopy - Keep I/O to a minimum**
+  - 
+
+
+- **Parallelize everywhere we can**
+  - process instructions in parallel
+
+
+  
+
+
+The parquet design goals are interoperability, space efficiency, and query efficiency ! 
+Reuse.
+Language agnostic 
+well defined at the binary format. 
+no double conversion
+file format and back 
+data model:  avro 
+framework:  spark
+query engine:  hive, impala
+store column by column, all same type, all homgeous
+homogeneous thing, compression easier 
+READ only the data you need ! 
+skip all the data you need (go straight to the column)
+projection 
+statistics 
+parquet has statistics 
+dont scan the entire file ! ! ! 
 
 
 
@@ -262,7 +294,6 @@ The following are pertinent links to information about the processing steps we t
 
 * `Databricks 201 <https://stackoverflow.com>`_
   — our deeper exploration into Databricks and pyspark
-
 
 
 
