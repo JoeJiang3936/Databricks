@@ -234,12 +234,15 @@ Our Technical Approach
 
 
 
-=====   ======
-Vokal   Umlaut
-=====   ======
-vcf     äÄ
-onto    aa
-=====   ======
+=====     ======
+Vokal     Umlaut
+=====     ======
+vcf       äÄ
+onto      aa
+
+
+FASTQ     FASTQ files contain billions of entries and are about 90-100 gigabytes in size, making them too large to open in a normal text editor. FASTQ files are the ultimate raw data.          
+=====     ======
 
 
 
