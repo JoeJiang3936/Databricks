@@ -417,6 +417,8 @@ Next Generation DNA Sequencing (NGS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+* `Genetics Home Reference  <https://ghr.nlm.nih.gov/>`_
+  — An introduction Genetics
 * `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
   — An introduction to the genomic Variant Call Format file type 
 * `VCF Specification  <https://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
