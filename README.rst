@@ -198,9 +198,24 @@ If we do this efficiently, we can keep the processing optimized in batch process
 .. class:: no-web no-pdf
 
 
+Our Technical Approach
+==================
+
+* Focus on leveraging the accepted .vcf file format for input files
+* All files are stored during the process in Apache Parquet format 
+   * This optimized columnar storage format is perfect for our applications
+* 
+
+
+
+
+
+
 
 
 |
+
+
 
 
 Jupyter Notebooks 
@@ -366,9 +381,11 @@ Next Generation DNA Sequencing (NGS)
 
 
 * `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
-  — An introduction to the genomic Variant Call Format 
+  — An introduction to the genomic Variant Call Format file type 
 * `VCF Specification  <https://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
-  — the variant call format specification, its written like a clean engineering breakout doc, its only 36 pages dude, just read it. 
+  — the variant call format specification, its written like a clean engineering breakout doc, its only 36 pages dude, just read it 
+* `Genetic Data VCF BAM FASTQ  <https://us.dantelabs.com/blogs/news/genetic-data-fastq-bam-and-vcf>`_
+  — The big picture view of the file format options and their place in sequencing
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
 * `Big Data Genomics <http://bdgenomics.org/>`_
@@ -389,7 +406,6 @@ Next Generation DNA Sequencing (NGS)
   — Main page overview of Google Genomics program for processing petabytes of genomic data
 * `Google Whitepaper <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/google-genomics-whitepaper.pdf>`_
   — Using Google Genomics API to query massive bioinformational datasets
-
 * `Spark Accelerated Genomics Processing <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/summit-talk_2019.pdf>`_
   — Spark Summit Slides about next generation sequencing and Spark
 
