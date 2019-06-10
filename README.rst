@@ -239,7 +239,7 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_ and file metadata format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileLayout.gif>`_  
 
 - **Philosopy - Keep I/O to a minimum**
-  - Parquet 2.0   
+   -  Parquet 2.0   
 
 - **Parallelize everywhere we can**
    -  process instructions in parallel
