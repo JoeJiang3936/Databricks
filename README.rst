@@ -233,11 +233,12 @@ Our Technical Approach
 |
 
 
+
 ===== ======
 Vokal Umlaut
 ===== ======
-aA äÄ
-oO öÖ
+aA    äÄ
+oO    öÖ
 ===== ======
 
 
