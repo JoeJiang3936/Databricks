@@ -214,18 +214,17 @@ If we do this efficiently, we can keep the processing optimized in batch process
 Our Technical Approach
 ==================
 
-- Focus on leveraging the accepted .vcf file format for input files
+- **File Format** - Focus on leveraging the accepted .vcf file format for input files
 - All files are stored during the process in Apache Parquet format
    - This format has advantages of compressed, efficient columnar data storage format and representation
    - Interop with hadoop streamlined
    - Parquet is built from the ground up with complex nested data structures in mind, and uses the record shredding and assembly algorithm described in the original Google Dremel paper
    - Parquet is built to support very efficient compression and encoding schemes. We also will demonstrate the performance impact of applying the right compression and encoding scheme to the data
    - Parquet allows compression schemes to be specified on a per-column level, and is future-proofed to allow adding more encodings as they are invented and implemented
-   - File format [image](https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif)
-   - File metatdata `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
-- more
-- more
-   - mor
+   - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
+   - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
+- 
+
 
 
 
