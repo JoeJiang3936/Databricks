@@ -210,6 +210,7 @@ Our Technical Approach
 ==================
 
 - **File Format** - Focus on leveraging the accepted .vcf file format for input files
+
 - **All files are stored during the process in Apache Parquet format**
    - This format has advantages of compressed, efficient columnar data storage format and representation
    - Interop with hadoop streamlined
