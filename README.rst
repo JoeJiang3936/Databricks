@@ -281,7 +281,7 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 - **Minimize shuffles !**
    -  Spark shuffles will call to io process, so we try to avoid  
 
-   
+
 
 
 
@@ -530,7 +530,7 @@ Solid Links
 
 |
 |
-Appendix - Variant Call Format (VCF) file field breakout
+Appendix - Variant Call Format (VCF) fields breakout
 =========
 
 
