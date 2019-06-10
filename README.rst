@@ -532,7 +532,9 @@ parquet has statistics
 dont scan the entire file ! ! ! 
 compression comparisons:  tpch:  compression 
 decoding time vs compresssion:  R ggplot2 graph
-https://parquet.apache.org/presentations/
+https://parquet.apache.org/presentations/  
+https://us.dantelabs.com/blogs/news/genetic-data-fastq-bam-and-vcf  
+
 
 
 
