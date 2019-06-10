@@ -139,6 +139,19 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 
+
+
+
+`Internal and External links <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_
+
+
+
+
+
+`Internal and External links`_
+
+
+
 Our Approach
 =============
 
@@ -257,18 +270,6 @@ The following are pertinent links to information about the processing steps we t
 * `Databricks 201 <https://stackoverflow.com>`_
   — our deeper exploration into Databricks and pyspark
 
-
-
-
-Author:      David Goodger
-
-Address:     123 Example Street Example, EX Canada A1B 2C3
-
-Contact:     docutils-develop@lists.sourceforge.net
-
-Authors:     Me; Myself; I
-
-organization:  humankind
 
 
 
