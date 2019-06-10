@@ -234,12 +234,12 @@ Our Technical Approach
 
 
 
-===== ======
-Vokal Umlaut
-===== ======
-aA    äÄ
-oO    öÖ
-===== ======
+=====   ======
+Vokal   Umlaut
+=====   ======
+vcf     äÄ
+onto    aa
+=====   ======
 
 
 
