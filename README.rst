@@ -250,18 +250,12 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    -  process instructions in parallel
    -  avoid jumps like 'if'  
 
-|
-
-
 
 
 
 
 |
 |
-
-
-
 Jupyter Notebooks 
 ==================
 
