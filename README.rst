@@ -236,12 +236,15 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    - We want compression but not at the cost of reading ! 
    - We also will demonstrate the performance impact of applying the right compression and encoding scheme to the data
    - Parquet allows compression schemes to be specified on a per-column level, and is future-proofed to allow adding more encodings as they are invented and implemented
-   - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_ and file metadata format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileLayout.gif>`_
+   - File format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileFormat.gif>`_ and file metadata format image `here <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/images/FileLayout.gif>`_  
+
 - **Philosopy - Keep I/O to a minimum**
-  - Parquet 2.0 
+  - Parquet 2.0   
+
 - **Parallelize everywhere we can**
   - process instructions in parallel
-  - avoid jumps like 'if'
+  - avoid jumps like 'if'  
+  
 
 
 |
