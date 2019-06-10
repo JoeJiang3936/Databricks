@@ -235,7 +235,7 @@ Our Technical Approach
 
  
 +------------+------------+
-| Header 1   | Header 2   |
+| File Type  | Description|
 +============+============+
 | vcf        |          VC|
 +------------+------------+
