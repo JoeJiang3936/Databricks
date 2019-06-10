@@ -260,6 +260,18 @@ The following are pertinent links to information about the processing steps we t
 
 
 
+Author:      David Goodger
+
+Address:     123 Example Street Example, EX Canada A1B 2C3
+
+Contact:     docutils-develop@lists.sourceforge.net
+
+Authors:     Me; Myself; I
+
+organization:  humankind
+
+
+
    
 |
 
