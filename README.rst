@@ -93,9 +93,16 @@ NGS
 
 
 
+
+
+
+
+
+
+
+
 |
-
-
+|
 Why Apache Spark ? 
 =============
 
@@ -120,11 +127,18 @@ Why Apache Spark ?
 
 
 
+
+
+
+
+
+
+
+
+
+
 |
-
-
-
-
+|
 Background
 ==============
 
@@ -136,14 +150,21 @@ It is fundamentally unified analytics engine for large-scale data processing.  S
 Our goal is to document how much more streamlined and efficient this system is for processing massive terabyte-sized DNA sequencing raw data, and demonstrate the usage of SparkSQL to query this datastructure. 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 |
 |
-
-
-
-
-
-
 Our Approach
 =============
 
@@ -203,10 +224,20 @@ If we do this efficiently, we can keep the processing optimized in batch process
 .. class:: no-web no-pdf
 
 
-|
-|
 
 
+
+
+
+
+
+
+
+
+
+
+|
+|
 Our Technical Approach
 ==================
 
@@ -249,6 +280,14 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 - **Parallelize everywhere we can**
    -  process instructions in parallel
    -  avoid jumps like 'if'  
+
+
+
+
+
+
+
+
 
 
 
@@ -354,10 +393,13 @@ Sample Code
 
 
 
-|
-|
 
 
+
+
+
+|
+|
 References
 =========
 
@@ -462,9 +504,6 @@ Next Generation DNA Sequencing (NGS)
 
 
 |
-
-
-
 Solid Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -483,11 +522,14 @@ Solid Links
 
   
 
+
+
+
+
+
+
 |
 |
-
-
-
 Appendix - Variant Call Format (VCF) file field breakout
 =========
 
