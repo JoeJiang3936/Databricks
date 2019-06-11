@@ -415,6 +415,10 @@ Links
 
 |
 
+
+  tbresee@mail.smu.edu, 1Raven111132DD
+
+
 General
 ~~~~~~~~~~~~
 
@@ -425,6 +429,25 @@ General
   — Hadoop Standard Library
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
   — where you can log in and use SparkSQL and other Databricks APIs
+
+
+
+
+Connecting to Databricks
+~~~~~~~~~~~~
+
+* `Connecting BI Tools  <https://docs.databricks.com/user-guide/bi/jdbc-odbc-bi.html>`_
+  — JDBC/ODBC driver and connectivity 
+* `Connecting MySQL Workbench <https://docs.databricks.com/user-guide/bi/workbenchj.html>`_
+  — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
+* `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
+  — where you can log in and use SparkSQL and other Databricks APIs
+
+
+
+
+
+
 
 
 
@@ -586,4 +609,18 @@ ToDo
 
 -  https://docs.databricks.com/_static/notebooks/mlflow/mlflow-quick-start-python.html
 
--  
+-  https://github.com/evodify
+
+-  https://github.com/evodify/genomic-analyses_in_apache-spark
+
+-  hail scala here ?   https://github.com/evodify/genomic-analyses_in_apache-spark/tree/master/hail-scala
+
+-  databricks documentation:  https://docs.databricks.com/index.html
+
+
+
+-  https://docs.databricks.com/applications/genomics/hls-runtime.html#dbr-hls
+-  really good cluster information:
+   https://community.cloud.databricks.com/driver-proxy/o/7001951515152566/0611-033207-may118/80/?c=cluster
+
+

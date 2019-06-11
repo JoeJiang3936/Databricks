@@ -1,0 +1,35 @@
+log4j:WARN No appenders could be found for logger (com.databricks.conf.trusted.ProjectConf$).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Tue Jun 11 03:33:31 2019 py4j imported
+Tue Jun 11 03:33:31 2019 Python shell started with PID  2383  and guid  6a2b56765f6f4e46a6a55e4e9e20bb57
+Tue Jun 11 03:33:32 2019 Python shell executor start
+Tue Jun 11 03:47:44 2019 py4j imported
+Tue Jun 11 03:47:44 2019 Python shell started with PID  4489  and guid  a8c2877653cf4791b39bc53910f50ac4
+Tue Jun 11 03:47:44 2019 Python shell executor start
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<command-2748760578684275> in <module>()
+----> 1 import mlflow
+
+ImportError: No module named 'mlflow'Tue Jun 11 03:49:47 2019 py4j imported
+Tue Jun 11 03:49:47 2019 Python shell started with PID  4526  and guid  627b427c8bad47a8b6a3456c18362404
+Tue Jun 11 03:49:48 2019 Python shell executor start
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<command-1445954997366881> in <module>()
+----> 1 import hail
+      2 hc = HailContext(sc)
+
+ImportError: No module named 'hail'---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<command-1445954997366894> in <module>()
+----> 1 vds = hc.import_vcf(vcf_path) # bgz import fails even with force_bgz=True. I compressed my files with bgzip from https://github.com/samtools/tabix .
+
+NameError: name 'hc' is not defined---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<command-1445954997366896> in <module>()
+----> 1 vds = vds.split_multi()
+
+NameError: name 'vds' is not defined
