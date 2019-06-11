@@ -579,3 +579,11 @@ ToDo
 -  db benchmark entire approach up and running 
 
 -  queries to baseline 
+
+-  databricks notebooks url links capture to unlist 
+
+-  https://cdn2.hubspot.net/hubfs/438089/notebooks/Samples/Data_Exploration/Data_Exploration_on_Databricks_Setup.html
+
+-  https://docs.databricks.com/_static/notebooks/mlflow/mlflow-quick-start-python.html
+
+-  
