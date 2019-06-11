@@ -288,14 +288,15 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    -  compute vs io
    -  Spark shuffles will call to io process, so we try to avoid  
    -  Parquet creates a compression format for each Avro-defined data model
-     -  Avro and Parquet for data models and file formats ! 
+   -  Avro and Parquet for data models and file formats ! 
 
+
+|
 
 
 - **Status**
-   1.  Create Databricks account . . . . . . . . . [complete]
-   2.  abc
-   
+1.  Create Databricks account . . . . . . . . . . . . . . . [complete]
+2.  more
 
 
 
