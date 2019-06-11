@@ -8,7 +8,11 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 
-Link to our public website:   https://thesparkgenomeproject.com/
+Link to our public website:   
+
+https://thesparkgenomeproject.com/
+
+https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7001951515152566/3688659401164340/6475682490817878/latest.html
 
 
 
@@ -283,6 +287,8 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    -  Fully utilize 
    -  compute vs io
    -  Spark shuffles will call to io process, so we try to avoid  
+   -  Parquet creates a compression format for each Avro-defined data model
+     -  Avro and Parquet for data models and file formats ! 
 
 
 

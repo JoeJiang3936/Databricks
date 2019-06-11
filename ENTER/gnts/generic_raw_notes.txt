@@ -21,6 +21,28 @@ Generic Raw Notes (GRN)
 
 
 
+--- important links ---
+
+https://databricks.com/blog/2016/05/24/genome-sequencing-in-a-nutshell.html
+
+		https://www.slideshare.net/TimothyDanford
+
+http://www.internationalgenome.org/
+
+https://www.slideshare.net/noootsab/lightning-fast-genomics-with-spark-adam-and-scala
+
+		performances here, very good set
+
+
+
+
+
+
+
+
+
+
+
 
 
 
