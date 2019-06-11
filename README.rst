@@ -566,12 +566,14 @@ ToDo
 
 -  create public databricks notebook test `post <https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7001951515152566/3688659401164340/6475682490817878/latest.html>`_ . . . . . . . . [complete]
 
+-  get adam and hail both up in spark environment (this is not expected to be easy)
+
 -  create image of the whole set up
 
 -  baseline and comparisons
 
--  adam up and working
-
--  hail up and working
-
 -  pipelines up and working
+
+-  db benchmark entire approach up and running 
+
+-  queries to baseline 
