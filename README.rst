@@ -564,7 +564,7 @@ Appendix - Variant Call Format (VCF) fields breakout
 ToDo
 =========
 
--  create databricks account . . . . . . . . . . . . [complete]
+-  create databricks account . . . . . . . . . . . . . . . . . [complete]
 
 -  create image of the whole set up
 
