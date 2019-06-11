@@ -12,8 +12,6 @@ Link to our public website:
 
 https://thesparkgenomeproject.com/
 
-https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7001951515152566/3688659401164340/6475682490817878/latest.html
-
 
 
 |
@@ -566,6 +564,8 @@ ToDo
 
 -  create databricks account . . . . . . . . . . . . . . . . . [complete]
 
+-  create public databricks notebook test `post <https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7001951515152566/3688659401164340/6475682490817878/latest.html>`_ . . . . . . . . [complete]
+
 -  create image of the whole set up
 
 -  baseline and comparisons
@@ -575,6 +575,3 @@ ToDo
 -  hail up and working
 
 -  pipelines up and working
-
-
-
