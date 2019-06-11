@@ -241,6 +241,8 @@ If we do this efficiently, we can keep the processing optimized in batch process
 Our Technical Approach
 ==================
 
+|
+
 - **All input sequenced files will be .VCF format (or .BAM)**
    - Standard file format for DNA sequenced files
 
