@@ -291,13 +291,6 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
    -  Avro and Parquet for data models and file formats ! 
 
 
-|
-
-
-- **Status**
-1.  Create Databricks account . . . . . . . . . . . . . . . [complete]
-2.  more
-
 
 
 
@@ -570,6 +563,8 @@ Appendix - Variant Call Format (VCF) fields breakout
 |
 ToDo
 =========
+
+-  create databricks account . . . . . . . . . . . . [complete]
 
 -  create image of the whole set up
 
