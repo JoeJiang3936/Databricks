@@ -295,6 +295,8 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 
 
 
+https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb
+
 
 
 
@@ -313,11 +315,21 @@ Jupyter Notebook Links
 The following are pertinent links to information about the processing steps we took 
 
 
+* `SparkSQL Basics on Databricks CE <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb.ipynb>`_
+  — showings the basics of SparkSQL usage on the Databricks platform
+
+* `SparkSQL Basics on Databricks CE HTML view <http://htmlpreview.github.io/?https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.html>`_
+  — HTML view of the above jupyter notebook
+
+
+
 * `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
   — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
 
 * `SparkSQL on Genomic Data HTML View <http://htmlpreview.github.io/?https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/html/successful_processing_vcf_genome_spark.html>`_
-  — same as above but probably easier to read
+  — HTML view of the above jupyter notebook
+
+
 
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   — for introductory example of how to create RDD datasets and get familiar with the Databricks platform
@@ -391,10 +403,6 @@ Sample Code
     
 
     
-
-
-
-
 
 
 
