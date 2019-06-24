@@ -321,7 +321,13 @@ The following are pertinent links to information about the processing steps we t
 |
 
 
-* `SQL Notebook on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/1e07b240b348ad0925682ea422c3c94ecbd94b27/ENTER/dbricks/beta%20-%20SQL%20-%20Pop%20vs%20Price.html>`_
+
+* `SQL Notebook 1 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/cc6519828241de3ba5b75444ce13672bf9aa9f21/ENTER/dbricks/beta - SQL - test.html>`_
+  — for introductory example of how to use SQL notebook file directly on Databricks
+
+
+
+* `SQL Notebook 2 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/1e07b240b348ad0925682ea422c3c94ecbd94b27/ENTER/dbricks/beta%20-%20SQL%20-%20Pop%20vs%20Price.html>`_
   — for introductory example of how to use SQL notebook file directly on Databricks
 
 
