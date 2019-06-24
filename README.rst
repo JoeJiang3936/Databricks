@@ -317,7 +317,7 @@ The following are pertinent links to information about the processing steps we t
 * `SparkSQL Basics on Databricks CE <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb>`_
   — showings the basics of SparkSQL usage on the Databricks platform
 
-* `SparkSQL Basics on Databricks CE HTML view <http://htmlpreview.github.io/?https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.html>`_
+* `SparkSQL Basics on Databricks CE HTML view <http://htmlpreview.github.io/?https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.html>`_
   — HTML view of the above jupyter notebook
 
 
@@ -329,6 +329,9 @@ The following are pertinent links to information about the processing steps we t
 
 * `SparkSQL on Genomic Data HTML View <http://htmlpreview.github.io/?https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/html/successful_processing_vcf_genome_spark.html>`_
   — HTML view of the above jupyter notebook
+
+
+
 
 
 |
