@@ -322,7 +322,7 @@ The following are pertinent links to information about the processing steps we t
 
 
 
-* `SQL Notebook 1 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/cc6519828241de3ba5b75444ce13672bf9aa9f21/ENTER/dbricks/beta - SQL - test.html>`_
+* `SQL Notebook 1 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/bcccb13349bed18a85e685734e5bd3cac0bfb64f/ENTER/dbricks/beta - SQL - test.html>`_
   — for introductory example of how to use SQL notebook file directly on Databricks
 
 
