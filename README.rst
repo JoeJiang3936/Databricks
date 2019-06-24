@@ -322,7 +322,6 @@ The following are pertinent links to information about the processing steps we t
   — HTML view of the above jupyter notebook
 
 
-<br>
 
 
 * `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
@@ -331,7 +330,8 @@ The following are pertinent links to information about the processing steps we t
 * `SparkSQL on Genomic Data HTML View <http://htmlpreview.github.io/?https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/html/successful_processing_vcf_genome_spark.html>`_
   — HTML view of the above jupyter notebook
 
-<br>
+
+
 
 
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
