@@ -37,7 +37,7 @@
 -- MAGIC 
 -- MAGIC data = data.dropna() # drop rows with missing values
 -- MAGIC 
--- MAGIC Now that you have created the data DataFrame, you can quickly access the data using standard Spark commands such as take(). 
+-- MAGIC #  Now that you have created the data DataFrame, you can quickly access the data using standard Spark commands such as take(). 
 
 -- COMMAND ----------
 
@@ -54,8 +54,6 @@
 
 -- COMMAND ----------
 
--- MAGIC 
--- MAGIC 
 -- MAGIC %python
 -- MAGIC #  *BEFORE* you can issue SQL queries, you must save your data DataFrame as a temporary table:   
 -- MAGIC #     Register table so it is accessible via SQL Context
