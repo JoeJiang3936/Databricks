@@ -321,8 +321,17 @@ The following are pertinent links to information about the processing steps we t
 |
 
 
+* `SQL Notebook on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/1e07b240b348ad0925682ea422c3c94ecbd94b27/ENTER/dbricks/beta%20-%20SQL%20-%20Pop%20vs%20Price.html>`_
+  — for introductory example of how to use SQL notebook file directly on Databricks
+
+
+
+
+
+
 * `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
   — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
+
 
 
 
