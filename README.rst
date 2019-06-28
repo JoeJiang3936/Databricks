@@ -311,7 +311,18 @@ As we progress step-by-step, we will upload jupyter notebooks. This is the key t
 Jupyter Notebook Links
 ------------------------
 
-The following are pertinent links to information about the processing steps we took 
+The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc 
+
+|
+
+
+
+
+* `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
+  — for introductory example of how to create RDD datasets and get familiar with the Databricks platform
+
+
+|
 
 
 * `SparkSQL Basics on Databricks CE <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb>`_
@@ -319,7 +330,6 @@ The following are pertinent links to information about the processing steps we t
 
 
 |
-
 
 
 * `SQL Notebook 1 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/bcccb13349bed18a85e685734e5bd3cac0bfb64f/ENTER/dbricks/beta - SQL - test.html>`_
@@ -335,17 +345,18 @@ The following are pertinent links to information about the processing steps we t
 
 
 
-* `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
-  — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
-
-
+* `Apache Parquet file type usage on Databricks CE <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/readingParquetFiles.ipynb>`_
+  — for getting a feel for this type of file format
 
 
 |
 
 
-* `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
-  — for introductory example of how to create RDD datasets and get familiar with the Databricks platform
+
+
+* `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
+  — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
+
 
 
 
