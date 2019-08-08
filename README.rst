@@ -439,13 +439,11 @@ References
 
 
 
-Master Links
-----------------
-
 
 
 Genomics
-~~~~~~~~~~~~
+-------------
+
 
 * `HailScalaGenomicsETLTutorial <https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html>`_
   — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
@@ -460,7 +458,7 @@ Genomics
 
 
 General
-~~~~~~~~~~~~
+--------
 
 
 * `Apache Spark <https://spark.apache.org/>`_
