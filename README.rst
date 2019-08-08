@@ -515,7 +515,7 @@ Databricks
 
 * `Delta Lake  <https://delta.io/>`_
   — delta like is an open-source storage layer that brings ACID transactions to Apache Spark workloads
-  
+
 
 * `Github Delta Lake  <https://github.com/delta-io/delta>`_
   — github location
@@ -562,16 +562,6 @@ Genomics
 
 
 
-|
-
-
-
-General
---------
-
-
-* `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
-  — where you can log in and use SparkSQL and other Databricks APIs
 
 
 
