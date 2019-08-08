@@ -432,6 +432,8 @@ Sample Code
 
 |
 |
+
+
 References
 =========
 
@@ -466,7 +468,7 @@ Apache Spark
 
 
 
-* `Gitbook Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
+* `Gitbook Internals of Apache Spark   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
   — really really good overview of how Apache Spark functions
 
 
@@ -512,8 +514,8 @@ Databricks
 
 
 * `Delta Lake  <https://delta.io/>`_
-  — delta like is an open-source storage layer that brings ACID transactions to Apache Spark and big data workloads
-
+  — delta like is an open-source storage layer that brings ACID transactions to Apache Spark workloads
+  
 
 * `Github Delta Lake  <https://github.com/delta-io/delta>`_
   — github location
