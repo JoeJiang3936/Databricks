@@ -521,6 +521,12 @@ Databricks
   — covers dataframes, used extensively with genomics and sparksql 
 
 
+
+* `SQL Guide <https://docs.databricks.com/spark/latest/spark-sql/index.html>`_
+  — covers SQL language manual for databricks
+
+
+
 * `Delta Lake  <https://delta.io/>`_
   — delta lake is an open-source storage layer that brings ACID transactions to Apache Spark workloads
 
@@ -551,19 +557,6 @@ https://databricks.com/resources/type/example-notebook
 
 
 
-
-
-|
-
-
-
-
-SparkSQL
--------------
-
-
-* `Gitbook  mastering SparkSQL <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
-  — great gitbook, very detailed
 
 
 
