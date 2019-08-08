@@ -12,9 +12,6 @@
 
 
 
-
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 --- download a file and save ---
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,6 +23,26 @@ urllib.request.urlretrieve("http://kdd.ics.uci.edu/databases/kddcup99/kddcup.dat
 dbutils.fs.mv("file:/tmp/kddcup_data.gz", "dbfs:/kdd/kddcup_data.gz")
 # show 
 display(dbutils.fs.ls("dbfs:/kdd"))
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---   install library        ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+dbutils.library.installPyPI("pypipackage", version="version", repo="repo", extras="extras")
+dbutils.library.list()
+
+dbutils.library.installPyPI("azureml-sdk", version="1.0.8", extras="databricks")
+dbutils.library.restartPython()  # Removes Python state, but some libraries might not work without calling this function
+
+
+
+
+
 
 
 

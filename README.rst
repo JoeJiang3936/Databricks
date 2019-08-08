@@ -557,11 +557,8 @@ Databricks
   — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
 
 
-* `Example Databricks Notebooks <https://databricks.com/resources/type/example-notebook>`_
-  — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
-
-
-https://databricks.com/resources/type/example-notebook
+* `Hipster Scala Example <https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/8497971343024764/53198984527781/2559267461126367/latest.html>`_
+  — scala example with variant spark
 
 
 
