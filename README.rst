@@ -455,7 +455,7 @@ Databricks
 
 
 * `Dataframe Guide <https://docs.databricks.com/spark/latest/dataframes-datasets/index.html>`_
-  — used extensively with genomics and spark sql 
+  — covers dataframes, used extensively with genomics and sparksql 
 
 
 
