@@ -442,9 +442,6 @@ Links
 ----------------
 
 
-|
-
-
  
 
 Genomics
@@ -458,6 +455,7 @@ Genomics
   — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex' in Scala (VariantSpark_HipsterIndex_Spark2.2)
 
 
+|
 
 
 
