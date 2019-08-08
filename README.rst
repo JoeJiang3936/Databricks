@@ -436,8 +436,31 @@ References
 =========
 
 
+|
+
+
+Apache Spark
+-------------
+
+
+* `Apache Spark Website <https://spark.apache.org/>`_
+  — the core website for Apache Spark 
+
+
+* `Documentation <https://spark.apache.org/docs/latest/>`_
+  — the main documentation link 
+
+
+* `Spark SQL DataFrames and Datasets Guide <https://spark.apache.org/docs/latest/sql-programming-guide.html>`_
+  — the detailed information about using SparkSQL
+
+ 
+
+
+
 
 |
+
 
 
 
@@ -460,9 +483,7 @@ Databricks
 
 
 
-
 |
-
 
 
 
