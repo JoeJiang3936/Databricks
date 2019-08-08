@@ -455,8 +455,8 @@ Genomics
 
  
 * `VariantSpark Example <https://docs.databricks.com/_static/notebooks/variant-spark-hipster-index.html>`_
-  — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex'
-  
+  — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex' in Scala (VariantSpark_HipsterIndex_Spark2.2)
+
 
 
 
