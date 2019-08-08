@@ -432,9 +432,6 @@ Sample Code
 
 
 
-
-
-
 |
 |
 References
@@ -449,6 +446,16 @@ Links
 
 
  
+
+Genomics
+~~~~~~~~~~~~
+
+* `HailScalaGenomicsETLTutorial <https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html>`_
+  — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
+
+ 
+
+
 
 
 General
@@ -474,10 +481,6 @@ Connecting to Databricks
   — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
   — where you can log in and use SparkSQL and other Databricks APIs
-
-
-
-
 
 
 
