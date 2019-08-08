@@ -467,7 +467,7 @@ General
   — where you can log in and use SparkSQL and other Databricks APIs
 
 
-
+|
 
 Connecting to Databricks
 ---------------------------
@@ -513,6 +513,7 @@ Scala
 
 
 |
+
 Next Generation DNA Sequencing (NGS)
 ---------------------------------------
 
@@ -569,10 +570,9 @@ Next Generation DNA Sequencing (NGS)
 
 
 
-
-
-
 |
+
+
 Solid Links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
