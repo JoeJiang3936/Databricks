@@ -1,0 +1,36 @@
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Databricks Quick Commands
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- download a file and save ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import urllib.request
+# retrieve 
+urllib.request.urlretrieve("http://kdd.ics.uci.edu/databases/kddcup99/kddcup.data_10_percent.gz", "/tmp/kddcup_data.gz")
+# move 
+dbutils.fs.mv("file:/tmp/kddcup_data.gz", "dbfs:/kdd/kddcup_data.gz")
+# show 
+display(dbutils.fs.ls("dbfs:/kdd"))
+
+
+
+
+
+
+
+
