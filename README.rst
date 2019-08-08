@@ -697,10 +697,6 @@ Next Generation DNA Sequencing (NGS)
   
 
 
-  https://docs.azuredatabricks.net/_static/notebooks/genomics/vcf2delta.html
-
-
-
 |
 
 Make Work
