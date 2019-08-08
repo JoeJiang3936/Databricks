@@ -295,10 +295,6 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 
 
 
-https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb
-
-
-
 |
 |
 Jupyter Notebooks 
