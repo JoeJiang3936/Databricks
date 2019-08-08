@@ -494,7 +494,21 @@ Databricks
 * `Cluster Mode Overview   <https://spark.apache.org/docs/latest/cluster-overview.html>`_
   — how Spark runs on clusters
 
+
+
+
+* `Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
+  — really really good overview of how Apache Spark functions, worth reading...
+
   
+
+
+
+
+
+https://jaceklaskowski.gitbooks.io/mastering-apache-spark/
+
+
 
 
 |
