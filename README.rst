@@ -430,8 +430,6 @@ Sample Code
 
 
 
-
-
 |
 |
 References
@@ -485,13 +483,12 @@ Connecting to Databricks
 
 
 
-
 |
 
 
 
 SparkSQL
-~~~~~~~~~~~~
+----------
 
 
 * `SparkSQL <https://spark.apache.org/sql/>`_
@@ -506,7 +503,7 @@ SparkSQL
 
 
 Scala
-~~~~~~~~~~~~
+--------
 
 
 * `Scala <https://www.scala-lang.org/>`_
@@ -517,45 +514,56 @@ Scala
 
 |
 Next Generation DNA Sequencing (NGS)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------
 
 
 * `Genetics Home Reference  <https://ghr.nlm.nih.gov/>`_
-  — An introduction Genetics
+  — an introduction Genetics
 
 * `What is DNA <https://ghr.nlm.nih.gov/primer/basics/dna>`_
   — DNA breakdown
 
 * `VCF  <https://faculty.washington.edu/browning/intro-to-vcf.html#example>`_
-  — An introduction to the genomic Variant Call Format file type 
+  — an introduction to the genomic Variant Call Format file type 
+
 * `VCF Specification  <https://samtools.github.io/hts-specs/VCFv4.3.pdf>`_
   — the variant call format specification, its written like a clean engineering breakout doc, its only 36 pages dude, just read it 
+
 * `Genetic Data VCF BAM FASTQ  <https://us.dantelabs.com/blogs/news/genetic-data-fastq-bam-and-vcf>`_
   — The big picture view of the file format options and their place in sequencing
+
 * `Hail <https://hail.is/>`_
   — this is where it starts getting very complicated
+
 * `Big Data Genomics <http://bdgenomics.org/>`_
   — Variant Calling with Cannoli, ADAM, Avocado, and DECA
+
 * `Genomics in the Cloud <https://aws.amazon.com/health/genomics/>`_
   — Amazon information about how to simplify and securely scale genomic analysis with AWS platform 
+
 * `Workflows  <https://docs.opendata.aws/genomics-workflows/>`_
   — Genomics workflows on AWS
+
 * `Igenomix  <https://aws.amazon.com/solutions/case-studies/igenomix/>`_
   — AWS-based case study of Igenomix and NGS
+
 * `Data Slicer  <http://grch37.ensembl.org/Homo_sapiens/Tools/DataSlicer?db=core>`_
-  — subset of extremely large datasets VCF BAM etc 
+  — subset of extremely large datasets VCF BAM etc
+
 * `Databricks Pipeline  <https://databricks.com/blog/2018/09/10/building-the-fastest-dnaseq-pipeline-at-scale.html>`_
   — Building the Fastest DNASeq Pipeline at Scale
+
 * `Databricks Unified Analytics Platform for Genomics <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/Unified_Analytics_Platform_for_Genomics_Databricks.pdf>`_
   — Blueprint data for new Databricks Genomics platform 
+
 * `Google Genomics Home <https://cloud.google.com/genomics/#>`_
   — Main page overview of Google Genomics program for processing petabytes of genomic data
+
 * `Google Whitepaper <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/google-genomics-whitepaper.pdf>`_
   — Using Google Genomics API to query massive bioinformational datasets
+
 * `Spark Accelerated Genomics Processing <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/summit-talk_2019.pdf>`_
   — Spark Summit Slides about next generation sequencing and Spark
-
-
 
 
 
@@ -585,12 +593,10 @@ Solid Links
 
 
 
-
-
-
-
 |
 |
+
+
 Appendix - Variant Call Format (VCF) fields breakout
 =========
 
