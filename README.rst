@@ -467,7 +467,7 @@ Apache Spark
 
 
 * `Gitbook Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
-  — really really good overview of how Apache Spark functions, worth reading...
+  — really really good overview of how Apache Spark functions
 
 
 
