@@ -459,7 +459,7 @@ Apache Spark
 * `Spark Python API Docs  <https://spark.apache.org/docs/latest/api/python/index.html>`_
   — covers pyspark .methods and commands 
 
-  
+
 
  
 
@@ -489,6 +489,12 @@ Databricks
   — covers dataframes, used extensively with genomics and sparksql 
 
 
+
+
+* `Cluster Mode Overview   <https://spark.apache.org/docs/latest/cluster-overview.html>`_
+  — how Spark runs on clusters
+
+  
 
 
 |
