@@ -696,6 +696,28 @@ Next Generation DNA Sequencing (NGS)
 
   
 
+
+  https://docs.azuredatabricks.net/_static/notebooks/genomics/vcf2delta.html
+
+
+
+|
+
+Make Work
+--------
+
+
+* `convert vcf files into delta lake <https://docs.databricks.com/_static/notebooks/genomics/vcf2delta.html>`_
+
+
+
+
+
+
+
+
+
+
 |
 |
 
