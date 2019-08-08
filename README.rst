@@ -561,6 +561,9 @@ Databricks
   — scala example with variant spark
 
 
+* `Databricks Connect  <https://docs.azuredatabricks.net/user-guide/dev-tools/db-connect.html>`_
+  — direct CLI access to the instance
+
 
 
 
