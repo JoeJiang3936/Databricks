@@ -514,11 +514,18 @@ Databricks
 
 
 * `Delta Lake  <https://delta.io/>`_
-  — delta like is an open-source storage layer that brings ACID transactions to Apache Spark workloads
+  — delta lake is an open-source storage layer that brings ACID transactions to Apache Spark workloads
 
 
 * `Github Delta Lake  <https://github.com/delta-io/delta>`_
   — github location
+
+
+
+* `Delta Lake Guide  <https://docs.databricks.com/delta/index.html>`_
+  — Delta Lake is an open source storage layer that brings reliability to data lakes. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. Delta Lake runs on top of your existing data lake and is fully compatible with Apache Spark APIs.
+
+
 
 
 * `Connecting BI Tools  <https://docs.databricks.com/user-guide/bi/jdbc-odbc-bi.html>`_
@@ -535,12 +542,11 @@ Databricks
 
 
 
-
 SparkSQL
 -------------
 
 
-* `Gitbook  mastering sparksql <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
+* `Gitbook  mastering SparkSQL <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
   — great gitbook, very detailed
 
 
