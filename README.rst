@@ -445,11 +445,11 @@ Genomics
 -------------
 
 
-* `HailScalaGenomicsETLTutorial <https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html>`_
+* `Hail Scala Genomics ETL Tutorial <https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html>`_
   — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
 
  
-* `VariantSpark Example <https://docs.databricks.com/_static/notebooks/variant-spark-hipster-index.html>`_
+* `Variant Spark Example <https://docs.databricks.com/_static/notebooks/variant-spark-hipster-index.html>`_
   — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex' in Scala (VariantSpark_HipsterIndex_Spark2.2)
 
 
