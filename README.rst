@@ -461,9 +461,32 @@ Apache Spark
 
 
 
- 
+* `Cluster Mode Overview   <https://spark.apache.org/docs/latest/cluster-overview.html>`_
+  — how Spark runs on clusters
 
 
+
+* `Gitbook Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
+  — really really good overview of how Apache Spark functions, worth reading...
+
+
+
+* `Gitbook Internals of Apache Spark SQL  <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/>`_
+  — same author, but covering SparkSQL
+
+
+
+* `Github Apache Spark  <https://github.com/apache/spark>`_
+  — the main Github page for Apache Spark
+
+
+
+* `Github Spark Examples  <https://github.com/apache/spark/tree/master/examples/src/main>`_
+  — you can see specific python, scala, and r examples you can run 
+
+
+* `Hadoop <https://hadoop.apache.org/>`_
+  — Hadoop Standard Library
 
 
 
@@ -484,26 +507,38 @@ Databricks
   — the main user manual for Databricks
 
 
-
 * `Dataframe Guide <https://docs.databricks.com/spark/latest/dataframes-datasets/index.html>`_
   — covers dataframes, used extensively with genomics and sparksql 
 
 
+* `Delta Lake  <https://delta.io/>`_
+  — delta like is an open-source storage layer that brings ACID transactions to Apache Spark and big data workloads
 
 
-* `Cluster Mode Overview   <https://spark.apache.org/docs/latest/cluster-overview.html>`_
-  — how Spark runs on clusters
+* `Github Delta Lake  <https://github.com/delta-io/delta>`_
+  — github location
+
+
+* `Connecting BI Tools  <https://docs.databricks.com/user-guide/bi/jdbc-odbc-bi.html>`_
+  — JDBC/ODBC driver and connectivity 
+
+* `Connecting MySQL Workbench <https://docs.databricks.com/user-guide/bi/workbenchj.html>`_
+  — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
+
+
+
+|
 
 
 
 
-* `Gitbook Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
-  — really really good overview of how Apache Spark functions, worth reading...
+
+SparkSQL
+-------------
 
 
-* `Gitbook Internals of Apache Spark SQL  <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/>`_
-  — same author, but covering SparkSQL
-
+* `Gitbook  mastering sparksql <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
+  — great gitbook, very detailed
 
 
 
@@ -524,6 +559,7 @@ Genomics
   — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex' in Scala (VariantSpark_HipsterIndex_Spark2.2)
 
 
+
 |
 
 
@@ -532,46 +568,13 @@ General
 --------
 
 
-* `Apache Spark <https://spark.apache.org/>`_
-  — Main Apache Spark website
-* `Hadoop <https://hadoop.apache.org/>`_
-  — Hadoop Standard Library
-* `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
-  — where you can log in and use SparkSQL and other Databricks APIs
-
-
-|
-
-Connecting to Databricks
----------------------------
-
-* `Connecting BI Tools  <https://docs.databricks.com/user-guide/bi/jdbc-odbc-bi.html>`_
-  — JDBC/ODBC driver and connectivity 
-* `Connecting MySQL Workbench <https://docs.databricks.com/user-guide/bi/workbenchj.html>`_
-  — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
 * `Databricks Community Edition Login <https://community.cloud.databricks.com/login.html;jsessionid=auth-auth-ce-7cfd54686d-vz28zhud1bk06082eui1au33svckk.auth-auth-ce-7cfd54686d-vz28z>`_
   — where you can log in and use SparkSQL and other Databricks APIs
 
 
 
-
-
 |
 
-
-
-SparkSQL
-----------
-
-
-* `SparkSQL <https://spark.apache.org/sql/>`_
-  — Main SparkSQL website 
-* `SparkSQL Apache Guide <https://spark.apache.org/docs/latest/sql-programming-guide.html>`_
-  — Spark SQL, DataFrames and Datasets Guide
-  
-  
-
-|
 
 
 
@@ -580,12 +583,20 @@ Scala
 
 
 * `Scala <https://www.scala-lang.org/>`_
-  — Main website for Scala.  There is no getting around it.  You want to push the envelope, you must learn Scala...
+  — the main website for Scala.  There is no getting around it.  You want to push the envelope, you must learn Scala...
+
+
+* `Scala examples  <http://blog.madhukaraphatak.com/introduction-to-spark-two-part-2/>`_
+  — scala examples
 
 
 
 
 |
+
+
+
+
 
 Next Generation DNA Sequencing (NGS)
 ---------------------------------------
@@ -641,30 +652,22 @@ Next Generation DNA Sequencing (NGS)
 
 
 
-
-
 |
 
 
-Solid Links
-~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 * `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
   — really good overviews of the transformations possible 
 
-* `gitbook mastering sparksql <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql.html>`_
-  — great gitbook, very detailed
 
-* `scala examples  <http://blog.madhukaraphatak.com/introduction-to-spark-two-part-2/>`_
-  — scala examples
+
+
 
 * `json lines (not json) <http://jsonlines.org/>`_
   —  this page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes. SSON Lines handles tabular data cleanly and without ambiguity. Stream compressors like gzip or bzip2 are recommended for saving space, resulting in .jsonl.gz or .jsonl.bz2 files...
 
   
-
-
 
 |
 |
