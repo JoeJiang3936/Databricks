@@ -497,22 +497,17 @@ Databricks
 
 
 
-* `Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
+* `Gitbook Internals of Apache Spark Gitbook   <https://jaceklaskowski.gitbooks.io/mastering-apache-spark/>`_
   — really really good overview of how Apache Spark functions, worth reading...
 
-  
 
-
-
-
-
-https://jaceklaskowski.gitbooks.io/mastering-apache-spark/
+* `Gitbook Internals of Apache Spark SQL  <https://jaceklaskowski.gitbooks.io/mastering-spark-sql/>`_
+  — same author, but covering SparkSQL
 
 
 
 
 |
-
 
 
 
