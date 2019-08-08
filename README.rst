@@ -436,7 +436,39 @@ References
 =========
 
 
+
 |
+
+
+
+Databricks
+-------------
+
+
+* `Documentation <https://docs.databricks.com/>`_
+  — the main documentation link for Databricks
+
+
+* `User Guide <https://docs.databricks.com/>`_
+  — the main user manual for Databricks
+
+
+* `User Guide <https://docs.databricks.com/>`_
+  — the main user manual for Databricks
+
+
+* `Dataframe Guide <https://docs.databricks.com/spark/latest/dataframes-datasets/index.html>`_
+  — used extensively with genomics and spark sql 
+
+
+
+
+
+|
+
+
+
+
 
 
 Genomics
