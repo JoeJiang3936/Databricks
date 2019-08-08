@@ -454,7 +454,15 @@ Apache Spark
 * `Spark SQL DataFrames and Datasets Guide <https://spark.apache.org/docs/latest/sql-programming-guide.html>`_
   — the detailed information about using SparkSQL
 
+
+
+* `Spark Python API Docs  <https://spark.apache.org/docs/latest/api/python/index.html>`_
+  — covers pyspark .methods and commands 
+
+  
+
  
+
 
 
 
