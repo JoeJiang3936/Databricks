@@ -350,6 +350,18 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
+* `SparkSQL Basics on Databricks <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb>`_
+  — successful implementation of core SparkSQL commands
+
+
+ 
+ /The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb
+
+
+
+|
+
+
 * `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
   — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
 
@@ -532,6 +544,15 @@ Databricks
 
 * `Connecting MySQL Workbench <https://docs.databricks.com/user-guide/bi/workbenchj.html>`_
   — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
+
+
+* `Example Databricks Notebooks <https://databricks.com/resources/type/example-notebook>`_
+  — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
+
+
+https://databricks.com/resources/type/example-notebook
+
+
 
 
 
