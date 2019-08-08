@@ -470,7 +470,7 @@ General
 
 
 Connecting to Databricks
-~~~~~~~~~~~~
+---------------------------
 
 * `Connecting BI Tools  <https://docs.databricks.com/user-guide/bi/jdbc-odbc-bi.html>`_
   — JDBC/ODBC driver and connectivity 
