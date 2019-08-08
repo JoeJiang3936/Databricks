@@ -449,7 +449,7 @@ Apache Spark
   — the core website for Apache Spark 
 
 
-* `Documentation <https://spark.apache.org/docs/latest/>`_
+* `Apache Spark Documentation <https://spark.apache.org/docs/latest/>`_
   — the main documentation link 
 
 
@@ -523,6 +523,7 @@ Databricks
 
 * `Connecting BI Tools  <https://docs.databricks.com/user-guide/bi/jdbc-odbc-bi.html>`_
   — JDBC/ODBC driver and connectivity 
+
 
 * `Connecting MySQL Workbench <https://docs.databricks.com/user-guide/bi/workbenchj.html>`_
   — Connecting org.apache.hive.jdbc.HiveDriver driver definition  
