@@ -349,6 +349,14 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
+* `Working with CSV Files <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20csv%20files.ipynb>`_
+  — working with reading and writing .csv files in different languages
+
+
+
+
+|
+
 
 * `SparkSQL Basics on Databricks <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb>`_
   — successful implementation of core SparkSQL commands
@@ -612,7 +620,7 @@ R
 * `SparkR in Databricks <https://docs.databricks.com/spark/latest/sparkr/index.html>`_
   — the reference for SparkR
 
-  
+
 
 
 
