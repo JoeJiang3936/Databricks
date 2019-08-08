@@ -583,10 +583,7 @@ Scala
 
 
 
-
 |
-
-
 
 
 
@@ -649,9 +646,9 @@ Next Generation DNA Sequencing (NGS)
 
 
 
+
 * `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
   — really good overviews of the transformations possible 
-
 
 
 
@@ -663,6 +660,7 @@ Next Generation DNA Sequencing (NGS)
 
 |
 |
+
 
 
 Appendix - Variant Call Format (VCF) fields breakout
