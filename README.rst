@@ -354,9 +354,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
   — successful implementation of core SparkSQL commands
 
 
- 
- /The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb
-
 
 
 |
