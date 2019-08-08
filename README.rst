@@ -614,49 +614,7 @@ Appendix - Variant Call Format (VCF) fields breakout
 |
 |
 |
-
-
-
-
-
 |
-ToDo
-=========
 
--  create databricks account . . . . . . . . . . . . . . . . . . . . . . . . [complete]
-
--  create public databricks notebook test `post <https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7001951515152566/3688659401164340/6475682490817878/latest.html>`_ . . . . . . . . [complete]
-
--  get adam and hail both up in spark environment (this is not expected to be easy)
-
--  create image of the whole set up
-
--  baseline and comparisons
-
--  pipelines up and working
-
--  db benchmark entire approach up and running 
-
--  queries to baseline 
-
--  databricks notebooks url links capture to unlist 
-
--  https://cdn2.hubspot.net/hubfs/438089/notebooks/Samples/Data_Exploration/Data_Exploration_on_Databricks_Setup.html
-
--  https://docs.databricks.com/_static/notebooks/mlflow/mlflow-quick-start-python.html
-
--  https://github.com/evodify
-
--  https://github.com/evodify/genomic-analyses_in_apache-spark
-
--  hail scala here ?   https://github.com/evodify/genomic-analyses_in_apache-spark/tree/master/hail-scala
-
--  databricks documentation:  https://docs.databricks.com/index.html
-
-
-
--  https://docs.databricks.com/applications/genomics/hls-runtime.html#dbr-hls
--  really good cluster information:
-   https://community.cloud.databricks.com/driver-proxy/o/7001951515152566/0611-033207-may118/80/?c=cluster
 
 
