@@ -698,7 +698,7 @@ Notes::
 
 
 
-- File format image `here <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
+- Databricks Installation and Command Notes `here <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
 
 
 
