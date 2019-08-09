@@ -718,6 +718,10 @@ Make Work
 
 
 
+*`colored cell insert box <https://www.ibm.com/support/knowledgecenter/en/SSGNPV_1.1.3/dsx/markd-jupyter.html>`_
+
+
+
 
 
 

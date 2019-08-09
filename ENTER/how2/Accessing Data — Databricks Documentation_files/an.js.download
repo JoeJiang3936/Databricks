@@ -1,0 +1,242 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+if (window.Element && !Element.prototype.closest) {
+    Element.prototype.closest =
+        function (s) {
+            var matches = (this.document || this.ownerDocument).querySelectorAll(s), i, el = this;
+            do {
+                i = matches.length;
+                while (--i >= 0 && matches.item(i) !== el) { }
+                ;
+            } while ((i < 0) && (el = el.parentElement));
+            return el;
+        };
+}
+var CaptureEvent = /** @class */ (function () {
+    function CaptureEvent(endpoint, uid, sessionTimeOut, emailTrackingEnabled, externalUserEnabled, accountName) {
+        this.emailTrackingEnabled = false;
+        this.externalUserEnabled = false;
+        this.endpoint = endpoint;
+        this.uid = uid;
+        this.sessionTimeOut = sessionTimeOut;
+        this.convertedUrls = [];
+        this.accountName = accountName;
+        if (emailTrackingEnabled === true || emailTrackingEnabled === "true" || emailTrackingEnabled === "1" || emailTrackingEnabled === 1)
+            this.emailTrackingEnabled = true;
+        if (externalUserEnabled === true || externalUserEnabled === "true" || externalUserEnabled === "1" || externalUserEnabled === 1)
+            this.externalUserEnabled = true;
+        this.sid = this.getsid();
+        this.gettaid();
+    }
+    CaptureEvent.prototype.startClickTracking = function () {
+        var _this = this;
+        this.utilDocReady(function () {
+            document.addEventListener("click", function (e) {
+                if (e.target.tagName === "A" || e.target.closest('a'))
+                    _this.sendAnalytics("click", {
+                        "target": e.target.href || e.target.closest('a').href
+                    });
+            });
+            document.addEventListener("contextmenu", function (e) {
+                if (e.target.tagName === "A" || e.target.closest('a'))
+                    _this.sendAnalytics("click", {
+                        "target": e.target.href || e.target.closest('a').href
+                    });
+            });
+        });
+    };
+    CaptureEvent.prototype.startTimeTracking = function () {
+        var _this = this;
+        this.heart = new Beep(function (event, params, cb) { _this.sendAnalytics(event, params, cb); });
+        this.utilDocReady(function () {
+            document.addEventListener("mousemove", function () { _this.heart.beat(); });
+            document.addEventListener("mousedown", function () { _this.heart.beat(); });
+            document.addEventListener("mouseup", function () { _this.heart.beat(); });
+            document.addEventListener("scroll", function () { _this.heart.beat(); });
+            document.addEventListener("wheel", function () { _this.heart.beat(); });
+            document.addEventListener("keyup", function () { _this.heart.beat(); });
+        });
+    };
+    CaptureEvent.prototype.getsid = function () {
+        // if(!this.sid)
+        this.sid = this.getCookie("_gz_sid");
+        if (!this.sid)
+            this.sid = Date.now() + ("000" + Math.floor(Math.random() * 1000)).slice(-3);
+        this.setCookie("_gz_sid", this.sid, this.sessionTimeOut);
+        return this.sid;
+    };
+    CaptureEvent.prototype.gettaid = function () {
+        var taid = this.getCookie("_gz_taid");
+        if (!taid) {
+            taid = Date.now() + ("000" + Math.floor(Math.random() * 1000)).slice(-3);
+            this.setCookie("_gz_taid", taid, 365 * 24 * 60);
+        }
+        return taid;
+    };
+    CaptureEvent.prototype.sendAnalytics = function (event, params, cb) {
+        if (!event) {
+            event = "pageView";
+        }
+        if (!params)
+            params = {};
+        if (!params.url)
+            params.url = window.location.href;
+        if (!params.referrer)
+            params.referrer = document.referrer;
+        if (!params.e)
+            params.e = event;
+        if (!params.t)
+            params.t = document.title;
+        if (!params.uid)
+            params.uid = this.uid;
+        if (!params.r)
+            params.r = Math.floor(Math.random() * 100000); // To disable caching
+        if (!params.sid)
+            params.sid = this.getsid();
+        if (!params.taid)
+            params.taid = this.gettaid();
+        if (!params.internal){
+            params.internal = this.getCookie("_gza_internal");
+        }
+        if (event === "search") {
+            this.convertedUrls = [];
+        }
+        if (event === "conversion") {
+            if (!(params.convUrl && params.convSub))
+                console.info("incomplete object in gza function. missing convUrl or convSub");
+            // params.analyticsID = this.getCookie("analyticsID");
+            if(this.convertedUrls.indexOf(params.convUrl)===-1)
+                this.convertedUrls.push(params.convUrl);
+            else
+                return;
+        }
+        params.sid = params.sid + ((params.internal.toString()=="true")?1:0);
+        var url = this.endpoint + "?";
+        for (var p in params) {
+            if (typeof params[p] === "object") {
+                params[p] = JSON.stringify(params[p]);
+            }
+            url = url + encodeURIComponent(p) + "=" + encodeURIComponent(params[p]) + "&";
+        }
+        this.utilAjax(url, function (resText) {
+            if (cb)
+                cb(resText);
+        });
+    };
+    CaptureEvent.prototype.setUser = function (email) {
+        var obj = {};
+        if(email){
+            if (this.emailTrackingEnabled && email) {
+                obj.utm = email.split("").map(function (c) { return c.charCodeAt() ^ 59; }).join(".");
+            }
+            if (this.externalUserEnabled && this.accountName)
+                obj.internal = (email.split("@")[1] === this.accountName);
+                this.setCookie("_gza_internal", obj.internal,this.sessionTimeOut);
+            if (obj.utm || typeof obj.internal === "boolean")
+                this.sendAnalytics("setUtm", obj);
+        }
+        
+    };
+    CaptureEvent.prototype.utilDocReady = function (cb) {
+        if (document.readyState === 'complete') {
+            cb();
+        }
+        else {
+            document.onreadystatechange = function () {
+                if (document.readyState === 'complete') {
+                    cb();
+                }
+            };
+        }
+    };
+    CaptureEvent.prototype.utilAjax = function (url, cb) {
+        var ele = document.createElement("img");
+        if (cb) {
+            ele.onload = cb;
+            ele.onerror = cb;
+        }
+        ele.src = url;
+        ele.width = 1;
+        ele.height = 1;
+    };
+    CaptureEvent.prototype.getCookie = function (cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i = i + 1) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    };
+    CaptureEvent.prototype.setCookie = function (cname, cvalue, exMins) {
+        var expires = '';
+        if (exMins) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exMins * 60 * 1000));
+            expires = "expires=" + d.toUTCString();
+        }
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    };
+    return CaptureEvent;
+}());
+var Beep = /** @class */ (function () {
+    function Beep(ping) {
+        this.gza = ping;
+        this.startTime = Date.now();
+        this.lastUsed = this.startTime;
+    }
+    Beep.prototype.beat = function () {
+        var now = Date.now();
+        if (document.hasFocus()) {
+            if ((now - this.lastUsed >= 5 * 1000) && _gr_utility_functions.getCookie("_gz_sid")) {
+                /*this.gza("beep", { 
+                    alive: Math.round((now - this.lastUsed) / 1000),
+                    sid : GzAnalytics.sid
+                }); */
+                this.lastUsed = now;
+            }
+        }
+        else {
+            this.lastUsed = now;
+        }
+        this.checkActive();
+    };
+    Beep.prototype.checkActive = function () {
+        var _this = this;
+        if (this.tmp)
+            clearTimeout(this.tmp);
+        this.tmp = setTimeout(function () { _this.beat(); }, 5 * 1000);
+    };
+    return Beep;
+}());
+var Analytics = /** @class */ (function (_super) {
+    __extends(Analytics, _super);
+    function Analytics() {
+        var _this = _super.call(this, "https://databricks.searchunify.com/analytics/track.png", "7dc8d13f-90bb-11e9-98a5-06d762ad9a62", +"60", "false", "false", "") || this;
+        _super.prototype.sendAnalytics.call(_this, "pageView", {});
+        _super.prototype.startClickTracking.call(_this);
+        _super.prototype.startTimeTracking.call(_this);
+        return _this;
+    }
+    return Analytics;
+}(CaptureEvent));
+var GzAnalytics = GzAnalytics || new Analytics();
+var gza = function (event, params, cb) { GzAnalytics.sendAnalytics(event, params, cb); };
+var _gr_utility_functions = {};
+_gr_utility_functions.getCookie = GzAnalytics.getCookie;

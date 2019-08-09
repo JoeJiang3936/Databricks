@@ -1,0 +1,445 @@
+var myapp = angular.module('searchUnifyAutoApp', ['ui.bootstrap', 'ngSanitize', 'ngAnimate', 'ngMaterial']);
+myapp.controller('SearchautoController', ['$scope', '$timeout', '$http', '$compile', '$sce', '$q', '$mdSidenav', '$httpParamSerializer', function ($scope, $timeout, $http, $compile, $sce, $q, $mdSidenav, $httpParamSerializer) {
+    $scope.searchClientType = '6';
+    $scope.searchString = '';
+    var searchStringBackup = "";
+    $scope.noOfAutocompleteResults = 10;
+//    $scope.$watch(function () {
+//	return $location.search();
+//    }, function (value) {
+//        if (value) {
+//	    $scope.searchString = decodeURIComponent(value.searchString || '');
+ //       }
+ //   });
+   function getUrlVars() {
+   	 var url = window.location.href;
+    	var vars = {};
+    	var hashes = url.split("?")[1];
+    	var hash = hashes.split('&');
+    	for (var i = 0; i < hash.length; i++) {
+   	 params=hash[i].split("=");
+    	vars[params[0]] = params[1];
+    	}
+    	return vars;
+    }
+	window.onhashchange = function() {
+		if(window.location.pathname == "/search.html"){ 
+		params=getUrlVars();
+		}
+		else{params = "" }
+		$scope.searchString = decodeURIComponent(decodeURIComponent(params.searchString));
+		if($scope.searchString == "undefined") {
+			$scope.searchString = "";
+		}
+	setTimeout(function(){
+		document.getElementById("searchText").value = $scope.searchString;
+	},500);	
+
+	}
+	$scope.$watch(function () {
+    		if(window.location.pathname == "/search.html"){ 
+                params=getUrlVars();
+                }
+                else{params = "" }
+
+   	}, function () {
+   	 $scope.searchString = decodeURIComponent(decodeURIComponent(params.searchString));
+	 if($scope.searchString == "undefined") {
+                        $scope.searchString = "";
+                }
+
+	});
+    $scope.search = function(search) {
+        return $scope.items = getAutocompleteResults(search).then(function(response) {
+            if (window.processing || $scope.restrictAutocomplete || $scope.autocompleteResultClicked) {
+                $scope.items = [];
+                $scope.restrictAutocomplete = false;
+                $timeout(function() {
+                    $scope.$apply();
+                });
+                return [];
+            } else {
+                var autosuggestions = [];
+                //if (response.recentSearchHistory) {
+                  //  autosuggestions.push({
+                    //    heading: "<li class='recommendedResult'><div><span>RECOMMENDED SEARCHES</span></div></li>"
+                    //})
+                    //response.recentSearchHistory.slice(0, 5).map(function(item, $index) {
+                      //  var imgRegex1 = new RegExp("<IMG[^>]*?>", "g");
+                        //var imgRegex2 = new RegExp("<img[^>]*?>", "g");
+                        //autosuggestions.push({
+                          //  recommendedResult: item["title"],
+                        //})                        
+                   // }) || [];
+                //}
+                if (response.result.total != 0) {
+//                    autosuggestions.push({
+//                        heading: "<li class='suggestedResults'><div><span>SUGGESTED RESULTS</span></div></li>"
+//                    })
+                    response.result.hits.map(function(item, $index) {
+                        var imgRegex1 = new RegExp("<IMG[^>]*?>", "g");
+                        var imgRegex2 = new RegExp("<img[^>]*?>", "g");
+                        autosuggestions.push({
+                            autosuggestData: item.autosuggestData || '',
+                            label: item["highlight"]["TitleToDisplay"][0] || '',
+                            value: item["highlight"]["TitleToDisplayString"][0] || '',
+                            string: (item["highlight"]["TitleToDisplayString"][0]) ? item["highlight"]["TitleToDisplayString"][0].replace("&#39;", "'") || '' : '',
+                            summary: (item["highlight"]["SummaryToDisplay"][0]) ? item["highlight"]["SummaryToDisplay"][0].replace(item["highlight"]["SummaryToDisplay"][0].match(imgRegex1), "").replace(item["highlight"]["SummaryToDisplay"][0].match(imgRegex1), "") || '' : '',
+                            solved: item["solved"],
+                            href: item["href"],
+                            sourceName: item['sourceName'],
+                            objName: item['objName'],
+                            id: item['id'],
+                            index: ($index + 1),
+                            icon: item["icon"],
+                        })
+                    }) || [];
+                }
+            }
+            $timeout(function() {
+                var mdAutocompleteSuggestions = document.getElementsByClassName('md-autocomplete-suggestions')[0].getElementsByTagName("li");
+                for (var i = 0; i < mdAutocompleteSuggestions.length; i++) {
+                    mdAutocompleteSuggestions[i].style.pointerEvents = "auto";
+                }
+                var suggestedResults = document.getElementsByClassName('suggestedResults');
+                if (suggestedResults[0]) {
+                    suggestedResults[0].parentNode.parentNode.parentNode.style.pointerEvents = "none";
+                }
+            }, 5);
+            return autosuggestions;
+        }),
+        function(response) {
+            console.log('error');
+            console.log(response);
+        };
+    }
+
+    $scope.clickSearch = function () {
+	 if (window.location.pathname == "/search.html"){
+		getResults();
+	}
+	else
+         window.location.href = "/search.html#!/search?searchString="+ $scope.searchString +"&from=0&sortby=_score&orderBy=desc&pageNo=1&aggregations=%255B%255D&uid=7dc8d13f-90bb-11e9-98a5-06d762ad9a62&resultsPerPage=10&exactPhrase=&withOneOrMore=&withoutTheWords=&pageSize=10"
+       
+    }
+
+    function getResults() {
+                    try {
+                        if (getSearchResults || !processing) {
+                            getSearchResults('', undefined, undefined, false, undefined, true, false, undefined, $scope.searchString);
+                        }
+                    } catch (ex) {
+                        //exception.
+                    }
+           }
+    $scope.resultOpenNewTab = function (href, item, recommendedResult) {
+        $scope.autocompleteResultClicked = true;
+        //var autoChild = document.getElementById('md-auto').firstElementChild;
+        //var el = angular.element(autoChild);
+        //el.scope().$mdAutocompleteCtrl.hidden = true;
+        if(recommendedResult) {
+            $scope.searchString = recommendedResult;
+            setTimeout(function() {
+                $scope.$$childHead.$$nextSibling.$mdAutocompleteCtrl.hidden = true;
+            }, 0);
+            $scope.clickSearch(true, true);
+        } else {
+                if (href) {
+                var win = window.open(href, '_self');
+                gza("conversion", {
+                    index: item['sourceName'],
+                    type: item['objName'],
+                    id: item['id'],
+                    rank: item['index'],
+                    convUrl: item['href'],
+                    convSub: item['string']
+                })
+            }
+            $scope.searchString = searchStringBackup;
+        }
+    }
+    
+    $scope.$watch(function() {
+        return $scope.searchString
+    }, function(newVal, oldVal) {
+        if (newVal != oldVal) {
+            searchStringBackup = newVal;
+            $scope.autocompleteResultClicked = false;
+        }
+    });
+
+    function decodeHTMLString(encodedStr) {
+        var parser = new DOMParser;
+        var dom = parser.parseFromString(
+            '<!doctype html><body>' + encodedStr,
+            'text/html');
+        return(dom.body.textContent);
+    }
+    
+    var htmlDecode = function (input) {
+        var e = document.createElement('div');
+        e.innerHTML = input;
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+    
+    function getsearchbox() {
+        $http({
+            method: 'GET',
+            url: 'https://databricks.searchunify.com/resources/search_clients_custom/7dc8d13f-90bb-11e9-98a5-06d762ad9a62/searchbox.html'
+        }).
+            then(function (response) {
+                $scope.autocompleteHtml = $sce.trustAsHtml(response.data);
+                $scope.isLoadingGetAppData = false;
+                $scope.doneLoading = true;
+            }, function (err) {
+                console.log("error: ", err);
+            });
+    }
+
+    getsearchbox();
+    
+    /**
+     * Call for autocomplete.
+     * @param search Search Term
+     */
+    function getAutocompleteResults(search) {
+        return $q(function(resolve, reject) {
+        switch($scope.searchClientType) {
+            case 6:
+            case 11:
+            case 12:
+            case 16:
+            case "6":
+            case "11":
+            case "12":
+            case "16":
+            var queryPassed = {
+                "searchString": $scope.searchString,
+                "from": 0,
+                "sortby": "_score",
+                "orderBy": "desc",
+                "pageNo": 1,
+                "uid": '7dc8d13f-90bb-11e9-98a5-06d762ad9a62',
+                "resultsPerPage": $scope.noOfAutocompleteResults,
+                "accessToken": "5ddd5c1be3dff30983a6050734eef7e8",
+                "sid": _gr_utility_functions.getCookie("_gz_taid")
+            }
+            var req = {
+                method: 'POST',
+                url: 'https://databricks.searchunify.com/search/searchResultByPost',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                data: queryPassed
+            }
+                $http(req).then(function successCallback(res) {
+                    resolve(res.data);
+                },function(res) {
+                    console.log('An error occured: ', res);
+                });
+                break;
+            case 9:
+            case "9":
+                Visualforce.remoting.Manager.invokeAction(
+                'su_vf_internal.SuVfInternalController.SearchResults',
+                JSON.stringify({
+                    "searchString": search,
+                    "from": 0,
+                    "sortby": "_score",
+                    "orderBy":"desc",
+                    "pageNo": 1,
+                    "aggregations": [],
+                    "resultsPerPage":$scope.noOfAutocompleteResults,
+                    "orgId": orgId
+                }),
+                function(res, event) {
+                    var response = {};
+                    response.data = res;
+                    for(var counter = 0; counter < res.result.hits.length; counter ++) {
+                        res.result.hits[counter].highlight.TitleToDisplay[0] = decodeHTMLString(res.result.hits[counter].highlight.TitleToDisplay[0]);
+                        res.result.hits[counter].highlight.SummaryToDisplay[0] = decodeHTMLString(res.result.hits[counter].highlight.SummaryToDisplay[0]);
+                    }
+                    resolve(response.data);
+                });
+                break;
+
+            case 7:
+            case "7":
+            Visualforce.remoting.Manager.invokeAction(
+                'su_vf_console.SuVfConsoleController.SearchResults',
+                JSON.stringify({
+                    "searchString": search,
+                    "from": 0,
+                    "sortby": "_score",
+                    "orderBy": "desc",
+                    "pageNo": 1,
+                    "aggregations": [],
+                    "resultsPerPage": $scope.noOfAutocompleteResults,
+                    "caseId": $scope.caseId,
+                }),
+                function(res, event) {
+                    var response = {};
+                    response.data = res;
+                    for(var counter = 0; counter < res.result.hits.length; counter ++) {
+                        res.result.hits[counter].highlight.TitleToDisplay[0] = decodeHTMLString(res.result.hits[counter].highlight.TitleToDisplay[0]);
+                        res.result.hits[counter].highlight.SummaryToDisplay[0] = decodeHTMLString(res.result.hits[counter].highlight.SummaryToDisplay[0]);
+                    }  
+                    resolve(response.data);
+                    });
+                
+                break;
+
+            case 3:
+            case "3":
+                Visualforce.remoting.Manager.invokeAction(
+                    'su_vf_community.SU_VfCommunityController.SearchResults',
+                    JSON.stringify({
+                        "searchString": search,
+                        "from": 0,
+                        "sortby": "_score",
+                        "orderBy":"desc",
+                        "pageNo": 1,
+                        "aggregations": [],
+                        "resultsPerPage":$scope.noOfAutocompleteResults
+                    }),
+                    function(res, event) {
+                        var response = {};
+                        response.data = res;
+                        for(var counter = 0; counter < res.result.hits.length; counter ++) {
+                            res.result.hits[counter].highlight.TitleToDisplay[0] = decodeHTMLString(res.result.hits[counter].highlight.TitleToDisplay[0]);
+                            res.result.hits[counter].highlight.SummaryToDisplay[0] = decodeHTMLString(res.result.hits[counter].highlight.SummaryToDisplay[0]);
+                        }
+                        resolve(response.data);
+                    });
+                    break;
+
+            case 2:
+            case "2": 
+                var queryPassed = {
+                    "searchString": search,
+                    "from": 0,
+                    "sortby": "_score",
+                    "orderBy":"desc",
+                    "pageNo": 1,
+                    "aggregations": "[]",
+                    "resultsPerPage":$scope.noOfAutocompleteResults,
+                    "uid": '7dc8d13f-90bb-11e9-98a5-06d762ad9a62'
+                }
+
+                var req = {
+                    method: 'POST',
+                    url: getSearchResultsEndpoint,
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+                    },
+                    data: $httpParamSerializer(queryPassed)
+                }
+
+
+                $http(req).then(function successCallback(res) {
+                    resolve(res.data);
+                });
+                break;
+                
+            case 14:
+            case 15:
+            case 17:
+            case "14":
+            case "15":
+            case "17":
+                var queryPassed = {
+                    "searchString": $scope.searchString,
+                    "from": 0,
+                    "sortby": "_score",
+                    "orderBy": "desc",
+                    "pageNo": 1,
+                    "uid": '7dc8d13f-90bb-11e9-98a5-06d762ad9a62',
+                    "resultsPerPage": $scope.noOfAutocompleteResults,
+                    "sid": _gr_utility_functions.getCookie("_gz_taid")
+                }
+                var req = {
+                    method: 'POST',
+                    url: BASEURL+'searchResultByPost',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    data: queryPassed
+                }
+                $http(req).then(function successCallback(res) {
+                    resolve(res.data);
+                },function(res) {
+                    console.log('An error occured: ', res);
+                });
+                break;
+
+            case 18:
+            case "18":
+                var queryToBePassed = JSON.stringify({
+                    "searchString": search,
+                    "from": 0,
+                    "sortby": "_score",
+                    "orderBy":"desc",
+                    "pageNo": 1,
+                    "aggregations": [],
+                    "resultsPerPage":$scope.noOfAutocompleteResults
+                });
+                queryToBePassed = queryToBePassed.replace(/\"/g, "'");
+                var finalQueryPassed = { "agre": queryToBePassed };
+                var serverURL = location.protocol + "//" + location.host;
+                var query = "ser_Custom_Action";
+                var req = {
+                    method: 'POST',
+                    url: serverURL + "/api/data/v8.2/" + query,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    data: JSON.stringify(finalQueryPassed)
+                }
+                $http(req).then(function successCallback(res) {
+                    var response = {};
+                    response.data = JSON.parse(res.data.Output);
+                    resolve(response.data);
+                });
+                break;
+            }
+        })
+    }
+
+}]);
+myapp.directive('myEnter', function () {
+    return function (scope, element, attrs) {
+        element.bind("keydown keypress", function (event) {
+            if(event.which === 13) {
+                scope.clickSearch(false,true);
+                scope.$apply(function (){
+                   scope.items = []; // $scope  modified to scope
+                   document.getElementById('md-auto').blur();
+                   var autoChild = document.getElementById('md-auto').firstElementChild;
+                    var el = angular.element(autoChild);
+                    el.scope().$mdAutocompleteCtrl.hidden = true;
+                });
+                event.preventDefault();
+            }
+        });
+    };
+});
+myapp.directive('bindHtmlCompile', ['$compile', function ($compile) {
+    return {
+        restrict: 'A',
+        link: function (scope, element, attrs) {
+            scope.$watch(function () {
+                return scope.$eval(attrs.bindHtmlCompile);
+            }, function (value) {
+                element.html(value && value.toString());
+                var compileScope = scope;
+                if (attrs.bindHtmlScope) {
+                    compileScope = scope.$eval(attrs.bindHtmlScope);
+                }
+                $compile(element.contents())(compileScope);
+            });
+        }
+    };
+}]);
+angular.element(document).ready(function() {
+  angular.bootstrap(document.getElementById('auto'), ['searchUnifyAutoApp']);
+});
