@@ -642,7 +642,6 @@ Next Generation DNA Sequencing (NGS)
 
 
 
-
 * `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
   — really good overviews of the transformations possible 
 
@@ -670,12 +669,11 @@ Make Work
 
 
 
-*`azurecln <https://www.blue-granite.com/blog/scaling-your-genomics-pipeline-to-the-cloud-with-azure-databricks>`_
+* `azurecln <https://www.blue-granite.com/blog/scaling-your-genomics-pipeline-to-the-cloud-with-azure-databricks>`_
 
 
 
-*`colored cell insert box <https://www.ibm.com/support/knowledgecenter/en/SSGNPV_1.1.3/dsx/markd-jupyter.html>`_
-
+* `colored cell insert box <https://www.ibm.com/support/knowledgecenter/en/SSGNPV_1.1.3/dsx/markd-jupyter.html>`_
 
 
 
@@ -685,14 +683,22 @@ Make Work
 
 
 
-Sample Code 
+Final Notes
 ------------------------
 
 
-So:: 
+Notes:: 
 
-  It's very convenient to use this form. 
-  i like it 
+  a
+  a
+  a
+  a
+  a
+  a
+  a
+
+
+
 
 
 
@@ -715,6 +721,7 @@ Appendix - Variant Call Format (VCF) fields breakout
         :align: center
 
 .. class:: no-web no-pdf
+
 
 
 
