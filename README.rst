@@ -404,46 +404,37 @@ Think big picture.  We need to change our perception on what we consider a LOT o
 |
 |
 
+
+
 Sample Code 
 ------------------------
 
 
-.. code-block:: python
 
-    import findspark
-    findspark.init()
-    import pyspark
-    import random
-    sc = pyspark.SparkContext()
+A paragraph containing only two colons 
+indicates that the following indented 
+or quoted text is a literal block. 
 
-    import hail as hl
-    print(hl.cite_hail())
+:: 
 
-    # The advantage of using ‘object’ dtype is that strings can be of any length. 
-    # Alternatively, you can use a fixed-length string dtype, e.g.:
+  Whitespace, newlines, blank lines, and 
+  all kinds of markup (like *this* or 
+  \this) is preserved by literal blocks. 
 
-    callset = allel.read_vcf('C:/SPARK/sample.vcf', types={'REF': 'S3'})
-    callset['variants/REF']
+  The paragraph containing only '::' 
+  will be omitted from the result. 
 
-    callset = allel.read_vcf('C:/SPARK/sample.vcf')
-    callset['variants/REF']
-    callset = allel.read_vcf('C:/SPARK/sample.vcf')
-    callset['variants/ALT']
+The ``::`` may be tacked onto the very 
+end of any paragraph. The ``::`` will be 
+omitted if it is preceded by whitespace. 
+The ``::`` will be converted to a single 
+colon if preceded by text, like this:: 
 
-    callset = allel.read_vcf(vcf_path, fields=['numalt'], log=sys.stdout)
-
-    allel.vcf_to_hdf5('C:/SPARK/sample.vcf', 'C:/SPARK/sample_hdf5.h5', fields='*', overwrite=True)
-
-    spark.read.json("s3n://...").registerTempTable("json")
-    results = spark.sql(
-    """SELECT * 
-     FROM people
-     JOIN json ...""")
+  It's very convenient to use this form. 
 
 
-    
 
-    
+
 
 
 
@@ -725,15 +716,23 @@ Make Work
 
 
 
+|
+|
+
+Sample Code 
+------------------------
 
 
+.. code-block:: python
+
+more 
 
 
+ 
 
 
 |
 |
-
 
 
 Appendix - Variant Call Format (VCF) fields breakout
