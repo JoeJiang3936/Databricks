@@ -401,42 +401,6 @@ Think big picture.  We need to change our perception on what we consider a LOT o
 .. class:: no-web no-pdf
 
 
-|
-|
-
-
-
-Sample Code 
-------------------------
-
-
-
-A paragraph containing only two colons 
-indicates that the following indented 
-or quoted text is a literal block. 
-
-:: 
-
-  Whitespace, newlines, blank lines, and 
-  all kinds of markup (like *this* or 
-  \this) is preserved by literal blocks. 
-
-  The paragraph containing only '::' 
-  will be omitted from the result. 
-
-The ``::`` may be tacked onto the very 
-end of any paragraph. The ``::`` will be 
-omitted if it is preceded by whitespace. 
-The ``::`` will be converted to a single 
-colon if preceded by text, like this:: 
-
-  It's very convenient to use this form. 
-
-
-
-
-
-
 
 |
 |
@@ -693,6 +657,7 @@ Next Generation DNA Sequencing (NGS)
 
 |
 
+
 Make Work
 --------
 
@@ -715,20 +680,21 @@ Make Work
 
 
 
+|
+|
 
-|
-|
+
 
 Sample Code 
 ------------------------
 
 
-.. code-block:: python
+So:: 
 
-more 
+  It's very convenient to use this form. 
+  i like it 
 
 
- 
 
 
 |
