@@ -543,7 +543,7 @@ Genomics
 *`Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
   — Tertiary datapipe
 
-  
+
 
 
 
@@ -691,7 +691,7 @@ Final Notes
 
 Notes:: 
 
-  a
+  http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
   a
   a
   a
