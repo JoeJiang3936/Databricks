@@ -540,7 +540,10 @@ Genomics
   — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex' in Scala (VariantSpark_HipsterIndex_Spark2.2)
 
 
+*`Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
+  — Tertiary datapipe
 
+  
 
 
 
