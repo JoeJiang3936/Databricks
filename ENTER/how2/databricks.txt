@@ -12,6 +12,9 @@
 
 
 
+
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 --- download a file and save ---
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,6 +26,9 @@ urllib.request.urlretrieve("http://kdd.ics.uci.edu/databases/kddcup99/kddcup.dat
 dbutils.fs.mv("file:/tmp/kddcup_data.gz", "dbfs:/kdd/kddcup_data.gz")
 # show 
 display(dbutils.fs.ls("dbfs:/kdd"))
+
+
+
 
 
 
@@ -44,6 +50,115 @@ dbutils.library.restartPython()  # Removes Python state, but some libraries migh
 
 
 
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---      .bz2                ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+urllib.urlretrieve("https://s3-us-west-1.amazonaws.com/variant-spark-pub/datasets/hipsterIndex/hipster.vcf.bz2", "/tmp/hipster.vcf.bz2")
+urllib.urlretrieve("https://s3-us-west-1.amazonaws.com/variant-spark-pub/datasets/hipsterIndex/hipster_labels.txt", "/tmp/hipster_labels.txt")
+
+dbutils.fs.mv("file:/tmp/hipster.vcf.bz2", "dbfs:/vs-datasets/hipsterIndex/hipster.vcf.bz2")
+dbutils.fs.mv("file:/tmp/hipster_labels.txt", "dbfs:/vs-datasets/hipsterIndex/hipster_labels.txt")
+
+display(dbutils.fs.ls("dbfs:/vs-datasets/hipsterIndex"))
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---      .vcf                ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+get this to work:
+	https://docs.databricks.com/_static/notebooks/genomics/vcf2delta.html
+
+
+https://docs.azuredatabricks.net/_static/notebooks/genomics/vcf2delta.html
+
+
+
+Predicting Geographic Population using Genome Variants and K-Means
+	https://databricks.com/blog/2016/05/24/predicting-geographic-population-using-genome-variants-and-k-means.html
+
+
+hail_all_spark.jar
+×
+Status
+Installed
+Source
+dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
+Messages
+No Messages
+
+
+
+
+== Parsed Logical Plan ==
+AddJarCommand /local_disk0/tmp/addedFile52657766961105597795698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar
+
+== Analyzed Logical Plan ==
+result: int
+AddJarCommand /local_disk0/tmp/addedFile52657766961105597795698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar
+
+== Optimized Logical Plan ==
+AddJarCommand /local_disk0/tmp/addedFile52657766961105597795698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar
+
+== Physical Plan ==
+Execute AddJarCommand
+   +- AddJarCommand /local_disk0/tmp/addedFile52657766961105597795698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---   setting up genomics    ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+env 
+	SPARK_CLASSPATH=$HAIL_HOME/build/libs/hail-all-spark.jar
+
+https://docs.databricks.com/_static/notebooks/genomics/vcf2delta.html
+
+env
+	SPARK_CLASSPATH=$HAIL_HOME/build/libs/hail-all-spark.jar
+
+
+SPARK_CLASSPATH=dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
+
+PYSPARK_PYTHON=python3
+SPARK_CLASSPATH=$HAIL_HOME/build/libs/hail-all-spark.jar
+println(sys.env.get("SPARK_HOME"))
+import os
+print(os.environ['SPARK_HOME'])
+
+
+https://www.blue-granite.com/blog/scaling-your-genomics-pipeline-to-the-cloud-with-azure-databricks
+
+
+
+hail_all_spark.jar
+×
+Status
+Installed
+Source
+dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
+Messages
+No Messages
 
 
 
