@@ -636,15 +636,8 @@ Next Generation DNA Sequencing (NGS)
   — Spark Summit Slides about next generation sequencing and Spark
 
 
-
-|
-
-
-
-
 * `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
   — really good overviews of the transformations possible 
-
 
 
 
@@ -677,9 +670,13 @@ Make Work
 
 
 
+* `incorporate slides from talk <https://www.slideshare.net/SparkSummit/hail-scaling-genetic-data-analysis-with-apache-spark-keynote-by-cotton-seed>`_
+
+
 
 |
 |
+
 
 
 
