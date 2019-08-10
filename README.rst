@@ -307,7 +307,7 @@ As we progress step-by-step, we will upload jupyter notebooks. This is the key t
 Jupyter Notebook Links
 ------------------------
 
-The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc 
+The following are working jupyter notebooks as we dive deeper into Apache Spark, Databricks, etc 
 
 |
 
@@ -331,7 +331,7 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 * `SQL Notebook 1 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/bcccb13349bed18a85e685734e5bd3cac0bfb64f/ENTER/dbricks/beta - SQL - test.html>`_
   — for introductory example of how to use SQL notebook file directly on Databricks, NOT LINKED YET, TO BE FIXED...
 
-
+|
 
 * `SQL Notebook 2 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/1e07b240b348ad0925682ea422c3c94ecbd94b27/ENTER/dbricks/beta%20-%20SQL%20-%20Pop%20vs%20Price.html>`_
   — for introductory example of how to use SQL notebook file directly on Databricks
@@ -363,7 +363,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-
 |
 
 
@@ -381,6 +380,14 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 |
+
+
+
+* `Hail running on Databricks Apache Spark written in <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks.ipynb>`_
+  — successful implementation of Hail 0.2 on the Databricks platform (Apache Spark based).  
+
+
+
    
 |
 
