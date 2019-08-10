@@ -383,8 +383,8 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 
 
 
-* `Hail running on Databricks Apache Spark written in <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks.ipynb>`_
-  — successful implementation of Hail 0.2 on the Databricks platform (Apache Spark based).  
+* `Hail running on Databricks Apache Spark written in Scala <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks.ipynb>`_
+  — successful implementation of Hail 0.2 on the Databricks platform in Scala code  
 
 
 
