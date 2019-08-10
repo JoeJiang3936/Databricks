@@ -554,20 +554,20 @@ Genomics
   — Demo custom machine learning library for real-time genomic data analysis with synthentic 'HipsterIndex' in Scala (VariantSpark_HipsterIndex_Spark2.2)
 
 
-*`Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
+* `Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
   — Tertiary datapipe
 
 
 
-*`Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
+* `Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
   — Tertiary datapipe
 
-
-*`Dmytro Kryvokhyzha <https://github.com/evodify>`_
+ 
+* `Dmytro Kryvokhyzha <https://github.com/evodify>`_
   —  Outstanding github repos for hard core genomics analysis.  This guy is good. 
 
 
-- Tom's Databricks Notes `here <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
+* `Tom Databricks Notes <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
 
 
 
