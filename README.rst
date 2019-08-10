@@ -378,6 +378,7 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
   — successful implementation of Hail 0.2 on Apache Spark (Ubuntu-based), working example (notebook kept in the 'working notebooks' sub-folder under /ENTER)
 
 
+
 |
 
 
@@ -385,11 +386,12 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
   — successful implementation of Hail 0.2 on the Databricks platform in Scala code  
 
 
+|
+
 
 
 * `Hail on Databricks written in Python with PCA  <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Genomics%26Spark%20.ipynb>`_
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
-
 
 
 
