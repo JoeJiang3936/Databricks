@@ -699,12 +699,14 @@ Final Notes
 Notes:: 
 
   http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
-  a
-  a
-  a
-  a
-  a
-  a
+  
+
+
+
+  Video-based working Scala:
+     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+
+
 
 
 
