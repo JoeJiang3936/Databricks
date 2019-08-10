@@ -1,0 +1,3226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/environment/?o=978277182616062 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  
+  <link rel="stylesheet" href="./bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./vis.min.css" type="text/css">
+  <link rel="stylesheet" href="./webui.css" type="text/css">
+  <link rel="stylesheet" href="./timeline-view.css" type="text/css">
+  <script src="./sorttable.js.download"></script>
+  <script src="./jquery-1.12.4.min.js.download"></script>
+  <script src="./vis.min.js.download"></script>
+  <script src="./bootstrap-tooltip.js.download"></script>
+  <script src="./initialize-tooltips.js.download"></script>
+  <script src="./table.js.download"></script>
+  <script src="./additional-metrics.js.download"></script>
+  <script src="./timeline-view.js.download"></script>
+  <script src="./log-view.js.download"></script>
+  <script src="./webui.js.download"></script>
+  <script>setUIRoot('')</script> 
+  <link rel="shortcut icon" href="./spark-logo-77x50px-hd.png"> 
+  <title>Databricks Shell - Environment</title>  
+  <script type="text/javascript">
+  window.parent.setSparkUiContextBar && window.parent.setSparkUiContextBar("ec2-3-92-87-147.compute-1.amazonaws.com")
+</script> 
+  <link rel="stylesheet" href="./sparkui-iframe.css">
+ </head> 
+ <body id="sparkui-iframe-body"> 
+  <div class="navbar navbar-static-top"> 
+   <div class="navbar-inner"> 
+    <div class="brand"> 
+     <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/?o=978277182616062" class="brand"> <img src="./spark-logo-77x50px-hd.png"> <span class="version">2.4.3</span> </a> 
+    </div> 
+    <p class="navbar-text pull-right"> <strong title="Databricks Shell">Databricks Shell</strong> application UI </p> 
+    <ul class="nav">
+     <li class=""> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/jobs/?o=978277182616062">Jobs</a> </li>
+     <li class=""> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/stages/?o=978277182616062">Stages</a> </li>
+     <li class=""> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/storage/?o=978277182616062">Storage</a> </li>
+     <li class="active"> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/environment/?o=978277182616062">Environment</a> </li>
+     <li class=""> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/executors/?o=978277182616062">Executors</a> </li>
+     <li class=""> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/SQL/?o=978277182616062">SQL</a> </li>
+     <li class=""> <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sparkui/0810-195737-camps23/driver-6864991145005241337/sqlserver/?o=978277182616062">JDBC/ODBC Server</a> </li>
+    </ul> 
+   </div> 
+  </div> 
+  <div class="container-fluid"> 
+   <div class="row-fluid"> 
+    <div class="span12"> 
+     <h3 style="vertical-align: bottom; display: inline-block;"> Environment </h3> 
+    </div> 
+   </div> 
+   <span> <span class="collapse-aggregated-runtimeInformation collapse-table" onclick="collapseTable(&#39;collapse-aggregated-runtimeInformation&#39;,
+            &#39;aggregated-runtimeInformation&#39;)"> <h4> <span class="collapse-table-arrow arrow-open"></span> <a>Runtime Information</a> </h4> </span> 
+    <div class="aggregated-runtimeInformation collapsible-table"> 
+     <table class="table table-bordered table-condensed table-striped sortable"> 
+      <thead>
+       <tr>
+        <th width="50.0%" class="">Name</th>
+        <th width="50.0%" class="">Value</th>
+       </tr>
+      </thead> 
+      <tbody> 
+       <tr>
+        <td>Java Version</td>
+        <td>1.8.0_191 (Oracle Corporation)</td>
+       </tr>
+       <tr>
+        <td>Java Home</td>
+        <td>/usr/lib/jvm/java-8-openjdk-amd64/jre</td>
+       </tr>
+       <tr>
+        <td>Scala Version</td>
+        <td>version 2.11.12</td>
+       </tr> 
+      </tbody> 
+     <tfoot></tfoot></table> 
+    </div> <span class="collapse-aggregated-sparkProperties collapse-table" onclick="collapseTable(&#39;collapse-aggregated-sparkProperties&#39;,
+            &#39;aggregated-sparkProperties&#39;)"> <h4> <span class="collapse-table-arrow arrow-open"></span> <a>Spark Properties</a> </h4> </span> 
+    <div class="aggregated-sparkProperties collapsible-table"> 
+     <table class="table table-bordered table-condensed table-striped sortable"> 
+      <thead>
+       <tr>
+        <th width="50.0%" class="">Name</th>
+        <th width="50.0%" class="">Value</th>
+       </tr>
+      </thead> 
+      <tbody> 
+       <tr>
+        <td>eventLog.rolloverIntervalSeconds</td>
+        <td>3600</td>
+       </tr>
+       <tr>
+        <td>spark.akka.frameSize</td>
+        <td>256</td>
+       </tr>
+       <tr>
+        <td>spark.app.id</td>
+        <td>app-20190810210147-0000</td>
+       </tr>
+       <tr>
+        <td>spark.app.name</td>
+        <td>Databricks Shell</td>
+       </tr>
+       <tr>
+        <td>spark.cleaner.referenceTracking.blocking</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.acl.client</td>
+        <td>com.databricks.spark.sql.acl.client.SparkSqlAclClient</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.acl.provider</td>
+        <td>com.databricks.sql.acl.ReflectionBackedAclProvider</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.cloudProvider</td>
+        <td>AWS</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterSource</td>
+        <td>UI</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.autoTerminationMinutes</td>
+        <td>29</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterAllTags</td>
+        <td>[{"key":"Vendor","value":"Databricks"},{"key":"Creator","value":"tbresee@mail.smu.edu"},{"key":"ClusterName","value":"Hail"},{"key":"ClusterId","value":"0810-195737-camps23"},{"key":"Name","value":"978277182616062-1eb54f5d-0990-42ac-b078-0e5707e67a1d-worker"}]</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterAvailability</td>
+        <td>SPOT_WITH_FALLBACK</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterCreator</td>
+        <td>Webapp</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterEbsVolumeCount</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterEbsVolumeSize</td>
+        <td>100</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterEbsVolumeType</td>
+        <td>GENERAL_PURPOSE_SSD</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterFirstOnDemand</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterGeneration</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterId</td>
+        <td>0810-195737-camps23</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterLastActivityTime</td>
+        <td>1565470830762</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterLogDeliveryEnabled</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterLogDestination</td>
+        <td></td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterMaxWorkers</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterMetastoreAccessType</td>
+        <td>RDS_DIRECT</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterMinWorkers</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterName</td>
+        <td>Hail</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterNoDriverDaemon</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterNodeType</td>
+        <td>r4.xlarge</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterNumSshKeys</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterOwnerOrgId</td>
+        <td>978277182616062</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterOwnerUserId</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterPinned</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterPythonVersion</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterResourceClass</td>
+        <td>default</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterScalingType</td>
+        <td>autoscaling</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterSku</td>
+        <td>STANDARD_SKU</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterSpotBidPricePercent</td>
+        <td>100</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterState</td>
+        <td>Restarting</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterStateMessage</td>
+        <td>Starting Spark</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterTargetWorkers</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.clusterWorkers</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.containerType</td>
+        <td>LXC</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.containerZoneId</td>
+        <td>us-east-1c</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.driverContainerId</td>
+        <td>933162fe72f44d9eafbd2c68f5d081d3</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.driverContainerPrivateIp</td>
+        <td>10.67.227.154</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.driverInstanceId</td>
+        <td>i-03d3a660c92b641d6</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.driverInstancePrivateIp</td>
+        <td>10.67.244.113</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.driverNodeType</td>
+        <td>r4.xlarge</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.driverPublicDns</td>
+        <td>ec2-3-92-87-147.compute-1.amazonaws.com</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.enableCredentialPassthrough</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.enableDfAcls</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.enableElasticDisk</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.enableJdbcAutoStart</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.enableJobsAutostart</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.enableSqlAclsOnly</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.numPerClusterInitScriptsV2</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.sparkVersion</td>
+        <td>5.4.x-scala2.11</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.userProvidedRemoteVolumeCount</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.userProvidedRemoteVolumeSizeGb</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.userProvidedRemoteVolumeType</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.clusterUsageTags.workerEnvironmentId</td>
+        <td>978277182616062-1eb54f5d-0990-42ac-b078-0e5707e67a1d</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.credential.redactor</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.delta.logStore.crossCloud.fatal</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.delta.multiClusterWrites.enabled</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.driverNodeTypeId</td>
+        <td>r4.xlarge</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.eventLog.dir</td>
+        <td>eventlogs</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.io.directoryCommit.enableLogicalDelete</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.overrideDefaultCommitProtocol</td>
+        <td>org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.passthrough.adls.gen2.tokenProviderClassName</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.passthrough.adls.tokenProviderClassName</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.passthrough.s3a.tokenProviderClassName</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.preemption.enabled</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.redactor</td>
+        <td>com.databricks.spark.util.DatabricksSparkLogRedactorProxy</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.session.share</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.sparkContextId</td>
+        <td>6864991145005241337</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.tahoe.logStore.aws.class</td>
+        <td>com.databricks.tahoe.store.MultiClusterLogStore</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.tahoe.logStore.azure.class</td>
+        <td>com.databricks.tahoe.store.AzureLogStore</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.tahoe.logStore.class</td>
+        <td>com.databricks.tahoe.store.DelegatingLogStore</td>
+       </tr>
+       <tr>
+        <td>spark.databricks.workerNodeTypeId</td>
+        <td>r4.xlarge</td>
+       </tr>
+       <tr>
+        <td>spark.driver.allowMultipleContexts</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.driver.host</td>
+        <td>ip-10-67-227-154.ec2.internal</td>
+       </tr>
+       <tr>
+        <td>spark.driver.maxResultSize</td>
+        <td>4g</td>
+       </tr>
+       <tr>
+        <td>spark.driver.port</td>
+        <td>38228</td>
+       </tr>
+       <tr>
+        <td>spark.driver.tempDirectory</td>
+        <td>/local_disk0/tmp</td>
+       </tr>
+       <tr>
+        <td>spark.eventLog.enabled</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.executor.extraClassPath</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.executor.extraJavaOptions</td>
+        <td>-Djava.io.tmpdir=/local_disk0/tmp -XX:ReservedCodeCacheSize=256m -XX:+UseCodeCacheFlushing -Djava.security.properties=/databricks/spark/dbconf/java/extra.security -XX:+PrintFlagsFinal -XX:+PrintGCDateStamps -verbose:gc -XX:+PrintGCDetails -Xss4m -Djavax.xml.datatype.DatatypeFactory=com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Djavax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema=com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory -Dorg.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser -Dorg.w3c.dom.DOMImplementationSourceList=com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl -Djavax.net.ssl.sessionCacheSize=10000 -Ddatabricks.serviceName=spark-executor-1</td>
+       </tr>
+       <tr>
+        <td>spark.executor.id</td>
+        <td>driver</td>
+       </tr>
+       <tr>
+        <td>spark.executor.memory</td>
+        <td>20396m</td>
+       </tr>
+       <tr>
+        <td>spark.executor.tempDirectory</td>
+        <td>/local_disk0/tmp</td>
+       </tr>
+       <tr>
+        <td>spark.extraListeners</td>
+        <td>com.databricks.backend.daemon.driver.DBCEventLoggingListener</td>
+       </tr>
+       <tr>
+        <td>spark.files.fetchFailure.unRegisterOutputOnHost</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.files.overwrite</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.files.useFetchCache</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.databricks.dbfs.client.version</td>
+        <td>v2</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.databricks.s3commit.client.sslTrustAll</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.abfs.impl</td>
+        <td>shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.abfs.impl.disable.cache</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.abfss.impl</td>
+        <td>shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.abfss.impl.disable.cache</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.adl.impl</td>
+        <td>com.databricks.adl.AdlFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.adl.impl.disable.cache</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.azure.skip.metrics</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3.impl</td>
+        <td>com.databricks.s3a.S3AFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.connection.maximum</td>
+        <td>200</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.fast.upload</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.fast.upload.default</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.impl</td>
+        <td>com.databricks.s3a.S3AFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.multipart.size</td>
+        <td>10485760</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.multipart.threshold</td>
+        <td>104857600</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3a.threads.max</td>
+        <td>136</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.s3n.impl</td>
+        <td>com.databricks.s3a.S3AFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.wasb.impl</td>
+        <td>shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.wasb.impl.disable.cache</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.wasbs.impl</td>
+        <td>shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.fs.wasbs.impl.disable.cache</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.enable.doAs</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.idle.operation.timeout</td>
+        <td>7200000</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.idle.session.timeout</td>
+        <td>900000</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.keystore.password</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.keystore.path</td>
+        <td>/databricks/keys/jetty-ssl-driver-keystore.jks</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.session.check.interval</td>
+        <td>60000</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.thrift.http.cookie.auth.enabled</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.thrift.http.port</td>
+        <td>10000</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.transport.mode</td>
+        <td>http</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.server2.use.SSL</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.hive.warehouse.subdir.inherit.perms</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.io.compression.codecs</td>
+        <td>org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.mapred.output.committer.class</td>
+        <td>com.databricks.backend.daemon.data.client.DirectOutputCommitter</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.mapreduce.input.fileinputformat.split.minsize</td>
+        <td>1099511627776</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.parquet.block.size</td>
+        <td>1099511627776</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.parquet.memory.pool.ratio</td>
+        <td>0.5</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.spark.sql.parquet.output.committer.class</td>
+        <td>org.apache.spark.sql.parquet.DirectParquetOutputCommitter</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.spark.sql.sources.outputCommitterClass</td>
+        <td>com.databricks.backend.daemon.data.client.MapReduceDirectOutputCommitter</td>
+       </tr>
+       <tr>
+        <td>spark.hadoop.spark.thriftserver.customHeadersToProperties</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.home</td>
+        <td>/databricks/spark</td>
+       </tr>
+       <tr>
+        <td>spark.logConf</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.master</td>
+        <td>spark://10.67.227.154:7077</td>
+       </tr>
+       <tr>
+        <td>spark.metrics.conf</td>
+        <td>/databricks/spark/conf/metrics.properties</td>
+       </tr>
+       <tr>
+        <td>spark.r.backendConnectionTimeout</td>
+        <td>604800</td>
+       </tr>
+       <tr>
+        <td>spark.r.numRBackendThreads</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>spark.rdd.compress</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.repl.class.outputDir</td>
+        <td>/local_disk0/tmp/repl/spark-6864991145005241337-f236d2a4-5794-4c01-88a1-56a0d217d4b6</td>
+       </tr>
+       <tr>
+        <td>spark.repl.class.uri</td>
+        <td>spark://ip-10-67-227-154.ec2.internal:38228/classes</td>
+       </tr>
+       <tr>
+        <td>spark.rpc.message.maxSize</td>
+        <td>256</td>
+       </tr>
+       <tr>
+        <td>spark.scheduler.listenerbus.eventqueue.capacity</td>
+        <td>20000</td>
+       </tr>
+       <tr>
+        <td>spark.scheduler.mode</td>
+        <td>FAIR</td>
+       </tr>
+       <tr>
+        <td>spark.serializer.objectStreamReset</td>
+        <td>100</td>
+       </tr>
+       <tr>
+        <td>spark.shuffle.manager</td>
+        <td>SORT</td>
+       </tr>
+       <tr>
+        <td>spark.shuffle.memoryFraction</td>
+        <td>0.2</td>
+       </tr>
+       <tr>
+        <td>spark.shuffle.reduceLocality.enabled</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.shuffle.service.enabled</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.shuffle.service.port</td>
+        <td>4048</td>
+       </tr>
+       <tr>
+        <td>spark.sparkr.use.daemon</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.speculation</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.speculation.multiplier</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>spark.speculation.quantile</td>
+        <td>0.9</td>
+       </tr>
+       <tr>
+        <td>spark.sql.allowMultipleContexts</td>
+        <td>false</td>
+       </tr>
+       <tr>
+        <td>spark.sql.catalogImplementation</td>
+        <td>hive</td>
+       </tr>
+       <tr>
+        <td>spark.sql.files.maxPartitionBytes</td>
+        <td>1099511627776</td>
+       </tr>
+       <tr>
+        <td>spark.sql.files.openCostInBytes</td>
+        <td>1099511627776</td>
+       </tr>
+       <tr>
+        <td>spark.sql.hive.convertCTAS</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.sql.hive.convertMetastoreParquet</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.sql.hive.metastore.jars</td>
+        <td>/databricks/hive/*</td>
+       </tr>
+       <tr>
+        <td>spark.sql.hive.metastore.sharedPrefixes</td>
+        <td>org.mariadb.jdbc,com.mysql.jdbc,org.postgresql,com.microsoft.sqlserver,microsoft.sql.DateTimeOffset,microsoft.sql.Types,com.databricks,com.codahale,com.fasterxml.jackson,shaded.databricks</td>
+       </tr>
+       <tr>
+        <td>spark.sql.hive.metastore.version</td>
+        <td>0.13.0</td>
+       </tr>
+       <tr>
+        <td>spark.sql.parquet.cacheMetadata</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.sql.parquet.compression.codec</td>
+        <td>snappy</td>
+       </tr>
+       <tr>
+        <td>spark.sql.sources.commitProtocolClass</td>
+        <td>com.databricks.sql.transaction.directory.DirectoryAtomicCommitProtocol</td>
+       </tr>
+       <tr>
+        <td>spark.sql.streaming.checkpointFileManagerClass</td>
+        <td>com.databricks.spark.sql.streaming.DatabricksCheckpointFileManager</td>
+       </tr>
+       <tr>
+        <td>spark.sql.ui.retainedExecutions</td>
+        <td>100</td>
+       </tr>
+       <tr>
+        <td>spark.sql.warehouse.dir</td>
+        <td>*********(redacted)</td>
+       </tr>
+       <tr>
+        <td>spark.storage.blockManagerTimeoutIntervalMs</td>
+        <td>300000</td>
+       </tr>
+       <tr>
+        <td>spark.storage.memoryFraction</td>
+        <td>0.5</td>
+       </tr>
+       <tr>
+        <td>spark.streaming.driver.writeAheadLog.allowBatching</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.streaming.driver.writeAheadLog.closeFileAfterWrite</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.task.reaper.enabled</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>spark.task.reaper.killTimeout</td>
+        <td>60s</td>
+       </tr>
+       <tr>
+        <td>spark.ui.port</td>
+        <td>46483</td>
+       </tr>
+       <tr>
+        <td>spark.worker.cleanup.enabled</td>
+        <td>false</td>
+       </tr> 
+      </tbody> 
+     <tfoot></tfoot></table> 
+    </div> <span class="collapse-aggregated-systemProperties collapse-table" onclick="collapseTable(&#39;collapse-aggregated-systemProperties&#39;,
+            &#39;aggregated-systemProperties&#39;)"> <h4> <span class="collapse-table-arrow arrow-open"></span> <a>System Properties</a> </h4> </span> 
+    <div class="aggregated-systemProperties collapsible-table"> 
+     <table class="table table-bordered table-condensed table-striped sortable"> 
+      <thead>
+       <tr>
+        <th width="50.0%" class="">Name</th>
+        <th width="50.0%" class="">Value</th>
+       </tr>
+      </thead> 
+      <tbody> 
+       <tr>
+        <td>awt.toolkit</td>
+        <td>sun.awt.X11.XToolkit</td>
+       </tr>
+       <tr>
+        <td>databricks.serviceName</td>
+        <td>driver-1</td>
+       </tr>
+       <tr>
+        <td>file.encoding</td>
+        <td>UTF-8</td>
+       </tr>
+       <tr>
+        <td>file.encoding.pkg</td>
+        <td>sun.io</td>
+       </tr>
+       <tr>
+        <td>file.separator</td>
+        <td>/</td>
+       </tr>
+       <tr>
+        <td>java.awt.graphicsenv</td>
+        <td>sun.awt.X11GraphicsEnvironment</td>
+       </tr>
+       <tr>
+        <td>java.awt.printerjob</td>
+        <td>sun.print.PSPrinterJob</td>
+       </tr>
+       <tr>
+        <td>java.class.version</td>
+        <td>52.0</td>
+       </tr>
+       <tr>
+        <td>java.endorsed.dirs</td>
+        <td>/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed</td>
+       </tr>
+       <tr>
+        <td>java.ext.dirs</td>
+        <td>/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext</td>
+       </tr>
+       <tr>
+        <td>java.home</td>
+        <td>/usr/lib/jvm/java-8-openjdk-amd64/jre</td>
+       </tr>
+       <tr>
+        <td>java.io.tmpdir</td>
+        <td>/local_disk0/tmp</td>
+       </tr>
+       <tr>
+        <td>java.library.path</td>
+        <td>/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib</td>
+       </tr>
+       <tr>
+        <td>java.runtime.name</td>
+        <td>OpenJDK Runtime Environment</td>
+       </tr>
+       <tr>
+        <td>java.runtime.version</td>
+        <td>1.8.0_191-8u191-b12-2ubuntu0.16.04.1-b12</td>
+       </tr>
+       <tr>
+        <td>java.security.properties</td>
+        <td>/databricks/spark/dbconf/java/extra.security</td>
+       </tr>
+       <tr>
+        <td>java.specification.name</td>
+        <td>Java Platform API Specification</td>
+       </tr>
+       <tr>
+        <td>java.specification.vendor</td>
+        <td>Oracle Corporation</td>
+       </tr>
+       <tr>
+        <td>java.specification.version</td>
+        <td>1.8</td>
+       </tr>
+       <tr>
+        <td>java.vendor</td>
+        <td>Oracle Corporation</td>
+       </tr>
+       <tr>
+        <td>java.vendor.url</td>
+        <td>http://java.oracle.com/</td>
+       </tr>
+       <tr>
+        <td>java.vendor.url.bug</td>
+        <td>http://bugreport.sun.com/bugreport/</td>
+       </tr>
+       <tr>
+        <td>java.version</td>
+        <td>1.8.0_191</td>
+       </tr>
+       <tr>
+        <td>java.vm.info</td>
+        <td>mixed mode</td>
+       </tr>
+       <tr>
+        <td>java.vm.name</td>
+        <td>OpenJDK 64-Bit Server VM</td>
+       </tr>
+       <tr>
+        <td>java.vm.specification.name</td>
+        <td>Java Virtual Machine Specification</td>
+       </tr>
+       <tr>
+        <td>java.vm.specification.vendor</td>
+        <td>Oracle Corporation</td>
+       </tr>
+       <tr>
+        <td>java.vm.specification.version</td>
+        <td>1.8</td>
+       </tr>
+       <tr>
+        <td>java.vm.vendor</td>
+        <td>Oracle Corporation</td>
+       </tr>
+       <tr>
+        <td>java.vm.version</td>
+        <td>25.191-b12</td>
+       </tr>
+       <tr>
+        <td>javax.net.ssl.sessionCacheSize</td>
+        <td>10000</td>
+       </tr>
+       <tr>
+        <td>javax.xml.datatype.DatatypeFactory</td>
+        <td>com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl</td>
+       </tr>
+       <tr>
+        <td>javax.xml.parsers.DocumentBuilderFactory</td>
+        <td>com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl</td>
+       </tr>
+       <tr>
+        <td>javax.xml.parsers.SAXParserFactory</td>
+        <td>com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl</td>
+       </tr>
+       <tr>
+        <td>javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema</td>
+        <td>com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory</td>
+       </tr>
+       <tr>
+        <td>jdk.tls.ephemeralDHKeySize</td>
+        <td>2048</td>
+       </tr>
+       <tr>
+        <td>jna.loaded</td>
+        <td>true</td>
+       </tr>
+       <tr>
+        <td>jna.platform.library.path</td>
+        <td>/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib:/usr/lib/x86_64-linux-gnu/libfakeroot:/usr/lib/x86_64-linux-gnu/mesa:/usr/lib/x86_64-linux-gnu/mesa-egl</td>
+       </tr>
+       <tr>
+        <td>jnidispatch.path</td>
+        <td>/local_disk0/tmp/jna-3506402/jna2704625712210204228.tmp</td>
+       </tr>
+       <tr>
+        <td>line.separator</td>
+        <td> </td>
+       </tr>
+       <tr>
+        <td>org.w3c.dom.DOMImplementationSourceList</td>
+        <td>com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl</td>
+       </tr>
+       <tr>
+        <td>org.xml.sax.driver</td>
+        <td>com.sun.org.apache.xerces.internal.parsers.SAXParser</td>
+       </tr>
+       <tr>
+        <td>os.arch</td>
+        <td>amd64</td>
+       </tr>
+       <tr>
+        <td>os.name</td>
+        <td>Linux</td>
+       </tr>
+       <tr>
+        <td>os.version</td>
+        <td>4.4.0-1087-aws</td>
+       </tr>
+       <tr>
+        <td>path.separator</td>
+        <td>:</td>
+       </tr>
+       <tr>
+        <td>scala.repl.name.line</td>
+        <td>dummyPrefix</td>
+       </tr>
+       <tr>
+        <td>sun.arch.data.model</td>
+        <td>64</td>
+       </tr>
+       <tr>
+        <td>sun.boot.class.path</td>
+        <td>/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes</td>
+       </tr>
+       <tr>
+        <td>sun.boot.library.path</td>
+        <td>/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64</td>
+       </tr>
+       <tr>
+        <td>sun.cpu.endian</td>
+        <td>little</td>
+       </tr>
+       <tr>
+        <td>sun.cpu.isalist</td>
+        <td></td>
+       </tr>
+       <tr>
+        <td>sun.io.unicode.encoding</td>
+        <td>UnicodeLittle</td>
+       </tr>
+       <tr>
+        <td>sun.java.command</td>
+        <td>com.databricks.backend.daemon.driver.DriverDaemon</td>
+       </tr>
+       <tr>
+        <td>sun.java.launcher</td>
+        <td>SUN_STANDARD</td>
+       </tr>
+       <tr>
+        <td>sun.jnu.encoding</td>
+        <td>UTF-8</td>
+       </tr>
+       <tr>
+        <td>sun.management.compiler</td>
+        <td>HotSpot 64-Bit Tiered Compilers</td>
+       </tr>
+       <tr>
+        <td>sun.nio.ch.bugLevel</td>
+        <td></td>
+       </tr>
+       <tr>
+        <td>sun.os.patch.level</td>
+        <td>unknown</td>
+       </tr>
+       <tr>
+        <td>user.country</td>
+        <td>US</td>
+       </tr>
+       <tr>
+        <td>user.dir</td>
+        <td>/databricks/driver</td>
+       </tr>
+       <tr>
+        <td>user.home</td>
+        <td>/root</td>
+       </tr>
+       <tr>
+        <td>user.language</td>
+        <td>en</td>
+       </tr>
+       <tr>
+        <td>user.name</td>
+        <td>root</td>
+       </tr>
+       <tr>
+        <td>user.timezone</td>
+        <td>Etc/UTC</td>
+       </tr> 
+      </tbody> 
+     <tfoot></tfoot></table> 
+    </div> <span class="collapse-aggregated-classpathEntries collapse-table" onclick="collapseTable(&#39;collapse-aggregated-classpathEntries&#39;,
+            &#39;aggregated-classpathEntries&#39;)"> <h4> <span class="collapse-table-arrow arrow-open"></span> <a>Classpath Entries</a> </h4> </span> 
+    <div class="aggregated-classpathEntries collapsible-table"> 
+     <table class="table table-bordered table-condensed table-striped sortable"> 
+      <thead>
+       <tr>
+        <th width="50.0%" class="">Resource</th>
+        <th width="50.0%" class="">Source</th>
+       </tr>
+      </thead> 
+      <tbody> 
+       <tr>
+        <td>/databricks/hive/conf</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----glue-catalog-spark-client--glue-catalog-client-common_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----glue-catalog-spark-client--glue-catalog-shim-common_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----glue-catalog-spark-client--glue-catalog-shim-hive1_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----glue-catalog-spark-client--glue-catalog-shim-hive2_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----glue-catalog-spark-client--glue-catalog-shim-loader_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----glue-catalog-spark-client--glue-catalog-spark-client_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----jackson_annotations_shaded--libjackson-annotations.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----jackson_core_shaded--libjackson-core.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----jackson_databind_shaded--libjackson-databind.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/----jackson_datatype_joda_shaded--libjackson-datatype-joda.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/api--rpc--rpc_parser-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/api-base--api-base-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/api-base--api-base_java-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/chauffeur-api--api--endpoints--endpoints-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/chauffeur-api--chauffeur-api-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--client--client-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--common-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--credentials--credentials-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--hadoop--hadoop-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--jetty--client--client-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--lazy--lazy-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--libcommon_resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--path--path-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--rate-limiter--rate-limiter-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/common--storage--storage-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/daemon--data--client--client-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/daemon--data--client--conf--conf-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/daemon--data--client--utils-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/daemon--data--data-common--data-common-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/dbfs--utils--dbfs-utils-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/extern--acl--auth--auth-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/extern--extern-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/extern--libaws-regions.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/jsonutil--jsonutil-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/libraries--api--managedLibraries--managedLibraries-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/libraries--api--typemappers--typemappers-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/libraries--libraries-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/logging--log4j-mod--log4j-mod-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/logging--utils--logging-utils-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/s3--s3-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/s3commit--client--client-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/s3commit--common--common-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/secret-manager--api--api-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--common--spark-common-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--conf-reader--conf-reader_lib-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--dbutils--dbutils-api-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--antlr--parser-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--common--driver-common-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--display--display-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--driver-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--events-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--ml--ml-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--secret-redaction-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--driver--spark--resources-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--hive-exec-with-glue--hive-12679-patch_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--hive-exec-with-glue--hive-exec_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--antlr--antlr--antlr__antlr__2.7.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--amazon-kinesis-client--com.amazonaws__amazon-kinesis-client__1.8.10.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-autoscaling--com.amazonaws__aws-java-sdk-autoscaling__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudformation--com.amazonaws__aws-java-sdk-cloudformation__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudfront--com.amazonaws__aws-java-sdk-cloudfront__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudhsm--com.amazonaws__aws-java-sdk-cloudhsm__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudsearch--com.amazonaws__aws-java-sdk-cloudsearch__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudtrail--com.amazonaws__aws-java-sdk-cloudtrail__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudwatch--com.amazonaws__aws-java-sdk-cloudwatch__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cloudwatchmetrics--com.amazonaws__aws-java-sdk-cloudwatchmetrics__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-codedeploy--com.amazonaws__aws-java-sdk-codedeploy__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cognitoidentity--com.amazonaws__aws-java-sdk-cognitoidentity__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-cognitosync--com.amazonaws__aws-java-sdk-cognitosync__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-config--com.amazonaws__aws-java-sdk-config__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-core--com.amazonaws__aws-java-sdk-core__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-datapipeline--com.amazonaws__aws-java-sdk-datapipeline__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-directconnect--com.amazonaws__aws-java-sdk-directconnect__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-directory--com.amazonaws__aws-java-sdk-directory__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-dynamodb--com.amazonaws__aws-java-sdk-dynamodb__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-ec2--com.amazonaws__aws-java-sdk-ec2__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-ecs--com.amazonaws__aws-java-sdk-ecs__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-efs--com.amazonaws__aws-java-sdk-efs__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-elasticache--com.amazonaws__aws-java-sdk-elasticache__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-elasticbeanstalk--com.amazonaws__aws-java-sdk-elasticbeanstalk__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-elasticloadbalancing--com.amazonaws__aws-java-sdk-elasticloadbalancing__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-elastictranscoder--com.amazonaws__aws-java-sdk-elastictranscoder__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-emr--com.amazonaws__aws-java-sdk-emr__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-glacier--com.amazonaws__aws-java-sdk-glacier__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-glue--com.amazonaws__aws-java-sdk-glue__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-iam--com.amazonaws__aws-java-sdk-iam__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-importexport--com.amazonaws__aws-java-sdk-importexport__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-kinesis--com.amazonaws__aws-java-sdk-kinesis__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-kms--com.amazonaws__aws-java-sdk-kms__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-lambda--com.amazonaws__aws-java-sdk-lambda__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-logs--com.amazonaws__aws-java-sdk-logs__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-machinelearning--com.amazonaws__aws-java-sdk-machinelearning__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-opsworks--com.amazonaws__aws-java-sdk-opsworks__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-rds--com.amazonaws__aws-java-sdk-rds__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-redshift--com.amazonaws__aws-java-sdk-redshift__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-route53--com.amazonaws__aws-java-sdk-route53__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-s3--com.amazonaws__aws-java-sdk-s3__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-ses--com.amazonaws__aws-java-sdk-ses__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-simpledb--com.amazonaws__aws-java-sdk-simpledb__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-simpleworkflow--com.amazonaws__aws-java-sdk-simpleworkflow__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-sns--com.amazonaws__aws-java-sdk-sns__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-sqs--com.amazonaws__aws-java-sdk-sqs__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-ssm--com.amazonaws__aws-java-sdk-ssm__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-storagegateway--com.amazonaws__aws-java-sdk-storagegateway__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-sts--com.amazonaws__aws-java-sdk-sts__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-support--com.amazonaws__aws-java-sdk-support__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-swf-libraries--com.amazonaws__aws-java-sdk-swf-libraries__1.11.22.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-workspaces--com.amazonaws__aws-java-sdk-workspaces__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.amazonaws--jmespath-java--com.amazonaws__jmespath-java__1.11.313.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.carrotsearch--hppc--com.carrotsearch__hppc__0.7.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.chuusai--shapeless_2.11--com.chuusai__shapeless_2.11__2.3.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.clearspring.analytics--stream--com.clearspring.analytics__stream__2.7.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.databricks--Rserve--com.databricks__Rserve__1.8-3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.databricks--dbml-local_2.11--com.databricks__dbml-local_2.11__0.5.0-db8-spark2.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.databricks--dbml-local_2.11-tests--com.databricks__dbml-local_2.11-tests__0.5.0-db8-spark2.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.databricks--jets3t--com.databricks__jets3t__0.7.1-0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.databricks.scalapb--compilerplugin_2.11--com.databricks.scalapb__compilerplugin_2.11__0.4.15-9.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.databricks.scalapb--scalapb-runtime_2.11--com.databricks.scalapb__scalapb-runtime_2.11__0.4.15-9.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.esotericsoftware--kryo-shaded--com.esotericsoftware__kryo-shaded__4.0.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.esotericsoftware--minlog--com.esotericsoftware__minlog__1.3.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml--classmate--com.fasterxml__classmate__1.0.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-annotations--com.fasterxml.jackson.core__jackson-annotations__2.6.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-core--com.fasterxml.jackson.core__jackson-core__2.6.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-databind--com.fasterxml.jackson.core__jackson-databind__2.6.7.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.dataformat--jackson-dataformat-cbor--com.fasterxml.jackson.dataformat__jackson-dataformat-cbor__2.6.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.datatype--jackson-datatype-joda--com.fasterxml.jackson.datatype__jackson-datatype-joda__2.6.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.module--jackson-module-paranamer--com.fasterxml.jackson.module__jackson-module-paranamer__2.6.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.fasterxml.jackson.module--jackson-module-scala_2.11--com.fasterxml.jackson.module__jackson-module-scala_2.11__2.6.7.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil--jniloader--com.github.fommil__jniloader__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--core--com.github.fommil.netlib__core__1.1.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--native_ref-java--com.github.fommil.netlib__native_ref-java__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--native_ref-java-natives--com.github.fommil.netlib__native_ref-java-natives__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--native_system-java--com.github.fommil.netlib__native_system-java__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--native_system-java-natives--com.github.fommil.netlib__native_system-java-natives__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--netlib-native_ref-linux-x86_64-natives--com.github.fommil.netlib__netlib-native_ref-linux-x86_64-natives__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.fommil.netlib--netlib-native_system-linux-x86_64-natives--com.github.fommil.netlib__netlib-native_system-linux-x86_64-natives__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.luben--zstd-jni--com.github.luben__zstd-jni__1.3.2-2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.github.rwl--jtransforms--com.github.rwl__jtransforms__2.4.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.google.code.findbugs--jsr305--com.google.code.findbugs__jsr305__2.0.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.google.code.gson--gson--com.google.code.gson__gson__2.2.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.google.guava--guava--com.google.guava__guava__15.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.google.protobuf--protobuf-java--com.google.protobuf__protobuf-java__2.6.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.googlecode.javaewah--JavaEWAH--com.googlecode.javaewah__JavaEWAH__0.3.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.h2database--h2--com.h2database__h2__1.3.174.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.jcraft--jsch--com.jcraft__jsch__0.1.50.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.jolbox--bonecp--com.jolbox__bonecp__0.8.0.RELEASE.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.microsoft.azure--azure-data-lake-store-sdk--com.microsoft.azure__azure-data-lake-store-sdk__2.2.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.microsoft.sqlserver--mssql-jdbc--com.microsoft.sqlserver__mssql-jdbc__6.2.2.jre8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.ning--compress-lzf--com.ning__compress-lzf__1.0.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.sun.mail--javax.mail--com.sun.mail__javax.mail__1.5.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.thoughtworks.paranamer--paranamer--com.thoughtworks.paranamer__paranamer__2.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.trueaccord.lenses--lenses_2.11--com.trueaccord.lenses__lenses_2.11__0.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.twitter--chill-java--com.twitter__chill-java__0.9.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.twitter--chill_2.11--com.twitter__chill_2.11__0.9.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.twitter--parquet-hadoop-bundle--com.twitter__parquet-hadoop-bundle__1.6.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.twitter--util-app_2.11--com.twitter__util-app_2.11__6.23.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.twitter--util-core_2.11--com.twitter__util-core_2.11__6.23.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.twitter--util-jvm_2.11--com.twitter__util-jvm_2.11__6.23.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.typesafe--config--com.typesafe__config__1.2.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.typesafe.scala-logging--scala-logging-api_2.11--com.typesafe.scala-logging__scala-logging-api_2.11__2.1.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.typesafe.scala-logging--scala-logging-slf4j_2.11--com.typesafe.scala-logging__scala-logging-slf4j_2.11__2.1.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.univocity--univocity-parsers--com.univocity__univocity-parsers__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.vlkan--flatbuffers--com.vlkan__flatbuffers__1.2.0-3f79e055.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--com.zaxxer--HikariCP--com.zaxxer__HikariCP__3.1.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-beanutils--commons-beanutils--commons-beanutils__commons-beanutils__1.9.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-cli--commons-cli--commons-cli__commons-cli__1.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-codec--commons-codec--commons-codec__commons-codec__1.10.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-collections--commons-collections--commons-collections__commons-collections__3.2.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-configuration--commons-configuration--commons-configuration__commons-configuration__1.6.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-dbcp--commons-dbcp--commons-dbcp__commons-dbcp__1.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-digester--commons-digester--commons-digester__commons-digester__1.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-httpclient--commons-httpclient--commons-httpclient__commons-httpclient__3.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-io--commons-io--commons-io__commons-io__2.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-lang--commons-lang--commons-lang__commons-lang__2.6.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-logging--commons-logging--commons-logging__commons-logging__1.1.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-net--commons-net--commons-net__commons-net__3.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--commons-pool--commons-pool--commons-pool__commons-pool__1.5.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--info.ganglia.gmetric4j--gmetric4j--info.ganglia.gmetric4j__gmetric4j__1.0.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.airlift--aircompressor--io.airlift__aircompressor__0.10.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-core--io.dropwizard.metrics__metrics-core__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-ganglia--io.dropwizard.metrics__metrics-ganglia__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-graphite--io.dropwizard.metrics__metrics-graphite__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-healthchecks--io.dropwizard.metrics__metrics-healthchecks__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-jetty9--io.dropwizard.metrics__metrics-jetty9__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-json--io.dropwizard.metrics__metrics-json__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-jvm--io.dropwizard.metrics__metrics-jvm__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-log4j--io.dropwizard.metrics__metrics-log4j__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-servlets--io.dropwizard.metrics__metrics-servlets__3.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.netty--netty--io.netty__netty__3.9.9.Final.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.netty--netty-all--io.netty__netty-all__4.1.17.Final.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.prometheus--simpleclient--io.prometheus__simpleclient__0.0.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.prometheus--simpleclient_common--io.prometheus__simpleclient_common__0.0.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.prometheus--simpleclient_dropwizard--io.prometheus__simpleclient_dropwizard__0.0.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.prometheus--simpleclient_servlet--io.prometheus__simpleclient_servlet__0.0.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--io.prometheus.jmx--collector--io.prometheus.jmx__collector__0.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.activation--activation--javax.activation__activation__1.1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.annotation--javax.annotation-api--javax.annotation__javax.annotation-api__1.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.el--javax.el-api--javax.el__javax.el-api__2.2.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.jdo--jdo-api--javax.jdo__jdo-api__3.0.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.servlet--javax.servlet-api--javax.servlet__javax.servlet-api__3.1.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.servlet.jsp--jsp-api--javax.servlet.jsp__jsp-api__2.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.transaction--jta--javax.transaction__jta__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.validation--validation-api--javax.validation__validation-api__1.1.0.Final.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.ws.rs--javax.ws.rs-api--javax.ws.rs__javax.ws.rs-api__2.0.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.xml.bind--jaxb-api--javax.xml.bind__jaxb-api__2.2.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javax.xml.stream--stax-api--javax.xml.stream__stax-api__1.0-2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--javolution--javolution--javolution__javolution__5.5.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--jline--jline--jline__jline__2.14.6.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--joda-time--joda-time--joda-time__joda-time__2.9.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--log4j--apache-log4j-extras--log4j__apache-log4j-extras__1.2.17.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--log4j--log4j--log4j__log4j__1.2.17.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.hydromatic--eigenbase-properties--net.hydromatic__eigenbase-properties__1.1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.razorvine--pyrolite--net.razorvine__pyrolite__4.13.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.sf.jpam--jpam--net.sf.jpam__jpam__1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.sf.opencsv--opencsv--net.sf.opencsv__opencsv__2.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.sf.supercsv--super-csv--net.sf.supercsv__super-csv__2.2.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.snowflake--snowflake-ingest-sdk--net.snowflake__snowflake-ingest-sdk__0.9.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.snowflake--snowflake-jdbc--net.snowflake__snowflake-jdbc__3.6.15.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.snowflake--spark-snowflake_2.11--net.snowflake__spark-snowflake_2.11__2.4.10-spark_2.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--net.sourceforge.f2j--arpack_combined_all--net.sourceforge.f2j__arpack_combined_all__0.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.acplt--oncrpc--org.acplt__oncrpc__1.0.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.antlr--ST4--org.antlr__ST4__4.0.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.antlr--antlr-runtime--org.antlr__antlr-runtime__3.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.antlr--antlr4-runtime--org.antlr__antlr4-runtime__4.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.antlr--stringtemplate--org.antlr__stringtemplate__3.2.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.ant--ant--org.apache.ant__ant__1.9.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.ant--ant-jsch--org.apache.ant__ant-jsch__1.9.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.ant--ant-launcher--org.apache.ant__ant-launcher__1.9.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.arrow--arrow-format--org.apache.arrow__arrow-format__0.10.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.arrow--arrow-memory--org.apache.arrow__arrow-memory__0.10.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.arrow--arrow-vector--org.apache.arrow__arrow-vector__0.10.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.avro--avro--org.apache.avro__avro__1.8.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.avro--avro-ipc--org.apache.avro__avro-ipc__1.8.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.avro--avro-mapred-hadoop2--org.apache.avro__avro-mapred-hadoop2__1.8.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.calcite--calcite-avatica--org.apache.calcite__calcite-avatica__1.2.0-incubating.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.calcite--calcite-core--org.apache.calcite__calcite-core__1.2.0-incubating.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.calcite--calcite-linq4j--org.apache.calcite__calcite-linq4j__1.2.0-incubating.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.commons--commons-compress--org.apache.commons__commons-compress__1.8.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.commons--commons-crypto--org.apache.commons__commons-crypto__1.0.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.commons--commons-lang3--org.apache.commons__commons-lang3__3.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.commons--commons-math3--org.apache.commons__commons-math3__3.4.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.curator--curator-client--org.apache.curator__curator-client__2.7.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.curator--curator-framework--org.apache.curator__curator-framework__2.7.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.curator--curator-recipes--org.apache.curator__curator-recipes__2.7.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.derby--derby--org.apache.derby__derby__10.12.1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.directory.api--api-asn1-api--org.apache.directory.api__api-asn1-api__1.0.0-M20.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.directory.api--api-util--org.apache.directory.api__api-util__1.0.0-M20.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.directory.server--apacheds-i18n--org.apache.directory.server__apacheds-i18n__2.0.0-M15.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.directory.server--apacheds-kerberos-codec--org.apache.directory.server__apacheds-kerberos-codec__2.0.0-M15.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-annotations--org.apache.hadoop__hadoop-annotations__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-auth--org.apache.hadoop__hadoop-auth__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-client--org.apache.hadoop__hadoop-client__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-common--org.apache.hadoop__hadoop-common__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-hdfs--org.apache.hadoop__hadoop-hdfs__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-mapreduce-client-app--org.apache.hadoop__hadoop-mapreduce-client-app__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-mapreduce-client-common--org.apache.hadoop__hadoop-mapreduce-client-common__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-mapreduce-client-core--org.apache.hadoop__hadoop-mapreduce-client-core__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-mapreduce-client-jobclient--org.apache.hadoop__hadoop-mapreduce-client-jobclient__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-mapreduce-client-shuffle--org.apache.hadoop__hadoop-mapreduce-client-shuffle__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-yarn-api--org.apache.hadoop__hadoop-yarn-api__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-yarn-client--org.apache.hadoop__hadoop-yarn-client__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-yarn-common--org.apache.hadoop__hadoop-yarn-common__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-yarn-server-common--org.apache.hadoop__hadoop-yarn-server-common__2.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.htrace--htrace-core--org.apache.htrace__htrace-core__3.1.0-incubating.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.httpcomponents--httpclient--org.apache.httpcomponents__httpclient__4.5.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.httpcomponents--httpcore--org.apache.httpcomponents__httpcore__4.4.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.ivy--ivy--org.apache.ivy__ivy__2.4.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.orc--orc-core-nohive--org.apache.orc__orc-core-nohive__1.5.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.orc--orc-mapreduce-nohive--org.apache.orc__orc-mapreduce-nohive__1.5.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.orc--orc-shims--org.apache.orc__orc-shims__1.5.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.parquet--parquet-column--org.apache.parquet__parquet-column__1.10.1.1-databricks3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.parquet--parquet-common--org.apache.parquet__parquet-common__1.10.1.1-databricks3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.parquet--parquet-encoding--org.apache.parquet__parquet-encoding__1.10.1.1-databricks3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.parquet--parquet-format--org.apache.parquet__parquet-format__2.4.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.parquet--parquet-hadoop--org.apache.parquet__parquet-hadoop__1.10.1.1-databricks3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.parquet--parquet-jackson--org.apache.parquet__parquet-jackson__1.10.1.1-databricks3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.thrift--libfb303--org.apache.thrift__libfb303__0.9.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.thrift--libthrift--org.apache.thrift__libthrift__0.9.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.xbean--xbean-asm6-shaded--org.apache.xbean__xbean-asm6-shaded__4.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.apache.zookeeper--zookeeper--org.apache.zookeeper__zookeeper__3.4.6.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.codehaus.jackson--jackson-core-asl--org.codehaus.jackson__jackson-core-asl__1.9.13.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.codehaus.jackson--jackson-jaxrs--org.codehaus.jackson__jackson-jaxrs__1.9.13.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.codehaus.jackson--jackson-mapper-asl--org.codehaus.jackson__jackson-mapper-asl__1.9.13.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.codehaus.jackson--jackson-xc--org.codehaus.jackson__jackson-xc__1.9.13.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.codehaus.janino--commons-compiler--org.codehaus.janino__commons-compiler__3.0.10.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.codehaus.janino--janino--org.codehaus.janino__janino__3.0.10.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.datanucleus--datanucleus-api-jdo--org.datanucleus__datanucleus-api-jdo__3.2.6.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.datanucleus--datanucleus-core--org.datanucleus__datanucleus-core__3.2.10.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.datanucleus--datanucleus-rdbms--org.datanucleus__datanucleus-rdbms__3.2.9.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-client--org.eclipse.jetty__jetty-client__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-continuation--org.eclipse.jetty__jetty-continuation__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-http--org.eclipse.jetty__jetty-http__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-io--org.eclipse.jetty__jetty-io__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-jndi--org.eclipse.jetty__jetty-jndi__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-plus--org.eclipse.jetty__jetty-plus__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-proxy--org.eclipse.jetty__jetty-proxy__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-security--org.eclipse.jetty__jetty-security__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-server--org.eclipse.jetty__jetty-server__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-servlet--org.eclipse.jetty__jetty-servlet__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-servlets--org.eclipse.jetty__jetty-servlets__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-util--org.eclipse.jetty__jetty-util__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-webapp--org.eclipse.jetty__jetty-webapp__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-xml--org.eclipse.jetty__jetty-xml__9.3.20.v20170531.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.fusesource.leveldbjni--leveldbjni-all--org.fusesource.leveldbjni__leveldbjni-all__1.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.hk2--hk2-api--org.glassfish.hk2__hk2-api__2.4.0-b34.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.hk2--hk2-locator--org.glassfish.hk2__hk2-locator__2.4.0-b34.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.hk2--hk2-utils--org.glassfish.hk2__hk2-utils__2.4.0-b34.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.hk2--osgi-resource-locator--org.glassfish.hk2__osgi-resource-locator__1.0.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.hk2.external--aopalliance-repackaged--org.glassfish.hk2.external__aopalliance-repackaged__2.4.0-b34.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.hk2.external--javax.inject--org.glassfish.hk2.external__javax.inject__2.4.0-b34.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.bundles.repackaged--jersey-guava--org.glassfish.jersey.bundles.repackaged__jersey-guava__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.containers--jersey-container-servlet--org.glassfish.jersey.containers__jersey-container-servlet__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.containers--jersey-container-servlet-core--org.glassfish.jersey.containers__jersey-container-servlet-core__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.core--jersey-client--org.glassfish.jersey.core__jersey-client__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.core--jersey-common--org.glassfish.jersey.core__jersey-common__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.core--jersey-server--org.glassfish.jersey.core__jersey-server__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.glassfish.jersey.media--jersey-media-jaxb--org.glassfish.jersey.media__jersey-media-jaxb__2.22.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.hibernate--hibernate-validator--org.hibernate__hibernate-validator__5.1.1.Final.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.iq80.snappy--snappy--org.iq80.snappy__snappy__0.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.javassist--javassist--org.javassist__javassist__3.18.1-GA.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.jboss.logging--jboss-logging--org.jboss.logging__jboss-logging__3.1.3.GA.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.jdbi--jdbi--org.jdbi__jdbi__2.63.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.joda--joda-convert--org.joda__joda-convert__1.7.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.jodd--jodd-core--org.jodd__jodd-core__3.5.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.json4s--json4s-ast_2.11--org.json4s__json4s-ast_2.11__3.5.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.json4s--json4s-core_2.11--org.json4s__json4s-core_2.11__3.5.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.json4s--json4s-jackson_2.11--org.json4s__json4s-jackson_2.11__3.5.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.json4s--json4s-scalap_2.11--org.json4s__json4s-scalap_2.11__3.5.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.lz4--lz4-java--org.lz4__lz4-java__1.4.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.mariadb.jdbc--mariadb-java-client--org.mariadb.jdbc__mariadb-java-client__2.1.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.mockito--mockito-all--org.mockito__mockito-all__1.9.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.objenesis--objenesis--org.objenesis__objenesis__2.5.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.postgresql--postgresql--org.postgresql__postgresql__42.1.4.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.roaringbitmap--RoaringBitmap--org.roaringbitmap__RoaringBitmap__0.7.45.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.roaringbitmap--shims--org.roaringbitmap__shims__0.7.45.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.rocksdb--rocksdbjni--org.rocksdb__rocksdbjni__5.2.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.rosuda.REngine--REngine--org.rosuda.REngine__REngine__2.1.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scala-lang--scala-compiler_2.11--org.scala-lang__scala-compiler__2.11.12.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scala-lang--scala-library_2.11--org.scala-lang__scala-library__2.11.12.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scala-lang--scala-reflect_2.11--org.scala-lang__scala-reflect__2.11.12.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scala-lang.modules--scala-parser-combinators_2.11--org.scala-lang.modules__scala-parser-combinators_2.11__1.1.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scala-lang.modules--scala-xml_2.11--org.scala-lang.modules__scala-xml_2.11__1.0.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scala-sbt--test-interface--org.scala-sbt__test-interface__1.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scalacheck--scalacheck_2.11--org.scalacheck__scalacheck_2.11__1.12.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scalactic--scalactic_2.11--org.scalactic__scalactic_2.11__3.0.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scalanlp--breeze-macros_2.11--org.scalanlp__breeze-macros_2.11__0.13.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scalanlp--breeze_2.11--org.scalanlp__breeze_2.11__0.13.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.scalatest--scalatest_2.11--org.scalatest__scalatest_2.11__3.0.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.slf4j--jcl-over-slf4j--org.slf4j__jcl-over-slf4j__1.7.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.slf4j--jul-to-slf4j--org.slf4j__jul-to-slf4j__1.7.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.slf4j--slf4j-api--org.slf4j__slf4j-api__1.7.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.slf4j--slf4j-log4j12--org.slf4j__slf4j-log4j12__1.7.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spark-project.hive--hive-beeline--org.spark-project.hive__hive-beeline__1.2.1.spark2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spark-project.hive--hive-cli--org.spark-project.hive__hive-cli__1.2.1.spark2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spark-project.hive--hive-jdbc--org.spark-project.hive__hive-jdbc__1.2.1.spark2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spark-project.hive--hive-metastore--org.spark-project.hive__hive-metastore__1.2.1.spark2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spark-project.spark--unused--org.spark-project.spark__unused__1.0.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spire-math--spire-macros_2.11--org.spire-math__spire-macros_2.11__0.13.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.spire-math--spire_2.11--org.spire-math__spire_2.11__0.13.0.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.springframework--spring-core--org.springframework__spring-core__4.1.4.RELEASE.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.springframework--spring-test--org.springframework__spring-test__4.1.4.RELEASE.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.tukaani--xz--org.tukaani__xz__1.5.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.typelevel--machinist_2.11--org.typelevel__machinist_2.11__0.6.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.typelevel--macro-compat_2.11--org.typelevel__macro-compat_2.11__1.1.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.xerial--sqlite-jdbc--org.xerial__sqlite-jdbc__3.8.11.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.xerial.snappy--snappy-java--org.xerial.snappy__snappy-java__1.1.7.3.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--org.yaml--snakeyaml--org.yaml__snakeyaml__1.16.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--oro--oro--oro__oro__2.0.8.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--software.amazon.ion--ion-java--software.amazon.ion__ion-java__1.0.2.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--stax--stax-api--stax__stax-api__1.0.1.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--maven-trees--spark_2.4--xmlenc--xmlenc--xmlenc__xmlenc__0.52.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--sql-extension--sql-extension-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--avro_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--catalyst_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.fasterxml.jackson.core__jackson-annotations__2.9.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.fasterxml.jackson.core__jackson-core__2.9.4_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.fasterxml.jackson.core__jackson-databind__2.9.4_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.fasterxml.jackson.jaxrs__jackson-jaxrs-base__2.9.4_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__2.9.4_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.fasterxml.jackson.module__jackson-module-jaxb-annotations__2.9.4_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.github.shyiko__mysql-binlog-connector-java__0.16.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--com.google.guava__guava__20.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--core_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--debezium-connector-mysql_2.11_deploy_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--ganglia-lgpl_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--graphx_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--hive-thriftserver_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--hive_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--io.confluent__common-utils__4.0.0_shaded-for-avro.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--io.confluent__kafka-schema-registry-client__4.0.0_shaded-for-avro.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--io.debezium__debezium-core__0.8.3.Final_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--io.debezium__debezium-ddl-parser__0.8.3.Final_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--io.debezium__debezium-embedded__0.8.3.Final_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--javax.annotation__javax.annotation-api__1.2_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--javax.servlet__javax.servlet-api__3.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--javax.validation__validation-api__1.1.0.Final_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--javax.ws.rs__javax.ws.rs-api__2.0.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--kafka-clients_only_kafka08_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--kafka-clients_only_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--kafka_2.11_only_kafka08_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--libspark-sql-parser-compiled.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--metrics-core_only_kafka08_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--mllib-local_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--mllib_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--mysql-cdc_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--net.sourceforge.argparse4j__argparse4j__0.7.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.commons__commons-pool2__2.5.0_shaded-for-hive.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__connect-api__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__connect-file__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__connect-json__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__connect-runtime__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__connect-transforms__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__kafka-clients__2.0.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__kafka-log4j-appender__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.apache.kafka__kafka-tools__1.1.0_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-client__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-continuation__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-http__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-io__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-security__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-server__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-servlet__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-servlets__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.eclipse.jetty__jetty-util__9.2.24.v20180105_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.hk2.external__aopalliance-repackaged__2.5.0-b32_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.hk2.external__javax.inject__2.5.0-b32_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.hk2__hk2-api__2.5.0-b32_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.hk2__hk2-locator__2.5.0-b32_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.hk2__hk2-utils__2.5.0-b32_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.hk2__osgi-resource-locator__1.0.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.bundles.repackaged__jersey-guava__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.containers__jersey-container-servlet-core__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.containers__jersey-container-servlet__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.core__jersey-client__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.core__jersey-common__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.core__jersey-server__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.glassfish.jersey.media__jersey-media-jaxb__2.25.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.javassist__javassist__3.21.0-GA_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.jpmml__pmml-model__1.2.15_shaded-for-mllib.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.jpmml__pmml-schema__1.2.15_shaded-for-mllib.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.lz4__lz4-java__1.4.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.reflections__reflections__0.9.11_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--org.xerial.snappy__snappy-java__1.1.7.1_shaded-for-mysql-cdc.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--py4j_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--redshift_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--repl_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--shim_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-avro-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-core-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-hive-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-mllib-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-mysql-cdc-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-spark-sql-aws-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-spark-sql-azure-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-spark-sql-kafka-0-10-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-spark-sql-kafka-0-8-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-sql-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-2.4-streaming-resources-jar-resources.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-sql-aws_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-sql-azure_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-sql-kafka-0-10_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-sql-kafka-0-8_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark-sql-notification_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--spark_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--sql_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--sqldw_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--streaming_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/spark--versions--2.4--tags_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--azure--com.fasterxml.jackson.core__jackson-core__2.7.2_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--azure--com.microsoft.azure__azure-keyvault-core__1.0.0_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--azure--com.microsoft.azure__azure-storage__5.2.0_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--azure--org.apache.commons__commons-lang3__3.4_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--datalake--datalake-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--aopalliance__aopalliance__1.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-annotations__2.7.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-core__2.7.2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-core__2.7.2_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-databind__2.7.2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.datatype__jackson-datatype-joda__2.7.2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.google.code.findbugs__jsr305__1.3.9_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.google.guava__guava__11.0.2_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.google.guava__guava__16.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.google.inject__guice__3.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-annotations__1.2.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-keyvault-core__1.0.0_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-storage__7.0.0_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.rest__client-runtime__1.1.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__logging-interceptor__3.3.1_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__okhttp-urlconnection__3.3.1_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__okhttp__3.3.1_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okio__okio__1.8.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__adapter-rxjava__2.1.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__converter-jackson__2.1.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__retrofit__2.1.0_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--com.sun.xml.bind__jaxb-impl__2.2.3-1_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--commons-codec__commons-codec__1.9_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--commons-codec__commons-codec__1.9_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--commons-logging__commons-logging__1.2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--commons-logging__commons-logging__1.2_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--hadoop-azure-2.7.3-abfs-external-20180625_3682417-spark_2.4_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--hadoop-azure-2.7.3-abfs-external-20180920_b33d810-spark_2.4_2.11_deploy_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--io.netty__netty-all__4.0.52.Final_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--io.reactivex__rxjava__1.2.4_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--javax.activation__activation__1.1_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--javax.inject__javax.inject__1_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--javax.xml.bind__jaxb-api__2.2.2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--javax.xml.stream__stax-api__1.0-2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--joda-time__joda-time__2.4_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--org.apache.htrace__htrace-core__3.1.0-incubating_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpclient__4.5.2_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpclient__4.5.2_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpcore__4.4.4_2.11_shaded_20180625_3682417.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpcore__4.4.4_2.11_shaded_20180920_b33d810.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jackson--guava_only_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jackson--jackson-module-scala-shaded_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jackson--jsr305_only_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jackson--paranamer_only_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jetty8-shaded-client--databricks-patched-jetty-client-jar_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jetty8-shaded-client--databricks-patched-jetty-http-jar_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jetty8-shaded-client--jetty-io_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jetty8-shaded-client--jetty-jmx_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/third_party--jetty8-shaded-client--jetty-util_shaded.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/utils--process_utils-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/jars/workflow--workflow-spark_2.4_2.11_deploy.jar</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/spark/dbconf/hadoop</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/spark/dbconf/jets3t/</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>/databricks/spark/dbconf/log4j/driver</td>
+        <td>System Classpath</td>
+       </tr>
+       <tr>
+        <td>spark://ip-10-67-227-154.ec2.internal:38228/files/addedFile48727469306177209285698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar</td>
+        <td>Added By User</td>
+       </tr>
+       <tr>
+        <td>spark://ip-10-67-227-154.ec2.internal:38228/jars/addedFile48727469306177209285698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar</td>
+        <td>Added By User</td>
+       </tr> 
+      </tbody> 
+     <tfoot></tfoot></table> 
+    </div> </span> 
+  </div>  
+ 
+</body></html>

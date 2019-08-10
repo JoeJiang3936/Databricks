@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/sparkUi -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+
+    <title>Clusters - Databricks</title>
+<link rel="shortcut icon" href="https://dbc-3bebe1da-196f.cloud.databricks.com/favicon.ico"><link href="./Spark UI - Environment_files/main.e025986d.css" rel="stylesheet"><link href="./Spark UI - Environment_files/print.e025986d.css" rel="stylesheet" media="print"><style data-emotion=""></style><style id="plotly.js-style-global"></style><link type="text/css" rel="stylesheet" href="chrome-extension://ghihpjhpgdepnohngpgfcmcijmkggpaf/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://ghihpjhpgdepnohngpgfcmcijmkggpaf/js/page_context.js"></script><style id="detectElementResize" type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; z-index: -1; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style></head>
+<body screen_capture_injected="true" class="">
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+
+
+<div id="toolbar"></div>
+<div id="tooltip" class="hidden">
+    <p><span id="value"></span></p>
+</div>
+
+<div id="global-notification-container"><div class="databricks-notification-wrapper"><div class="notifications-wrapper"></div></div></div>
+
+<div id="topbar" style="">
+    <div class="tb-title-wrapper tb-title-wrapper-central" style="left: 76px;">
+        <span class="tb-title" data-name="Clusters"><span class="breadcrumbs"><span><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#setting/clusters">Clusters</a><span class="divider"> / </span></span><span>Hail</span></span></span>
+        <span class="tb-title-lang" data-lang="none"></span>
+        <div class="tb-status">
+            <span class="tb-status-msg tb-status-msg-error"></span>
+            <span class="tb-status-msg tb-status-msg-banner"></span>
+            <span class="tb-status-msg tb-status-msg-locked"></span>
+            <span class="tb-status-msg tb-status-msg-connecting">Connecting...&nbsp;</span>
+            <span class="tb-status-msg tb-status-msg-waiting">Still working...&nbsp;</span>
+            <img class="tb-status-spinner" src="./Spark UI - Environment_files/spinner.gif" alt="spinner">
+        </div>
+    </div>
+    <div class="tb-title-wrapper tb-title-wrapper-right">
+        <div class="tb-trial-msg"></div>
+        <div class="tb-title-icons tb-title-icons-right"></div>
+        <div class="tb-status presence">
+            <span class="tb-status-msg tb-status-presence" style="display: none;"><!-- presenceTemplate -->
+
+<ul class="noselect">
+  
+  <li title="Recent Activity" class="presence-history">
+    <div><i class="fa fa-clock-o"></i></div>
+  </li>
+</ul>
+
+</span>
+        </div>
+    </div>
+    <a class="tb-button tb-button-right tb-button-user" title="Account">
+        <i class="fa fa-user fa-lg"></i>
+    </a>
+    <a class="tb-button tb-button-right tb-button-help" title="Help and Support">
+        <i class="fa fa-question fa-lg"></i>
+    </a>
+    <a class="tb-button tb-button-right tb-button-upgrade" title="Upgrade" target="_blank">
+    <span>
+        <i class="fa fa-arrow-circle-up"></i>Upgrade
+    </span>
+    </a>
+</div>
+
+<div id="sidebar-and-notebook">
+    <div id="sidebar" class="sidebar"><div class="sidebar-outer"><div class="sidebar-main" data-panel="Workspace"><ul class="sidebar-ul"><li><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" class="sidebar-element" data-name="Databricks"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><img src="./Spark UI - Environment_files/Databricks_Logo_Side_Nav_Gray.81457fbd.svg" alt="databricks-logo"></div></div><div><span>databricks</span></div></a></li><div class="sidebar-spacer"></div><li><a class="sidebar-element" data-name="Home"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-home"></i></div></div><div><span>Home</span></div></a></li><li><a class="sidebar-element" data-name="Workspace"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-folder-open-o"></i></div></div><div><span>Workspace</span></div></a></li><li><a class="sidebar-element" data-name="Recents"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-clock-o"></i></div></div><div><span>Recents</span></div></a></li><div class="sidebar-spacer"></div><li><a class="sidebar-element" data-name="Tables"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-database"></i></div></div><div><span>Data</span></div></a></li><li><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#setting/clusters" class="sidebar-element" data-name="Clusters"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-sitemap"></i></div></div><div><span>Clusters</span></div></a></li><li><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#joblist" class="sidebar-element" data-name="Jobs"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-calendar"></i></div></div><div><span>Jobs</span></div></a></li><li><a class="sidebar-element" data-name="Search"><div class="sidebar-element-icon"><div class="sidebar-element-icon-inner"><i class="fa fa-fw fa-search"></i></div></div><div><span>Search</span></div></a></li></ul></div><div class="sidebar-alt"><div></div></div></div></div>
+    <div id="overallView" style="left: 76px;" class=""><div id="context-bar" style="display: none;"></div><div id="content" style="top: 0px;"><div class="primary-react-root" style="height: 100%;"><div style="height: 100%;"><div class="clusters-get-page"><form class="clusters-get"><h2><div class="status-indicator-wrapper"><i class="cluster-state status-indicator-icon ok fa fa-fw fa-circle" data-cluster-name="Hail" data-cluster-state="RUNNING" title="RUNNING"></i></div>Hail<a class="cluster-pin"><i class="fa fa-thumb-tack"></i></a><span class="header-btn-group"><button class="btn btn-default" type="button"><i class="fa fa-fw fa-edit fa-button-icon"></i>Edit</button><button class="btn btn-default" type="button"><i class="fa fa-fw fa-copy fa-button-icon"></i>Clone</button><button class="btn btn-default" type="button"><i class="fa fa-refresh fa-button-icon"></i>Restart</button><button class="btn btn-default" type="button"><i class="fa fa-button-icon fa-stop"></i>Terminate</button><span class="action"><a title="Delete" class="btn btn-default"><i class="fa fa-fw fa-remove"></i>Delete</a></span></span></h2><div class="react-tab-view active-tab-sparkUi"><ul class="nav nav-tabs"><li class="tab-nav-item" data-tab-name="Configuration"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/configuration" class="">Configuration</a></li><li class="tab-nav-item" data-tab-name="Notebooks (0)"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/notebooks" class="">Notebooks (0)</a></li><li class="tab-nav-item" data-tab-name="Libraries"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/libraries" class="">Libraries</a></li><li class="tab-nav-item" data-tab-name="Event Log"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/events" class="">Event Log</a></li><li class="tab-nav-item active" data-tab-name="Spark UI"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/sparkUi" class="">Spark UI</a></li><li class="tab-nav-item" data-tab-name="Driver Logs"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/driverLogs" class="">Driver Logs</a></li><li class="tab-nav-item" data-tab-name="Metrics"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/metrics" class="">Metrics</a></li><li class="tab-nav-item" data-tab-name="Apps"><div class="tooltip-react-outer"><div class="tooltip-react-element"><a disabled="" class="disabled-tab ">Apps</a></div><div class="tooltip-react-content" style="left: 10px; top: 36px; width: 260px;"><div class="tooltip-react-arrow" style="left: 27px;"></div><div class="tooltip-react-inner">Apps are not available on clusters with automatic termination enabled</div></div></div></li><li class="tab-nav-item" data-tab-name="[object Object]"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#/setting/clusters/0810-195737-camps23/sparkClusterUi" class=""><div class="spark-cluster-ui-title">Spark Cluster UI - Master <i class="fa fa-caret-down"></i></div></a></li></ul><div class="active-panel"><div class="react-tabs-panel"><div class="spark-ui-panel"><div id="spark-ui-context" class=""><span id="spark-ui-hostname" class="context-bar-item">Hostname: ec2-3-92-87-147.compute-1.amazonaws.com</span><span class="context-bar-item"> Spark Version:5.4.x-scala2.11</span></div><div class="row-fluid sparkui-wrapper"><iframe id="sparkui-iframe" src="./Spark UI - Environment_files/driver-6864991145005241337.html" frameborder="0" width="100%"></iframe></div></div></div></div></div></form></div></div></div></div></div>
+</div>
+
+<div id="filebrowser-popup" style="left: -316px; display: none;">
+    <div class="filebrowser-header">Workspace</div>
+    <div class="filebrowser filetree" style="width: 392px; display: none;" data-state="invisible" data-history-size="30"><div class="inner"><div class="ft-panel ui-droppable ui-resizable" data-panel="Workspace" style="width: 196px;"><ul class="ft-panel-list"><li class="filetree-list-item top-link has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="Workspace" class="filetree-link" title="Workspace"><i class="fa fa-databricks-does-not-exist fa-fw"></i><span class="filetree-display-name">Workspace</span><div class="dropdown"><i class="fa fa-chevron-down"></i></div></a></li><li class="filetree-list-item"><a href="https://docs.databricks.com/index.html" data-name="Documentation" class="filetree-link" title="Documentation"><i class="fa fa-question fa-fw"></i><span class="filetree-display-name">Documentation</span></a></li><li class="filetree-list-item"><a href="https://docs.databricks.com/release-notes/product/index.html" data-name="Release Notes" class="filetree-link" title="Release Notes"><i class="fa fa-code fa-fw"></i><span class="filetree-display-name">Release Notes</span></a></li><li class="filetree-list-item"><a href="https://docs.databricks.com/spark/latest/training/index.html" data-name="Training &amp; Tutorials" class="filetree-link" title="Training &amp; Tutorials"><i class="fa fa-graduation-cap fa-fw"></i><span class="filetree-display-name">Training &amp; Tutorials</span></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="Shared" class="filetree-link ui-droppable" title="Shared"><i class="fa fa-share-alt-square fa-fw"></i><span class="filetree-display-name">Shared</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu selected"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="Users" class="filetree-link ui-droppable" title="Users"><i class="fa fa-users fa-fw"></i><span class="filetree-display-name">Users</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609850" data-name="abc" class="filetree-link ui-draggable ui-draggable-handle" title="abc"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="true"></i><span class="filetree-display-name">abc</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/191751759330624" data-name="HAILv100" class="filetree-link ui-draggable ui-draggable-handle" title="HAILv100"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">HAILv100</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/191751759330628" data-name="HAILv101" class="filetree-link ui-draggable ui-draggable-handle" title="HAILv101"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">HAILv101</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/1410785419595546" data-name="SMU_Hail_Scala_Genomics" class="filetree-link ui-draggable ui-draggable-handle" title="SMU_Hail_Scala_Genomics"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="true"></i><span class="filetree-display-name">SMU_Hail_Scala_Genomics</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/191751759330632" data-name="Tom Aquinas Bresee" class="filetree-link ui-draggable ui-draggable-handle" title="Tom Aquinas Bresee"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Tom Aquinas Bresee</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609907" data-name="VariantSpark_HipsterIndex_Spark2.2" class="filetree-link ui-draggable ui-draggable-handle" title="VariantSpark_HipsterIndex_Spark2.2"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">VariantSpark_HipsterIndex_Spark2.2</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/191751759330584" data-name="vcf2delta" class="filetree-link ui-draggable ui-draggable-handle" title="vcf2delta"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">vcf2delta</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li></ul><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div></div><div class="ft-panel ui-droppable ui-resizable" data-panel="Users" style="width: 196px;"><ul class="ft-panel-list"><li class="filetree-list-item top-link has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="Users" class="filetree-link" title="Users"><i class="fa fa-databricks-does-not-exist fa-fw"></i><span class="filetree-display-name">Users</span><div class="dropdown"><i class="fa fa-chevron-down"></i></div></a></li><li class="filetree-list-item home-folder has-menu selected"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="tbresee@mail.smu.edu" class="home-folder filetree-link ui-droppable" title="tbresee@mail.smu.edu"><i class="fa fa-home fa-fw"></i><span class="filetree-display-name"><span class="email-name">tbresee</span><span class="email-domain">@mail.smu.edu</span></span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li></ul><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div></div><div class="ft-panel ui-droppable ui-resizable" style="width: 196px;" data-panel="tbresee@mail.smu.edu"><ul class="ft-panel-list"><li class="filetree-list-item top-link has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="tbresee@mail.smu.edu" class="filetree-link" title="tbresee@mail.smu.edu"><i class="fa fa-databricks-does-not-exist fa-fw"></i><span class="filetree-display-name">tbresee@mail.smu.edu</span><div class="dropdown"><i class="fa fa-chevron-down"></i></div></a></li><li class="filetree-list-item trash-folder has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="Trash" class="trash-folder filetree-link ui-droppable" title="Trash"><i class="fa fa-trash-o fa-fw"></i><span class="filetree-display-name">Trash</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/2222141052477764" data-name="a" class="filetree-link ui-draggable ui-draggable-handle" title="a"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">a</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/2222141052477759" data-name="aa" class="filetree-link ui-draggable ui-draggable-handle" title="aa"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">aa</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609823" data-name="aaa" class="filetree-link ui-draggable ui-draggable-handle" title="aaa"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">aaa</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609792" data-name="DNASeqPipeline" class="filetree-link ui-draggable ui-draggable-handle" title="DNASeqPipeline"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">DNASeqPipeline</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609804" data-name="hail" class="filetree-link ui-draggable ui-draggable-handle" title="hail"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">hail</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/2222141052477746" data-name="Hail" class="filetree-link ui-draggable ui-draggable-handle" title="Hail"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Hail</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3999088909860255" data-name="Hail_Scala_Notebook" class="filetree-link ui-draggable ui-draggable-handle" title="Hail_Scala_Notebook"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="true"></i><span class="filetree-display-name">Hail_Scala_Notebook</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609815" data-name="Joint Genotyping Pipeline" class="filetree-link ui-draggable ui-draggable-handle" title="Joint Genotyping Pipeline"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Joint Genotyping Pipeline</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" data-name="new" class="filetree-link ui-draggable ui-draggable-handle ui-droppable" title="new"><i class="fa fa-folder-o fa-fw"></i><span class="filetree-display-name">new</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609836" data-name="pleasework" class="filetree-link ui-draggable ui-draggable-handle" title="pleasework"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">pleasework</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609832" data-name="plz" class="filetree-link ui-draggable ui-draggable-handle" title="plz"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">plz</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3746685138301629" data-name="pyVCF" class="filetree-link ui-draggable ui-draggable-handle" title="pyVCF"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">pyVCF</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/2222141052477710" data-name="Quickstart Notebook" class="filetree-link ui-draggable ui-draggable-handle" title="Quickstart Notebook"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Quickstart Notebook</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/2222141052477728" data-name="Quickstart Notebook (1)" class="filetree-link ui-draggable ui-draggable-handle" title="Quickstart Notebook (1)"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Quickstart Notebook (1)</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/524525317211822" data-name="Quickstart Notebook (2)" class="filetree-link ui-draggable ui-draggable-handle" title="Quickstart Notebook (2)"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Quickstart Notebook (2)</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/524525317211840" data-name="Quickstart Notebook (3)" class="filetree-link ui-draggable ui-draggable-handle" title="Quickstart Notebook (3)"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Quickstart Notebook (3)</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/524525317211858" data-name="Quickstart Notebook (4)" class="filetree-link ui-draggable ui-draggable-handle" title="Quickstart Notebook (4)"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">Quickstart Notebook (4)</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3999088909860222" data-name="SMU" class="filetree-link ui-draggable ui-draggable-handle" title="SMU"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="true"></i><span class="filetree-display-name">SMU</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/3898701875609842" data-name="TEST" class="filetree-link ui-draggable ui-draggable-handle" title="TEST"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">TEST</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/191751759330638" data-name="WINv1" class="filetree-link ui-draggable ui-draggable-handle" title="WINv1"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">WINv1</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li><li class="filetree-list-item has-menu"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#notebook/2222141052477753" data-name="work" class="filetree-link ui-draggable ui-draggable-handle" title="work"><i class="fa fa-file-text-o fa-fw" data-cluster-ready="false"></i><span class="filetree-display-name">work</span><div class="dropdown"><i class="fa fa-caret-down"></i></div></a></li></ul><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div></div></div></div>
+<a class="ft-pin-button" href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" title="Pin side panels"></a><a class="ft-scroll-angle-left hidden" href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" title="Scroll to left"><i class="fa fa-angle-left"></i></a><a class="ft-scroll-angle-right hidden" href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#" title="Scroll to right"><i class="fa fa-angle-right"></i></a></div>
+
+<div id="searchpanel-popup">
+    <div class="searchpanel ui-resizable" data-panel="Search" style="display: none;" data-state="invisible"><div class="search-panel-content"><a class="ft-pin-button" title="Pin side panels"></a><div class="newsearch"><input class="newsearch searchbox" type="text" placeholder="Search Workspace"><span class="search-mixin-spinner"><i class="fa fa-spinner fa-spin"></i></span></div><ul></ul></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div></div>
+</div>
+
+<div id="title-menu" class="tb-title-menu dropdown-menu" role="menu"></div>
+
+<div id="user-menu" class="dropdown-menu"><div class="user-menu-view"><div class="account-section"><div class="header" title="tbresee@mail.smu.edu">Signed in as <br><b>tbresee@mail.smu.edu</b></div><ul><li><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#setting/account" class="accounts-link settings-button"><div class="accounts-text">User Settings</div></a></li><li><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#setting/accounts" class="accounts-link admin-console-button"><div class="accounts-text">Admin Console</div></a></li><li><a href="https://accounts.cloud.databricks.com/registration.html#login" class="accounts-link manage-account-button"><div class="accounts-text">Manage Account</div></a></li><li><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/?o=978277182616062#setting/logout" class="accounts-link logout-button"><div class="accounts-text">Log Out</div></a></li></ul></div><hr><div><div class="org-section"><div class="header">Workspaces</div><ul class="confirmed-workspaces"><li><a class="workspace-link" data-name="Southern Methodist University" target="_blank" title="Southern Methodist University (tbresee@mail.smu.edu)"><div class="workspace-item"><div class="workspace-text"><div class="icon"><i class="fa fa-check"></i></div><div class="workspace-name">Southern Methodist University</div></div><div class="workspace-owner">tbresee@mail.smu.edu</div></div></a></li></ul></div></div></div></div>
+
+<ul id="help-menu" class="dropdown-menu newhelp"><div><div class="input"><i class="fa fa-search fa-fw"></i><input class="newsearch" type="text" placeholder="Search guide &amp; forum"><span class="search-mixin-spinner"><i class="fa fa-spinner fa-spin"></i></span></div><ul style="max-height: 703.366px;"><li class="result"><a href="https://docs.databricks.com/" class="" data-name="Documentation" title="Documentation"><i class="fa fa-book fa-fw"></i><span>Documentation</span></a></li><li class="result"><a href="https://docs.databricks.com/api/index.html" class="" data-name="REST API Docs" title="REST API Docs"><i class="fa fa-book fa-fw"></i><span>REST API Docs</span></a></li><li class="result"><a href="http://forums.databricks.com/" class="" data-name="Community Forum" title="Community Forum"><i class="fa fa-question fa-fw"></i><span>Community Forum</span></a></li><li class="result"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/SHORTCUT_URL" class="" data-name="Shortcuts" title="Shortcuts"><i class="fa fa-keyboard-o fa-fw"></i><span>Shortcuts</span></a></li><li class="result"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sso/ideas" class="" data-name="Feedback" title="Feedback"><i class="fa fa-envelope fa-fw"></i><span>Feedback</span></a></li><li class="result"><a href="https://dbc-3bebe1da-196f.cloud.databricks.com/sso/support" class="" data-name="Support" title="Support"><i class="fa fa-phone fa-fw"></i><span>Support</span></a></li></ul></div></ul>
+
+
+<div id="hidden" style="display: none;"></div>
+<div id="history" style="display: none;"><div id="history-head">
+  
+  <h3 class="history-title">
+    Recent Activity
+    <i class="hide-recent-activity remove-button fa fa-remove fa-fw"></i>
+  </h3>
+  
+</div>
+
+<div id="history-list">
+  <ul>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 16:00:25</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 16:00:12</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:59:40</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:56:22</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:53:18</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:53:09</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:52:54</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:51:23</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:50:52</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Deleted command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:50:49</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:50:28</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:50:18</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:49:18</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:49:15</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Deleted command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:49:08</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Added a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:48:39</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:48:18</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:47:25</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:47:18</p>
+      </div>
+    </li>
+    
+    <li class="history-item">
+      <div class="history-user-avatar" style="background-color: #1f77b4">
+        T
+      </div>
+      <div class="history-item-action">
+        <p class="user-name">tbresee@mail.smu.edu:</p>
+        <p class="user-message">Ran a command</p>
+      </div>
+      <div class="history-item-timestamp">
+        <p>2019-08-10 15:47:03</p>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+</div>
+
+<div id="debugHelper" style="background-color: white; z-index: 1000; display: none; position: fixed; right: 190px; bottom: 0px;">
+    <div id="debugRoute" style="position: fixed; right: 190px; bottom: 40px;">cons-webapp-0</div>
+    <div id="debugCounters" style="position: fixed; right: 50px; bottom: 20px;"></div>
+    <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/ops/">[OPS]</a>
+    <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/ops/debug">Debug</a>
+    <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/ops/metrics">Metrics</a>
+    <a href="https://dbc-3bebe1da-196f.cloud.databricks.com/ops/requests">Requests</a>
+</div>
+
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<script type="text/javascript" src="./Spark UI - Environment_files/metrics-graphics.82840a7f.js.download"></script><script type="text/javascript" src="./Spark UI - Environment_files/main.204e53ae.js.download"></script>
+
+<div class="filebrowser-context-menu dropdown-menu" style="display: none;"></div><input type="file" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><div class="portal-target"></div><input type="file" multiple="multiple" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><div class="ReactModalPortal"></div></body></html>
