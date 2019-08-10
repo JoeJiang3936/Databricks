@@ -559,6 +559,16 @@ Genomics
 
 
 
+*`Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
+  — Tertiary datapipe
+
+
+*`Dmytro Kryvokhyzha <https://github.com/evodify>`_
+  —  Outstanding github repos for hard core genomics analysis.  This guy is good. 
+
+
+- Tom's Databricks Notes `here <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
+
 
 
 |
@@ -709,18 +719,6 @@ Notes::
   
 
 
-
-
-  Video-based working Scala:
-     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
-
-
-  Scala: 
-     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
-  Python:
-     
-
-
   When I got it working:
     * ENABLE_HAIL=true
     * location of jar = = =  dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
@@ -728,6 +726,13 @@ Notes::
                              5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
 
 
+  Hail / Databricks / Python:
+     https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
+
+
+  Hail / Databricks / Scala:
+     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
 
 
 
@@ -736,9 +741,6 @@ Notes::
 
 
 
-
-
-- Databricks Installation and Command Notes `here <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
 
 
 

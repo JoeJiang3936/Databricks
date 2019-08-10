@@ -110,8 +110,7 @@ display(dbutils.fs.ls("dbfs:/kdd"))
 --- list out files from dbfs ---
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-%fs
-ls  dbfs:/FileStore/jars
+%fs ls  dbfs:/FileStore/jars
 
 
 
