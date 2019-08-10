@@ -703,8 +703,29 @@ Notes::
 
 
 
+
   Video-based working Scala:
      https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+
+
+  Scala: 
+     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+  Python:
+     
+
+
+  When I got it working:
+    * ENABLE_HAIL=true
+    * location of jar = = =  dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
+    *                        dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar,
+                             5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
+
+
+
+
+
+
+
 
 
 
