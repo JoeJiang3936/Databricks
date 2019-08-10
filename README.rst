@@ -50,7 +50,8 @@ The following github repo contains information assembled for our course project,
 
 
 |
-
+|
+|
 
 
 
@@ -98,13 +99,10 @@ NGS
 
 
 
-
-
-
-
-
 |
 |
+|
+
 Why Apache Spark ? 
 =============
 
@@ -138,9 +136,10 @@ Why Apache Spark ?
 
 
 
+|
+|
+|
 
-|
-|
 Background
 ==============
 
@@ -164,9 +163,10 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 
+|
+|
+|
 
-|
-|
 Our Approach
 =============
 
@@ -297,6 +297,9 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 
 |
 |
+|
+
+
 Jupyter Notebooks 
 ==================
 
@@ -397,12 +400,11 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 
 
 |
-
+|
 
 
 
 Think big picture.  We need to change our perception on what we consider a LOT of data...
-
 .. class:: no-web
 
 
@@ -416,6 +418,7 @@ Think big picture.  We need to change our perception on what we consider a LOT o
 
 
 
+|
 |
 |
 
@@ -703,7 +706,7 @@ Make Work
 
 |
 |
-
+|
 
 
 
@@ -712,12 +715,10 @@ Final Notes
 
 
 
-
 Notes:: 
 
   http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
   
-
 
   When I got it working:
     * ENABLE_HAIL=true
@@ -727,14 +728,11 @@ Notes::
 
 
   Hail / Databricks / Python:
-     https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
+  https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
 
 
   Hail / Databricks / Scala:
-     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
-     https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
-
-
+  https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
 
 
 
@@ -748,7 +746,7 @@ Notes::
 
 |
 |
-
+|
 
 Appendix - Variant Call Format (VCF) fields breakout
 =========
