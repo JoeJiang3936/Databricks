@@ -1,0 +1,162 @@
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+What is so great about Databricks ?   What am i really getting ? 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+   Databricks Runtime:
+   -------------------
+
+
+	Run multiple versions of Spark	
+
+	Built-in file system optimized for cloud storage access (AWS S3, Redshift, Azure Blob)		
+
+	Serverless pools offering auto-configuration of resources for SQL and Python workloads		
+
+	Spark-native fine grained resource sharing for optimum utilization		
+
+	Fault isolation of compute resources		
+
+	Faster writes to S3		
+
+	Compute optimization during joins and filters		
+
+	Rapid release cycles		
+
+	Auto-scaling compute		
+
+	Auto-scaling local storage		
+
+	High availability for cluster		
+
+	Multi-user cluster sharing		
+
+	Automatic migration between spot and on-demand instances		
+
+	Second-level billing
+
+
+
+
+
+
+
+   Managed Delta Lake:
+   -------------------
+
+	ACID transactions	Yes	No
+
+	Schema management	Yes	No
+
+	Batch/Stream read/write support	Yes	No
+
+	Data versioning	Yes	No
+
+	Performance optimizations
+
+
+
+
+
+
+
+   Integrated Workspace:
+   ---------------------
+
+
+	Interactive Data Science and COLLABORATION
+	
+
+	Interactive notebooks with support for multiple languages (SQL, Python, R and Scala)	Yes	No
+
+	Real-time collaboration	Yes	No
+
+	Notebook revision history and GitHub integration	Yes	No
+
+	One-click visualizations	Yes	No
+
+	Publish notebooks as interactive dashboards
+
+
+
+
+
+
+   Production Jobs and Workflows:
+   ------------------------------
+
+	Spark job monitoring alerts	Yes	No
+
+	One-click deployment from notebooks to Spark Jobs	Yes	No
+
+	APIs to build workflows in notebooks	Yes	No
+
+	Production streaming with monitoring
+
+
+
+
+
+
+
+   Enterprise Security:
+   --------------------
+
+	Access control for notebooks, clusters, jobs, and structured data	Yes	No
+
+	Audit logs	Yes	No
+
+	SSO with SAML 2.0 support	Yes	No
+
+	Data encryption (at rest and in motion)	Yes	No
+
+	Compliance (HIPAA, SOC 2 Type 2)
+
+
+
+
+
+
+
+   Integrations:
+   -------------
+
+	Connect other BI tools via authenticated ODBC/JDBC (Tableau, Looker, etc)	Yes	No
+
+	REST API	Yes	No
+
+	Data source connectors
+
+
+
+
+
+
+
+
+   Expert Support:
+   ---------------
+
+	Including SQL support 
+
+
+
+
+
+
+
+
+
+
+
+

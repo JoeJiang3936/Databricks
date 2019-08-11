@@ -7,11 +7,9 @@ Gene Sequencing Data Processing with Apache Spark
 |
 
 
-
 Link to our public website:   
 
 https://thesparkgenomeproject.com/
-
 
 
 |
@@ -43,17 +41,15 @@ The following github repo contains information assembled for our course project,
 
 
 
-
 .. contents::
 
 .. section-numbering::
 
 
-|
-|
-|
 
-
+|
+|
+|
 
 Gene Sequencing Explained
 =========================
@@ -102,6 +98,7 @@ NGS
 |
 |
 |
+
 
 Why Apache Spark ? 
 =============
@@ -152,9 +149,20 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 
+|
 
 
+Think big picture.  We need to change our perception on what we consider a LOT of data...
+.. class:: no-web
 
+
+    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/purple.jpg 
+        :alt: HTTPie in action
+        :width: 100%
+        :align: center
+
+
+.. class:: no-web no-pdf
 
 
 
@@ -293,8 +301,6 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 
 
 
-
-
 |
 |
 |
@@ -398,23 +404,6 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 
 
 
-
-|
-|
-
-
-
-Think big picture.  We need to change our perception on what we consider a LOT of data...
-.. class:: no-web
-
-
-    .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/purple.jpg 
-        :alt: HTTPie in action
-        :width: 100%
-        :align: center
-
-
-.. class:: no-web no-pdf
 
 
 
@@ -537,10 +526,15 @@ Databricks
   — direct CLI access to the instance
 
 
+* `Databricks Supported Instance Types <https://databricks.com/product/aws-pricing/instance-types>`_
+  — direct CLI access to the instance
+
+
 
 
 
 |
+
 
 
 
@@ -561,7 +555,6 @@ Genomics
   — Tertiary datapipe
 
 
-
 * `Databricks Genomics Guide <https://docs.databricks.com/applications/genomics/index.html>`_
   — Tertiary datapipe
 
@@ -571,11 +564,11 @@ Genomics
 
 
 * `Tom Databricks Notes <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
+  —  Outstanding github repos for hard core genomics analysis.  This guy is good. 
 
 
 
 |
-
 
 
 
@@ -596,15 +589,12 @@ Scala
 
 
 
-
-
 R
 --------
 
 
 * `SparkR in Databricks <https://docs.databricks.com/spark/latest/sparkr/index.html>`_
   — the reference for SparkR
-
 
 
 
@@ -679,9 +669,29 @@ Next Generation DNA Sequencing (NGS)
 
 |
 
+Explanatory Videos
+-------------
+
+
+* `Genetic Association Explained <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
+  — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
+
+
+
+|
+
+
 
 Make Work
 --------
+
+
+* `error message  openCostinBytes  <https://stackoverflow.com/questions/49048212/how-to-set-spark-sql-files-conf-in-pyspark>`_
+
+
+
+* `variant calls via scala <https://databricks.com/blog/2019/06/26/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers.html>`_
+
 
 
 * `convert vcf files into delta lake <https://docs.databricks.com/_static/notebooks/genomics/vcf2delta.html>`_
@@ -729,10 +739,13 @@ Notes::
 
   Hail / Databricks / Python:
   https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
+  https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
 
 
   Hail / Databricks / Scala:
   https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+  https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+
 
 
 
