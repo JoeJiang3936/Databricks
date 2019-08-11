@@ -152,7 +152,14 @@ Our goal is to document how much more streamlined and efficient this system is f
 |
 
 
+
+
 Think big picture.  We need to change our perception on what we consider a LOT of data...
+
+
+
+
+
 .. class:: no-web
 
 
@@ -163,9 +170,6 @@ Think big picture.  We need to change our perception on what we consider a LOT o
 
 
 .. class:: no-web no-pdf
-
-
-
 
 
 
