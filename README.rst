@@ -598,11 +598,11 @@ Hail 0.2
 
 
 * `Hail Github <https://github.com/hail-is/hail>`_
-  — core page for Hail
-
+  — core github for Hail 
+  
   
 
-  
+
 
 
 |
