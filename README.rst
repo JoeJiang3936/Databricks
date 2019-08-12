@@ -481,6 +481,10 @@ Databricks
   — the main user manual for Databricks
 
 
+* `Forum for Questions <https://forums.databricks.com/index.html>`_
+  — questions and answers
+
+  
 * `Dataframe Guide <https://docs.databricks.com/spark/latest/dataframes-datasets/index.html>`_
   — covers dataframes, used extensively with genomics and sparksql 
 
