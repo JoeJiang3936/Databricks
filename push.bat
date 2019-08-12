@@ -2,13 +2,17 @@
 :: This batch will upload files to github automatically
 TITLE GitPush
 :: Section 1: test batch file
-ECHO ============================
-ECHO Github Push
-ECHO ============================
+
+ECHO === git add * ===
 git add * 
+
+ECHO === git commit -am "-" ===
 git commit -am "-"
+
+
+ECHO === git push ===
 git push
-ECHO ============================
-ECHO done
-ECHO ============================
-exit
+
+ECHO  bye...
+
+exit /B
