@@ -11,4 +11,4 @@ git push
 ECHO ============================
 ECHO done
 ECHO ============================
-PAUSE
+exit
