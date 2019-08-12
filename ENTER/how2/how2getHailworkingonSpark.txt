@@ -1,0 +1,12 @@
+
+
+
+In [3]: conf = SparkConf()
+   ...: conf.set('spark.sql.files.maxPartitionBytes','60000000000')
+   ...: conf.set('spark.sql.files.openCostInBytes','60000000000')
+   ...: conf.set('master','local[*]')
+   ...: conf.set('spark.submit.deployMode', u'client')
+   ...: conf.set('spark.app.name', u'PyTest')
+   ...: sc = SparkContext(conf=conf)
+
+

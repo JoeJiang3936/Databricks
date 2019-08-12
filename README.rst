@@ -586,6 +586,25 @@ R
 
 
 
+
+|
+
+Hail 0.2
+--------
+
+
+* `Hail Site <https://hail.is/>`_
+  — core page for Hail
+
+
+* `Hail Github <https://github.com/hail-is/hail>`_
+  — core page for Hail
+
+  
+
+  
+
+
 |
 
 Next Generation DNA Sequencing (NGS)
