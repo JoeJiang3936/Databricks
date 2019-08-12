@@ -599,9 +599,9 @@ Hail 0.2
 
 * `Hail Github <https://github.com/hail-is/hail>`_
   — core github for Hail 
-  
-  
 
+  
+* `Hail 0.2 on Amazon EMR <https://github.com/hms-dbmi/hail-on-EMR>`_
 
 
 
