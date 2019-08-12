@@ -1,0 +1,74 @@
+
+
+
+
+http://bdgenomics.org/blog/2015/07/10/genomic-analysis-using-adam/
+
+
+https://docs.databricks.com/_static/notebooks/variant-spark-hipster-index.html
+
+
+https://databricks.com/blog/2019/06/26/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers.html
+
+
+https://github.com/lifeomic/spark-vcf
+
+
+https://databricks.com/blog/2019/06/26/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers.html
+
+
+
+
+====================================
+How to get Hail to run on Databricks
+====================================
+
+
+
+
+
+
+
+
+1.  Google APIs and .jars link   
+
+
+https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
+
+
+First download Hail's Python and Java libraries to your computer:
+
+https://storage.googleapis.com/hail-common/hail-tutorial-databricks.jar
+
+https://storage.googleapis.com/hail-common/hail-devel-py2.7-databricks.egg
+
+Then on the Databricks interface, navigate to Workspace > Users > Username and select Import from the Username drop-down menu. At the bottom of Import Notebooks window, click the link in (To import a library, such as a jar or egg,click here). Upload both the .jar and .egg files using this interface, using any names you like. Make sure that the option Attach automatically to all clusters is checked in the success dialog.
+
+Next click the Clusters icon on the left sidebar and then +Create Cluster. For Apache Spark Version, select Spark 2.0 (Auto-updating, Scala 2.11). Note that Hail won't work with Scala 2.10! In the Databricks cluster creation dialog, click Show advanced settings at bottom and then on the Spark tab, and paste the text below into the Spark config box.
+
+spark.hadoop.io.compression.codecs org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+spark.sql.files.openCostInBytes 1099511627776
+spark.sql.files.maxPartitionBytes 1099511627776
+spark.hadoop.mapreduce.input.fileinputformat.split.minsize 1099511627776
+spark.hadoop.parquet.block.size 1099511627776
+Start the cluster and attach this notebook to it by clicking on your cluster name in menu Detached at the top left of this workbook. Now you're ready to Hail!
+
+
+
+
+
+
+
+
+
+
+2.  hail-all-spark.jar
+
+https://hail.is/docs/0.2/getting_started.html
+
+
+
+
+
+
+

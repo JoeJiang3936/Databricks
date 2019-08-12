@@ -40,7 +40,6 @@ The following github repo contains information assembled for our course project,
 
 
 
-
 .. contents::
 
 .. section-numbering::
@@ -99,7 +98,6 @@ NGS
 |
 |
 
-
 Why Apache Spark ? 
 =============
 
@@ -150,8 +148,6 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 |
-
-
 
 
 Think big picture.  We need to change our perception on what we consider a LOT of data...
@@ -245,12 +241,10 @@ If we do this efficiently, we can keep the processing optimized in batch process
 
 
 
-
-
-
-
 |
 |
+|
+
 Our Technical Approach
 ==================
 
@@ -305,11 +299,9 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 
 
 
-
 |
 |
 |
-
 
 Jupyter Notebooks 
 ==================
@@ -324,7 +316,6 @@ Jupyter Notebook Links
 The following are working jupyter notebooks as we dive deeper into Apache Spark, Databricks, etc 
 
 |
-
 
 
 
@@ -406,7 +397,6 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 
 * `Hail on Databricks written in Python with PCA  <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Genomics%26Spark%20.ipynb>`_
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
-
 
 
 
@@ -540,10 +530,6 @@ Databricks
 
 |
 
-
-
-
-
 Genomics
 -------------
 
@@ -575,8 +561,6 @@ Genomics
 
 |
 
-
-
 Scala
 --------
 
@@ -592,8 +576,6 @@ Scala
 
 |
 
-
-
 R
 --------
 
@@ -605,8 +587,6 @@ R
 
 
 |
-
-
 
 Next Generation DNA Sequencing (NGS)
 ---------------------------------------
@@ -660,7 +640,6 @@ Next Generation DNA Sequencing (NGS)
 * `Spark Accelerated Genomics Processing <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/txt_based_info/summit-talk_2019.pdf>`_
   — Spark Summit Slides about next generation sequencing and Spark
 
-
 * `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
   — really good overviews of the transformations possible 
 
@@ -670,6 +649,7 @@ Next Generation DNA Sequencing (NGS)
   —  this page describes the JSON Lines text format, also called newline-delimited JSON. JSON Lines is a convenient format for storing structured data that may be processed one record at a time. It works well with unix-style text processing tools and shell pipelines. It's a great format for log files. It's also a flexible format for passing messages between cooperating processes. SSON Lines handles tabular data cleanly and without ambiguity. Stream compressors like gzip or bzip2 are recommended for saving space, resulting in .jsonl.gz or .jsonl.bz2 files...
 
   
+
 
 
 |
@@ -684,6 +664,7 @@ Explanatory Videos
 
 
 |
+
 
 
 
@@ -755,13 +736,6 @@ Notes::
 
 
 
-
-
-
-
-
-
-
 |
 |
 |
@@ -780,7 +754,6 @@ Appendix - Variant Call Format (VCF) fields breakout
         :align: center
 
 .. class:: no-web no-pdf
-
 
 
 
