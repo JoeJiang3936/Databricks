@@ -4,6 +4,10 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 
+https://github.com/lamastex/scalable-data-science/blob/master/dbcArchives/2019/sds-2-x-geo.dbc
+
+
+
 |
 
 
@@ -484,7 +488,7 @@ Databricks
 * `Forum for Questions <https://forums.databricks.com/index.html>`_
   — questions and answers
 
-  
+
 * `Dataframe Guide <https://docs.databricks.com/spark/latest/dataframes-datasets/index.html>`_
   — covers dataframes, used extensively with genomics and sparksql 
 

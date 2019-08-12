@@ -1,0 +1,112 @@
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	libraries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+--- opens a file (like README) and reads it ---
+
+with open("/dbfs/databricks-datasets/README.md") as f:
+    x = ''.join(f.readlines())
+print(x)
+
+
+
+
+
+
+
+
+--- cluster configuration in json ---
+
+{
+    "num_workers": 0,
+    "cluster_name": "HailvF",
+    "spark_version": "5.4.x-scala2.11",
+    "spark_conf": {
+        "spark.hadoop.mapreduce.input.fileinputformat.split.minsize": "1099511627776",
+        "spark.hadoop.io.compression.codecs": "org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec",
+        "spark.sql.files.openCostInBytes": "1099511627776",
+        "spark.databricks.delta.preview.enabled": "true",
+        "spark.sql.files.maxPartitionBytes": "1099511627776",
+        "spark.hadoop.parquet.block.size": "1099511627776"
+    },
+    "aws_attributes": {
+        "first_on_demand": 0,
+        "availability": "ON_DEMAND",
+        "zone_id": "us-west-2c",
+        "spot_bid_price_percent": 100,
+        "ebs_volume_count": 0
+    },
+    "node_type_id": "dev-tier-node",
+    "driver_node_type_id": "dev-tier-node",
+    "ssh_public_keys": [],
+    "custom_tags": {},
+    "spark_env_vars": {
+        "ENABLE_HAIL": "true",
+        "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+    },
+    "autotermination_minutes": 120,
+    "enable_elastic_disk": false,
+    "cluster_source": "API",
+    "init_scripts": [],
+    "cluster_id": "0812-164141-nifty797"
+}
+
+
+
+
+
+--- example spark config ---
+
+spark.hadoop.mapreduce.input.fileinputformat.split.minsize 1099511627776
+spark.hadoop.io.compression.codecs org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+spark.sql.files.openCostInBytes 1099511627776
+spark.databricks.delta.preview.enabled true
+spark.sql.files.maxPartitionBytes 1099511627776
+spark.hadoop.parquet.block.size 1099511627776
+
+
+
+
+
+
+
+--- starting hail ---
+
+
+I have this set now as a library to start on all new clusters:
+dbfs:/FileStore/jars/35bb0c74_d723_4381_bc5c_5bb9d4ea6326-hail_tutorial_databricks-e84f3.jar
+
+
+
+
+ENABLE_HAIL=true
+PYSPARK_PYTHON=/databricks/python3/bin/python3
+
+
+
+spark.hadoop.mapreduce.input.fileinputformat.split.minsize 1099511627776
+spark.hadoop.io.compression.codecs org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+spark.sql.files.openCostInBytes 1099511627776
+spark.databricks.delta.preview.enabled true
+spark.sql.files.maxPartitionBytes 1099511627776
+spark.hadoop.parquet.block.size 1099511627776
+
+
+dbfs:/FileStore/jars/35bb0c74_d723_4381_bc5c_5bb9d4ea6326-hail_tutorial_databricks-e84f3.jar	35bb0c74_d723_4381_bc5c_5bb9d4ea6326-hail_tutorial_databricks-e84f3.jar	27876587
+dbfs:/FileStore/jars/a3245b97_8a2b_4bce_902a_cf2cec710769-hail_tutorial_databricks-e84f3.jar	a3245b97_8a2b_4bce_902a_cf2cec710769-hail_tutorial_databricks-e84f3.jar	27876587
+dbfs:/FileStore/jars/b9008399_4234_4453_837b_0c918d34f13a-hail_tutorial_databricks-e84f3.jar	b9008399_4234_4453_837b_0c918d34f13a-hail_tutorial_databricks-e84f3.jar	27876587
+dbfs:/FileStore/jars/c7eaedcd_8828_4b98_8cc6_90caba462aa4-hail_devel_py2_7_databricks-20ed0.egg	c7eaedcd_8828_4b98_8cc6_90caba462aa4-hail_devel_py2_7_databricks-20ed0.egg	153491
+dbfs:/FileStore/jars/ce0ce418_f2d9_4cc8_89ee_206a3245fff5-hail_tutorial_databricks-e84f3.jar	ce0ce418_f2d9_4cc8_89ee_206a3245fff5-hail_tutorial_databricks-e84f3.jar	27876587
+
+
