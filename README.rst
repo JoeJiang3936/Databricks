@@ -759,18 +759,16 @@ Notes::
   
 
   When I got it working:
-    * ENABLE_HAIL=true
+    * ENABLE_HAIL=true < - - confirm still updated .jar is pushed 
     * location of jar = = =  dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
-    *                        dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar,
-                             5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
+    *                                 5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
 
 
-  spark script init: 
+  spark script init notes:  
   https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
   https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
   https://github.com/lamastex/scalable-data-science/blob/master/dbcArchives/2019/sds-2-x-geo.dbc
   http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
-
 
 
 
