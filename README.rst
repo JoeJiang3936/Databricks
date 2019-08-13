@@ -703,6 +703,10 @@ Explanatory Videos
   — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
 
 
+* `Practical Genomics with Apache Spark <https://databricks.com/session/practical-genomics-with-apache-spark>`_
+  — Tom White is a data scientist at Cloudera, specializing in big data and bioinformatics. He also literally wrote the definitive guide on Hadoop, so he is solid. He goes over the big picture of genomics and that data being analyzed via parallel computing.  
+
+
 
 |
 
