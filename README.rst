@@ -420,10 +420,11 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 * `Hail on Databricks Demo for SMU jupyter notebook <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks_joe.ipynb>`_
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
 
+
 |
 
 
-* `Hail on Databricks Demo for SMU html file <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/working_notebooks/hail_databricks_joe.html>`_
+* `Hail on Databricks Demo for SMU html file <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks_joe.html>`_
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
 
 
