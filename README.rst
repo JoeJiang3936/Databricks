@@ -520,7 +520,6 @@ Databricks
   — github location
 
 
-
 * `Delta Lake Guide  <https://docs.databricks.com/delta/index.html>`_
   — Delta Lake is an open source storage layer that brings reliability to data lakes. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. Delta Lake runs on top of your existing data lake and is fully compatible with Apache Spark APIs.
 
@@ -535,7 +534,7 @@ Databricks
 
 
 * `Hipster Scala Example <https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/8497971343024764/53198984527781/2559267461126367/latest.html>`_
-  — scala example with variant spark
+  — Scala example with variant spark
 
 
 * `Databricks Connect  <https://docs.azuredatabricks.net/user-guide/dev-tools/db-connect.html>`_
@@ -543,7 +542,7 @@ Databricks
 
 
 * `Databricks Supported Instance Types <https://databricks.com/product/aws-pricing/instance-types>`_
-  — direct CLI access to the instance
+  — lists the different types of VM instances possible 
 
 
 * `Spark Definitive Guide <https://github.com/databricks/Spark-The-Definitive-Guide>`_
@@ -578,8 +577,8 @@ Genomics
   —  Outstanding github repos for hard core genomics analysis.  This guy is good. 
 
 
-* `Tom Databricks Notes <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
-  —  Outstanding github repos for hard core genomics analysis.  This guy is good. 
+* `Toms Databricks Notes <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/how2/databricks.txt>`_
+  —  This guy is good too. 
 
 
 
