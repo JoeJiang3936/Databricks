@@ -4,7 +4,6 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 
-
 |
 
 
@@ -738,11 +737,9 @@ Make Work
 * `incorporate slides from talk <https://www.slideshare.net/SparkSummit/hail-scaling-genetic-data-analysis-with-apache-spark-keynote-by-cotton-seed>`_
 
 
-
 |
 |
 |
-
 
 
 Final Notes
@@ -752,7 +749,6 @@ Final Notes
 
 Notes:: 
 
-  http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
   
 
   When I got it working:
@@ -766,6 +762,7 @@ Notes::
   https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
   https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
   https://github.com/lamastex/scalable-data-science/blob/master/dbcArchives/2019/sds-2-x-geo.dbc
+  http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
 
 
 
