@@ -546,6 +546,9 @@ Databricks
   — direct CLI access to the instance
 
 
+* `Spark Definitive Guide <https://github.com/databricks/Spark-The-Definitive-Guide>`_
+  — github location of the book `Spark - The Definitive Guide' that can also be run in Databricks via the DBFS location:  dbfs:/databricks-datasets/definitive-guide/data
+
 
 
 
