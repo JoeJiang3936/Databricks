@@ -362,6 +362,13 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
   — working with reading and writing .csv files in different languages
 
 
+|
+
+
+* `Intermediate Level Data Analysis Demo2  <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Demo2.ipynb>`_
+  — Demo-002  
+
+
 
 
 |
@@ -369,6 +376,16 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 
 * `SparkSQL Basics on Databricks <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb>`_
   — successful implementation of core SparkSQL commands
+
+
+
+
+
+* `Hail on Databricks written in Python with PCA  <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Genomics%26Spark%20.ipynb>`_
+  — Hail 0.2, Databricks, Apache Spark, production version, PCA  
+
+
+
 
 
 
