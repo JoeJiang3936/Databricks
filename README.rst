@@ -5,22 +5,19 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 |
-
-
-
 |
 
 
-What is this ?    
+
+What is this ?   
 
 The following github repo contains detailed information about utilizing Apache Spark with Genomics Analysis. 
 
-Besides this repowe are also working on a public website:  https://thesparkgenomeproject.com/
-
+Public Website:  https://thesparkgenomeproject.com/
 
 
 |
-
+|
 
 
 
@@ -36,7 +33,6 @@ Besides this repowe are also working on a public website:  https://thesparkgenom
 
 
 
-
 |
 
 
@@ -44,6 +40,7 @@ Besides this repowe are also working on a public website:  https://thesparkgenom
 .. contents::
 
 .. section-numbering::
+
 
 
 
