@@ -13,7 +13,7 @@ What is this ?
 
 The following github repo contains detailed information about utilizing Apache Spark with Genomics Analysis. 
 
-Public Website:  https://thesparkgenomeproject.com/
+There is also an associated public website that is in process:  https://thesparkgenomeproject.com/
 
 
 |
