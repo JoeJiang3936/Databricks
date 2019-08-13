@@ -621,10 +621,11 @@ Hail 0.2
 
 
 * `Hail Github <https://github.com/hail-is/hail>`_
-  — core github for Hail 
+  — core github for Hail
 
   
-* `Hail 0.2 on Amazon EMR <https://github.com/hms-dbmi/hail-on-EMR>`_
+* `Hail on AWS EMR  <https://github.com/hms-dbmi/hail-on-EMR>`_
+
 
 
 
@@ -684,7 +685,6 @@ Next Generation DNA Sequencing (NGS)
 
 * `pyspark transformations <https://nbviewer.jupyter.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb>`_
   — really good overviews of the transformations possible 
-
 
 
 * `json lines (not json) <http://jsonlines.org/>`_
