@@ -317,7 +317,6 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 |
 
 
-
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   — for introductory example of how to create RDD datasets and get familiar with the Databricks platform
 
@@ -389,7 +388,6 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
   — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
 
 
-
 |
 
 
@@ -413,7 +411,19 @@ The following are working jupyter notebooks as we dive deeper into Apache Spark,
 
 |
 
-* `Hail on Databricks Demo for SMU <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Genomics%26Spark%20.ipynb>`_
+* `Hail on Databricks Demo for SMU draft <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Genomics%26Spark%20.ipynb>`_
+  — Hail 0.2, Databricks, Apache Spark  
+
+|
+
+
+* `Hail on Databricks Demo for SMU jupyter notebook <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks_joe.ipynb>`_
+  — Hail 0.2, Databricks, Apache Spark, production version, PCA  
+
+|
+
+
+* `Hail on Databricks Demo for SMU html file <https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/working_notebooks/hail_databricks_joe.html>`_
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
 
 
