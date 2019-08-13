@@ -1,0 +1,472 @@
+19/08/12 23:02:10 INFO StaticConf$: DB_HOME: /databricks
+19/08/12 23:02:10 INFO DriverDaemon$: ========== driver starting up ==========
+19/08/12 23:02:10 INFO DriverDaemon$: Java: Oracle Corporation 1.8.0_212
+19/08/12 23:02:10 INFO DriverDaemon$: OS: Linux/amd64 4.4.0-1087-aws
+19/08/12 23:02:10 INFO DriverDaemon$: CWD: /databricks/driver
+19/08/12 23:02:10 INFO DriverDaemon$: Mem: Max: 43.8G loaded GCs: PS Scavenge, PS MarkSweep
+19/08/12 23:02:10 INFO DriverDaemon$: Logging multibyte characters: ✓
+19/08/12 23:02:10 INFO DriverDaemon$: 'publicFile' appender in root logger: class com.databricks.logging.RedactionRollingFileAppender
+19/08/12 23:02:10 INFO DriverDaemon$: 'org.apache.log4j.Appender' appender in root logger: class com.codahale.metrics.log4j.InstrumentedAppender
+19/08/12 23:02:10 INFO DriverDaemon$: 'null' appender in root logger: class com.databricks.logging.RequestTracker
+19/08/12 23:02:10 INFO DriverDaemon$: == Modules:
+19/08/12 23:02:11 INFO DriverDaemon$: Starting prometheus metrics log export timer
+19/08/12 23:02:11 INFO DriverDaemon$: Universe Git Hash: 9fe869e25b36fd138ce6237260383d9acb7597f5
+19/08/12 23:02:11 INFO DriverDaemon$: Spark Git Hash: da21e1ae0fc26ce7b8930f2fa37323adf8ff376c
+19/08/12 23:02:11 WARN RunHelpers$: Missing tag isolation client: java.util.NoSuchElementException: key not found: TagDefinition(clientType,The client type for a request, used for isolating resources for the request.)
+19/08/12 23:02:11 INFO DatabricksILoop$: Creating throwaway interpreter
+19/08/12 23:02:11 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.sql.files.maxPartitionBytes -> 1099511627776
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.sql.files.openCostInBytes -> 1099511627776
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.executor.tempDirectory -> /local_disk0/tmp
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.hadoop.mapreduce.input.fileinputformat.split.minsize -> 1099511627776
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.hadoop.parquet.block.size -> 1099511627776
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.driver.tempDirectory -> /local_disk0/tmp
+19/08/12 23:02:11 INFO SparkConfUtils$: new spark config: spark.hadoop.io.compression.codecs -> org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+19/08/12 23:02:11 INFO MetastoreMonitor$: Internal internal metastore configured (config=DbMetastoreConfig{host=md13pes28u6ilc4.chkweekm4xjq.us-east-1.rds.amazonaws.com, port=3306, dbName=organization978277182616062, user=wAYERvGGkTCcCyiR})
+19/08/12 23:02:11 INFO JettyClient$: Creating new HttpClient with SSLContextFactory=None,maxRequestHeaderSize=65536, namePrefix=Some(DriverDaemon), idleTimeout=2 hours, useBlockingConnect: true
+19/08/12 23:02:11 INFO HikariDataSource: metastore-monitor - Starting...
+19/08/12 23:02:11 INFO HikariDataSource: metastore-monitor - Start completed.
+19/08/12 23:02:12 INFO DriverCorral: Creating the driver context
+19/08/12 23:02:12 INFO DatabricksILoop$: Class Server Dir: /local_disk0/tmp/repl/spark-5734299820362437325-2cb16186-80da-4182-b091-29e7a7a0432b
+19/08/12 23:02:12 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/08/12 23:02:12 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/08/12 23:02:12 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 681 milliseconds)
+19/08/12 23:02:12 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.sql.files.maxPartitionBytes -> 1099511627776
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.sql.files.openCostInBytes -> 1099511627776
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.executor.tempDirectory -> /local_disk0/tmp
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.hadoop.mapreduce.input.fileinputformat.split.minsize -> 1099511627776
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.hadoop.parquet.block.size -> 1099511627776
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.driver.tempDirectory -> /local_disk0/tmp
+19/08/12 23:02:12 INFO SparkConfUtils$: new spark config: spark.hadoop.io.compression.codecs -> org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+19/08/12 23:02:12 WARN SparkConf: The configuration key 'spark.akka.frameSize' has been deprecated as of Spark 1.6 and may be removed in the future. Please use the new key 'spark.rpc.message.maxSize' instead.
+19/08/12 23:02:12 INFO SparkContext: Running Spark version 2.4.3
+19/08/12 23:02:12 WARN SparkConf: Detected deprecated memory fraction settings: [spark.storage.memoryFraction, spark.shuffle.memoryFraction]. As of Spark 1.6, execution and storage memory management are unified. All memory fractions used in the old model are now deprecated and no longer read. If you wish to use the old memory management, you may explicitly enable `spark.memory.useLegacyMode` (not recommended).
+19/08/12 23:02:12 INFO SparkContext: Submitted application: Databricks Shell
+19/08/12 23:02:12 INFO SparkContext: Spark configuration:
+eventLog.rolloverIntervalSeconds=3600
+spark.akka.frameSize=256
+spark.app.name=Databricks Shell
+spark.cleaner.referenceTracking.blocking=false
+spark.databricks.acl.client=com.databricks.spark.sql.acl.client.SparkSqlAclClient
+spark.databricks.acl.provider=com.databricks.sql.acl.ReflectionBackedAclProvider
+spark.databricks.cloudProvider=AWS
+spark.databricks.clusterSource=UI
+spark.databricks.clusterUsageTags.autoTerminationMinutes=45
+spark.databricks.clusterUsageTags.clusterAllTags=[{"key":"Vendor","value":"Databricks"},{"key":"Creator","value":"tbresee@mail.smu.edu"},{"key":"ClusterName","value":"Temp"},{"key":"ClusterId","value":"0812-224616-grad803"},{"key":"Name","value":"978277182616062-1eb54f5d-0990-42ac-b078-0e5707e67a1d-worker"}]
+spark.databricks.clusterUsageTags.clusterAvailability=SPOT_WITH_FALLBACK
+spark.databricks.clusterUsageTags.clusterCreator=Webapp
+spark.databricks.clusterUsageTags.clusterEbsVolumeCount=3
+spark.databricks.clusterUsageTags.clusterEbsVolumeSize=100
+spark.databricks.clusterUsageTags.clusterEbsVolumeType=GENERAL_PURPOSE_SSD
+spark.databricks.clusterUsageTags.clusterFirstOnDemand=1
+spark.databricks.clusterUsageTags.clusterGeneration=0
+spark.databricks.clusterUsageTags.clusterId=0812-224616-grad803
+spark.databricks.clusterUsageTags.clusterLastActivityTime=1565650612810
+spark.databricks.clusterUsageTags.clusterLogDeliveryEnabled=false
+spark.databricks.clusterUsageTags.clusterLogDestination=
+spark.databricks.clusterUsageTags.clusterMaxWorkers=8
+spark.databricks.clusterUsageTags.clusterMetastoreAccessType=RDS_DIRECT
+spark.databricks.clusterUsageTags.clusterMinWorkers=2
+spark.databricks.clusterUsageTags.clusterName=Temp
+spark.databricks.clusterUsageTags.clusterNoDriverDaemon=false
+spark.databricks.clusterUsageTags.clusterNodeType=r4.2xlarge
+spark.databricks.clusterUsageTags.clusterNumSshKeys=0
+spark.databricks.clusterUsageTags.clusterOwnerOrgId=978277182616062
+spark.databricks.clusterUsageTags.clusterOwnerUserId=*********(redacted)
+spark.databricks.clusterUsageTags.clusterPinned=false
+spark.databricks.clusterUsageTags.clusterPythonVersion=3
+spark.databricks.clusterUsageTags.clusterResourceClass=default
+spark.databricks.clusterUsageTags.clusterScalingType=autoscaling
+spark.databricks.clusterUsageTags.clusterSku=STANDARD_SKU
+spark.databricks.clusterUsageTags.clusterSpotBidPricePercent=100
+spark.databricks.clusterUsageTags.clusterState=Restarting
+spark.databricks.clusterUsageTags.clusterStateMessage=Starting Spark
+spark.databricks.clusterUsageTags.clusterTargetWorkers=2
+spark.databricks.clusterUsageTags.clusterWorkers=2
+spark.databricks.clusterUsageTags.containerType=LXC
+spark.databricks.clusterUsageTags.containerZoneId=us-east-1c
+spark.databricks.clusterUsageTags.driverContainerId=49d6887ea0644d3dbc529112e749bfff
+spark.databricks.clusterUsageTags.driverContainerPrivateIp=10.67.237.124
+spark.databricks.clusterUsageTags.driverInstanceId=i-07369000e410090b3
+spark.databricks.clusterUsageTags.driverInstancePrivateIp=10.67.231.19
+spark.databricks.clusterUsageTags.driverNodeType=r4.2xlarge
+spark.databricks.clusterUsageTags.driverPublicDns=ec2-3-223-191-117.compute-1.amazonaws.com
+spark.databricks.clusterUsageTags.enableCredentialPassthrough=*********(redacted)
+spark.databricks.clusterUsageTags.enableDfAcls=false
+spark.databricks.clusterUsageTags.enableElasticDisk=false
+spark.databricks.clusterUsageTags.enableJdbcAutoStart=true
+spark.databricks.clusterUsageTags.enableJobsAutostart=true
+spark.databricks.clusterUsageTags.enableSqlAclsOnly=false
+spark.databricks.clusterUsageTags.numPerClusterInitScriptsV2=0
+spark.databricks.clusterUsageTags.sparkVersion=5.5.x-scala2.11
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeCount=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeSizeGb=*********(redacted)
+spark.databricks.clusterUsageTags.userProvidedRemoteVolumeType=*********(redacted)
+spark.databricks.clusterUsageTags.workerEnvironmentId=978277182616062-1eb54f5d-0990-42ac-b078-0e5707e67a1d
+spark.databricks.credential.redactor=*********(redacted)
+spark.databricks.delta.logStore.crossCloud.fatal=true
+spark.databricks.delta.multiClusterWrites.enabled=true
+spark.databricks.driverNodeTypeId=r4.2xlarge
+spark.databricks.eventLog.dir=eventlogs
+spark.databricks.io.directoryCommit.enableLogicalDelete=false
+spark.databricks.overrideDefaultCommitProtocol=org.apache.spark.sql.execution.datasources.SQLHadoopMapReduceCommitProtocol
+spark.databricks.passthrough.adls.gen2.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.adls.tokenProviderClassName=*********(redacted)
+spark.databricks.passthrough.glue.credentialsProviderFactoryClassName=*********(redacted)
+spark.databricks.passthrough.glue.executorServiceFactoryClassName=com.databricks.backend.daemon.driver.GlueClientExecutorServiceFactory
+spark.databricks.passthrough.s3a.tokenProviderClassName=*********(redacted)
+spark.databricks.preemption.enabled=true
+spark.databricks.redactor=com.databricks.spark.util.DatabricksSparkLogRedactorProxy
+spark.databricks.session.share=false
+spark.databricks.sparkContextId=5734299820362437325
+spark.databricks.tahoe.logStore.aws.class=com.databricks.tahoe.store.MultiClusterLogStore
+spark.databricks.tahoe.logStore.azure.class=com.databricks.tahoe.store.AzureLogStore
+spark.databricks.tahoe.logStore.class=com.databricks.tahoe.store.DelegatingLogStore
+spark.databricks.workerNodeTypeId=r4.2xlarge
+spark.driver.allowMultipleContexts=false
+spark.driver.maxResultSize=4g
+spark.driver.tempDirectory=/local_disk0/tmp
+spark.eventLog.enabled=false
+spark.executor.extraClassPath=*********(redacted)
+spark.executor.extraJavaOptions=-Djava.io.tmpdir=/local_disk0/tmp -XX:ReservedCodeCacheSize=256m -XX:+UseCodeCacheFlushing -Djava.security.properties=/databricks/spark/dbconf/java/extra.security -XX:+PrintFlagsFinal -XX:+PrintGCDateStamps -verbose:gc -XX:+PrintGCDetails -Xss4m -Djavax.xml.datatype.DatatypeFactory=com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl -Djavax.xml.parsers.SAXParserFactory=com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl -Djavax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema=com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory -Dorg.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser -Dorg.w3c.dom.DOMImplementationSourceList=com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl -Djavax.net.ssl.sessionCacheSize=10000 -Ddatabricks.serviceName=spark-executor-1
+spark.executor.memory=44632m
+spark.executor.tempDirectory=/local_disk0/tmp
+spark.extraListeners=com.databricks.backend.daemon.driver.DBCEventLoggingListener
+spark.files.fetchFailure.unRegisterOutputOnHost=true
+spark.files.overwrite=true
+spark.files.useFetchCache=false
+spark.hadoop.databricks.dbfs.client.version=v2
+spark.hadoop.databricks.s3commit.client.sslTrustAll=false
+spark.hadoop.fs.abfs.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+spark.hadoop.fs.abfs.impl.disable.cache=true
+spark.hadoop.fs.abfss.impl=shaded.databricks.v20180920_b33d810.org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+spark.hadoop.fs.abfss.impl.disable.cache=true
+spark.hadoop.fs.adl.impl=com.databricks.adl.AdlFileSystem
+spark.hadoop.fs.adl.impl.disable.cache=true
+spark.hadoop.fs.azure.skip.metrics=true
+spark.hadoop.fs.s3.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.connection.maximum=200
+spark.hadoop.fs.s3a.fast.upload=true
+spark.hadoop.fs.s3a.fast.upload.default=true
+spark.hadoop.fs.s3a.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.s3a.multipart.size=10485760
+spark.hadoop.fs.s3a.multipart.threshold=104857600
+spark.hadoop.fs.s3a.threads.max=136
+spark.hadoop.fs.s3n.impl=com.databricks.s3a.S3AFileSystem
+spark.hadoop.fs.wasb.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasb.impl.disable.cache=true
+spark.hadoop.fs.wasbs.impl=shaded.databricks.org.apache.hadoop.fs.azure.NativeAzureFileSystem
+spark.hadoop.fs.wasbs.impl.disable.cache=true
+spark.hadoop.hive.server2.enable.doAs=false
+spark.hadoop.hive.server2.idle.operation.timeout=7200000
+spark.hadoop.hive.server2.idle.session.timeout=900000
+spark.hadoop.hive.server2.keystore.password=*********(redacted)
+spark.hadoop.hive.server2.keystore.path=/databricks/keys/jetty-ssl-driver-keystore.jks
+spark.hadoop.hive.server2.session.check.interval=60000
+spark.hadoop.hive.server2.thrift.http.cookie.auth.enabled=false
+spark.hadoop.hive.server2.thrift.http.port=10000
+spark.hadoop.hive.server2.transport.mode=http
+spark.hadoop.hive.server2.use.SSL=true
+spark.hadoop.hive.warehouse.subdir.inherit.perms=false
+spark.hadoop.io.compression.codecs=org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+spark.hadoop.mapred.output.committer.class=com.databricks.backend.daemon.data.client.DirectOutputCommitter
+spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version=2
+spark.hadoop.mapreduce.input.fileinputformat.split.minsize=1099511627776
+spark.hadoop.parquet.block.size=1099511627776
+spark.hadoop.parquet.memory.pool.ratio=0.5
+spark.hadoop.spark.sql.parquet.output.committer.class=org.apache.spark.sql.parquet.DirectParquetOutputCommitter
+spark.hadoop.spark.sql.sources.outputCommitterClass=com.databricks.backend.daemon.data.client.MapReduceDirectOutputCommitter
+spark.hadoop.spark.thriftserver.customHeadersToProperties=*********(redacted)
+spark.home=/databricks/spark
+spark.logConf=true
+spark.master=spark://10.67.237.124:7077
+spark.metrics.conf=/databricks/spark/conf/metrics.properties
+spark.r.backendConnectionTimeout=604800
+spark.r.numRBackendThreads=1
+spark.rdd.compress=true
+spark.repl.class.outputDir=/local_disk0/tmp/repl/spark-5734299820362437325-2cb16186-80da-4182-b091-29e7a7a0432b
+spark.rpc.message.maxSize=256
+spark.scheduler.listenerbus.eventqueue.capacity=20000
+spark.scheduler.mode=FAIR
+spark.serializer.objectStreamReset=100
+spark.shuffle.manager=SORT
+spark.shuffle.memoryFraction=0.2
+spark.shuffle.reduceLocality.enabled=false
+spark.shuffle.service.enabled=true
+spark.shuffle.service.port=4048
+spark.sparkr.use.daemon=false
+spark.speculation=false
+spark.speculation.multiplier=3
+spark.speculation.quantile=0.9
+spark.sql.allowMultipleContexts=false
+spark.sql.files.maxPartitionBytes=1099511627776
+spark.sql.files.openCostInBytes=1099511627776
+spark.sql.hive.convertCTAS=true
+spark.sql.hive.convertMetastoreParquet=true
+spark.sql.hive.metastore.jars=/databricks/hive/*
+spark.sql.hive.metastore.sharedPrefixes=org.mariadb.jdbc,com.mysql.jdbc,org.postgresql,com.microsoft.sqlserver,microsoft.sql.DateTimeOffset,microsoft.sql.Types,com.databricks,com.codahale,com.fasterxml.jackson,shaded.databricks
+spark.sql.hive.metastore.version=0.13.0
+spark.sql.parquet.cacheMetadata=true
+spark.sql.parquet.compression.codec=snappy
+spark.sql.sources.commitProtocolClass=com.databricks.sql.transaction.directory.DirectoryAtomicCommitProtocol
+spark.sql.streaming.checkpointFileManagerClass=com.databricks.spark.sql.streaming.DatabricksCheckpointFileManager
+spark.sql.ui.retainedExecutions=100
+spark.sql.warehouse.dir=*********(redacted)
+spark.storage.blockManagerTimeoutIntervalMs=300000
+spark.storage.memoryFraction=0.5
+spark.streaming.driver.writeAheadLog.allowBatching=true
+spark.streaming.driver.writeAheadLog.closeFileAfterWrite=true
+spark.task.reaper.enabled=true
+spark.task.reaper.killTimeout=60s
+spark.ui.port=41766
+spark.worker.cleanup.enabled=false
+19/08/12 23:02:12 INFO SecurityManager: Changing view acls to: root
+19/08/12 23:02:12 INFO SecurityManager: Changing modify acls to: root
+19/08/12 23:02:12 INFO SecurityManager: Changing view acls groups to: 
+19/08/12 23:02:12 INFO SecurityManager: Changing modify acls groups to: 
+19/08/12 23:02:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+19/08/12 23:02:13 INFO Utils: Successfully started service 'sparkDriver' on port 33234.
+19/08/12 23:02:13 INFO SparkEnv: Registering MapOutputTracker
+19/08/12 23:02:13 INFO SparkEnv: Registering BlockManagerMaster
+19/08/12 23:02:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/08/12 23:02:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/08/12 23:02:13 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-9e0425dc-5204-4551-831c-3296a9e39f07
+19/08/12 23:02:13 INFO MemoryStore: MemoryStore started with capacity 24.3 GB
+19/08/12 23:02:13 INFO SparkEnv: Registering OutputCommitCoordinator
+19/08/12 23:02:13 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+19/08/12 23:02:13 INFO log: Logging initialized @4595ms
+19/08/12 23:02:13 INFO Server: jetty-9.3.20.v20170531
+19/08/12 23:02:13 INFO Server: Started @4706ms
+19/08/12 23:02:13 INFO AbstractConnector: Started ServerConnector@591a4f8e{HTTP/1.1,[http/1.1]}{10.67.237.124:41766}
+19/08/12 23:02:13 INFO Utils: Successfully started service 'SparkUI' on port 41766.
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6dc1dc69{/jobs,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@777d191f{/jobs/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7fc420b8{/jobs/job,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@e38f0b7{/jobs/job/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1192b58e{/stages,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4f8d86e4{/stages/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5f631ca0{/stages/stage,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3134153d{/stages/stage/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@767599a7{/stages/pool,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5f5effb0{/stages/pool/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@25d0cb3a{/storage,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@345cbf40{/storage/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6e3eb0cd{/storage/rdd,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@463561c5{/storage/rdd/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@659feb22{/environment,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3468ee6e{/environment/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2f4b98f6{/executors,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@421def93{/executors/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@58c1da09{/executors/threadDump,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2b2954e1{/executors/threadDump/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@58d6e55a{/executors/heapHistogram,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@751ae8a4{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@235d659c{/static,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4bcaa195{/,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@d08edc5{/api,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6bc24e72{/jobs/job/kill,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@724aefc3{/stages/stage/kill,null,AVAILABLE,@Spark}
+19/08/12 23:02:13 INFO SparkUI: Bound SparkUI to 10.67.237.124, and started at http://10.67.237.124:41766
+19/08/12 23:02:13 WARN FairSchedulableBuilder: Fair Scheduler configuration file not found so jobs will be scheduled in FIFO order. To use fair scheduling, configure pools in fairscheduler.xml or set spark.scheduler.allocation.file to a file that contains the configuration.
+19/08/12 23:02:13 INFO FairSchedulableBuilder: Created default pool: default, schedulingMode: FIFO, minShare: 0, weight: 1
+19/08/12 23:02:13 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://10.67.237.124:7077...
+19/08/12 23:02:14 INFO TransportClientFactory: Successfully created connection to /10.67.237.124:7077 after 384 ms (0 ms spent in bootstraps)
+19/08/12 23:02:14 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20190812230214-0000
+19/08/12 23:02:14 INFO TaskSchedulerImpl: Task preemption enabled.
+19/08/12 23:02:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45637.
+19/08/12 23:02:14 INFO NettyBlockTransferService: Server created on ip-10-67-237-124.ec2.internal:45637
+19/08/12 23:02:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/08/12 23:02:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-67-237-124.ec2.internal, 45637, None)
+19/08/12 23:02:14 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-67-237-124.ec2.internal:45637 with 24.3 GB RAM, BlockManagerId(driver, ip-10-67-237-124.ec2.internal, 45637, None)
+19/08/12 23:02:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-67-237-124.ec2.internal, 45637, None)
+19/08/12 23:02:14 INFO BlockManager: external shuffle service port = 4048
+19/08/12 23:02:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-67-237-124.ec2.internal, 45637, None)
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4735d6e5{/metrics/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO DBCEventLoggingListener: Initializing DBCEventLoggingListener
+19/08/12 23:02:14 INFO DBCEventLoggingListener: Logging events to eventlogs/5734299820362437325/eventlog
+19/08/12 23:02:14 INFO SparkContext: Registered listener com.databricks.backend.daemon.driver.DBCEventLoggingListener
+19/08/12 23:02:14 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+19/08/12 23:02:14 INFO SparkContext: Loading Spark Service RPC Server
+19/08/12 23:02:14 INFO SparkServiceRPCServer: Starting Spark Service RPC Server
+19/08/12 23:02:14 INFO Server: jetty-9.3.20.v20170531
+19/08/12 23:02:14 INFO AbstractConnector: Started ServerConnector@68ab6ab0{HTTP/1.1,[http/1.1]}{0.0.0.0:15001}
+19/08/12 23:02:14 INFO Server: Started @6017ms
+19/08/12 23:02:14 INFO DatabricksILoop$: Successfully registered spark metrics in Prometheus registry
+19/08/12 23:02:14 INFO DatabricksILoop$: Successfully initialized SparkContext
+19/08/12 23:02:14 INFO SharedState: Scheduler stats enabled.
+19/08/12 23:02:14 INFO SharedState: loading hive config file: file:/databricks/hive/conf/hive-site.xml
+19/08/12 23:02:14 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('/user/hive/warehouse').
+19/08/12 23:02:14 INFO SharedState: Warehouse path is '/user/hive/warehouse'.
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@309dcdf3{/SQL,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7573b9ee{/SQL/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2c0c4c0a{/SQL/execution,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@35d26ad2{/SQL/execution/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7f73ce28{/static/sql,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@149b4d20{/storage/iocache,null,AVAILABLE,@Spark}
+19/08/12 23:02:14 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@664e848c{/storage/iocache/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:15 INFO DatabricksILoop$: Finished creating throwaway interpreter
+19/08/12 23:02:15 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/08/12 23:02:17 INFO JettyClient$: Creating new HttpClient with SSLContextFactory=None,maxRequestHeaderSize=65536, namePrefix=Some(DBFS-SHARED), idleTimeout=2 hours, useBlockingConnect: true
+19/08/12 23:02:17 INFO DatabricksFileSystemV2Factory: Creating S3A file system for s3a://databrickstombresee
+19/08/12 23:02:18 INFO DBFS: Initialized DBFS with DBFSV2 as the delegate.
+19/08/12 23:02:18 INFO HiveUtils: Initializing execution hive, version 1.2.1
+19/08/12 23:02:18 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/08/12 23:02:18 INFO ObjectStore: ObjectStore, initialize called
+19/08/12 23:02:18 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/08/12 23:02:18 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/08/12 23:02:20 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/08/12 23:02:20 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20190812230214-0000/0 on worker-20190812230219-10.67.233.230-44612 (10.67.233.230:44612) with 8 core(s)
+19/08/12 23:02:20 INFO StandaloneSchedulerBackend: Granted executor ID app-20190812230214-0000/0 on hostPort 10.67.233.230:44612 with 8 core(s), 43.6 GB RAM
+19/08/12 23:02:20 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20190812230214-0000/0 is now RUNNING
+19/08/12 23:02:21 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:02:21 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:02:22 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:02:22 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:02:22 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/08/12 23:02:22 INFO ObjectStore: Initialized ObjectStore
+19/08/12 23:02:22 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+19/08/12 23:02:22 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+19/08/12 23:02:23 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20190812230214-0000/1 on worker-20190812230222-10.67.245.78-35845 (10.67.245.78:35845) with 8 core(s)
+19/08/12 23:02:23 INFO StandaloneSchedulerBackend: Granted executor ID app-20190812230214-0000/1 on hostPort 10.67.245.78:35845 with 8 core(s), 43.6 GB RAM
+19/08/12 23:02:23 INFO HiveMetaStore: Added admin role in metastore
+19/08/12 23:02:23 INFO HiveMetaStore: Added public role in metastore
+19/08/12 23:02:23 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20190812230214-0000/1 is now RUNNING
+19/08/12 23:02:23 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/08/12 23:02:23 INFO HiveMetaStore: 0: get_all_databases
+19/08/12 23:02:23 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_all_databases	
+19/08/12 23:02:23 INFO HiveMetaStore: 0: get_functions: db=default pat=*
+19/08/12 23:02:23 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+19/08/12 23:02:23 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:02:23 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.67.233.230:46822) with ID 0
+19/08/12 23:02:23 INFO BlockManagerMasterEndpoint: Registering block manager 10.67.233.230:44502 with 23.1 GB RAM, BlockManagerId(0, 10.67.233.230, 44502, None)
+19/08/12 23:02:23 INFO SessionState: Created local directory: /local_disk0/tmp/root
+19/08/12 23:02:23 INFO SessionState: Created local directory: /local_disk0/tmp/14f0ddd8-9c54-4ae9-a238-6e96a7c51a57_resources
+19/08/12 23:02:23 INFO S3AFileSystem: Making directory: /oregon-prod/978277182616062/tmp/hive/root/14f0ddd8-9c54-4ae9-a238-6e96a7c51a57
+19/08/12 23:02:23 INFO SessionState: Created HDFS directory: /tmp/hive/root/14f0ddd8-9c54-4ae9-a238-6e96a7c51a57
+19/08/12 23:02:24 INFO SessionState: Created local directory: /local_disk0/tmp/root/14f0ddd8-9c54-4ae9-a238-6e96a7c51a57
+19/08/12 23:02:24 INFO S3AFileSystem: Making directory: /oregon-prod/978277182616062/tmp/hive/root/14f0ddd8-9c54-4ae9-a238-6e96a7c51a57/_tmp_space.db
+19/08/12 23:02:24 INFO SessionState: Created HDFS directory: /tmp/hive/root/14f0ddd8-9c54-4ae9-a238-6e96a7c51a57/_tmp_space.db
+19/08/12 23:02:24 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is /user/hive/warehouse
+19/08/12 23:02:24 INFO SessionManager: Operation log root directory is created: /local_disk0/tmp/root/operation_logs
+19/08/12 23:02:24 INFO SessionManager: HiveServer2: Background operation thread pool size: 100
+19/08/12 23:02:24 INFO SessionManager: HiveServer2: Background operation thread wait queue size: 100
+19/08/12 23:02:24 INFO SessionManager: HiveServer2: Background operation thread keepalive time: 10 seconds
+19/08/12 23:02:24 INFO AbstractService: Service:OperationManager is inited.
+19/08/12 23:02:24 INFO AbstractService: Service:SessionManager is inited.
+19/08/12 23:02:24 INFO AbstractService: Service: CLIService is inited.
+19/08/12 23:02:24 INFO AbstractService: Service:ThriftHttpCLIService is inited.
+19/08/12 23:02:24 INFO AbstractService: Service: HiveServer2 is inited.
+19/08/12 23:02:24 INFO AbstractService: Service:OperationManager is started.
+19/08/12 23:02:24 INFO AbstractService: Service:SessionManager is started.
+19/08/12 23:02:24 INFO AbstractService: Service:CLIService is started.
+19/08/12 23:02:24 INFO ObjectStore: ObjectStore, initialize called
+19/08/12 23:02:24 INFO Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+19/08/12 23:02:24 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/08/12 23:02:24 INFO ObjectStore: Initialized ObjectStore
+19/08/12 23:02:24 INFO HiveMetaStore: 0: get_databases: default
+19/08/12 23:02:24 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_databases: default	
+19/08/12 23:02:24 INFO HiveMetaStore: 0: Shutting down the object store...
+19/08/12 23:02:24 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=Shutting down the object store...	
+19/08/12 23:02:24 INFO HiveMetaStore: 0: Metastore shutdown complete.
+19/08/12 23:02:24 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=Metastore shutdown complete.	
+19/08/12 23:02:24 INFO AbstractService: Service:ThriftHttpCLIService is started.
+19/08/12 23:02:24 INFO AbstractService: Service:HiveServer2 is started.
+19/08/12 23:02:24 INFO ThriftCLIService: HTTP Server SSL: adding excluded protocols: [SSLv2, SSLv3]
+19/08/12 23:02:24 INFO ThriftCLIService: HTTP Server SSL: SslContextFactory.getExcludeProtocols = [SSL, SSLv2, SSLv2Hello, SSLv3]
+19/08/12 23:02:24 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1259b2a5{/sqlserver,null,AVAILABLE,@Spark}
+19/08/12 23:02:24 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6779af40{/sqlserver/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:24 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1d0acb8f{/sqlserver/session,null,AVAILABLE,@Spark}
+19/08/12 23:02:24 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6abaa14b{/sqlserver/session/json,null,AVAILABLE,@Spark}
+19/08/12 23:02:24 INFO DriverDaemon: Starting driver daemon...
+19/08/12 23:02:24 INFO SparkConfUtils$: Customize spark config according to file /tmp/custom-spark.conf
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.sql.files.maxPartitionBytes -> 1099511627776
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.sql.files.openCostInBytes -> 1099511627776
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.executor.tempDirectory -> /local_disk0/tmp
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.hadoop.mapreduce.input.fileinputformat.split.minsize -> 1099511627776
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.hadoop.parquet.block.size -> 1099511627776
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.driver.tempDirectory -> /local_disk0/tmp
+19/08/12 23:02:24 INFO SparkConfUtils$: new spark config: spark.hadoop.io.compression.codecs -> org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,org.apache.hadoop.io.compress.GzipCodec
+19/08/12 23:02:24 WARN SparkConf: The configuration key 'spark.akka.frameSize' has been deprecated as of Spark 1.6 and may be removed in the future. Please use the new key 'spark.rpc.message.maxSize' instead.
+19/08/12 23:02:24 INFO DriverDaemon$$anon$1: Message out thread ready
+19/08/12 23:02:24 INFO Server: jetty-9.3.20.v20170531
+19/08/12 23:02:24 INFO AbstractConnector: Started ServerConnector@1fa77770{HTTP/1.1,[http/1.1]}{0.0.0.0:6061}
+19/08/12 23:02:24 INFO Server: Started @15680ms
+19/08/12 23:02:24 INFO DriverDaemon: Driver daemon started.
+19/08/12 23:02:24 INFO Server: jetty-9.3.20.v20170531
+19/08/12 23:02:24 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5ebc90a1{/,null,AVAILABLE}
+19/08/12 23:02:24 INFO SslContextFactory: x509=X509@1a257309(1,h=[databrickscloud.com],w=[]) for SslContextFactory@61974b8b(file:///databricks/keys/jetty-ssl-driver-keystore.jks,null)
+19/08/12 23:02:24 INFO AbstractConnector: Started ServerConnector@7ce154f1{SSL,[ssl, http/1.1]}{0.0.0.0:10000}
+19/08/12 23:02:24 INFO Server: Started @15753ms
+19/08/12 23:02:24 INFO ThriftCLIService: Started ThriftHttpCLIService in https mode on port 10000 path=/cliservice/* with 5...500 worker threads
+19/08/12 23:02:24 INFO DriverCorral: Loading the root classloader
+19/08/12 23:02:24 INFO DriverCorral: Starting sql repl ReplId-6dfc6-0635f-db95e
+19/08/12 23:02:24 WARN SQLDriverLocal: loadLibraries: Libraries failed to be installed: Set()
+19/08/12 23:02:24 INFO DriverCorral: Starting sql repl ReplId-6dda2-99606-ebc51-7
+19/08/12 23:02:24 WARN SQLDriverLocal: loadLibraries: Libraries failed to be installed: Set()
+19/08/12 23:02:25 INFO SQLDriverWrapper: setupRepl:ReplId-6dfc6-0635f-db95e: finished to load
+19/08/12 23:02:25 INFO SQLDriverWrapper: setupRepl:ReplId-6dda2-99606-ebc51-7: finished to load
+19/08/12 23:02:25 INFO DriverCorral: Starting sql repl ReplId-36d04-276ac-6a235-e
+19/08/12 23:02:25 WARN SQLDriverLocal: loadLibraries: Libraries failed to be installed: Set()
+19/08/12 23:02:25 INFO SQLDriverWrapper: setupRepl:ReplId-36d04-276ac-6a235-e: finished to load
+19/08/12 23:02:25 INFO DriverCorral: Starting sql repl ReplId-3a3d9-75a47-52a4c-3
+19/08/12 23:02:25 WARN SQLDriverLocal: loadLibraries: Libraries failed to be installed: Set()
+19/08/12 23:02:25 INFO SQLDriverWrapper: setupRepl:ReplId-3a3d9-75a47-52a4c-3: finished to load
+19/08/12 23:02:25 INFO DriverCorral: Starting sql repl ReplId-5e62e-02383-b74b7-0
+19/08/12 23:02:25 WARN SQLDriverLocal: loadLibraries: Libraries failed to be installed: Set()
+19/08/12 23:02:25 INFO SQLDriverWrapper: setupRepl:ReplId-5e62e-02383-b74b7-0: finished to load
+19/08/12 23:02:25 INFO DriverCorral: Starting r repl ReplId-280b8-165af-5d266-8
+19/08/12 23:02:25 WARN RDriverLocal: loadLibraries: Libraries failed to be installed: Set()
+19/08/12 23:02:25 INFO RDriverLocal: 1. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: object created with for ReplId-280b8-165af-5d266-8.
+19/08/12 23:02:25 INFO RDriverLocal: 2. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: initializing ...
+19/08/12 23:02:25 INFO RDriverLocal: 3. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: started RBackend thread on port 34728
+19/08/12 23:02:25 INFO RDriverLocal: 4. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: waiting for SparkR to be installed ...
+19/08/12 23:02:25 INFO DriverCorral: AttachLibraries - candidate libraries: List(JavaJarId(dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar,,NONE))
+19/08/12 23:02:25 INFO LibraryDownloadManager: Downloading a library that was not in the cache: JavaJarId(dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar,,NONE)
+19/08/12 23:02:26 INFO LibraryDownloadManager: Downloaded library dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar as local file /local_disk0/tmp/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar
+19/08/12 23:02:26 INFO SharedDriverContext: Adding libraries that haven't been added before: Set(/local_disk0/tmp/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar)
+19/08/12 23:02:26 INFO SparkContext: Added file /local_disk0/tmp/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar at spark://ip-10-67-237-124.ec2.internal:33234/files/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar with timestamp 1565650946168
+19/08/12 23:02:26 INFO Utils: Copying /local_disk0/tmp/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar to /local_disk0/spark-975c5cea-3a1c-4e7a-ba91-340666d600e8/userFiles-dd779b74-0b5e-491f-ae99-102381ef730b/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar
+19/08/12 23:02:26 INFO SparkContext: Added JAR /local_disk0/tmp/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar at spark://ip-10-67-237-124.ec2.internal:33234/jars/addedFile49161365083162528115698d3bc_4eae_4017_adc7_a960409bcd16_hail_all_spark_71440-df353.jar with timestamp 1565650946210
+19/08/12 23:02:26 INFO DriverCorral: Successfully attached library dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar to Spark
+19/08/12 23:02:26 INFO LibraryState: Successfully attached library dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
+19/08/12 23:02:26 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.67.245.78:40824) with ID 1
+19/08/12 23:02:26 INFO BlockManagerMasterEndpoint: Registering block manager 10.67.245.78:33626 with 23.1 GB RAM, BlockManagerId(1, 10.67.245.78, 33626, None)
+19/08/12 23:02:39 INFO RDriverLocal$: SparkR installation completed.
+19/08/12 23:02:39 INFO RDriverLocal: 5. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: launching R process ...
+19/08/12 23:02:39 INFO RDriverLocal: 6. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: cgroup isolation disabled, not placing R process in REPL cgroup.
+19/08/12 23:02:39 INFO RDriverLocal: 7. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: starting R process on port 1100 (attempt 1) ...
+19/08/12 23:02:39 INFO RDriverLocal: 8. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: setting up BufferedStreamThread with bufferSize: 100.
+19/08/12 23:02:40 INFO RDriverLocal: 9. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: R process started with RServe listening on port 1100.
+19/08/12 23:02:41 INFO RDriverLocal: 10. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: starting interpreter to talk to R process ...
+19/08/12 23:02:42 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
+19/08/12 23:02:42 INFO RDriverLocal: 11. RDriverLocal.3f773c61-d93d-4124-9d82-2f1c60561f5d: R interpretter is connected.
+19/08/12 23:02:42 INFO RDriverWrapper: setupRepl:ReplId-280b8-165af-5d266-8: finished to load
+19/08/12 23:07:11 INFO DriverCorral: DBFS health check ok
+19/08/12 23:07:12 INFO HikariDataSource: metastore-monitor - Starting...
+19/08/12 23:07:12 INFO HikariDataSource: metastore-monitor - Start completed.
+19/08/12 23:07:13 INFO HikariDataSource: metastore-monitor - Shutdown initiated...
+19/08/12 23:07:13 INFO HikariDataSource: metastore-monitor - Shutdown completed.
+19/08/12 23:07:13 INFO MetastoreMonitor: Metastore healthcheck successful (connection duration = 1645 milliseconds)
+19/08/12 23:07:24 INFO HiveUtils: Initializing HiveMetastoreConnection version 0.13.0 using file:/databricks/hive/maven--spark_1.4--com.esotericsoftware.reflectasm--reflectasm-shaded--com.esotericsoftware.reflectasm__reflectasm-shaded__1.07.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scalatest--scalatest_2.11--org.scalatest__scalatest_2.11__3.0.3.jar:file:/databricks/hive/maven--spark_1.4--org.datanucleus--datanucleus-core--org.datanucleus__datanucleus-core__3.2.10.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__okhttp__3.3.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--azure--org.apache.commons__commons-lang3__3.4_shaded.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-common--org.spark-project.hive__hive-common__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--org.antlr--ST4--org.antlr__ST4__4.0.4.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-jetty9--io.dropwizard.metrics__metrics-jetty9__3.1.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-security--org.eclipse.jetty__jetty-security__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.slf4j--slf4j-log4j12--org.slf4j__slf4j-log4j12__1.7.16.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.datatype__jackson-datatype-joda__2.7.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/extern--acl--auth--auth-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-sts--com.amazonaws__aws-java-sdk-sts__1.11.313.jar:file:/databricks/hive/maven--spark_1.4--org.apache.velocity--velocity--org.apache.velocity__velocity__1.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.htrace--htrace-core--org.apache.htrace__htrace-core__3.1.0-incubating.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-continuation--org.eclipse.jetty__jetty-continuation__9.3.20.v20170531.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-annotations__1.2.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--azure--com.fasterxml.jackson.core__jackson-core__2.7.2_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.twitter--util-jvm_2.11--com.twitter__util-jvm_2.11__6.23.0.jar:file:/databricks/hive/maven--log4j--log4j--log4j__log4j__1.2.17.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.trueaccord.lenses--lenses_2.11--com.trueaccord.lenses__lenses_2.11__0.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-log4j--io.dropwizard.metrics__metrics-log4j__3.1.5.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--hadoop-azure-2.7.3-abfs-external-20180920_b33d810-spark_2.4_2.11_deploy_shaded.jar:file:/databricks/hive/maven--commons-logging--commons-logging--commons-logging__commons-logging__1.1.3.jar:file:/databricks/hive/maven--spark_1.4--org.antlr--antlr-runtime--org.antlr__antlr-runtime__3.4.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.server--apacheds-i18n--org.apache.directory.server__apacheds-i18n__2.0.0-M15.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__logging-interceptor__3.3.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--jetty8-shaded-client--databricks-patched-jetty-client-jar_shaded.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-serde--org.spark-project.hive__hive-serde__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--software.amazon.ion--ion-java--software.amazon.ion__ion-java__1.0.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang.modules--scala-xml_2.11--org.scala-lang.modules__scala-xml_2.11__1.0.5.jar:file:/databricks/hive/maven--commons-io--commons-io--commons-io__commons-io__2.5.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.inject__javax.inject__1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.xerial.snappy--snappy-java--org.xerial.snappy__snappy-java__1.1.7.3.jar:file:/databricks/hive/maven--commons-codec--commons-codec--commons-codec__commons-codec__1.8.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.microsoft.azure--azure-data-lake-store-sdk--com.microsoft.azure__azure-data-lake-store-sdk__2.2.8.jar:file:/databricks/hive/maven--spark_1.4--org.apache.avro--avro--org.apache.avro__avro__1.8.2.jar:file:/databricks/hive/maven--spark_1.4--org.datanucleus--datanucleus-api-jdo--org.datanucleus__datanucleus-api-jdo__3.2.6.jar:file:/databricks/hive/maven--spark_1.4--javax.jdo--jdo-api--javax.jdo__jdo-api__3.0.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml--classmate--com.fasterxml__classmate__1.0.0.jar:file:/databricks/hive/maven--org.slf4j--slf4j-log4j12--org.slf4j__slf4j-log4j12__1.7.5.jar:file:/databricks/hive/third_party--datalake--datalake-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.joda--joda-convert--org.joda__joda-convert__1.7.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-servlets--io.dropwizard.metrics__metrics-servlets__3.1.5.jar:file:/databricks/hive/maven--spark_1.4--javax.transaction--jta--javax.transaction__jta__1.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.xml.bind__jaxb-api__2.2.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--org.json--json--org.json__json__20090211.jar:file:/databricks/hive/api-base--api-base-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.typesafe.scala-logging--scala-logging-slf4j_2.11--com.typesafe.scala-logging__scala-logging-slf4j_2.11__2.1.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpclient__4.5.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--spark_1.4--com.esotericsoftware.minlog--minlog--com.esotericsoftware.minlog__minlog__1.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.api--api-asn1-api--org.apache.directory.api__api-asn1-api__1.0.0-M20.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-collections--commons-collections--commons-collections__commons-collections__3.2.2.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-cli--org.spark-project.hive__hive-cli__0.13.1a.jar:file:/databricks/hive/third_party--jetty8-shaded-client--jetty-jmx_shaded.jar:file:/databricks/hive/common--jetty--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.databricks.scalapb--scalapb-runtime_2.11--com.databricks.scalapb__scalapb-runtime_2.11__0.4.15-9.jar:file:/databricks/hive/maven--spark_1.4--commons-cli--commons-cli--commons-cli__commons-cli__1.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.activation__activation__1.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.codehaus.jackson--jackson-core-asl--org.codehaus.jackson__jackson-core-asl__1.9.13.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-core--com.fasterxml.jackson.core__jackson-core__2.6.7.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-json--io.dropwizard.metrics__metrics-json__3.1.5.jar:file:/databricks/hive/maven--org.apache.httpcomponents--httpclient--org.apache.httpcomponents__httpclient__4.4.1.jar:file:/databricks/hive/maven--spark_1.4--io.netty--netty--io.netty__netty__3.8.0.Final.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.twitter--util-app_2.11--com.twitter__util-app_2.11__6.23.0.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-shims--org.spark-project.hive__hive-shims__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--org.codehaus.jackson--jackson-mapper-asl--org.codehaus.jackson__jackson-mapper-asl__1.9.13.jar:file:/databricks/hive/daemon--data--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.twitter--util-core_2.11--com.twitter__util-core_2.11__6.23.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--log4j--log4j--log4j__log4j__1.2.17.jar:file:/databricks/hive/common--path--path-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--spark_1.4--net.sf.jpam--jpam--net.sf.jpam__jpam__1.1.jar:file:/databricks/hive/third_party--prometheus-client--simpleclient-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-storage__7.0.0_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/third_party--jackson--guava_only_shaded.jar:file:/databricks/hive/maven--org.apache.commons--commons-lang3--org.apache.commons__commons-lang3__3.4.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-ant--org.spark-project.hive__hive-ant__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--com.twitter--parquet-hadoop-bundle--com.twitter__parquet-hadoop-bundle__1.3.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--log4j--apache-log4j-extras--log4j__apache-log4j-extras__1.2.17.jar:file:/databricks/hive/jsonutil--jsonutil-spark_2.4_2.11_deploy.jar:file:/databricks/hive/daemon--data--data-common--data-common-spark_2.4_2.11_deploy.jar:file:/databricks/hive/extern--extern-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.jdbi--jdbi--org.jdbi__jdbi__2.63.1.jar:file:/databricks/hive/s3commit--common--common-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--org.slf4j--slf4j-api--org.slf4j__slf4j-api__1.7.5.jar:file:/databricks/hive/maven--spark_1.4--org.tukaani--xz--org.tukaani__xz__1.5.jar:file:/databricks/hive/maven--org.apache.httpcomponents--httpcore--org.apache.httpcomponents__httpcore__4.4.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.tukaani--xz--org.tukaani__xz__1.5.jar:file:/databricks/hive/maven--spark_1.4--com.esotericsoftware.kryo--kryo--com.esotericsoftware.kryo__kryo__2.21.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--io.reactivex__rxjava__1.2.4_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.el--javax.el-api--javax.el__javax.el-api__2.2.4.jar:file:/databricks/hive/maven--spark_1.4--org.apache.thrift--libfb303--org.apache.thrift__libfb303__0.9.0.jar:file:/databricks/hive/third_party--jackson--jsr305_only_shaded.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-annotations__2.7.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-annotations--org.apache.hadoop__hadoop-annotations__2.7.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.commons--commons-math3--org.apache.commons__commons-math3__3.4.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scalactic--scalactic_2.11--org.scalactic__scalactic_2.11__3.0.3.jar:file:/databricks/hive/third_party--jetty8-shaded-client--jetty-util_shaded.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-core__2.7.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-jdbc--org.spark-project.hive__hive-jdbc__0.13.1a.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__adapter-rxjava__2.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.httpcomponents--httpcore--org.apache.httpcomponents__httpcore__4.4.8.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-logging__commons-logging__1.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.hibernate--hibernate-validator--org.hibernate__hibernate-validator__5.1.1.Final.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-beanutils--commons-beanutils--commons-beanutils__commons-beanutils__1.9.3.jar:file:/databricks/hive/logging--log4j-mod--log4j-mod-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--spark_1.4--org.codehaus.groovy--groovy-all--org.codehaus.groovy__groovy-all__2.1.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang--scala-library_2.11--org.scala-lang__scala-library__2.11.12.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-core--com.amazonaws__aws-java-sdk-core__1.11.313.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-metastore--org.spark-project.hive__hive-metastore__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-common-secure--org.spark-project.hive.shims__hive-shims-common-secure__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.api--api-util--org.apache.directory.api__api-util__1.0.0-M20.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-ganglia--io.dropwizard.metrics__metrics-ganglia__3.1.5.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-lang--commons-lang--commons-lang__commons-lang__2.6.jar:file:/databricks/hive/----jackson_annotations_shaded--libjackson-annotations.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.springframework--spring-core--org.springframework__spring-core__4.1.4.RELEASE.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.inject__guice__3.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.servlet--javax.servlet-api--javax.servlet__javax.servlet-api__3.1.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--jmespath-java--com.amazonaws__jmespath-java__1.11.313.jar:file:/databricks/hive/maven--commons-lang--commons-lang--commons-lang__commons-lang__2.6.jar:file:/databricks/hive/maven--stax--stax-api--stax__stax-api__1.0.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.servlet.jsp--jsp-api--javax.servlet.jsp__jsp-api__2.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.rest__client-runtime__1.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.httpcomponents--httpclient--org.apache.httpcomponents__httpclient__4.5.4.jar:file:/databricks/hive/common--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-service--org.spark-project.hive__hive-service__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.codehaus.jackson--jackson-core-asl--org.codehaus.jackson__jackson-core-asl__1.9.13.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-databind__2.7.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.guava__guava__11.0.2_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-util--org.eclipse.jetty__jetty-util__9.3.20.v20170531.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.sun.xml.bind__jaxb-impl__2.2.3-1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.protobuf--protobuf-java--org.spark-project.protobuf__protobuf-java__2.5.0-spark.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.slf4j--slf4j-api--org.slf4j__slf4j-api__1.7.16.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-annotations--com.fasterxml.jackson.core__jackson-annotations__2.6.7.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.avro--avro--org.apache.avro__avro__1.8.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.code.gson--gson--com.google.code.gson__gson__2.2.4.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-core--io.dropwizard.metrics__metrics-core__3.1.5.jar:file:/databricks/hive/maven--spark_1.4--org.iq80.snappy--snappy--org.iq80.snappy__snappy__0.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpcore__4.4.4_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.protobuf--protobuf-java--com.google.protobuf__protobuf-java__2.6.1.jar:file:/databricks/hive/maven--com.thoughtworks.paranamer--paranamer--com.thoughtworks.paranamer__paranamer__2.8.jar:file:/databricks/hive/maven--spark_1.4--org.apache.commons--commons-compress--org.apache.commons__commons-compress__1.9.jar:file:/databricks/hive/maven--spark_1.4--org.apache.zookeeper--zookeeper--org.apache.zookeeper__zookeeper__3.4.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.code.findbugs--jsr305--com.google.code.findbugs__jsr305__2.0.1.jar:file:/databricks/hive/third_party--jackson--jackson-module-scala-shaded_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.core--jackson-databind--com.fasterxml.jackson.core__jackson-databind__2.6.7.1.jar:file:/databricks/hive/api-base--api-base_java-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-common--org.apache.hadoop__hadoop-common__2.7.3.jar:file:/databricks/hive/maven--spark_1.4--jline--jline--jline__jline__0.9.94.jar:file:/databricks/hive/maven--spark_1.4--org.datanucleus--datanucleus-rdbms--org.datanucleus__datanucleus-rdbms__3.2.9.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.commons--commons-compress--org.apache.commons__commons-compress__1.8.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang.modules--scala-parser-combinators_2.11--org.scala-lang.modules__scala-parser-combinators_2.11__1.1.0.jar:file:/databricks/hive/extern--libaws-regions.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.zookeeper--zookeeper--org.apache.zookeeper__zookeeper__3.4.6.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-http--org.eclipse.jetty__jetty-http__9.3.20.v20170531.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.guava__guava__16.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-jvm--io.dropwizard.metrics__metrics-jvm__3.1.5.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-exec--org.spark-project.hive__hive-exec__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.thoughtworks.paranamer--paranamer--com.thoughtworks.paranamer__paranamer__2.8.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okio__okio__1.8.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--javax.xml.stream__stax-api__1.0-2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.apache.derby--derby--org.apache.derby__derby__10.10.1.1.jar:file:/databricks/hive/maven--spark_1.4--org.apache.thrift--libthrift--org.apache.thrift__libthrift__0.9.2.jar:file:/databricks/hive/maven--spark_1.4--com.googlecode.javaewah--JavaEWAH--com.googlecode.javaewah__JavaEWAH__0.3.2.jar:file:/databricks/hive/third_party--jetty8-shaded-client--jetty-io_shaded.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__retrofit__2.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.typesafe.scala-logging--scala-logging-api_2.11--com.typesafe.scala-logging__scala-logging-api_2.11__2.1.2.jar:file:/databricks/hive/----jackson_databind_shaded--libjackson-databind.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.google.guava--guava--com.google.guava__guava__15.0.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-logging--commons-logging--commons-logging__commons-logging__1.1.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.curator--curator-recipes--org.apache.curator__curator-recipes__2.7.1.jar:file:/databricks/hive/daemon--data--client--conf--conf-spark_2.4_2.11_deploy.jar:file:/databricks/hive/maven--org.apache.ant--ant--org.apache.ant__ant__1.9.2.jar:file:/databricks/hive/third_party--jetty8-shaded-client--databricks-patched-jetty-http-jar_shaded.jar:file:/databricks/hive/maven--spark_1.4--org.objenesis--objenesis--org.objenesis__objenesis__1.2.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--aopalliance__aopalliance__1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.dropwizard.metrics--metrics-healthchecks--io.dropwizard.metrics__metrics-healthchecks__3.1.5.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.htrace__htrace-core__3.1.0-incubating_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--prometheus-client--simpleclient_dropwizard-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.retrofit2__converter-jackson__2.1.0_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive--hive-beeline--org.spark-project.hive__hive-beeline__0.13.1a.jar:file:/databricks/hive/common--credentials--credentials-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-io--commons-io--commons-io__commons-io__2.4.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-0.20S--org.spark-project.hive.shims__hive-shims-0.20S__0.13.1a.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-codec__commons-codec__1.9_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-cli--commons-cli--commons-cli__commons-cli__1.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.curator--curator-client--org.apache.curator__curator-client__2.7.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--io.netty__netty-all__4.0.52.Final_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/s3--s3-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--xmlenc--xmlenc--xmlenc__xmlenc__0.52.jar:file:/databricks/hive/maven--spark_1.4--junit--junit--junit__junit__3.8.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.jboss.logging--jboss-logging--org.jboss.logging__jboss-logging__3.1.3.GA.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.squareup.okhttp3__okhttp-urlconnection__3.3.1_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--azure--com.microsoft.azure__azure-keyvault-core__1.0.0_shaded.jar:file:/databricks/hive/maven--org.apache.ant--ant-launcher--org.apache.ant__ant-launcher__1.9.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-net--commons-net--commons-net__commons-net__3.1.jar:file:/databricks/hive/common--hadoop--hadoop-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-kms--com.amazonaws__aws-java-sdk-kms__1.11.313.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--joda-time--joda-time--joda-time__joda-time__2.9.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.acplt--oncrpc--org.acplt__oncrpc__1.0.7.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-io--org.eclipse.jetty__jetty-io__9.3.20.v20170531.jar:file:/databricks/hive/----jackson_core_shaded--libjackson-core.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-servlet--org.eclipse.jetty__jetty-servlet__9.3.20.v20170531.jar:file:/databricks/hive/maven--spark_1.4--oro--oro--oro__oro__2.0.8.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-proxy--org.eclipse.jetty__jetty-proxy__9.3.20.v20170531.jar:file:/databricks/hive/maven--spark_1.4--com.jolbox--bonecp--com.jolbox__bonecp__0.8.0.RELEASE.jar:file:/databricks/hive/third_party--jackson--paranamer_only_shaded.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.google.code.findbugs__jsr305__1.3.9_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/maven--org.xerial.snappy--snappy-java--org.xerial.snappy__snappy-java__1.1.2.6.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.microsoft.azure__azure-keyvault-core__1.0.0_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--info.ganglia.gmetric4j--gmetric4j--info.ganglia.gmetric4j__gmetric4j__1.0.7.jar:file:/databricks/hive/s3commit--client--client-spark_2.4_2.11_deploy.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-digester--commons-digester--commons-digester__commons-digester__1.8.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.curator--curator-framework--org.apache.curator__curator-framework__2.7.1.jar:file:/databricks/hive/maven--antlr--antlr--antlr__antlr__2.7.7.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--hadoop-azure-2.7.3-abfs-external-20180625_3682417-spark_2.4_2.11_deploy_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.typesafe--config--com.typesafe__config__1.2.1.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--joda-time__joda-time__2.4_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.fasterxml.jackson.dataformat--jackson-dataformat-cbor--com.fasterxml.jackson.dataformat__jackson-dataformat-cbor__2.6.7.jar:file:/databricks/hive/----jackson_datatype_joda_shaded--libjackson-datatype-joda.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-server--org.eclipse.jetty__jetty-server__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-client--org.eclipse.jetty__jetty-client__9.3.20.v20170531.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-codec--commons-codec--commons-codec__commons-codec__1.10.jar:file:/databricks/hive/third_party--prometheus-client--simpleclient-jetty9-hadoop1_2.11_deploy.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-logging__commons-logging__1.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.databricks--jets3t--com.databricks__jets3t__0.7.1-0.jar:file:/databricks/hive/maven--commons-httpclient--commons-httpclient--commons-httpclient__commons-httpclient__3.1.jar:file:/databricks/hive/maven--org.antlr--stringtemplate--org.antlr__stringtemplate__3.2.1.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-common--org.spark-project.hive.shims__hive-shims-common__0.13.1a.jar:file:/databricks/hive/maven--spark_1.4--javolution--javolution--javolution__javolution__5.5.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.hadoop--hadoop-auth--org.apache.hadoop__hadoop-auth__2.7.3.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-configuration--commons-configuration--commons-configuration__commons-configuration__1.6.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-0.23--org.spark-project.hive.shims__hive-shims-0.23__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.netty--netty-all--io.netty__netty-all__4.1.17.Final.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--io.netty--netty--io.netty__netty__3.9.9.Final.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.databricks.scalapb--compilerplugin_2.11--com.databricks.scalapb__compilerplugin_2.11__0.4.15-9.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.springframework--spring-test--org.springframework__spring-test__4.1.4.RELEASE.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpcore__4.4.4_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--org.apache.httpcomponents__httpclient__4.5.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--javax.validation--validation-api--javax.validation__validation-api__1.1.0.Final.jar:file:/databricks/hive/maven--spark_1.4--org.spark-project.hive.shims--hive-shims-0.20--org.spark-project.hive.shims__hive-shims-0.20__0.13.1a.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.apache.directory.server--apacheds-kerberos-codec--org.apache.directory.server__apacheds-kerberos-codec__2.0.0-M15.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--commons-httpclient--commons-httpclient--commons-httpclient__commons-httpclient__3.1.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.eclipse.jetty--jetty-servlets--org.eclipse.jetty__jetty-servlets__9.3.20.v20170531.jar:file:/databricks/hive/maven--commons-collections--commons-collections--commons-collections__commons-collections__3.2.2.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--com.amazonaws--aws-java-sdk-s3--com.amazonaws__aws-java-sdk-s3__1.11.313.jar:file:/databricks/hive/common--lazy--lazy-spark_2.4_2.11_deploy.jar:file:/databricks/hive/dbfs--utils--dbfs-utils-spark_2.4_2.11_deploy.jar:file:/databricks/hive/third_party--azure--com.microsoft.azure__azure-storage__5.2.0_shaded.jar:file:/databricks/hive/spark--maven-trees--spark_2.4--org.scala-lang--scala-reflect_2.11--org.scala-lang__scala-reflect__2.11.12.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--commons-codec__commons-codec__1.9_2.11_shaded_20180920_b33d810.jar:file:/databricks/hive/third_party--hadoop-azure-2.7.3-abfs--com.fasterxml.jackson.core__jackson-core__2.7.2_2.11_shaded_20180625_3682417.jar:file:/databricks/hive/bonecp-configs.jar
+19/08/12 23:07:24 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/08/12 23:07:24 INFO ObjectStore: ObjectStore, initialize called
+19/08/12 23:07:24 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/08/12 23:07:24 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/08/12 23:07:25 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/08/12 23:07:25 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:07:25 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:07:25 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:07:25 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/12 23:07:25 INFO Query: Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+19/08/12 23:07:25 INFO ObjectStore: Initialized ObjectStore
+19/08/12 23:07:25 INFO HiveMetaStore: Added admin role in metastore
+19/08/12 23:07:25 INFO HiveMetaStore: Added public role in metastore
+19/08/12 23:07:25 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/08/12 23:07:26 INFO SessionState: No Tez session required at this point. hive.execution.engine=mr.
+19/08/12 23:07:26 INFO HiveClientImpl: Warehouse location for Hive client (version 0.13.1) is /user/hive/warehouse
+19/08/12 23:07:26 INFO HiveMetaStore: 0: get_database: default
+19/08/12 23:07:26 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/12 23:07:26 INFO HiveMetaStore: 0: get_database: default
+19/08/12 23:07:26 INFO audit: ugi=root	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/12 23:07:26 INFO DriverCorral: Metastore health check ok

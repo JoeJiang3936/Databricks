@@ -3,17 +3,129 @@
 
 
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	libraries
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    upload jar and use these steps 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+get the jar file
+
+Upload the built build/libs/hail-all-spark.jar to Databricks Workspace > *Shared* > Libraries > Create Library 
+and click Drop library JAR here to upload
+
+Next click the Clusters icon on the left sidebar and then +Create Cluster. 
+
+For Apache Spark Version, select Spark 2.0 (Auto-updating, Scala 2.11). 
+
+In the Databricks cluster creation dialog, click on the Spark tab, and paste the text below into the Spark config box.
+
+THEN go back to Workspace > Shared > Libraries click on the hail-all-spark.jar library and attach it to the created cluster.
+
+
+BOTTOM LINE:
+	
+	shared, create, library
+	then go to your cluster and install new, select workspace, and will be there
 
 
 
---- opens a file (like README) and reads it ---
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	files and directories  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+%fs ls
+
+%fs ls /dbfs/FileStore/
+
+%fs ls /dbfs/FileStore/jars
+
+# Really good sample hail data to work with:
+display(dbutils.fs.ls("/databricks-datasets/hail/data-001"))
+
+dbutils.fs.ls("/")
+
+dbutils.fs.ls("dbfs:/FileStore/")
+
+dbutils.fs.ls(".")
+[FileInfo(path='dbfs:/FileStore/', name='FileStore/', size=0),
+ FileInfo(path='dbfs:/cbp.vds/', name='cbp.vds/', size=0),
+ FileInfo(path='dbfs:/databricks-datasets/', name='databricks-datasets/', size=0),
+ FileInfo(path='dbfs:/databricks-results/', name='databricks-results/', size=0),
+ FileInfo(path='dbfs:/delta/', name='delta/', size=0),
+ FileInfo(path='dbfs:/kdd/', name='kdd/', size=0),
+ FileInfo(path='dbfs:/local_disk0/', name='local_disk0/', size=0),
+ FileInfo(path='dbfs:/ml/', name='ml/', size=0),
+ FileInfo(path='dbfs:/mnt/', name='mnt/', size=0),
+ FileInfo(path='dbfs:/tmp/', name='tmp/', size=0),
+ FileInfo(path='dbfs:/tom/', name='tom/', size=0),
+ FileInfo(path='dbfs:/user/', name='user/', size=0)]
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	dbutils 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+shortcut
+	
+	db and then tab
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	libraries installPyPI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import pkg_resources
+
+dbutils.library.list()
+
+dbutils.library.installPyPI('numpy')
+
+https://databricks.com/blog/2019/01/08/introducing-databricks-library-utilities-for-notebooks.html
+
+	dbutils.library.installPyPI('hail')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     open a file and read it 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 with open("/dbfs/databricks-datasets/README.md") as f:
     x = ''.join(f.readlines())
@@ -26,7 +138,14 @@ print(x)
 
 
 
---- cluster configuration in json ---
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    cluster configuration json view 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 {
     "num_workers": 0,
@@ -61,6 +180,87 @@ print(x)
     "init_scripts": [],
     "cluster_id": "0812-164141-nifty797"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

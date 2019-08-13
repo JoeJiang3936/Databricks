@@ -1,5 +1,13 @@
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   windows ubuntu location
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+location
+
+	tbresee@TM0493322:~/.local/lib/python3.6/site-packages/hail$
 
 
 
@@ -10,7 +18,147 @@
 
 
 
- -  Tom, when you are done put the dashes around it to keep it clean 
+spark.driver.extraClassPath or it's alias --driver-class-path to set extra classpaths on the node running the driver.
+
+
+https://community.cloud.databricks.com/files/beer_data.csv?o=7001951515152566
+
+
+
+my-file.txt
+
+
+
+?o=7001951515152566#notebook/2385188326668946/command/2385188326668969
+
+
+
+https://tance>/files/my-stuff/my-file.txt?o=7001951515152566
+
+
+
+beer_data.csv
+
+
+
+
+https://community.cloud.databricks.com/?o=7001951515152566#notebook/2385188326668946/command/2385188326668969
+
+However, if there is ?o= in the deployment URL, for example, https://<databricks-instance>/?o=6280049833385130, replace https://<databricks-instance>/files/my-stuff/my-file.txt with 
+
+
+https://<databricks-instance>/files/my-stuff/my-file.txt?o=###### where the number after o= is the same as in your URL.
+
+
+
+https://community.cloud.databricks.com/?o=7001951515152566#notebook/2385188326668946/command/2385188326668969
+
+
+
+Databricks Workspace id
+
+
+A Databricks Workspace is where the Databricks platform runs and where you can create Spark clusters and schedule workloads.
+
+Some types of workspaces have a unique Workspace ID. If there is o= in the deployment URL, for example, https://<databricks-instance>/?o=6280049833385130, the random number after o= is the Databricks Workspace ID. Here the Workspace ID is 6280049833385130. If there is no o= in the deployment URL, the Workspace ID is 0.
+
+
+
+
+ClassPath:
+ClassPath is affected depending on what you provide. There are a couple of ways to set something on the classpath:
+
+spark.driver.extraClassPath or it's alias --driver-class-path to set extra classpaths on the node running the driver.
+spark.executor.extraClassPath to set extra class path on the Worker nodes.
+
+
+
+
+
+
+
+
+
+
+HAIL HAS TO HAVE THE CORE HAIL JAR FILE WITHIN DATABRICKS OR NOTHING WORKS AT ALL
+
+I need to see my core .jar file for Hail within the Databricks /jars folder here:
+
+%fs ls dbfs:/FileStore/jars
+
+If you dont, nothing at all will work properly, in any form.  It is your starting point ! 
+
+
+
+
+
+
+
+
+
+
+
+
+COMMUNITY EDITION DATABRICKS SEEMS TO LOAD HAIL INCORRECTLY
+
+when you enter this command:  ENABLE_HAIL=true, within your environment variables, like this website says to do:
+https://docs.databricks.com/applications/genomics/hail.html, and then you look for your jar fails, you DON't see
+jar files that are right, you see like these tutorials:
+
+%fs ls dbfs:/FileStore/jars command outputs:
+dbfs:/FileStore/jars/35bb0c74_d723_4381_bc5c_5bb9d4ea6326-hail_tutorial_databricks-e84f3.jar	35bb0c74_d723_4381_bc5c_5bb9d4ea6326-hail_tutorial_databricks-e84f3.jar	27876587
+
+dbfs:/FileStore/jars/a3245b97_8a2b_4bce_902a_cf2cec710769-hail_tutorial_databricks-e84f3.jar	a3245b97_8a2b_4bce_902a_cf2cec710769-hail_tutorial_databricks-e84f3.jar	27876587
+
+dbfs:/FileStore/jars/b9008399_4234_4453_837b_0c918d34f13a-hail_tutorial_databricks-e84f3.jar	b9008399_4234_4453_837b_0c918d34f13a-hail_tutorial_databricks-e84f3.jar	27876587
+
+dbfs:/FileStore/jars/c7eaedcd_8828_4b98_8cc6_90caba462aa4-hail_devel_py2_7_databricks-20ed0.egg	c7eaedcd_8828_4b98_8cc6_90caba462aa4-hail_devel_py2_7_databricks-20ed0.egg	153491
+
+dbfs:/FileStore/jars/ce0ce418_f2d9_4cc8_89ee_206a3245fff5-hail_tutorial_databricks-e84f3.jar
+ce0ce418_f2d9_4cc8_89ee_206a3245fff5-hail_tutorial_databricks-e84f3.jar	27876587
+
+this just doesn't seem right at all...
+
+
+
+I BELIEVE YOU COULD POINT DATABRICKS TO ONE OF THOSE TUTORIAL JAR FILES
+
+
+
+
+I BELIEVE HAIL IS NOT STARTING CORRECTLY IN DATABRICKS
+
+when i go to the cluster after it has started, and i look for the 'Libraries', i see:
+
+hail	PyPi	Status: Installed	- (under source)
+
+	i dont think this is right, there is no core hail .jar file !  
+
+
+
+
+
+
+LETS TRY INSTALLING IT WITH PYPI:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
