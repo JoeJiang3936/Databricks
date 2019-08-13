@@ -4,9 +4,6 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 
-https://github.com/lamastex/scalable-data-science/blob/master/dbcArchives/2019/sds-2-x-geo.dbc
-
-
 
 |
 
@@ -765,14 +762,11 @@ Notes::
                              5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
 
 
-  Hail / Databricks / Python:
+  spark script init: 
   https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
-  https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
-
-
-  Hail / Databricks / Scala:
   https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
-  https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
+  https://github.com/lamastex/scalable-data-science/blob/master/dbcArchives/2019/sds-2-x-geo.dbc
+
 
 
 
