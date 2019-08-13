@@ -15,7 +15,10 @@ https://thesparkgenomeproject.com/
 |
 
 
-The following github repo contains information assembled for our course project, and contains all the details of how we completed this ambitious project
+What is this ?    
+
+The following github repo contains detailed information about utilizing Apache Spark with Genomics Analysis. 
+
 
 
 |
