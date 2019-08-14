@@ -4,8 +4,10 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 
+
 |
 |
+
 
 
 .. image:: https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/images/demo.png  
@@ -21,7 +23,7 @@ Gene Sequencing Data Processing with Apache Spark
 
 **What is this ?**  
 
-The following github repo contains detailed information about utilizing Apache Spark with Genomics Analysis. 
+The following github repo contains detailed information about utilizing Apache Spark and Databricks for Genomics Analysis. 
 
 There is also an associated public website that is in process:  https://thesparkgenomeproject.com/
 
