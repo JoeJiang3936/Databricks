@@ -755,6 +755,7 @@ Final Notes
 
 
 
+
 Notes:: 
 
   
@@ -776,7 +777,7 @@ Explanatory Videos
 * `Genetic Association Explained <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
   — youtube video explaining the big picture of genetic association 
 
-  
+
 
 
 |
