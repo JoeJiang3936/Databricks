@@ -100,7 +100,7 @@ Why Apache Spark ?
 =============
 
 * Runs workloads 100x+ faster than conventional approaches
-* Think divide and conquer !  (good metaphor Joe) 
+* Think divide and conquer !  
 * Distributed processing
 * Quasi-infinite scaling
 * Standaridized and Generalized
@@ -115,13 +115,6 @@ Why Apache Spark ?
 .. image:: https://raw.githubusercontent.com/TomBresee/The_Spark_Genome_Project/master/ENTER/images/spark-runs-everywhere.png  
   :width: 200
   :alt: Alternative text
-
-
-
-
-
-
-
 
 
 
@@ -304,14 +297,14 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 Jupyter Notebooks 
 ==================
 
-As we progress step-by-step, we will upload jupyter notebooks. This is the key to really understanding this complicated approach. 
+As progression is made step-by-step, I will upload pertinent jupyter notebooks.  This is the key to really understanding this complicated approach. 
 
 |
 
 Jupyter Notebook Links
 ------------------------
 
-The following are working jupyter notebooks as we dive deeper into Apache Spark, Databricks, etc 
+The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc 
 
 |
 
