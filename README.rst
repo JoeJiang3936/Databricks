@@ -726,7 +726,7 @@ Explanatory Videos
 
 
 
-Make Work
+Modify and Upload 
 --------
 
 
@@ -734,27 +734,15 @@ Make Work
 
 
 
-* `variant calls via scala <https://databricks.com/blog/2019/06/26/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers.html>`_
-
-
-
 * `convert vcf files into delta lake <https://docs.databricks.com/_static/notebooks/genomics/vcf2delta.html>`_
-
-
-
-* `zero point two <https://docs.databricks.com/applications/genomics/hail.html>`_
 
 
 
 * `azurecln <https://www.blue-granite.com/blog/scaling-your-genomics-pipeline-to-the-cloud-with-azure-databricks>`_
 
 
+* `incorporate slides from Spark Summit 2018 <https://www.slideshare.net/SparkSummit/hail-scaling-genetic-data-analysis-with-apache-spark-keynote-by-cotton-seed>`_
 
-* `colored cell insert box <https://www.ibm.com/support/knowledgecenter/en/SSGNPV_1.1.3/dsx/markd-jupyter.html>`_
-
-
-
-* `incorporate slides from talk <https://www.slideshare.net/SparkSummit/hail-scaling-genetic-data-analysis-with-apache-spark-keynote-by-cotton-seed>`_
 
 
 |
@@ -775,15 +763,6 @@ Notes::
     * ENABLE_HAIL=true < - - confirm still updated .jar is pushed 
     * location of jar = = =  dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
     *                                 5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
-
-
-  spark script init notes:  
-  https://evodify.com/assets/posts/2017-11-08-big-data-tutorial/GenomicsSpark.html
-  https://lamastex.github.io/scalable-data-science/sds/2/2/db/999_05_StudentProject_HailScalaGenomicsETLTutorial.html
-  https://github.com/lamastex/scalable-data-science/blob/master/dbcArchives/2019/sds-2-x-geo.dbc
-  http://www.wtwjasa.com/scaling-genomic-workflows-with-spark-sql-bgen-and-vcf-readers/
-
-
 
 
 
