@@ -782,8 +782,9 @@ Powerpoint
 -------------
 
 
-* `Project <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
-  — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
+* `Project Click Here for PPT <https://github.com/TomBresee/The_Spark_Genome_Project/raw/master/ENTER/final_project/Project%20Slides%20-%20Spark%20Genomics.pptx>`_
+  — final project slides
+
 
 
 
