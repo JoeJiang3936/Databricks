@@ -762,6 +762,32 @@ Notes::
 
 
 
+
+
+
+Explanatory Videos
+-------------
+
+
+* `Genetic Association Explained <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
+  — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
+
+
+
+|
+
+
+
+Powerpoint
+-------------
+
+
+* `Project <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
+  — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
+
+
+
+
 |
 |
 |
