@@ -8,7 +8,7 @@ Gene Sequencing Data Processing with Apache Spark
 |
 
 
-.. image:: https://spark.apache.org/docs/latest/img/spark-logo-hd.png  
+.. image:: https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/images/image_243.png  
   :width: 200
   :alt: Alternative text
 
