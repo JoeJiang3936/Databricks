@@ -105,8 +105,9 @@ Why Apache Spark ?
 * Quasi-infinite scaling
 * Standaridized and Generalized
 * Capable of combining SQL, streaming, and complex analytics
-* Runs *everywhere*: Hadoop, Apache Mesos, Kubernetes, standalone, in the cloud (Azure, AWS, etc)
 * Accidentally a perfect fit for NGS and precision medicine
+* **Runs everywhere**:  Spark runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud (Azure, AWS, etc). It can access diverse data sources.  You can run Spark using its standalone cluster mode, on AWS EC2, on Hadoop YARN, on Mesos, or on Kubernetes.  Ability to access data in HDFS, Alluxio, Apache Cassandra, Apache HBase, Apache Hive, and *hundreds* of other data sources.
+
 
 
 
