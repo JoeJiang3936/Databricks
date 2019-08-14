@@ -9,7 +9,7 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 .. image:: https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/images/image_243.png  
-  :width: 100
+  :width: 200
   :alt: Alternative text
 
 
@@ -766,7 +766,7 @@ Notes::
 
 
 
-
+|
 
 
 Explanatory Videos
@@ -774,12 +774,12 @@ Explanatory Videos
 
 
 * `Genetic Association Explained <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
-  — Written by Dmytro Kryvokhyzha, excellent overview of using Databricks in Scala with Hail
+  — youtube video explaining the big picture of genetic association 
 
+  
 
 
 |
-
 
 
 Powerpoint
