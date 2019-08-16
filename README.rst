@@ -312,7 +312,7 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-* `Databricks Overview <https://nbviewer.jupyter.org/github/https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/overview_001.ipynb>`_
+* `Databricks Overview <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/overview_001.ipynb>`_
   — a gentle introduction notebook to show you the basics of what Databricks can do. **Start here**
 
 
