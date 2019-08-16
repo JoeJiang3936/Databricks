@@ -47,7 +47,7 @@ The following github repo contains detailed information about utilizing Apache S
 |
 
 Gene Sequencing Explained
-=========================
+============================
 
 Some high level basics... 
 
@@ -93,7 +93,7 @@ NGS
 |
 
 Why Apache Spark ? 
-=============
+=====================
 
 * Runs workloads 100x+ faster than conventional approaches
 * Think divide and conquer !  
@@ -167,7 +167,7 @@ Think big picture.  We need to change our perception on what we consider a LOT o
 |
 
 Our Approach
-=============
+==============
 
 * Research the basics of Apache Spark  
 * Research SparkSQL and pyspark API libraries  
@@ -238,7 +238,7 @@ If we do this efficiently, we can keep the processing optimized in batch process
 
 
 Our Technical Approach
-==================
+========================
 
 |
 
@@ -297,7 +297,7 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 
 
 **Jupyter Notebooks (exciting part)**
-**==================
+=========================================
 
 As progression is made step-by-step, I will upload pertinent jupyter notebooks.  This is the key to really understanding this complicated approach. 
 
@@ -439,14 +439,14 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 References
-=========
+=============
 
 
 |
 
 
 Apache Spark
--------------
+---------------
 
 
 * `Apache Spark Website <https://spark.apache.org/>`_
@@ -709,7 +709,7 @@ Next Generation DNA Sequencing (NGS)
 |
 
 Explanatory Videos
--------------
+--------------------
 
 
 * `Genetic Association Explained <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
@@ -727,7 +727,7 @@ Explanatory Videos
 
 
 Modify and Upload 
---------
+-------------------
 
 
 * `error message  openCostinBytes  <https://stackoverflow.com/questions/49048212/how-to-set-spark-sql-files-conf-in-pyspark>`_
@@ -778,7 +778,7 @@ Notes::
 
 
 Explanatory Videos
--------------
+----------------------
 
 
 * `Genetic Association Explained <https://www.youtube.com/watch?v=HIF73Hu1Vmw>`_
@@ -804,7 +804,7 @@ Powerpoint
 |
 
 Appendix - Variant Call Format (VCF) fields breakout
-=========
+=====================================================
 
 
 
