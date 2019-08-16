@@ -323,6 +323,15 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
+* `Pain <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Hail%200.2%20Tutorial%20-%20Databricks.ipynb>`_
+  — this killed me 
+
+
+
+
+|
+
+
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   — for introductory example of how to create RDD datasets and get familiar with the Databricks platform
 
