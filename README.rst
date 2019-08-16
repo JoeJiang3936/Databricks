@@ -705,8 +705,8 @@ Next Generation DNA Sequencing (NGS)
 
   
 
-
 |
+
 
 Explanatory Videos
 --------------------
@@ -746,35 +746,8 @@ Modify and Upload
 
 
 |
-|
-|
 
 
-Final Notes
-------------------------
-
-
-
-
-Notes:: 
-
-  
-
-  When I got it working:
-    * ENABLE_HAIL=true < - - confirm still updated .jar is pushed 
-    * location of jar = = =  dbfs:/FileStore/jars/5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar
-    *                                 5698d3bc_4eae_4017_adc7_a960409bcd16-hail_all_spark-71440.jar, 29914913))
-
-
-    last line of D:
-    https://discuss.hail.is/t/classnotfoundexception-is-hail-asm4s-asmfunction2/231
-    https://forums.databricks.com/questions/11391/can-i-run-hail-on-databricks.html
-
-    
-
-
-
-|
 
 
 Explanatory Videos
@@ -790,6 +763,7 @@ Explanatory Videos
 |
 
 
+
 Powerpoint
 -------------
 
@@ -802,6 +776,7 @@ Powerpoint
 |
 |
 |
+
 
 Appendix - Variant Call Format (VCF) fields breakout
 =====================================================
