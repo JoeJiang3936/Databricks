@@ -296,8 +296,8 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 |
 
 
-Jupyter Notebooks 
-==================
+**Jupyter Notebooks (exciting part)**
+**==================
 
 As progression is made step-by-step, I will upload pertinent jupyter notebooks.  This is the key to really understanding this complicated approach. 
 
