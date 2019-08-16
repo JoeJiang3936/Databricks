@@ -1,7 +1,7 @@
 
-Gene Sequencing Data Processing with Apache Spark 
-########################################
 
+Gene Sequencing Data Processing with Apache Spark 
+###################################################
 
 
 
@@ -14,12 +14,9 @@ Gene Sequencing Data Processing with Apache Spark
 
 The following github repo contains detailed information about utilizing Apache Spark and Databricks for Genomics Analysis. 
 
-There is also an associated public website that is in process:  https://thesparkgenomeproject.com/
-
 
 |
 |
-
 
 
 .. class:: no-web
@@ -35,7 +32,7 @@ There is also an associated public website that is in process:  https://thespark
 
 
 |
-
+|
 
 
 .. contents::
@@ -91,8 +88,6 @@ NGS
 
 
 
-
-
 |
 |
 |
@@ -108,6 +103,7 @@ Why Apache Spark ?
 * Capable of combining SQL, streaming, and complex analytics
 * Accidentally a perfect fit for NGS and precision medicine
 * **Runs everywhere**:  Spark runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud (Azure, AWS, etc). It can access diverse data sources.  You can run Spark using its standalone cluster mode, on AWS EC2, on Hadoop YARN, on Mesos, or on Kubernetes.  Ability to access data in HDFS, Alluxio, Apache Cassandra, Apache HBase, Apache Hive, and *hundreds* of other data sources.
+
 
 
 
@@ -141,6 +137,7 @@ Our goal is to document how much more streamlined and efficient this system is f
 
 
 |
+
 
 
 Think big picture.  We need to change our perception on what we consider a LOT of data...
@@ -195,6 +192,7 @@ Our Approach
 * Publish all results 
 
 
+
 |
 
 
@@ -237,6 +235,7 @@ If we do this efficiently, we can keep the processing optimized in batch process
 |
 |
 |
+
 
 Our Technical Approach
 ==================
@@ -295,6 +294,7 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 |
 |
 |
+
 
 Jupyter Notebooks 
 ==================
