@@ -444,6 +444,10 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
 
 
+|
+
+* `Direct link to working notebooks via nbviewer front end <https://nbviewer.jupyter.org/github/tombresee/The_Spark_Genome_Project/tree/master/ENTER/working_notebooks/>`_
+
 
 |
 |
