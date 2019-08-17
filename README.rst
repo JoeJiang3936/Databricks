@@ -317,8 +317,8 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-* `Databricks Overview <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/4602f11ee09c4c08f8844f57ae6aaca9f9858470/ENTER/working_notebooks/overview_001_f.html>`_
-  — **Start Here:**  a gentle introductory notebook (rendered in html)
+* `Databricks Overview notebook <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/4602f11ee09c4c08f8844f57ae6aaca9f9858470/ENTER/working_notebooks/overview_001_f.html>`_
+  — **Start Here**  
 
 
 
