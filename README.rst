@@ -324,7 +324,7 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-* `Pain <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/668cf42d082a2c1b9cfc96cd87995f5a879ad6f2/ENTER/working_notebooks/Hail 0.2 Tutorial - Databricks.html>`_
+* `Pain <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/e1381ea1c111e28b3c55c84ffdcacbedb46bfa63/ENTER/working_notebooks/Hail 0.2 Tutorial - Databricks.html>`_
   — this killed me 
 
 
