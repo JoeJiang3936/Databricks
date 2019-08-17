@@ -321,30 +321,28 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
   — a gentle introduction notebook (rendered in html) to show you the basics of what Databricks can do.  **Start here**
 
 
-|
+
 
 
 
 * `Pain <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Hail%200.2%20Tutorial%20-%20Databricks.ipynb>`_
-  — this almost killed me 
+  — the notebook that almost killed me
 
 
-
-|
 
 
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
   — for introductory example of how to create RDD datasets and get familiar with the Databricks platform
 
 
-|
+
 
 
 * `SparkSQL Basics on Databricks CE <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/Working%20with%20SQL%20at%20Scale%20-%20Spark%20SQL%20Tutorial.ipynb>`_
   — showings the basics of SparkSQL usage on the Databricks platform
 
 
-|
+
 
 
 * `SQL Notebook 1 on Databricks CE <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/bcccb13349bed18a85e685734e5bd3cac0bfb64f/ENTER/dbricks/beta - SQL - test.html>`_
@@ -365,8 +363,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
   — for getting a feel for this type of file format
 
 
-|
-
 
 * `Apache Parquet same notebook but in html for ease of viewing  <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/7142fd1b90e234d4e5de134f93dac9b77f35263d/ENTER/working_notebooks/keep_readingParquetFiles.html>`_
 
@@ -381,7 +377,7 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
   — working with reading and writing .csv files in different languages
 
 
-|
+
 
 
 * `Intermediate Level Data Analysis Demo2  <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Demo2.ipynb>`_
