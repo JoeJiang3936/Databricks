@@ -299,6 +299,7 @@ FASTQ   FASTQ files contain billions of entries and are about 90-100 gigabytes i
 |
 
 
+
 **Jupyter Notebooks ( < - - exciting part)**
 =========================================
 
@@ -398,7 +399,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-
 * `SparkSQL on Genomic Data <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/successful_processing_vcf_genome_spark.ipynb>`_
   — successful implementation of reading and processing via SparkSQL a .vcf genomics data fie series (Anaconda Windows10 laptop)
 
@@ -408,7 +408,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 * `Hail running on Apache Spark running on Ubuntu <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/HAIL%20on%20Apache%20Spark.ipynb>`_
   — successful implementation of Hail 0.2 on Apache Spark (Ubuntu-based), working example (notebook kept in the 'working notebooks' sub-folder under /ENTER)
-
 
 
 |
@@ -439,7 +438,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 |
 
 
-
 * `Hail on Databricks Demo for SMU html file <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/hail_databricks_joe.html>`_
   — Hail 0.2, Databricks, Apache Spark, production version, PCA  
 
@@ -447,6 +445,7 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 |
 
 * `Direct link to working notebooks via nbviewer front end <https://nbviewer.jupyter.org/github/tombresee/The_Spark_Genome_Project/tree/master/ENTER/working_notebooks/>`_
+
 
 
 |
@@ -762,7 +761,6 @@ Modify and Upload
 
 
 |
-
 
 
 
