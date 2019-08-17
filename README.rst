@@ -309,7 +309,8 @@ As progression is made step-by-step, I will upload pertinent jupyter notebooks. 
 Jupyter Notebook Links
 ------------------------
 
-The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc 
+The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc.  All raw .ipynb notebook files are contained under ENTER/working_notebooks repo folder. 
+
 
 |
 
@@ -321,19 +322,10 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 |
 
-* `Databricks Overview <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/4602f11ee09c4c08f8844f57ae6aaca9f9858470/ENTER/working_notebooks/overview_001_f.html>`_
-  — the original jupyter notebook (rendered in nbviewer)
 
 
-
-|
-
-
-
-
-* `Pain <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Hail%200.2%20Tutorial%20-%20Databricks.ipynb>`_
+* `Pain <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/668cf42d082a2c1b9cfc96cd87995f5a879ad6f2/ENTER/working_notebooks/Hail 0.2 Tutorial - Databricks.html>`_
   — this killed me 
-
 
 
 
