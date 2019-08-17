@@ -423,6 +423,14 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 * `Hail running on Apache Spark running on Ubuntu <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/HAIL%20on%20Apache%20Spark.ipynb>`_
   — successful implementation of Hail 0.2 on Apache Spark (Ubuntu-based), working example (notebook kept in the 'working notebooks' sub-folder under /ENTER)
 
+  *  `html version <https://github.com/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/HAIL%20on%20Apache%20Spark.html>`_
+
+
+
+
+
+
+
 
 |
 
@@ -458,7 +466,7 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 |
 
-* `Direct link to working notebooks via nbviewer front end <https://nbviewer.jupyter.org/github/tombresee/The_Spark_Genome_Project/tree/master/ENTER/working_notebooks/>`_
+* `Direct link to all working notebooks via nbviewer front end <https://nbviewer.jupyter.org/github/tombresee/The_Spark_Genome_Project/tree/master/ENTER/working_notebooks/>`_
 
 
 
