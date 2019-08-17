@@ -324,12 +324,21 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-* `Pain <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/e1381ea1c111e28b3c55c84ffdcacbedb46bfa63/ENTER/working_notebooks/Hail 0.2 Tutorial - Databricks.html>`_
+* `Pain <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Hail%200.2%20Tutorial%20-%20Databricks.ipynb>`_
   — this killed me 
 
 
 
 |
+
+
+* `Pain <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/e1381ea1c111e28b3c55c84ffdcacbedb46bfa63/ENTER/working_notebooks/Hail 0.2 Tutorial - Databricks.html>`_
+  — this killed me (rendered in html)
+
+
+
+|
+
 
 
 * `Databricks 101 <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/notebooks/001-pyspark.ipynb>`_
