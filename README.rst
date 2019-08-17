@@ -312,16 +312,14 @@ As progression is made step-by-step, I will upload pertinent jupyter notebooks. 
 Jupyter Notebook Links
 ------------------------
 
-The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc.  All raw .ipynb notebook files are contained under ENTER/working_notebooks repo folder. 
+The following are working jupyter notebooks as I dive deeper into Apache Spark, Databricks, etc.  All raw .ipynb notebook files are contained under ENTER/working_notebooks repo folder.  Most of the links below are enabled via nbviewer to show the notebooks in html, to aid ease of viewing...
 
 
 |
 
 
-
 * `Databricks Overview notebook <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/4602f11ee09c4c08f8844f57ae6aaca9f9858470/ENTER/working_notebooks/overview_001_f.html>`_
   — **Start Here**  
-
 
 
 |
@@ -332,7 +330,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
   — the notebook that almost killed me
 
   *  `html version <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/18102831c1efb315f88e75407d26efc2000928bd/ENTER/working_notebooks/Hail%200.2%20Tutorial%20-%20Databricks.html>`_
-
 
 
 
@@ -365,8 +362,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 |
 
 
-
-
 * `Apache Parquet file type usage on Databricks <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/keep_readingParquetFiles.ipynb>`_
   — for getting a feel for this type of file format
 
@@ -381,8 +376,6 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-
-
 * `Working with CSV Files <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Working%20with%20csv%20files.ipynb>`_
   — working with reading and writing .csv files in different languages
 
@@ -390,10 +383,8 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 |
 
 
-
 * `Intermediate Level Data Analysis Demo2  <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/Demo2.ipynb>`_
   — Demo-002  
-
 
 
 
