@@ -360,11 +360,14 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 
 
 
-* `Apache Parquet file type usage on Databricks CE <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/dbricks/readingParquetFiles.ipynb>`_
+
+
+* `Apache Parquet file type usage on Databricks <https://nbviewer.jupyter.org/github/TomBresee/The_Spark_Genome_Project/blob/master/ENTER/working_notebooks/keep_readingParquetFiles.ipynb>`_
   — for getting a feel for this type of file format
 
 
 |
+
 
 
 
