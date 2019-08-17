@@ -464,6 +464,26 @@ The following are working jupyter notebooks as I dive deeper into Apache Spark, 
 * `Direct link to all working notebooks via nbviewer front end <https://nbviewer.jupyter.org/github/tombresee/The_Spark_Genome_Project/tree/master/ENTER/working_notebooks/>`_
 
 
+|
+
+
+Advanced Notebooks
+------------------------
+
+These are bit more complex, include things like Delta Lake, etc. 
+
+
+|
+
+
+
+* `Databricks Overview notebook <https://rawcdn.githack.com/TomBresee/The_Spark_Genome_Project/4602f11ee09c4c08f8844f57ae6aaca9f9858470/ENTER/working_notebooks/overview_001_f.html>`_
+  — **Start Here**  
+
+
+
+
+
 
 |
 |
