@@ -5,6 +5,8 @@ Gene Sequencing Data Processing with Apache Spark
 
 
 
+
+
 |
 |
 
@@ -13,6 +15,7 @@ Gene Sequencing Data Processing with Apache Spark
 **What is this ?**  
 
 The following github repo contains detailed information about utilizing Apache Spark and Databricks for Genomics Analysis. 
+
 
 
 
@@ -36,6 +39,7 @@ The following github repo contains detailed information about utilizing Apache S
 
 |
 |
+
 
 
 .. contents::
@@ -199,6 +203,7 @@ Our Approach
 |
 
 
+
 .. class:: no-web
 
 
@@ -215,6 +220,7 @@ Our Approach
 |
 
 
+
 If we do this efficiently, we can keep the processing optimized in batch processing:
 
 .. class:: no-web
@@ -227,7 +233,6 @@ If we do this efficiently, we can keep the processing optimized in batch process
 
 
 .. class:: no-web no-pdf
-
 
 
 
